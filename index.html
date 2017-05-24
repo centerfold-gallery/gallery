@@ -103,6 +103,42 @@
                 </div>
             </div>
         </div>
+        <div class="buy" id="buy2">
+            <div class="buy-flex">
+                <div class="buy-wrap">
+                    <div class="buy-art shadow">
+                        <img src="assets/art/Ali3.jpg">
+                    </div>
+                    <div class="buy-artist-card-wrap">
+                        <div class="buy-artist-card">
+                            <span class="buy-art-title">5pm at the Museum</span><br/>
+                            <span class="buy-art-artist">Ali Inay</span><br/><br/><br/>
+                            <span class="buy-art-description">
+                                Haring's eries titled Growing is a collection of 5 screen prints that narrate the development of human beings through his figures.
+                            </span><br/><br/>
+                            Digital Print<br/>
+                            16" x 16"<br/>
+                            $300<br/>
+                            <br/>
+                            <form action="https://YOUR-APP.herokuapp.com/" method="POST">
+                                <script
+                                    src="https://checkout.stripe.com/checkout.js"
+                                    class="stripe-button"
+                                    data-key="pk_test_C387opaZCGYru4uaKfthZATA"
+                                    data-name="Centerfold Gallery"
+                                    data-description="5pm at the Museum - Ali Inay"
+                                    data-amount="30000"
+                                ></script>
+                                <input name="amount" value="YOUR_AMOUNT" type="hidden">
+                                <input name="description" value="YOUR_DESCRIPTION" type="hidden">
+                                <input name="metadata" value="YOUR_METADATA" type="hidden">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         <script src="js/three.js"></script>
 		<script src="js/PointerLockControls.js"></script>
