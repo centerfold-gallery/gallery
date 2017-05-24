@@ -1,5 +1,4 @@
-<script>
-    var handler = StripeCheckout.configure({
+var handler = StripeCheckout.configure({
       key: 'pk_test_C387opaZCGYru4uaKfthZATA',
       image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
       locale: 'auto',
@@ -24,4 +23,3 @@
     window.addEventListener('popstate', function() {
       handler.close();
     });
-</script>
