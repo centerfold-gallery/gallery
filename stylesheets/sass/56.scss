@@ -123,7 +123,7 @@ canvas {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 101;
+    z-index: 300;
 }
 
 #overlay {
@@ -211,8 +211,8 @@ canvas {
     margin-bottom: 16em;
 }
 
-.shadow,
-.shadow img {
+.art-art,
+.art-art img {
     width: 350px;
     height: 350px;
     display: inline-block;
@@ -226,6 +226,11 @@ canvas {
     position: absolute;
     top: 0;
     margin-left: 1em;
+}
+
+.art-art:hover,
+.artist-card-wrap:hover {
+    cursor: pointer;
 }
 
 .artist-card {
@@ -254,6 +259,56 @@ canvas {
 }
 
 
+.buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $background-color;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    display: none;
+}
+
+.buy-flex {
+    width: 100%;
+    height: 100%;
+    @include boxflexh;
+    position: relative;
+}
+
+.buy-art,
+.buy-art img {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.buy-artist-card-wrap {
+    font-family: $type-2;
+    font-size: $type-size-1;
+    margin-left: 2em;
+    float: right;
+}
+
+.buy-art-title {
+    display: inline-block;
+    font-family: $type-1;
+    font-size: 2em;
+}
+
+.buy-art-artist {
+    display: inline-block;
+    font-family: $type-2;
+    font-size: 2em;
+}
+
+.buy-art-description {
+    width: 400px;
+    display: inline-block;
+    font-family: $type-1;
+    font-size: 1.2em;
+}
 
 #image-1 {
     display: none;
