@@ -28,11 +28,43 @@
 		</div>
        
         <div class="still">
-            <div class="centerfold-14">
-                Centerfold Series 14 <img id="threed" src="assets/3d.png">
-            </div>
-            <div class="event-description">
-                Centerfold is partnering with Chromatic for our 14th exhibition, which will feature the work of 10 visual artists who have gained popularity and praise on Instagram. Oh and there's also a roof-top terrace party as well!
+            <div class="everything">
+                <div class="centerfold-14">
+                    Centerfold Series 14 <img id="threed" src="assets/3d.png">
+                </div>
+                <div class="event-description">
+                    Centerfold is partnering with Chromatic for our 14th exhibition, which will feature the work of 10 visual artists who have gained popularity and praise on Instagram. Oh and there's also a roof-top terrace party as well!
+                </div>
+
+                <div class="art" id="art1">
+                    <div class="shadow">
+                        <img src="assets/art/Celia1.JPG">
+                    </div>
+                    <div class="artist-card-wrap">
+                        <div class="artist-card" id="card1">
+                            <span class="art-title">Galaxy SOHO</span><br/>
+                            Celia Spenard-Ko<br/>
+                            Digital Print<br/>
+                            16" x 16"<br/>
+                            $300
+                        </div>
+                    </div>
+                </div>
+                <div class="art" id="art2">
+                    <div class="shadow">
+                        <img src="assets/art/Ali3.jpg">
+                    </div>
+                    <div class="artist-card-wrap">
+                        <div class="artist-card" id="card2">
+                            <span class="art-title">5pm at the Museum</span><br/>
+                            Ali Inay<br/>
+                            Digital Print<br/>
+                            16" x 16"<br/>
+                            $300
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         
@@ -304,12 +336,64 @@
         </script>
         <script>
             $('#threed').click(function() {
-                $('.still').fadeOut(1000);
+                $('.still').fadeOut(500);
             });
             $(document).keyup(function(e) {
                 if (e.which == 27) {
-                    $('.still').fadeIn(1000); 
+                    $('.still').fadeIn(500); 
                 }
+            });
+        </script>
+        <script>
+            $("#art1").hover(function(){
+                $('#card1').fadeIn();
+            },function(){
+                $('#card1').fadeOut();
+            });
+            $("#art2").hover(function(){
+                $('#card2').fadeIn();
+            },function(){
+                $('#card2').fadeOut();
+            });
+            $("#art3").hover(function(){
+                $('#card3').fadeIn();
+            },function(){
+                $('#card3').fadeOut();
+            });
+            $("#art4").hover(function(){
+                $('#card4').fadeIn();
+            },function(){
+                $('#card4').fadeOut();
+            });
+            $("#art5").hover(function(){
+                $('#card5').fadeIn();
+            },function(){
+                $('#card5').fadeOut();
+            });
+            $("#art6").hover(function(){
+                $('#card6').fadeIn();
+            },function(){
+                $('#card6').fadeOut();
+            });
+            $("#art7").hover(function(){
+                $('#card7').fadeIn();
+            },function(){
+                $('#card7').fadeOut();
+            });
+            $("#art8").hover(function(){
+                $('#card8').fadeIn();
+            },function(){
+                $('#card8').fadeOut();
+            });
+            $("#art9").hover(function(){
+                $('#card9').fadeIn();
+            },function(){
+                $('#card9').fadeOut();
+            });
+            $("#art10").hover(function(){
+                $('#card10').fadeIn();
+            },function(){
+                $('#card10').fadeOut();
             });
         </script>
 	</body>
