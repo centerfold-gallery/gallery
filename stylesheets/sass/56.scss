@@ -67,6 +67,8 @@ body {
 
 $background-color: #fffbfb;
 
+$color-1: #000;
+
 $type-1: 'caslon', caslon;
 $type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
 
@@ -106,7 +108,6 @@ body {
     background-color: #0000ff;
     margin: 0;
     overflow: hidden;
-    font-family: arial;
 }
 
 canvas {
@@ -152,7 +153,6 @@ canvas {
     color: #000000;
     text-align: center;
     cursor: pointer;
-    font-family: drukwide;
     z-index: 6;
 }
 
@@ -176,6 +176,7 @@ canvas {
 .centerfold-14 {
     font-family: $type-1;
     font-size: 2em;
+    color: $color-1;
     width: 100%;
     @include boxflexh;
     margin-top: 4em;
@@ -197,6 +198,7 @@ canvas {
     font-family: $type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
+    color: $color-1;
     width: 30%;
     margin-top: 1em;
     margin-left: 50%;
@@ -223,6 +225,7 @@ canvas {
     font-family: $type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
+    color: $color-1;
     position: absolute;
     top: 0;
     margin-left: 1em;
@@ -241,6 +244,7 @@ canvas {
     display: inline-block;
     font-family: $type-1;
     line-height: $line-height-1;
+    color: $color-1;
     font-size: 1em;
 }
 
@@ -287,6 +291,7 @@ canvas {
 .buy-artist-card-wrap {
     font-family: $type-2;
     font-size: $type-size-1;
+    color: $color-1;
     margin-left: 2em;
     float: right;
 }
@@ -294,12 +299,14 @@ canvas {
 .buy-art-title {
     display: inline-block;
     font-family: $type-1;
+    color: $color-1;
     font-size: 2em;
 }
 
 .buy-art-artist {
     display: inline-block;
     font-family: $type-2;
+    color: $color-1;
     font-size: 2em;
 }
 
@@ -307,7 +314,37 @@ canvas {
     width: 400px;
     display: inline-block;
     font-family: $type-1;
+    color: $color-1;
     font-size: 1.2em;
+}
+
+.success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+    @include boxflex;
+}
+
+.thank-you {
+    width: 35%;
+    font-family: $type-2;
+    font-size: $type-size-1;
+    line-height: $line-height-1;
+    color: $color-1;
+}
+
+.thank-you-title {
+    display: inline-block;
+    font-family: $type-1;
+    color: $color-1;
+    font-size: 2em;
+}
+
+.thank-you-link {
+    border-bottom: $color-1 5px solid;
 }
 
 #image-1 {

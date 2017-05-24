@@ -13,7 +13,6 @@
                 $(".se-pre-con").fadeOut("slow");;
             });
         </script>
-        <script src="https://checkout.stripe.com/checkout.js"></script>
         
     </head>
 	<body>
@@ -86,7 +85,19 @@
                             16" x 16"<br/>
                             $300<br/>
                             <br/>
-                            <button id="customButton">Purchase</button>
+                            <form action="https://YOUR-APP.herokuapp.com/" method="POST">
+                                <script
+                                    src="https://checkout.stripe.com/checkout.js"
+                                    class="stripe-button"
+                                    data-key="pk_test_C387opaZCGYru4uaKfthZATA"
+                                    data-name="Centerfold Gallery"
+                                    data-description="Galaxy SOHO - Celia Spenard-Ko"
+                                    data-amount="30000"
+                                ></script>
+                                <input name="amount" value="YOUR_AMOUNT" type="hidden">
+                                <input name="description" value="YOUR_DESCRIPTION" type="hidden">
+                                <input name="metadata" value="YOUR_METADATA" type="hidden">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -492,6 +503,5 @@
 
             });
         </script>
-        <script src="js/stripe.js"></script>
 	</body>
 </html>
