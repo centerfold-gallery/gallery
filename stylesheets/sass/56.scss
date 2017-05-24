@@ -9,8 +9,20 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    height: 100%;
+}
+
+::-moz-selection { color: #0000ff; }
+::selection { color: #0000ff; }
+/* ::-webkit-scrollbar { display: none; } */
+
+@font-face {
+    font-family: caslon;
+    src: url(../../assets/type/ACaslonPro-Italic.otf);
+}
+
+@font-face {
+    font-family: pressura-mono;
+    src: url(../../assets/type/GT-Pressura-Mono-Trial-Regular.otf);
 }
 
 @mixin boxflex {
@@ -32,6 +44,31 @@ body {
     -webkit-flex-direction: column;
     flex-direction: column;
 }
+
+@mixin boxflexh {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: row;
+}
+
+$background-color: #fffbfb;
+
+$type-1: 'caslon', caslon;
+$type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
 
 a {
     text-decoration: none;
@@ -62,16 +99,17 @@ a {
     background: url(../../assets/waiting.gif) center repeat #ffffff;
 }
 
-@font-face {
-    font-family: drukwide;
-    src: url(../../assets/DrukWide.otf);
-}
-
 body {
     background-color: #0000ff;
     margin: 0;
     overflow: hidden;
     font-family: arial;
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -82,6 +120,7 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
+    z-index: 101;
 }
 
 #overlay {
@@ -89,6 +128,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.0);
+    z-index: 5;
 }
 
 #instructions {
@@ -110,6 +150,48 @@ body {
     text-align: center;
     cursor: pointer;
     font-family: drukwide;
+    z-index: 6;
+}
+
+.still {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: $background-color;
+    /* background-color: rgba(240, 248, 255, 0.36); */
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+.centerfold-14 {
+    font-family: $type-1;
+    font-size: 2em;
+    width: 100%;
+    @include boxflexh;
+    margin-top: 4em;
+    padding-left: 1.2em;
+}
+
+.centerfold-14 img {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    margin-left: 1em;
+}
+
+.centerfold-14 img:hover {
+    cursor: pointer;
+}
+
+.event-description {
+    font-family: $type-2;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    width: 30%;
+    margin-top: 1em;
+    margin-left: 50%;
 }
 
 #image-1 {
