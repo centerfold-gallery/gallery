@@ -32,121 +32,121 @@ body { background-color: #0000ff; margin: 0; overflow: hidden; }
 canvas { position: fixed; width: 100%; height: 100%; }
 
 /* line 121, ../sass/56.scss */
-.logo { width: 100%; height: 60px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 300; }
+.logo { width: 100%; height: 60px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 300; }
 
-/* line 132, ../sass/56.scss */
+/* line 131, ../sass/56.scss */
 #overlay { position: absolute; width: 100%; height: 100%; background-color: transparent; z-index: 5; }
 
-/* line 140, ../sass/56.scss */
+/* line 139, ../sass/56.scss */
 #instructions { width: 100%; height: 100%; display: -webkit-box; display: -moz-box; display: box; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-box-align: center; -moz-box-align: center; box-align: center; color: #000000; text-align: center; cursor: pointer; z-index: 6; }
 
-/* line 161, ../sass/56.scss */
+/* line 160, ../sass/56.scss */
 .still { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; /* background-color: rgba(240, 248, 255, 0.36); */ z-index: 100; overflow-y: scroll; overflow-x: hidden; }
 
-/* line 174, ../sass/56.scss */
+/* line 173, ../sass/56.scss */
 .everything { width: 100%; }
 
-/* line 178, ../sass/56.scss */
+/* line 177, ../sass/56.scss */
 .centerfold-14 { font-family: "caslon", caslon; font-size: 2em; color: #000; width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; margin-top: 4em; padding-left: 1.2em; }
 
-/* line 188, ../sass/56.scss */
+/* line 187, ../sass/56.scss */
 .centerfold-14 img { display: inline-block; height: 1em; width: auto; margin-left: 1em; }
 
-/* line 195, ../sass/56.scss */
+/* line 194, ../sass/56.scss */
 .centerfold-14 img:hover { cursor: pointer; }
 
-/* line 199, ../sass/56.scss */
+/* line 198, ../sass/56.scss */
 .event-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; width: 30%; margin-top: 1em; margin-left: 50%; }
 
-/* line 209, ../sass/56.scss */
+/* line 208, ../sass/56.scss */
 .art { position: relative; margin-top: 16em; }
 
-/* line 214, ../sass/56.scss */
+/* line 213, ../sass/56.scss */
 .art:last-child { margin-bottom: 16em; }
 
-/* line 218, ../sass/56.scss */
+/* line 217, ../sass/56.scss */
 .art-art, .art-art img { width: 350px; height: 350px; display: inline-block; }
 
-/* line 225, ../sass/56.scss */
+/* line 224, ../sass/56.scss */
 .artist-card-wrap { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; position: absolute; top: 0; margin-left: 1em; }
 
-/* line 236, ../sass/56.scss */
+/* line 235, ../sass/56.scss */
 .art-art:hover, .artist-card-wrap:hover { cursor: pointer; }
 
-/* line 241, ../sass/56.scss */
+/* line 240, ../sass/56.scss */
 .artist-card { display: none; }
 
-/* line 245, ../sass/56.scss */
+/* line 244, ../sass/56.scss */
 .art-title { display: inline-block; font-family: "caslon", caslon; line-height: 1.2em; color: #000; font-size: 1em; }
 
-/* line 253, ../sass/56.scss */
+/* line 252, ../sass/56.scss */
 .shadow { background-color: rgba(0, 0, 0, 0.56); -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); }
 
-/* line 260, ../sass/56.scss */
+/* line 259, ../sass/56.scss */
 #art1 { margin-left: 30%; }
 
-/* line 264, ../sass/56.scss */
+/* line 263, ../sass/56.scss */
 #art2 { margin-left: 60%; }
 
-/* line 268, ../sass/56.scss */
+/* line 267, ../sass/56.scss */
 #art3 { margin-left: 45%; }
 
-/* line 272, ../sass/56.scss */
+/* line 271, ../sass/56.scss */
 #art4 { margin-left: 55%; }
 
-/* line 276, ../sass/56.scss */
+/* line 275, ../sass/56.scss */
 #art5 { margin-left: 15%; }
 
-/* line 280, ../sass/56.scss */
+/* line 279, ../sass/56.scss */
 #art6 { margin-left: 35%; }
 
-/* line 284, ../sass/56.scss */
+/* line 283, ../sass/56.scss */
 #art7 { margin-left: 25%; }
 
-/* line 288, ../sass/56.scss */
+/* line 287, ../sass/56.scss */
 #art8 { margin-left: 50%; }
 
-/* line 292, ../sass/56.scss */
+/* line 291, ../sass/56.scss */
 #art9 { margin-left: 30%; }
 
-/* line 296, ../sass/56.scss */
+/* line 295, ../sass/56.scss */
 #art10 { margin-left: 20%; }
 
-/* line 301, ../sass/56.scss */
+/* line 300, ../sass/56.scss */
 .buy { position: fixed; top: 0; left: 0; background-color: #fffbfb; width: 100%; height: 100%; z-index: 200; display: none; }
 
-/* line 312, ../sass/56.scss */
+/* line 311, ../sass/56.scss */
 .buy-flex { width: 100%; height: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; position: relative; }
 
-/* line 319, ../sass/56.scss */
+/* line 318, ../sass/56.scss */
 .close { position: fixed; top: 20px; left: 20px; cursor: w-resize; z-index: 300; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; }
 
-/* line 329, ../sass/56.scss */
+/* line 328, ../sass/56.scss */
 .buy-art, .buy-art img { width: 400px; height: 400px; float: left; }
 
-/* line 336, ../sass/56.scss */
+/* line 335, ../sass/56.scss */
 .buy-artist-card-wrap { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; color: #000; margin-left: 2em; float: right; }
 
-/* line 344, ../sass/56.scss */
+/* line 343, ../sass/56.scss */
 .buy-art-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 351, ../sass/56.scss */
+/* line 350, ../sass/56.scss */
 .buy-art-artist { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; color: #000; font-size: 2em; }
 
-/* line 358, ../sass/56.scss */
+/* line 357, ../sass/56.scss */
 .buy-art-description { width: 400px; display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 1.2em; }
 
-/* line 366, ../sass/56.scss */
+/* line 365, ../sass/56.scss */
 .success { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 376, ../sass/56.scss */
+/* line 375, ../sass/56.scss */
 .thank-you { width: 35%; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; }
 
-/* line 384, ../sass/56.scss */
+/* line 383, ../sass/56.scss */
 .thank-you-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 391, ../sass/56.scss */
+/* line 390, ../sass/56.scss */
 .thank-you-link { border-bottom: #000 5px solid; }
 
-/* line 395, ../sass/56.scss */
+/* line 394, ../sass/56.scss */
 #image-1 { display: none; }
