@@ -173,27 +173,27 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .thank-you-link { border-bottom: #000 5px solid; }
 
 /* line 449, ../sass/56.scss */
-.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: contain; font-size: 1em; line-height: 1.4em; z-index: 299; margin: 10%; padding-top: 20%; }
+.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; margin: 10%; padding-top: 20%; }
 
-/* line 469, ../sass/56.scss */
+/* line 470, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
 
-/* line 473, ../sass/56.scss */
+/* line 474, ../sass/56.scss */
 #image-1 { display: none; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 478, ../sass/56.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 479, ../sass/56.scss */
   .hello { display: block; }
-  /* line 482, ../sass/56.scss */
+  /* line 483, ../sass/56.scss */
   canvas { display: none; }
-  /* line 486, ../sass/56.scss */
+  /* line 487, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 490, ../sass/56.scss */
+  /* line 491, ../sass/56.scss */
   .still { display: none; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 496, ../sass/56.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 497, ../sass/56.scss */
   .hello { display: block; }
-  /* line 500, ../sass/56.scss */
+  /* line 501, ../sass/56.scss */
   canvas { display: none; }
-  /* line 504, ../sass/56.scss */
+  /* line 505, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 508, ../sass/56.scss */
+  /* line 509, ../sass/56.scss */
   .still { display: none; } }

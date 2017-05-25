@@ -458,7 +458,8 @@ canvas {
     font-family: $type-2;
     background-image: url(../../assets/mobile-bg.png);
     background-position: bottom;
-    background-size: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
     font-size: 1em;
     line-height: 1.4em;
     z-index: 299;
