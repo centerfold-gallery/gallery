@@ -251,6 +251,7 @@ canvas {
 }
 
 .shadow {
+    background-color: rgba(0,0,0,0.56);
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
@@ -262,6 +263,38 @@ canvas {
 
 #art2 {
     margin-left: 60%;
+}
+
+#art3 {
+    margin-left: 45%;
+}
+
+#art4 {
+    margin-left: 55%;
+}
+
+#art5 {
+    margin-left: 15%;
+}
+
+#art6 {
+    margin-left: 35%;
+}
+
+#art7 {
+    margin-left: 25%;
+}
+
+#art8 {
+    margin-left: 50%;
+}
+
+#art9 {
+    margin-left: 30%;
+}
+
+#art10 {
+    margin-left: 20%;
 }
 
 
@@ -281,6 +314,16 @@ canvas {
     height: 100%;
     @include boxflexh;
     position: relative;
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: w-resize;
+    z-index: 300;
+    font-family: $type-2;
+    font-size: $type-size-1;
 }
 
 .buy-art,
