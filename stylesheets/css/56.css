@@ -12,114 +12,114 @@ html, body { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit
 
 /* ::-webkit-scrollbar { display: none; } */
 @font-face { font-family: caslon; src: url(../../assets/type/ACaslonPro-Italic.otf); }
-@font-face { font-family: pressura-mono; src: url(../../assets/type/GT-Pressura-Mono-Trial-Regular.otf); }
-/* line 78, ../sass/56.scss */
+@font-face { font-family: pressura-mono; src: url(../../assets/type/GT-Pressura-Mono-Regular.woff) format("woff"), url(../../assets/type/GT-Pressura-Mono-Regular.otf) format("opentype"), url(../../assets/type/GT-Pressura-Mono-Regular.ttf) format("truetype"); }
+/* line 80, ../sass/56.scss */
 a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; }
 
-/* line 86, ../sass/56.scss */
+/* line 88, ../sass/56.scss */
 .no-js #loader { display: none; }
 
-/* line 90, ../sass/56.scss */
+/* line 92, ../sass/56.scss */
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 
-/* line 97, ../sass/56.scss */
+/* line 99, ../sass/56.scss */
 .se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center repeat #ffffff; }
 
-/* line 107, ../sass/56.scss */
+/* line 109, ../sass/56.scss */
 body { background-color: #0000ff; margin: 0; overflow: hidden; }
 
-/* line 113, ../sass/56.scss */
+/* line 115, ../sass/56.scss */
 canvas { position: fixed; width: 100%; height: 100%; }
 
-/* line 119, ../sass/56.scss */
+/* line 121, ../sass/56.scss */
 .logo { width: 100%; height: 60px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 300; }
 
-/* line 130, ../sass/56.scss */
+/* line 132, ../sass/56.scss */
 #overlay { position: absolute; width: 100%; height: 100%; background-color: transparent; z-index: 5; }
 
-/* line 138, ../sass/56.scss */
+/* line 140, ../sass/56.scss */
 #instructions { width: 100%; height: 100%; display: -webkit-box; display: -moz-box; display: box; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-box-pack: center; -moz-box-pack: center; box-pack: center; -webkit-box-align: center; -moz-box-align: center; box-align: center; color: #000000; text-align: center; cursor: pointer; z-index: 6; }
 
-/* line 159, ../sass/56.scss */
+/* line 161, ../sass/56.scss */
 .still { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; /* background-color: rgba(240, 248, 255, 0.36); */ z-index: 100; overflow-y: scroll; overflow-x: hidden; }
 
-/* line 172, ../sass/56.scss */
+/* line 174, ../sass/56.scss */
 .everything { width: 100%; }
 
-/* line 176, ../sass/56.scss */
+/* line 178, ../sass/56.scss */
 .centerfold-14 { font-family: "caslon", caslon; font-size: 2em; color: #000; width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; margin-top: 4em; padding-left: 1.2em; }
 
-/* line 186, ../sass/56.scss */
+/* line 188, ../sass/56.scss */
 .centerfold-14 img { display: inline-block; height: 1em; width: auto; margin-left: 1em; }
 
-/* line 193, ../sass/56.scss */
+/* line 195, ../sass/56.scss */
 .centerfold-14 img:hover { cursor: pointer; }
 
-/* line 197, ../sass/56.scss */
+/* line 199, ../sass/56.scss */
 .event-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; width: 30%; margin-top: 1em; margin-left: 50%; }
 
-/* line 207, ../sass/56.scss */
+/* line 209, ../sass/56.scss */
 .art { position: relative; margin-top: 16em; }
 
-/* line 212, ../sass/56.scss */
+/* line 214, ../sass/56.scss */
 .art:last-child { margin-bottom: 16em; }
 
-/* line 216, ../sass/56.scss */
+/* line 218, ../sass/56.scss */
 .art-art, .art-art img { width: 350px; height: 350px; display: inline-block; }
 
-/* line 223, ../sass/56.scss */
+/* line 225, ../sass/56.scss */
 .artist-card-wrap { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; position: absolute; top: 0; margin-left: 1em; }
 
-/* line 234, ../sass/56.scss */
+/* line 236, ../sass/56.scss */
 .art-art:hover, .artist-card-wrap:hover { cursor: pointer; }
 
-/* line 239, ../sass/56.scss */
+/* line 241, ../sass/56.scss */
 .artist-card { display: none; }
 
-/* line 243, ../sass/56.scss */
+/* line 245, ../sass/56.scss */
 .art-title { display: inline-block; font-family: "caslon", caslon; line-height: 1.2em; color: #000; font-size: 1em; }
 
-/* line 251, ../sass/56.scss */
+/* line 253, ../sass/56.scss */
 .shadow { -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); }
 
-/* line 257, ../sass/56.scss */
+/* line 259, ../sass/56.scss */
 #art1 { margin-left: 30%; }
 
-/* line 261, ../sass/56.scss */
+/* line 263, ../sass/56.scss */
 #art2 { margin-left: 60%; }
 
-/* line 266, ../sass/56.scss */
+/* line 268, ../sass/56.scss */
 .buy { position: fixed; top: 0; left: 0; background-color: #fffbfb; width: 100%; height: 100%; z-index: 200; display: none; }
 
-/* line 277, ../sass/56.scss */
+/* line 279, ../sass/56.scss */
 .buy-flex { width: 100%; height: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; position: relative; }
 
-/* line 284, ../sass/56.scss */
+/* line 286, ../sass/56.scss */
 .buy-art, .buy-art img { width: 400px; height: 400px; float: left; }
 
-/* line 291, ../sass/56.scss */
+/* line 293, ../sass/56.scss */
 .buy-artist-card-wrap { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; color: #000; margin-left: 2em; float: right; }
 
-/* line 299, ../sass/56.scss */
+/* line 301, ../sass/56.scss */
 .buy-art-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 306, ../sass/56.scss */
+/* line 308, ../sass/56.scss */
 .buy-art-artist { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; color: #000; font-size: 2em; }
 
-/* line 313, ../sass/56.scss */
+/* line 315, ../sass/56.scss */
 .buy-art-description { width: 400px; display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 1.2em; }
 
-/* line 321, ../sass/56.scss */
+/* line 323, ../sass/56.scss */
 .success { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 331, ../sass/56.scss */
+/* line 333, ../sass/56.scss */
 .thank-you { width: 35%; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; }
 
-/* line 339, ../sass/56.scss */
+/* line 341, ../sass/56.scss */
 .thank-you-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 346, ../sass/56.scss */
+/* line 348, ../sass/56.scss */
 .thank-you-link { border-bottom: #000 5px solid; }
 
-/* line 350, ../sass/56.scss */
+/* line 352, ../sass/56.scss */
 #image-1 { display: none; }
