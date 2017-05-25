@@ -3,7 +3,8 @@
 	<head>
         <title>Centerfold</title>
         <meta charset=utf-8>
-        <meta name="description" content="">
+        <meta name="description" content="Centerfold gallery is a Montreal based series of pop-up art exhibitions 
+which raises funds for local and emerging artists.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="stylesheets/css/56.css">
@@ -32,9 +33,6 @@
 			        </div>
 			        <div class="controls-start"><span class="controls-start-button">Start</span></div>
 			    </div>
-				<!-- <span>
-				    <img style="width:80%;height:auto;" src="assets/click-to-play.png">
-				</span> -->
 			</div>
 
 		</div>
@@ -92,7 +90,7 @@
                 </div>
                 <div class="art" id="art4">
                     <div class="art-art shadow">
-                        <img src="assets/art/Pascal4_new.png">
+                        <img src="assets/art/Pascal4_new.jpg">
                     </div>
                     <div class="artist-card-wrap">
                         <div class="artist-card" id="card4">
@@ -106,7 +104,7 @@
                 </div>
                 <div class="art" id="art5">
                     <div class="art-art shadow">
-                        <img src="assets/art/Jade1.png">
+                        <img src="assets/art/Jade1.jpg">
                     </div>
                     <div class="artist-card-wrap">
                         <div class="artist-card" id="card5">
@@ -120,7 +118,7 @@
                 </div>
                 <div class="art" id="art6">
                     <div class="art-art shadow">
-                        <img src="assets/art/Sayeh2.png">
+                        <img src="assets/art/Sayeh2.jpg">
                     </div>
                     <div class="artist-card-wrap">
                         <div class="artist-card" id="card6">
@@ -176,7 +174,7 @@
                 </div>
                 <div class="art" id="art10">
                     <div class="art-art shadow">
-                        <img src="assets/art/Koku2.png">
+                        <img src="assets/art/Koku2.jpg">
                     </div>
                     <div class="artist-card-wrap">
                         <div class="artist-card" id="card10">
@@ -302,7 +300,7 @@
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
-                        <img src="assets/art/Pascal4_new.png" data-action="zoom">
+                        <img src="assets/art/Pascal4_new.jpg" data-action="zoom">
                     </div>
                     <div class="buy-artist-card-wrap">
                         <div class="buy-artist-card">
@@ -337,7 +335,7 @@
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
-                        <img src="assets/art/Jade1.png" data-action="zoom">
+                        <img src="assets/art/Jade1.jpg" data-action="zoom">
                     </div>
                     <div class="buy-artist-card-wrap">
                         <div class="buy-artist-card">
@@ -372,7 +370,7 @@
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
-                        <img src="assets/art/Sayeh2.png" data-action="zoom">
+                        <img src="assets/art/Sayeh2.jpg" data-action="zoom">
                     </div>
                     <div class="buy-artist-card-wrap">
                         <div class="buy-artist-card">
@@ -512,7 +510,7 @@
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
-                        <img src="assets/art/Koku2.png" data-action="zoom">
+                        <img src="assets/art/Koku2.jpg" data-action="zoom">
                     </div>
                     <div class="buy-artist-card-wrap">
                         <div class="buy-artist-card">
@@ -718,35 +716,175 @@
                 //plane.rotateX( - Math.PI / 2);
                 //scene.add(plane);
                 
-                var art1geometry = new THREE.CubeGeometry(50,50,1);
+                var centerfoldlogogeometry = new THREE.CubeGeometry(50,50,0);
+                var centerfoldlogotexture = new THREE.ImageUtils.loadTexture( 'assets/three-logo.png' );
+                var centerfoldlogomaterial = new THREE.MeshBasicMaterial( { map: centerfoldlogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var centerfoldlogo = new THREE.Mesh( centerfoldlogogeometry, centerfoldlogomaterial );
+                centerfoldlogo.position.set(0,20,-50);
+                scene.add( centerfoldlogo );
+                
+                var art1geometry = new THREE.CubeGeometry(40,40,1);
                 var art1texture = new THREE.ImageUtils.loadTexture( 'assets/art/emile1.jpg' );
                 var art1material = new THREE.MeshBasicMaterial( { map: art1texture, side: THREE.DoubleSide } );
                 var art1 = new THREE.Mesh( art1geometry, art1material );
-                art1.position.set(56,20,-200);
+                art1.position.set(-58,27,-200);
                 scene.add( art1 );
                 
-                var art2geometry = new THREE.CubeGeometry(50,50,1);
+                var art1labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art1labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/emile.png' );
+                var art1labelmaterial = new THREE.MeshBasicMaterial( { map: art1labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art1label = new THREE.Mesh( art1labelgeometry, art1labelmaterial );
+                art1label.position.set(-58,-1,-200);
+                scene.add( art1label );
+                
+                var art2geometry = new THREE.CubeGeometry(40,40,1);
                 var art2texture = new THREE.ImageUtils.loadTexture( 'assets/art/Celia1.JPG' );
                 var art2material = new THREE.MeshBasicMaterial( { map: art2texture, side: THREE.DoubleSide } );
                 var art2 = new THREE.Mesh( art2geometry, art2material );
-                art2.position.set(-58,20,-100);
-                art2.rotation.y = Math.PI / 2.8;
+                art2.position.set(56,27,-300);
+                art2.rotation.y = Math.PI / 1.4;
                 scene.add( art2 );
                 
-                var art3geometry = new THREE.CubeGeometry(50,41,1);
+                var art2labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art2labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/celia.png' );
+                var art2labelmaterial = new THREE.MeshBasicMaterial( { map: art2labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art2label = new THREE.Mesh( art2labelgeometry, art2labelmaterial );
+                art2label.position.set(56,-1,-300);
+                art2label.rotation.y = Math.PI / 1.4;
+                scene.add( art2label );
+                
+                var art3geometry = new THREE.CubeGeometry(40,40,1);
                 var art3texture = new THREE.ImageUtils.loadTexture( 'assets/art/Ali3.jpg' );
                 var art3material = new THREE.MeshBasicMaterial( { map: art3texture, side: THREE.DoubleSide } );
                 var art3 = new THREE.Mesh( art3geometry, art3material );
-                art3.position.set(0,20,-300);
-                art3.rotation.y = Math.PI / 1.1;
+                art3.position.set(-100,27,-400);
+                art3.rotation.y = Math.PI / 4;
                 scene.add( art3 );
+                
+                var art3labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art3labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/ali.png' );
+                var art3labelmaterial = new THREE.MeshBasicMaterial( { map: art3labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art3label = new THREE.Mesh( art3labelgeometry, art3labelmaterial );
+                art3label.position.set(-100,-1,-400);
+                art3label.rotation.y = Math.PI / 4;
+                scene.add( art3label );
+                
+                var art4geometry = new THREE.CubeGeometry(40,40,1);
+                var art4texture = new THREE.ImageUtils.loadTexture( 'assets/art/Pascal4_new.jpg' );
+                var art4material = new THREE.MeshBasicMaterial( { map: art4texture, side: THREE.DoubleSide } );
+                var art4 = new THREE.Mesh( art4geometry, art4material );
+                art4.position.set(80,27,-500);
+                art4.rotation.y = Math.PI / 1.4;
+                scene.add( art4 );
+                
+                var art4labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art4labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/pascal.png' );
+                var art4labelmaterial = new THREE.MeshBasicMaterial( { map: art4labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art4label = new THREE.Mesh( art4labelgeometry, art4labelmaterial );
+                art4label.position.set(80,-1,-500);
+                art4label.rotation.y = Math.PI / 1.4;
+                scene.add( art4label );
+                
+                var art5geometry = new THREE.CubeGeometry(40,40,1);
+                var art5texture = new THREE.ImageUtils.loadTexture( 'assets/art/Jade1.jpg' );
+                var art5material = new THREE.MeshBasicMaterial( { map: art5texture, side: THREE.DoubleSide } );
+                var art5 = new THREE.Mesh( art5geometry, art5material );
+                art5.position.set(-60,27,-600);
+                art5.rotation.y = Math.PI / 4;
+                scene.add( art5 );
+                
+                var art5labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art5labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/jade.png' );
+                var art5labelmaterial = new THREE.MeshBasicMaterial( { map: art5labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art5label = new THREE.Mesh( art5labelgeometry, art5labelmaterial );
+                art5label.position.set(-60,-1,-600);
+                art5label.rotation.y = Math.PI / 4;
+                scene.add( art5label );
+                
+                var art6geometry = new THREE.CubeGeometry(40,40,1);
+                var art6texture = new THREE.ImageUtils.loadTexture( 'assets/art/Sayeh2.jpg' );
+                var art6material = new THREE.MeshBasicMaterial( { map: art6texture, side: THREE.DoubleSide } );
+                var art6 = new THREE.Mesh( art6geometry, art6material );
+                art6.position.set(0,27,-700);
+                art6.rotation.y = Math.PI / 3.6;
+                scene.add( art6 );
+                
+                var art6labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art6labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/sayeh.png' );
+                var art6labelmaterial = new THREE.MeshBasicMaterial( { map: art6labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art6label = new THREE.Mesh( art6labelgeometry, art6labelmaterial );
+                art6label.position.set(0,-1,-700);
+                art6label.rotation.y = Math.PI / 3.6;
+                scene.add( art6label );
+                
+                var art7geometry = new THREE.CubeGeometry(40,40,1);
+                var art7texture = new THREE.ImageUtils.loadTexture( 'assets/art/Nastia2.jpg' );
+                var art7material = new THREE.MeshBasicMaterial( { map: art7texture, side: THREE.DoubleSide } );
+                var art7 = new THREE.Mesh( art7geometry, art7material );
+                art7.position.set(70,27,-800);
+                art7.rotation.y = Math.PI / 1.4;
+                scene.add( art7 );
+                
+                var art7labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art7labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/nastia.png' );
+                var art7labelmaterial = new THREE.MeshBasicMaterial( { map: art7labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art7label = new THREE.Mesh( art7labelgeometry, art7labelmaterial );
+                art7label.position.set(70,-1,-800);
+                art7label.rotation.y = Math.PI / 1.4;
+                scene.add( art7label );
+                
+                var art8geometry = new THREE.CubeGeometry(40,40,1);
+                var art8texture = new THREE.ImageUtils.loadTexture( 'assets/art/Gab2.jpg' );
+                var art8material = new THREE.MeshBasicMaterial( { map: art8texture, side: THREE.DoubleSide } );
+                var art8 = new THREE.Mesh( art8geometry, art8material );
+                art8.position.set(-30,27,-900);
+                art8.rotation.y = Math.PI / 4;
+                scene.add( art8 );
+                
+                var art8labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art8labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/gab.png' );
+                var art8labelmaterial = new THREE.MeshBasicMaterial( { map: art8labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art8label = new THREE.Mesh( art8labelgeometry, art8labelmaterial );
+                art8label.position.set(-30,-1,-900);
+                art8label.rotation.y = Math.PI / 4;
+                scene.add( art8label );
+                
+                var art9geometry = new THREE.CubeGeometry(40,40,1);
+                var art9texture = new THREE.ImageUtils.loadTexture( 'assets/art/Schael3.jpg' );
+                var art9material = new THREE.MeshBasicMaterial( { map: art9texture, side: THREE.DoubleSide } );
+                var art9 = new THREE.Mesh( art9geometry, art9material );
+                art9.position.set(40,27,-1000);
+                art9.rotation.y = Math.PI / 1.4;
+                scene.add( art9 );
+                
+                var art9labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art9labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/schael.png' );
+                var art9labelmaterial = new THREE.MeshBasicMaterial( { map: art9labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art9label = new THREE.Mesh( art9labelgeometry, art9labelmaterial );
+                art9label.position.set(40,-1,-1000);
+                art9label.rotation.y = Math.PI / 1.4;
+                scene.add( art9label );
+                
+                var art10geometry = new THREE.CubeGeometry(40,40,1);
+                var art10texture = new THREE.ImageUtils.loadTexture( 'assets/art/Koku2.jpg' );
+                var art10material = new THREE.MeshBasicMaterial( { map: art10texture, side: THREE.DoubleSide } );
+                var art10 = new THREE.Mesh( art10geometry, art10material );
+                art10.position.set(-60,27,-1100);
+                scene.add( art10 );
+                
+                var art10labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var art10labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/labels/koku.png' );
+                var art10labelmaterial = new THREE.MeshBasicMaterial( { map: art10labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var art10label = new THREE.Mesh( art10labelgeometry, art10labelmaterial );
+                art10label.position.set(-60,-1,-1100);
+                scene.add( art10label );
                 
                 
                 var floorTexture = new THREE.ImageUtils.loadTexture( 'assets/floor.jpg' ); //256x256
                 floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
-                floorTexture.repeat.set( 10, 10 );
+                floorTexture.repeat.set( 100, 100 );
                 var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side: THREE.DoubleSide } );
-                var floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
+                var floorGeometry = new THREE.PlaneGeometry(5000, 5000, 10, 10);
                 var floor = new THREE.Mesh(floorGeometry, floorMaterial);
                 floor.position.y = -0.5;
                 floor.rotation.x = Math.PI / 2;
