@@ -456,8 +456,10 @@ canvas {
     background-color: $background-color;
     color: $color-1;
     font-family: $type-2;
-    font-size: 2em;
+    font-size: 1em;
     z-index: 299;
+    padding: 10%;
+    padding-top: 20%;
 }
 
 .hello a {
