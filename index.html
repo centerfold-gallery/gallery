@@ -20,9 +20,21 @@
 		<div id="overlay">
 
 			<div id="instructions">
-				<span>
+			    <div class="instructions">
+			        <div class="controls-description">
+			            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus odio veniam voluptate tempore voluptatem vero vel nihil dolorum est nam eius cupiditate architecto quos sint numquam vitae, provident exercitationem.
+			        </div>
+			        <div class="controls-title">
+			            Controls
+			        </div>
+			        <div class="controls-view">
+			            <img src="assets/controls.png">
+			        </div>
+			        <div class="controls-start"><span class="controls-start-button">Start</span></div>
+			    </div>
+				<!-- <span>
 				    <img style="width:80%;height:auto;" src="assets/click-to-play.png">
-				</span>
+				</span> -->
 			</div>
 
 		</div>
@@ -706,15 +718,15 @@
                 //plane.rotateX( - Math.PI / 2);
                 //scene.add(plane);
                 
-                var art1geometry = new THREE.CubeGeometry(50,38,1);
-                var art1texture = new THREE.ImageUtils.loadTexture( 'assets/art1.jpg' );
+                var art1geometry = new THREE.CubeGeometry(50,50,1);
+                var art1texture = new THREE.ImageUtils.loadTexture( 'assets/art/emile1.jpg' );
                 var art1material = new THREE.MeshBasicMaterial( { map: art1texture, side: THREE.DoubleSide } );
                 var art1 = new THREE.Mesh( art1geometry, art1material );
                 art1.position.set(56,20,-200);
                 scene.add( art1 );
                 
-                var art2geometry = new THREE.CubeGeometry(50,28,1);
-                var art2texture = new THREE.ImageUtils.loadTexture( 'assets/art2.jpg' );
+                var art2geometry = new THREE.CubeGeometry(50,50,1);
+                var art2texture = new THREE.ImageUtils.loadTexture( 'assets/art/Celia1.JPG' );
                 var art2material = new THREE.MeshBasicMaterial( { map: art2texture, side: THREE.DoubleSide } );
                 var art2 = new THREE.Mesh( art2geometry, art2material );
                 art2.position.set(-58,20,-100);
@@ -722,7 +734,7 @@
                 scene.add( art2 );
                 
                 var art3geometry = new THREE.CubeGeometry(50,41,1);
-                var art3texture = new THREE.ImageUtils.loadTexture( 'assets/art3.jpg' );
+                var art3texture = new THREE.ImageUtils.loadTexture( 'assets/art/Ali3.jpg' );
                 var art3material = new THREE.MeshBasicMaterial( { map: art3texture, side: THREE.DoubleSide } );
                 var art3 = new THREE.Mesh( art3geometry, art3material );
                 art3.position.set(0,20,-300);

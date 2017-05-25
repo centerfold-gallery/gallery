@@ -154,10 +154,63 @@ canvas {
     -webkit-box-align: center;
     -moz-box-align: center;
     box-align: center;
-    color: #000000;
-    text-align: center;
-    cursor: pointer;
     z-index: 6;
+}
+
+.instructions {
+    width: 600px;
+    background-color: $background-color;
+    font-family: $type-2;
+    font-size: 1em;
+    line-height: 1.4em;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
+}
+
+.controls-description {
+    padding: 1em;
+}
+
+.controls-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.instructions img {
+    margin-top: 1em;
+}
+
+.controls-view {
+    width: 100%;
+    @include boxflex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.controls-start {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.controls-start-button {
+    border: 1px solid $color-1;
+    padding: 1px 6px 2px 6px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.controls-start-button:hover {
+    border: 1px solid $color-1;
+    background-color: $color-1;
+    color: $background-color;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
 }
 
 .still {
