@@ -26,7 +26,7 @@ a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transit
 .se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center repeat #ffffff; }
 
 /* line 109, ../sass/56.scss */
-body { background-color: #0000ff; margin: 0; overflow: hidden; }
+body { background-color: #fffbfb; margin: 0; overflow: hidden; }
 
 /* line 115, ../sass/56.scss */
 canvas { position: fixed; width: 100%; height: 100%; }
@@ -173,7 +173,7 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .thank-you-link { border-bottom: #000 5px solid; }
 
 /* line 449, ../sass/56.scss */
-.hello { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1em; z-index: 299; padding: 10%; padding-top: 20%; }
+.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1em; z-index: 299; margin: 10%; padding-top: 20%; }
 
 /* line 465, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }

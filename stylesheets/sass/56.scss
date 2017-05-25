@@ -107,7 +107,7 @@ a {
 }
 
 body {
-    background-color: #0000ff;
+    background-color: $background-color;
     margin: 0;
     overflow: hidden;
 }
@@ -451,14 +451,14 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background-color: $background-color;
     color: $color-1;
     font-family: $type-2;
     font-size: 1em;
     z-index: 299;
-    padding: 10%;
+    margin: 10%;
     padding-top: 20%;
 }
 
