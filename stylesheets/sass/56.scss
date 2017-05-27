@@ -417,6 +417,10 @@ canvas {
     font-size: 1.2em;
 }
 
+body.zoom-overlay-open {
+    cursor: -webkit-zoom-out;
+}
+
 .success {
     position: fixed;
     top: 0;

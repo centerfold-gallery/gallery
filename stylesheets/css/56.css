@@ -161,39 +161,42 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .buy-art-description { width: 400px; display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 1.2em; }
 
 /* line 420, ../sass/56.scss */
+body.zoom-overlay-open { cursor: -webkit-zoom-out; }
+
+/* line 424, ../sass/56.scss */
 .success { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 430, ../sass/56.scss */
+/* line 434, ../sass/56.scss */
 .thank-you { width: 35%; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; }
 
-/* line 438, ../sass/56.scss */
+/* line 442, ../sass/56.scss */
 .thank-you-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 445, ../sass/56.scss */
+/* line 449, ../sass/56.scss */
 .thank-you-link { border-bottom: #000 5px solid; }
 
-/* line 449, ../sass/56.scss */
+/* line 453, ../sass/56.scss */
 .hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
 
-/* line 470, ../sass/56.scss */
+/* line 474, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
 
-/* line 474, ../sass/56.scss */
+/* line 478, ../sass/56.scss */
 #image-1 { display: none; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 479, ../sass/56.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 483, ../sass/56.scss */
   .hello { display: block; }
-  /* line 483, ../sass/56.scss */
-  canvas { display: none; }
   /* line 487, ../sass/56.scss */
-  #overlay { display: none; }
-  /* line 491, ../sass/56.scss */
-  .still { display: none; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 497, ../sass/56.scss */
-  .hello { display: block; }
-  /* line 501, ../sass/56.scss */
   canvas { display: none; }
-  /* line 505, ../sass/56.scss */
+  /* line 491, ../sass/56.scss */
   #overlay { display: none; }
+  /* line 495, ../sass/56.scss */
+  .still { display: none; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 501, ../sass/56.scss */
+  .hello { display: block; }
+  /* line 505, ../sass/56.scss */
+  canvas { display: none; }
   /* line 509, ../sass/56.scss */
+  #overlay { display: none; }
+  /* line 513, ../sass/56.scss */
   .still { display: none; } }
