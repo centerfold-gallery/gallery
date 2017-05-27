@@ -250,6 +250,33 @@ canvas {
     cursor: pointer;
 }
 
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+}
+
 .event-description {
     font-family: $type-2;
     font-size: $type-size-1;
