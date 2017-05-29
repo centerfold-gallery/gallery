@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
 <html lang="en">
 	<head>
         <title>Centerfold</title>
@@ -43,7 +54,7 @@
         <link href="js/zoom-vanilla/zoom.css" rel="stylesheet">
     </head>
 	<body>
-        <div class="logo"><a href="https://centerfold.gallery"><img src="assets/centerfold.png"></a></div>
+        <div class="logo"><a href="https://centerfold.gallery"><img src="assets/centerfold.svg"></a></div>
         <div class="hello">
             This experience was designed to be viewed on a computer. You can <a href="mailto:?subject=Centerfold 3D Gallery&body=Experience the Centerfold 14 interactive gallery here: https://centerfold.gallery">click here</a> to send yourself an email to look at it later.
             <br/>
@@ -916,6 +927,13 @@
                 var art10label = new THREE.Mesh( art10labelgeometry, art10labelmaterial );
                 art10label.position.set(-60,-11,-1350);
                 scene.add( art10label );
+                
+                var chromaticlogogeometry = new THREE.CubeGeometry(50,50,0);
+                var chromaticlogotexture = new THREE.ImageUtils.loadTexture( 'assets/three-logo-2.png' );
+                var chromaticlogomaterial = new THREE.MeshBasicMaterial( { map: chromaticlogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var chromaticlogo = new THREE.Mesh( chromaticlogogeometry, chromaticlogomaterial );
+                chromaticlogo.position.set(0,15,-1500);
+                scene.add( chromaticlogo );
                 
                 
                 var floorTexture = new THREE.ImageUtils.loadTexture( 'assets/floor.jpg' ); //256x256
