@@ -288,6 +288,7 @@
         </div>
         <div class="buy" id="buy2">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -323,6 +324,7 @@
         </div>
         <div class="buy" id="buy3">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -358,6 +360,7 @@
         </div>
         <div class="buy" id="buy4">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -390,9 +393,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy5">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -425,9 +430,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy6">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -460,9 +467,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy7">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -495,9 +504,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy8">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -530,9 +541,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy9">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -565,9 +578,11 @@
                     </div>
                 </div>
             </div>
+        
         </div>
         <div class="buy" id="buy10">
             <div class="close">Back</div>
+            <div class="close-full"></div>
             <div class="buy-flex">
                 <div class="buy-wrap">
                     <div class="buy-art shadow">
@@ -672,7 +687,7 @@
                 var skyBox = new THREE.Mesh( skyBoxGeometry, skyBoxMaterial );
                 skyBox.position.set(0,0,0);
                 scene.add( skyBox );
-				var light = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1 );
+				var light = new THREE.PointLight( 0xffffff, 0xffffff, 1 );
 				light.position.set( 0.5, 1, 0.75 );
 				scene.add( light );
                 
