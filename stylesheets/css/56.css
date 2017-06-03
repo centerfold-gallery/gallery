@@ -23,7 +23,7 @@ a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transit
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 
 /* line 99, ../sass/56.scss */
-.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center no-repeat #fffbfb; }
+.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.svg) center no-repeat #fffbfb; }
 
 /* line 109, ../sass/56.scss */
 body { background-color: #fffbfb; margin: 0; overflow: hidden; }
