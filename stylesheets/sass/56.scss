@@ -405,7 +405,8 @@ canvas {
     height: 100%;
     @include boxflexh;
     position: relative;
-    z-index: 599;
+    z-index:  601;
+    pointer-events: none;
 }
 
 .close {
@@ -413,9 +414,10 @@ canvas {
     top: 20px;
     left: 20px;
     cursor: w-resize;
-    z-index: 600;
+    z-index: 602;
     font-family: $type-2;
     font-size: $type-size-1;
+    pointer-events: all;
 }
 
 .close-full {
@@ -426,7 +428,7 @@ canvas {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    display: none;
+    pointer-events: all;
 }
 
 .buy-art,
@@ -434,6 +436,7 @@ canvas {
     width: 400px;
     height: 400px;
     float: left;
+    pointer-events: all;
 }
 
 .buy-artist-card-wrap {
@@ -442,6 +445,7 @@ canvas {
     color: $color-1;
     margin-left: 2em;
     float: right;
+    pointer-events: all;
 }
 
 .buy-art-title {
@@ -449,6 +453,7 @@ canvas {
     font-family: $type-1;
     color: $color-1;
     font-size: 2em;
+    pointer-events: all;
 }
 
 .buy-art-artist {
@@ -456,6 +461,7 @@ canvas {
     font-family: $type-2;
     color: $color-1;
     font-size: 2em;
+    pointer-events: all;
 }
 
 .buy-art-description {
@@ -464,10 +470,12 @@ canvas {
     font-family: $type-1;
     color: $color-1;
     font-size: 1.2em;
+    pointer-events: all;
 }
 
 body.zoom-overlay-open {
     cursor: -webkit-zoom-out;
+    pointer-events: all;
 }
 
 .success {
