@@ -293,6 +293,13 @@ canvas {
     margin-left: 50%;
 }
 
+.results-link {
+}
+
+.results-link:hover {
+    cursor: s-resize;
+}
+
 .art {
     position: relative;
     margin-top: 16em;
