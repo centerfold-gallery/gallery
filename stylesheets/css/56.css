@@ -146,78 +146,96 @@ canvas { position: fixed; width: 100%; height: 100%; }
 #art7 { margin-left: 25%; }
 
 /* line 379, ../sass/56.scss */
-#art8 { margin-left: 50%; }
+#art72 { margin-left: 50%; }
 
 /* line 383, ../sass/56.scss */
-#art9 { margin-left: 30%; }
+#art73 { margin-left: 35%; }
 
 /* line 387, ../sass/56.scss */
-#art10 { margin-left: 20%; }
+#art8 { margin-left: 50%; }
 
-/* line 392, ../sass/56.scss */
-.buy { position: fixed; top: 0; left: 0; background-color: #fffbfb; width: 100%; height: 100%; z-index: 200; display: none; }
+/* line 391, ../sass/56.scss */
+#art82 { margin-left: 10%; }
+
+/* line 395, ../sass/56.scss */
+#art83 { margin-left: 45%; }
+
+/* line 399, ../sass/56.scss */
+#art9 { margin-left: 30%; }
 
 /* line 403, ../sass/56.scss */
+#art10 { margin-left: 20%; }
+
+/* line 407, ../sass/56.scss */
+#art102 { margin-left: 40%; }
+
+/* line 411, ../sass/56.scss */
+#art103 { margin-left: 50%; }
+
+/* line 416, ../sass/56.scss */
+.buy { position: fixed; top: 0; left: 0; background-color: #fffbfb; width: 100%; height: 100%; z-index: 200; display: none; }
+
+/* line 427, ../sass/56.scss */
 .buy-flex { width: 100%; height: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; position: relative; z-index: 601; pointer-events: none; }
 
-/* line 412, ../sass/56.scss */
+/* line 436, ../sass/56.scss */
 .close { position: fixed; top: 20px; left: 20px; cursor: w-resize; z-index: 602; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; pointer-events: all; }
 
-/* line 423, ../sass/56.scss */
+/* line 447, ../sass/56.scss */
 .close-full { position: fixed; top: 0; left: 0; z-index: 599; width: 100%; height: 100%; background-color: transparent; pointer-events: all; }
 
-/* line 434, ../sass/56.scss */
+/* line 458, ../sass/56.scss */
 .buy-art, .buy-art img { width: 400px; height: 400px; float: left; pointer-events: all; }
 
-/* line 442, ../sass/56.scss */
+/* line 466, ../sass/56.scss */
 .buy-artist-card-wrap { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; color: #000; margin-left: 2em; float: right; pointer-events: all; }
 
-/* line 451, ../sass/56.scss */
+/* line 475, ../sass/56.scss */
 .buy-art-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; pointer-events: all; }
 
-/* line 459, ../sass/56.scss */
+/* line 483, ../sass/56.scss */
 .buy-art-artist { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; color: #000; font-size: 2em; pointer-events: all; }
 
-/* line 467, ../sass/56.scss */
+/* line 491, ../sass/56.scss */
 .buy-art-description { width: 400px; display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 1.2em; pointer-events: all; }
 
-/* line 476, ../sass/56.scss */
+/* line 500, ../sass/56.scss */
 body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 
-/* line 481, ../sass/56.scss */
+/* line 505, ../sass/56.scss */
 .success { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 491, ../sass/56.scss */
+/* line 515, ../sass/56.scss */
 .thank-you { width: 35%; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; }
 
-/* line 499, ../sass/56.scss */
+/* line 523, ../sass/56.scss */
 .thank-you-title { display: inline-block; font-family: "caslon", caslon; color: #000; font-size: 2em; }
 
-/* line 506, ../sass/56.scss */
+/* line 530, ../sass/56.scss */
 .thank-you-link { border-bottom: #000 5px solid; }
 
-/* line 510, ../sass/56.scss */
+/* line 534, ../sass/56.scss */
 .hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
 
-/* line 531, ../sass/56.scss */
+/* line 555, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
 
-/* line 535, ../sass/56.scss */
+/* line 559, ../sass/56.scss */
 #image-1 { display: none; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 540, ../sass/56.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 564, ../sass/56.scss */
   .hello { display: block; }
-  /* line 544, ../sass/56.scss */
+  /* line 568, ../sass/56.scss */
   canvas { display: none; }
-  /* line 548, ../sass/56.scss */
+  /* line 572, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 552, ../sass/56.scss */
+  /* line 576, ../sass/56.scss */
   .still { display: none; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 558, ../sass/56.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 582, ../sass/56.scss */
   .hello { display: block; }
-  /* line 562, ../sass/56.scss */
+  /* line 586, ../sass/56.scss */
   canvas { display: none; }
-  /* line 566, ../sass/56.scss */
+  /* line 590, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 570, ../sass/56.scss */
+  /* line 594, ../sass/56.scss */
   .still { display: none; } }
