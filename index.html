@@ -812,22 +812,89 @@
                 var curatory2texture = new THREE.ImageUtils.loadTexture( 'assets/curatorial-statement-2.png' );
                 var curatory2material = new THREE.MeshBasicMaterial( { map: curatory2texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
                 var curatory2 = new THREE.Mesh( curatory2geometry, curatory2material );
-                curatory2.position.set(-25,10,-250);
+                curatory2.position.set(-25,10,-200);
                 scene.add( curatory2 );
                 
                 var curatory3geometry = new THREE.CubeGeometry(50,50,0);
                 var curatory3texture = new THREE.ImageUtils.loadTexture( 'assets/curatorial-statement-3.png' );
                 var curatory3material = new THREE.MeshBasicMaterial( { map: curatory3texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
                 var curatory3 = new THREE.Mesh( curatory3geometry, curatory3material );
-                curatory3.position.set(25,10,-300);
+                curatory3.position.set(25,10,-200);
                 scene.add( curatory3 );
                 
                 var curatory4geometry = new THREE.CubeGeometry(50,50,0);
                 var curatory4texture = new THREE.ImageUtils.loadTexture( 'assets/curatorial-statement-4.png' );
                 var curatory4material = new THREE.MeshBasicMaterial( { map: curatory4texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
                 var curatory4 = new THREE.Mesh( curatory4geometry, curatory4material );
-                curatory4.position.set(75,10,-350);
+                curatory4.position.set(75,10,-200);
                 scene.add( curatory4 );
+                
+                var resultsstatementgeometry = new THREE.CubeGeometry(40,40,0);
+                var resultsstatementtexture = new THREE.ImageUtils.loadTexture( 'assets/art/results/results-statement.png' );
+                var resultsstatementmaterial = new THREE.MeshBasicMaterial( { map: resultsstatementtexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var resultsstatement = new THREE.Mesh( resultsstatementgeometry, resultsstatementmaterial );
+                resultsstatement.position.set(0,10,-300);
+                scene.add( resultsstatement );
+                
+                
+                
+                var results1geometry = new THREE.CubeGeometry(40,40,0);
+                var results1texture = new THREE.ImageUtils.loadTexture( 'assets/art/results/results-1.png' );
+                var results1material = new THREE.MeshBasicMaterial( { map: results1texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1 = new THREE.Mesh( results1geometry, results1material );
+                results1.position.set(300,17,-200);
+                results1.rotation.y = Math.PI / 2;
+                scene.add( results1 );
+                
+                var results1work1geometry = new THREE.CubeGeometry(40,40,1);
+                var results1work1texture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/emblematic.png' );
+                var results1work1material = new THREE.MeshBasicMaterial( { map: results1work1texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work1 = new THREE.Mesh( results1work1geometry, results1work1material );
+                results1work1.position.set(300,17,-250);
+                results1work1.rotation.y = Math.PI / 2;
+                scene.add( results1work1 );
+                
+                var results1work1labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var results1work1labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/emblematic-label.png' );
+                var results1work1labelmaterial = new THREE.MeshBasicMaterial( { map: results1work1labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work1label = new THREE.Mesh( results1work1labelgeometry, results1work1labelmaterial );
+                results1work1label.position.set(300,-11,-250);
+                results1work1label.rotation.y = Math.PI / 2;
+                scene.add( results1work1label );
+                
+                var results1work2geometry = new THREE.CubeGeometry(40,40,1);
+                var results1work2texture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/ghetto-rich.png' );
+                var results1work2material = new THREE.MeshBasicMaterial( { map: results1work2texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work2 = new THREE.Mesh( results1work2geometry, results1work2material );
+                results1work2.position.set(300,17,-300);
+                results1work2.rotation.y = Math.PI / 2;
+                scene.add( results1work2 );
+                
+                var results1work2labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var results1work2labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/ghetto-rich-label.png' );
+                var results1work2labelmaterial = new THREE.MeshBasicMaterial( { map: results1work2labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work2label = new THREE.Mesh( results1work2labelgeometry, results1work2labelmaterial );
+                results1work2label.position.set(300,-11,-300);
+                results1work2label.rotation.y = Math.PI / 2;
+                scene.add( results1work2label );
+                
+                var results1work3geometry = new THREE.CubeGeometry(40,40,1);
+                var results1work3texture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/purple-rain.png' );
+                var results1work3material = new THREE.MeshBasicMaterial( { map: results1work3texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work3 = new THREE.Mesh( results1work3geometry, results1work3material );
+                results1work3.position.set(300,17,-350);
+                results1work3.rotation.y = Math.PI / 2;
+                scene.add( results1work3 );
+                
+                var results1work3labelgeometry = new THREE.CubeGeometry(40,16,1);
+                var results1work3labeltexture = new THREE.ImageUtils.loadTexture( 'assets/art/results/koku/purple-rain-label.png' );
+                var results1work3labelmaterial = new THREE.MeshBasicMaterial( { map: results1work3labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
+                var results1work3label = new THREE.Mesh( results1work3labelgeometry, results1work3labelmaterial );
+                results1work3label.position.set(300,-11,-350);
+                results1work3label.rotation.y = Math.PI / 2;
+                scene.add( results1work3label );
+                
+                
                 
                 var art1geometry = new THREE.CubeGeometry(40,40,1);
                 var art1texture = new THREE.ImageUtils.loadTexture( 'assets/art/emile1.jpg' );
