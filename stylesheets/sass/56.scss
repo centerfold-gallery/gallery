@@ -306,6 +306,11 @@ canvas {
     border-bottom: 4px solid $color-1;
 }
 
+.submit:hover {
+    border-bottom: 6px solid $color-1;
+    cursor: ne-resize;
+}
+
 .art {
     position: relative;
     margin-top: 16em;
