@@ -302,6 +302,10 @@ canvas {
     cursor: s-resize;
 }
 
+.submit {
+    border-bottom: 4px solid $color-1;
+}
+
 .art {
     position: relative;
     margin-top: 16em;
