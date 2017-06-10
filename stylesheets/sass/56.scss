@@ -71,8 +71,9 @@ $background-color: #fffbfb;
 
 $color-1: #000;
 
-$type-1: 'caslon', caslon;
+$type-1: 'caslon', caslon, serif;
 $type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
+$type-3: 'Work Sans', sans-serif;
 
 $type-size-1: 0.8em;
 $line-height-1: 1.2em;
@@ -83,6 +84,7 @@ a {
     -webkit-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
+    cursor: pointer;
 }
 
 .no-js #loader {
@@ -136,6 +138,46 @@ canvas {
     height: auto;
 }
 
+.nav {
+    font-family: $type-3;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.nav-link {
+    z-index: 560;
+}
+
+.nav-active {
+    border-bottom: 0.6em solid $color-1;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nav-art {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.nav-events {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.nav-services {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.nav-about {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
 
 #overlay {
     position: absolute;
@@ -577,6 +619,124 @@ body.zoom-overlay-open {
 #image-1 {
     display: none;
 }
+
+
+/* ABOUT PAGE */
+
+.about-description {
+    font-family: $type-2;
+    font-size: $type-size-1;
+    line-height: 1.4em;
+    color: $color-1;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.about-description img {
+    height: 2.4em;
+    width: auto;
+    display: inline-block;
+    transform: translateY(9px);
+    margin-right: 4px;
+}
+
+.about-description:nth-of-type(n+2) {
+    margin-top: 8em;
+}
+
+#about-0 {
+    font-family: $type-1;
+    font-size: 2em;
+    color: $color-1;
+    margin-top: 4em;
+    padding-left: 1.2em;
+    margin-left: 70%;
+    transform: translateY(2em);
+}
+
+#about-0 img {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    margin-left: 1em;
+}
+
+#about-0 img:hover {
+    cursor: pointer;
+}
+
+#about-1 {
+    margin-left: 20%;
+    margin-top: 0;
+}
+
+#about-2 {
+    margin-left: 40%;
+}
+
+#about-3 {
+    margin-left: 30%;
+}
+
+#about-4 {
+    margin-left: 50%;
+}
+
+#about-5 {
+    margin-left: 35%;
+}
+
+.centerfold-header {
+    font-family: $type-1;
+    font-size: 2em;
+    color: $color-1;
+    width: 100%;
+    @include boxflexh;
+    margin-top: 4em;
+}
+
+.contact {
+    
+}
+
+.contact-card:nth-of-type(odd) {
+    width: 15%;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 2em;
+}
+
+.contact-card:nth-of-type(even) {
+    width: 15%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 2em;
+}
+
+.contact-card:last-of-type {
+    margin-bottom: 6em;
+    width: 15%;
+    margin-left: 42%;
+}
+
+.contact-name {
+    font-family: $type-2;
+    font-size: 1.2em;
+    color: $color-1;
+}
+
+.contact-title {
+    font-family: $type-1;
+    font-size: 0.8em;
+    color: $color-1;
+}
+
+.contact-email {
+    font-family: $type-2;
+    font-size: 0.8em;
+    color: $color-1;
+}
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .hello {
