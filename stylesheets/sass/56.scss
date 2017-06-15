@@ -737,6 +737,64 @@ body.zoom-overlay-open {
     color: $color-1;
 }
 
+.everything-events {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.everything-events:first-child {
+    margin-top: 8em;
+}
+
+.everything-events:last-child {
+    margin-bottom: 8em;
+}
+
+.events-pc {
+    margin-top: 4em;
+    font-family: $type-1;
+    font-size: 2em;
+}
+
+.event-card {
+    margin-top: 4em;
+    position: relative;
+}
+
+.event-image {
+    max-width: 60%;
+    height: auto;
+    display: inline-block;
+}
+
+.event-card-info {
+    width: 38%;
+    margin-left: 0.4em;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.event-card-title {
+    font-family: $type-2;
+    font-size: 2em;
+}
+
+.event-card-description {
+    font-family: $type-1;
+    font-size: 1em;
+    line-height: $line-height-1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.event-view {
+    font-family: $type-2;
+    font-size: $type-size-1;
+    border-bottom: 0.6em solid $color-1;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .hello {
