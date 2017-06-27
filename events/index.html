@@ -772,6 +772,16 @@
             });
         </script>
         <script>
+            $('#threed').click(function() {
+                $('.nav').fadeOut(500);
+            });
+            $(document).keyup(function(e) {
+                if (e.which == 27) {
+                    $('.nav').fadeIn(500); 
+                }
+            });
+        </script>
+        <script>
             $("#art1").hover(function(){
                 $('#card1').fadeIn();
             },function(){
