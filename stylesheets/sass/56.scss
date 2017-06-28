@@ -87,6 +87,10 @@ a {
     cursor: pointer;
 }
 
+.inline-link {
+    border-bottom: $color-1 5px solid;
+}
+
 .no-js #loader {
     display: none;
 }
