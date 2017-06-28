@@ -35,7 +35,7 @@ body { background-color: #fffbfb; margin: 0; overflow: hidden; }
 canvas { position: fixed; width: 100%; height: 100%; }
 
 /* line 127, ../sass/56.scss */
-.logo { position: fixed; top: 26px; left: 50%; width: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); z-index: 300; }
+.logo { position: fixed; top: 30px; left: 50%; width: auto; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); z-index: 300; }
 
 /* line 140, ../sass/56.scss */
 .logo a img { width: 120px; height: auto; }
