@@ -12,9 +12,9 @@
 -->
 <html lang="en">
 	<head>
-        <title>Centerfold &mdash; About</title>
+        <title>Center404d</title>
         <meta charset=utf-8>
-        <meta name="description" content="Explore our latest collection of artists in 3D.">
+        <meta name="description" content="You're lost.">
 
         <meta property="og:title" content="Centerfold" />
         <meta property="og:type" content="article" />
@@ -63,7 +63,7 @@
             <a href="../" class="nav-link nav-art">ART</a>
             <a href="../events" class="nav-link nav-events">EVENTS</a>
             <a href="../services" class="nav-link nav-services">SERVICES</a>
-            <a href="../about" class="nav-active nav-link nav-about">ABOUT</a>
+            <a href="../about" class="nav-link nav-about">ABOUT</a>
         </div>
         <div class="se-pre-con"></div>
         <div class="logo"><a href="https://centerfold.gallery"><img src="../assets/centerfold.svg"></a></div>
@@ -78,7 +78,8 @@
 			<div id="instructions">
 			    <div class="instructions">
 			        <div class="controls-description">
-			            By replicating aspects of a physical space within the digital world, we’ve brought the gallery experience just a little bit closer to you. Please explore, and have fun!
+			            You're lost. <i class="em em-pensive"></i><br/>
+						Maybe you can find something of value here?
 			        </div>
 			        <div class="controls-title">
 			            Controls
@@ -86,7 +87,7 @@
 			        <div class="controls-view">
 			            <img src="../assets/controls.png">
 			        </div>
-			        <div class="controls-start"><span class="controls-start-button">Start</span></div>
+			        <div class="controls-start"><span class="controls-start-button">Play</span></div>
 			    </div>
 			</div>
 
@@ -94,58 +95,9 @@
 
         <div class="still">
             <div class="everything">
-                <div id="about-0">
-                    <img id="threed" class="animated infinite pulse" src="../assets/3d.png">
+                <div class="fourohno">
+                    <img id="threed" class="fouromg animated infinite pulse" src="404.png">
                 </div>
-                <div id="about-1" class="about-description">
-                    <img src="../assets/centerfold.svg">is a Montreal-based organization with the aim of driving social and economic change in the art industry. Our goal is to enable artists to gain exposure and funding while increasing art awareness within the community.
-                </div>
-                <div id="about-2" class="about-description">
-                    Centerfold's founding event series functions as a one night exhibit showcasing local visual art under a new economic model; creators are funded through the audience’s experience.<br/>
-                    <br/>
-                    The series began as an idea to facilitate artists’ endeavours by putting money in the pockets of artists. From there, the idea has flourished into a series of pop-up exhibitions that feature local artists and crowd-source funds for those featured. The revenue from the exhibition is distributed back to the artists based on the popularity of their contributions.
-                </div>
-                <div id="about-3" class="about-description">
-                    The Centerfold pop-up series may be seen as a scientific study on the relationship between art and the observer. The hypothesis under scrutiny follows: can a viewer’s appreciation for an artwork be monetized? Focusing on the evolution of the way art is consumed, the series explores an array of themes and mediums. While the series lacks an overarching theme, the crowd-funding system is the essential idea of each exhibition. The artists and their artwork are drawn from the thriving local art scenes of the various cities in which the exhibitions take place.
-                </div>
-                <div id="about-4" class="about-description">
-                    On the day of the exhibit, attendees will donate upon entry and vote for their favourite works. The donations are pooled together and re-distributed amongst the artists based on the percentage of votes each artist receives. This serves to engage the viewer with the art on a deeper level in order to understand their preferences and relationship with the works. It also facilitates our mission of raising awareness and funding for artists through the recognition of the art community.
-                </div>
-                <div id="about-5" class="about-description">
-                    Since the project began, Centerfold has raised $9,000 for its featured artists.
-                </div>
-                <div class="centerfold-header">
-                    Contact
-                </div>
-                <div class="contact">
-                    <div class="contact-card">
-                        <div class="contact-name">Nadim El-Asmar</div>
-                        <div class="contact-title">Director / Business Relations</div>
-                        <a class="contact-email" href="mailto:nadim@centerfold.gallery" target="_blank">nadim@centerfold.gallery</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Sandro Papais</div>
-                        <div class="contact-title">Director of Operations / Production</div>
-                        <a class="contact-email" href="mailto:sandro@centerfold.gallery" target="_blank">sandro@centerfold.gallery</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Adam Rutledge</div>
-                        <div class="contact-title">Creative Director / Editor</div>
-                        <a class="contact-email" href="mailto:adam@centerfold.gallery" target="_blank">adam@centerfold.gallery</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Brittne Potter</div>
-                        <div class="contact-title">Art Director / Artist Relations</div>
-                        <a class="contact-email" href="mailto:brittne@centerfold.gallery" target="_blank">brittne@centerfold.gallery</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">General Inquiries</div>
-                        <div class="contact-title">&nbsp;</div>
-                        <a class="contact-email" href="mailto:info@centerfold.gallery" target="_blank">info@centerfold.gallery</a>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
@@ -161,7 +113,6 @@
 			var raycaster;
 			var overlay = document.getElementById( 'overlay' );
 			var instructions = document.getElementById( 'instructions' );
-			// http://www.html5rocks.com/en/tutorials/pointerlock/intro/
 			var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
 			if ( havePointerLock ) {
 				var element = document.body;

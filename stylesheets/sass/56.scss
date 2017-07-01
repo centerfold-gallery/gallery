@@ -801,6 +801,19 @@ body.zoom-overlay-open {
     padding-right: 3px;
 }
 
+.fourohno {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include boxflex;
+}
+
+.fouromg {
+    cursor: pointer;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     .hello {
         display: block;

@@ -344,19 +344,25 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 /* line 796, ../sass/56.scss */
 .event-view { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; border-bottom: 0.6em solid #000; padding-left: 3px; padding-right: 3px; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 805, ../sass/56.scss */
+/* line 804, ../sass/56.scss */
+.fourohno { width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
+
+/* line 813, ../sass/56.scss */
+.fouromg { cursor: pointer; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 818, ../sass/56.scss */
   .hello { display: block; }
-  /* line 809, ../sass/56.scss */
+  /* line 822, ../sass/56.scss */
   canvas { display: none; }
-  /* line 813, ../sass/56.scss */
+  /* line 826, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 817, ../sass/56.scss */
+  /* line 830, ../sass/56.scss */
   .still { display: none; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 823, ../sass/56.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 836, ../sass/56.scss */
   .hello { display: block; }
-  /* line 827, ../sass/56.scss */
+  /* line 840, ../sass/56.scss */
   canvas { display: none; }
-  /* line 831, ../sass/56.scss */
+  /* line 844, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 835, ../sass/56.scss */
+  /* line 848, ../sass/56.scss */
   .still { display: none; } }
