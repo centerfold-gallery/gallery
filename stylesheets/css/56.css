@@ -303,7 +303,7 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 .contact-card:nth-of-type(even) { width: 15%; display: inline-block; margin-left: 10%; margin-top: 2em; }
 
 /* line 721, ../sass/56.scss */
-.contact-card:last-of-type { margin-bottom: 6em; width: 15%; margin-left: 42%; }
+.contact-card:last-of-type { width: 15%; margin-left: 42%; }
 
 /* line 727, ../sass/56.scss */
 .contact-name { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1.2em; color: #000; }
@@ -315,54 +315,66 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 .contact-email { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; color: #000; }
 
 /* line 745, ../sass/56.scss */
-.everything-events { width: 60%; margin-left: 20%; }
+.about-press-logo-container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; width: 100%; height: 100px; margin-top: 3em; margin-bottom: 8em; }
 
-/* line 750, ../sass/56.scss */
-.everything-events:first-child { margin-top: 8em; }
+/* line 753, ../sass/56.scss */
+.about-press-logo { display: inline-block; margin-left: 25px; margin-right: 25px; opacity: 0.9; }
 
-/* line 754, ../sass/56.scss */
-.everything-events:last-child { margin-bottom: 8em; }
-
-/* line 758, ../sass/56.scss */
-.events-pc { margin-top: 4em; font-family: "caslon", caslon, serif; font-size: 2em; }
+/* line 760, ../sass/56.scss */
+.about-press-logo:hover { opacity: 1; }
 
 /* line 764, ../sass/56.scss */
-.event-card { margin-top: 4em; position: relative; }
+.about-press-logo img { max-height: 100px; max-width: 200px; }
 
 /* line 769, ../sass/56.scss */
-.event-image { max-width: 60%; height: auto; display: inline-block; }
+.everything-events { width: 60%; margin-left: 20%; }
 
-/* line 775, ../sass/56.scss */
-.event-card-info { width: 38%; margin-left: 0.4em; display: inline-block; position: absolute; top: 0; }
+/* line 774, ../sass/56.scss */
+.everything-events:first-child { margin-top: 8em; }
 
-/* line 783, ../sass/56.scss */
-.event-card-title { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 2em; }
+/* line 778, ../sass/56.scss */
+.everything-events:last-child { margin-bottom: 8em; }
+
+/* line 782, ../sass/56.scss */
+.events-pc { margin-top: 4em; font-family: "caslon", caslon, serif; font-size: 2em; }
 
 /* line 788, ../sass/56.scss */
+.event-card { margin-top: 4em; position: relative; }
+
+/* line 793, ../sass/56.scss */
+.event-image { max-width: 60%; height: auto; display: inline-block; }
+
+/* line 799, ../sass/56.scss */
+.event-card-info { width: 38%; margin-left: 0.4em; display: inline-block; position: absolute; top: 0; }
+
+/* line 807, ../sass/56.scss */
+.event-card-title { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 2em; }
+
+/* line 812, ../sass/56.scss */
 .event-card-description { font-family: "caslon", caslon, serif; font-size: 1em; line-height: 1.2em; margin-top: 16px; margin-bottom: 16px; }
 
-/* line 796, ../sass/56.scss */
+/* line 820, ../sass/56.scss */
 .event-view { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; border-bottom: 0.6em solid #000; padding-left: 3px; padding-right: 3px; }
 
-/* line 804, ../sass/56.scss */
+/* line 828, ../sass/56.scss */
 .fourohno { width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 813, ../sass/56.scss */
+/* line 837, ../sass/56.scss */
 .fouromg { cursor: pointer; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 818, ../sass/56.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 842, ../sass/56.scss */
   .hello { display: block; }
-  /* line 822, ../sass/56.scss */
+  /* line 846, ../sass/56.scss */
   canvas { display: none; }
-  /* line 826, ../sass/56.scss */
+  /* line 850, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 830, ../sass/56.scss */
+  /* line 854, ../sass/56.scss */
   .still { display: none; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 836, ../sass/56.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 860, ../sass/56.scss */
   .hello { display: block; }
-  /* line 840, ../sass/56.scss */
+  /* line 864, ../sass/56.scss */
   canvas { display: none; }
-  /* line 844, ../sass/56.scss */
+  /* line 868, ../sass/56.scss */
   #overlay { display: none; }
-  /* line 848, ../sass/56.scss */
+  /* line 872, ../sass/56.scss */
   .still { display: none; } }
