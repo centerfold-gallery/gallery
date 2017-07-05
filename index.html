@@ -1735,9 +1735,11 @@
 		</script>
 		<script src="js/blazy.min.js"></script>
 		<script>
+		;(function() {
 			var bLazy = new Blazy({
-
-			});
+			        container: '.everything' // Default is window
+			    });
+		})();
 		</script>
 	</body>
 </html>
