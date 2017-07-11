@@ -691,6 +691,24 @@ body.zoom-overlay-open {
     margin-left: 35%;
 }
 
+.about-img {
+    width: 400px;
+    height: auto;
+    margin-top: 6em;
+}
+
+#about-img-1 {
+    margin-left: 30%;
+}
+
+#about-img-2 {
+    margin-left: 50%;
+}
+
+#about-img-3 {
+    margin-left: 20%;
+}
+
 .centerfold-header {
     font-family: $type-1;
     font-size: 2em;
@@ -704,24 +722,24 @@ body.zoom-overlay-open {
 
 }
 
-.contact-card:nth-of-type(odd) {
-    width: 15%;
-    display: inline-block;
-    margin-left: 30%;
-    margin-top: 2em;
-}
-
-.contact-card:nth-of-type(even) {
-    width: 15%;
-    display: inline-block;
-    margin-left: 10%;
-    margin-top: 2em;
-}
+// .contact-card:nth-of-type(odd) {
+//     width: 15%;
+//     display: inline-block;
+//     margin-left: 30%;
+//     margin-top: 2em;
+// }
+//
+// .contact-card:nth-of-type(even) {
+//     width: 15%;
+//     display: inline-block;
+//     margin-left: 10%;
+//     margin-top: 2em;
+// }
 
 .contact-card:last-of-type {
     // margin-bottom: 6em;
-    width: 15%;
-    margin-left: 42%;
+    margin-top: 2em;
+    width: 100%;
 }
 
 .contact-name {
