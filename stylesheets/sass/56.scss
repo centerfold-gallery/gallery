@@ -184,6 +184,25 @@ canvas {
     right: 30px;
 }
 
+.nav-social-links {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    z-index: 560;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nav-social {
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.nav-social:hover {
+    opacity: 1;
+}
+
 #overlay {
     position: absolute;
     width: 100%;
