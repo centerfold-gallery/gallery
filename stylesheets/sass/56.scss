@@ -91,17 +91,6 @@ a {
     border-bottom: $color-1 5px solid;
 }
 
-.no-js #loader {
-    display: none;
-}
-
-.js #loader {
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 0;
-}
-
 body {
     background-color: $background-color;
     margin: 0;
