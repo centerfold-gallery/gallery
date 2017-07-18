@@ -11,6 +11,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -25,7 +26,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0001"
      },
      {
        "title": "Untitled",
@@ -38,6 +40,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -52,7 +55,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0002"
      },
      {
        "title": "Untitled",
@@ -65,6 +69,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -79,7 +84,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0003"
      },
      {
        "title": "Untitled",
@@ -92,6 +98,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -106,7 +113,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0004"
      },
      {
        "title": "Untitled",
@@ -119,6 +127,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -133,7 +142,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0005"
      },
      {
        "title": "Untitled",
@@ -146,6 +156,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -160,7 +171,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0006"
      },
      {
        "title": "Untitled",
@@ -173,6 +185,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -187,7 +200,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0007"
      },
      {
        "title": "Sister's Kicks",
@@ -200,6 +214,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -214,7 +229,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0008"
      },
      {
        "title": "Too Many Faces",
@@ -227,6 +243,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -241,7 +258,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0009"
      },
      {
        "title": "Ben, After Sound Class",
@@ -254,6 +272,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -268,7 +287,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:17pm"
+       "Entry Timestamp": "7/14/2017 4:17pm",
+       "uniqueid": "cfuid0010"
      },
      {
        "title": "Steel City",
@@ -281,6 +301,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -295,7 +316,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0011"
      },
      {
        "title": "Foggy Day",
@@ -308,6 +330,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -322,7 +345,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0012"
      },
      {
        "title": "Place Ville Marie",
@@ -335,6 +359,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -349,7 +374,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0013"
      },
      {
        "title": "Fade Into You",
@@ -362,6 +388,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -376,7 +403,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0014"
      },
      {
        "title": "Untitled",
@@ -389,6 +417,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -403,7 +432,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0015"
      },
      {
        "title": "Boost",
@@ -416,6 +446,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -430,7 +461,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:16pm"
+       "Entry Timestamp": "7/14/2017 4:16pm",
+       "uniqueid": "cfuid0016"
      },
      {
        "title": "Transition",
@@ -443,6 +475,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -457,7 +490,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:15pm"
+       "Entry Timestamp": "7/14/2017 4:15pm",
+       "uniqueid": "cfuid0017"
      },
      {
        "title": "Behind the Window",
@@ -470,6 +504,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -484,7 +519,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 4:15pm"
+       "Entry Timestamp": "7/14/2017 4:15pm",
+       "uniqueid": "cfuid0018"
      },
      {
        "title": "5pm at the Museum",
@@ -497,6 +533,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -511,7 +548,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/14/2017 3:47pm"
+       "Entry Timestamp": "7/14/2017 3:47pm",
+       "uniqueid": "cfuid0019"
      },
      {
        "title": "Stroke My Hairy Legs",
@@ -524,6 +562,7 @@
        "medium": "Ceramic",
        "year": "2016",
        "value": "$1,900.00",
+       "valuecents": 190000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -538,7 +577,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0020"
      },
      {
        "title": "Unshaven",
@@ -551,6 +591,7 @@
        "medium": "Ceramic",
        "year": "2016",
        "value": "$1,300.00",
+       "valuecents": 130000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -565,7 +606,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0021"
      },
      {
        "title": "Preening",
@@ -578,6 +620,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$1,200.00",
+       "valuecents": 120000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -592,7 +635,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0022"
      },
      {
        "title": "Self Love (wall piece)",
@@ -605,6 +649,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$950.00",
+       "valuecents": 95000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -619,7 +664,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0023"
      },
      {
        "title": "Bits and Pieces",
@@ -632,6 +678,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$900.00",
+       "valuecents": 90000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -646,7 +693,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0024"
      },
      {
        "title": "Rust",
@@ -659,6 +707,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$400.00",
+       "valuecents": 40000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -673,7 +722,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0025"
      },
      {
        "title": "A Touch of Menstruation",
@@ -686,6 +736,7 @@
        "medium": "Ceramic",
        "year": "2016",
        "value": "$1,100.00",
+       "valuecents": 110000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -700,7 +751,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0026"
      },
      {
        "title": "Bits & Pieces #2",
@@ -713,6 +765,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$850.00",
+       "valuecents": 85000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -727,7 +780,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0027"
      },
      {
        "title": "Bent",
@@ -740,6 +794,7 @@
        "medium": "Ceramic",
        "year": "2015",
        "value": "$400.00",
+       "valuecents": 40000,
        "framed": "N/A",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -754,7 +809,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0028"
      },
      {
        "title": "Dialect of desires: The Female Body",
@@ -767,6 +823,7 @@
        "medium": "Graphite Pencil,Paper,Graphite",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -781,7 +838,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0029"
      },
      {
        "title": "Media Clean Up ",
@@ -794,6 +852,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$30.00",
+       "valuecents": 3000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -808,7 +867,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0030"
      },
      {
        "title": "Flavour",
@@ -821,6 +881,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$30.00",
+       "valuecents": 3000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -835,7 +896,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0031"
      },
      {
        "title": "Flavour 2",
@@ -848,6 +910,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$30.00",
+       "valuecents": 3000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -862,7 +925,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0032"
      },
      {
        "title": "Passage",
@@ -875,6 +939,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$30.00",
+       "valuecents": 3000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -889,7 +954,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0033"
      },
      {
        "title": "Authentic",
@@ -902,6 +968,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$30.00",
+       "valuecents": 3000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -916,7 +983,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0034"
      },
      {
        "title": "Demonstrators and SPVM Riot Police Clash on May Day 2017 ",
@@ -929,6 +997,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -943,7 +1012,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0035"
      },
      {
        "title": "Untitled 2",
@@ -956,6 +1026,7 @@
        "medium": "Oil Paint",
        "year": "2015",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -970,7 +1041,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0036"
      },
      {
        "title": "Untitled 6",
@@ -983,6 +1055,7 @@
        "medium": "Oil Paint",
        "year": "2016",
        "value": "$5,000.00",
+       "valuecents": 500000,
        "framed": "N/A",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -997,7 +1070,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0037"
      },
      {
        "title": "Untitled 1",
@@ -1010,6 +1084,7 @@
        "medium": "Paper",
        "year": "2016",
        "value": "$700.00",
+       "valuecents": 70000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1024,7 +1099,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0038"
      },
      {
        "title": "Reflections",
@@ -1037,6 +1113,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1051,7 +1128,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0039"
      },
      {
        "title": "In My Eyes",
@@ -1064,6 +1142,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1078,7 +1157,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0040"
      },
      {
        "title": "Cool Skin",
@@ -1091,6 +1171,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1105,7 +1186,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0041"
      },
      {
        "title": "Faster",
@@ -1118,6 +1200,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1132,7 +1215,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0042"
      },
      {
        "title": "En Suite",
@@ -1145,6 +1229,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1159,7 +1244,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0043"
      },
      {
        "title": "Slush",
@@ -1172,6 +1258,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1186,7 +1273,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0044"
      },
      {
        "title": "Untitled",
@@ -1199,6 +1287,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1213,7 +1302,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0045"
      },
      {
        "title": "Untitled",
@@ -1226,6 +1316,7 @@
        "medium": "Film Print",
        "year": "2017",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1240,7 +1331,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0046"
      },
      {
        "title": "Untitled ",
@@ -1253,6 +1345,7 @@
        "medium": "Film Print",
        "year": "2016",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1267,7 +1360,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:57pm"
+       "Entry Timestamp": "7/11/2017 2:57pm",
+       "uniqueid": "cfuid0047"
      },
      {
        "title": "D̩suet",
@@ -1280,6 +1374,7 @@
        "medium": "Paper,Mixed media",
        "year": "2016 2017",
        "value": "$80.00",
+       "valuecents": 8000,
        "framed": "Not Framed",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -1294,7 +1389,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0048"
      },
      {
        "title": "17:15",
@@ -1307,6 +1403,7 @@
        "medium": "Paper",
        "year": "2017",
        "value": "$60.00",
+       "valuecents": 6000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1321,7 +1418,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0049"
      },
      {
        "title": "Complexifier nos natures",
@@ -1334,6 +1432,7 @@
        "medium": "Canvas Board,Collage,Digital Print,Paper,Mixed media",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1348,7 +1447,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0050"
      },
      {
        "title": "Intercourse",
@@ -1361,6 +1461,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1375,7 +1476,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0051"
      },
      {
        "title": "D'instinct m̩canique",
@@ -1388,6 +1490,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1402,7 +1505,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0052"
      },
      {
        "title": "Retenir sa libert̩",
@@ -1415,6 +1519,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1429,7 +1534,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0053"
      },
      {
        "title": "Les proies sans peur",
@@ -1442,6 +1548,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1456,7 +1563,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0054"
      },
      {
        "title": "Tordre son reflet",
@@ -1469,6 +1577,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1483,7 +1592,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0055"
      },
      {
        "title": "Vomir sa naissance",
@@ -1496,6 +1606,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1510,7 +1621,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0056"
      },
      {
        "title": "L'intimit̩ fluide",
@@ -1523,6 +1635,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1537,7 +1650,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0057"
      },
      {
        "title": "Golden Baby",
@@ -1550,6 +1664,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1564,7 +1679,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0058"
      },
      {
        "title": "M̩canisme de d̩fense",
@@ -1577,6 +1693,7 @@
        "medium": "Card stock,Collage,Digital Print,Mixed media,Paper",
        "year": "2017",
        "value": "$255.00",
+       "valuecents": 25500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1591,7 +1708,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0059"
      },
      {
        "title": "Layered Reproduction 1 ",
@@ -1604,6 +1722,7 @@
        "medium": "Digital Print,Marker",
        "year": "2016/2017",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1618,7 +1737,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0060"
      },
      {
        "title": "Sawmill",
@@ -1631,6 +1751,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1645,7 +1766,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0061"
      },
      {
        "title": "General Store",
@@ -1658,6 +1780,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1672,7 +1795,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0062"
      },
      {
        "title": "Sawmill Sides",
@@ -1685,6 +1809,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1699,7 +1824,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0063"
      },
      {
        "title": "Balaclava",
@@ -1712,6 +1838,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1726,7 +1853,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0064"
      },
      {
        "title": "Gas Station",
@@ -1739,6 +1867,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1753,7 +1882,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0065"
      },
      {
        "title": "Vacancy",
@@ -1766,6 +1896,7 @@
        "medium": "Digital Print",
        "year": "2017",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -1780,7 +1911,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "7/11/2017 2:21pm"
+       "Entry Timestamp": "7/11/2017 2:21pm",
+       "uniqueid": "cfuid0066"
      },
      {
        "title": "KahibaIsTheHeritage",
@@ -1793,6 +1925,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1807,7 +1940,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0067"
      },
      {
        "title": "BernardIsTheHeritage",
@@ -1820,6 +1954,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1834,7 +1969,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0068"
      },
      {
        "title": "DanielIsTheHeritage",
@@ -1847,6 +1983,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1861,7 +1998,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0069"
      },
      {
        "title": "DeborahAndGeorgeAreTheHeritage",
@@ -1874,6 +2012,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1888,7 +2027,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0070"
      },
      {
        "title": "DidiIsTheHeritage",
@@ -1901,6 +2041,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1915,7 +2056,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0071"
      },
      {
        "title": "DorcasIsTheHeritage",
@@ -1928,6 +2070,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1942,7 +2085,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0072"
      },
      {
        "title": "EliseeIsTheHeritage",
@@ -1955,6 +2099,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1969,7 +2114,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0073"
      },
      {
        "title": "EsaieIsTheHeritage",
@@ -1982,6 +2128,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -1996,7 +2143,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0074"
      },
      {
        "title": "GaspardIsTheHeritage",
@@ -2009,6 +2157,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2023,7 +2172,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0075"
      },
      {
        "title": "GeorgesIsTheHeritage",
@@ -2036,6 +2186,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2050,7 +2201,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0076"
      },
      {
        "title": "HeleneIsTheHeritage",
@@ -2063,6 +2215,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2077,7 +2230,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0077"
      },
      {
        "title": "JonathanIsTheHeritage",
@@ -2090,6 +2244,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2104,7 +2259,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0078"
      },
      {
        "title": "Lucienne&PaulineAreTheHeritage",
@@ -2117,6 +2273,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2131,7 +2288,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0079"
      },
      {
        "title": "PlamediIsTheHeritage",
@@ -2144,6 +2302,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2158,7 +2317,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0080"
      },
      {
        "title": "LucieIsTheHeritage",
@@ -2171,6 +2331,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2185,7 +2346,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0081"
      },
      {
        "title": "MarcellineIsTheHeritage",
@@ -2198,6 +2360,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2212,7 +2375,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0082"
      },
      {
        "title": "MarieIsTheHeritage",
@@ -2225,6 +2389,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2239,7 +2404,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0083"
      },
      {
        "title": "MichelWasTheheritage",
@@ -2252,6 +2418,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2266,7 +2433,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0084"
      },
      {
        "title": "MoiseIsTheHeritage",
@@ -2279,6 +2447,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2293,7 +2462,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0085"
      },
      {
        "title": "NaomiIsTheHeritage",
@@ -2306,6 +2476,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2320,7 +2491,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0086"
      },
      {
        "title": "NathalieIsTheHeritage",
@@ -2333,6 +2505,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2347,7 +2520,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0087"
      },
      {
        "title": "PaulineIsTheHeritage",
@@ -2360,6 +2534,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2374,7 +2549,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0088"
      },
      {
        "title": "PlamediIsTheHeritage",
@@ -2387,6 +2563,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2401,7 +2578,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0089"
      },
      {
        "title": "PriscilleIsTheHeritage",
@@ -2414,6 +2592,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2428,7 +2607,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0090"
      },
      {
        "title": "MwanzaIsTheHeritage",
@@ -2441,6 +2621,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2455,7 +2636,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0091"
      },
      {
        "title": "VitalIsTheHeritage",
@@ -2468,6 +2650,7 @@
        "medium": "Digital Print",
        "year": "2016",
        "value": "$2,000.00",
+       "valuecents": 200000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2482,7 +2665,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0092"
      },
      {
        "title": "Foursome",
@@ -2495,6 +2679,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2016",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -2509,7 +2694,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0093"
      },
      {
        "title": "Fruits",
@@ -2522,6 +2708,7 @@
        "medium": "Acrylic Paint,Paper",
        "year": "2016",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2536,7 +2723,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0094"
      },
      {
        "title": "St. Lucy",
@@ -2549,6 +2737,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2017",
        "value": "$600.00",
+       "valuecents": 60000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -2563,7 +2752,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0095"
      },
      {
        "title": "Maest�� 2",
@@ -2576,6 +2766,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2016",
        "value": "$180.00",
+       "valuecents": 18000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -2590,7 +2781,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0096"
      },
      {
        "title": "Temple",
@@ -2603,6 +2795,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2015",
        "value": "$1,500.00",
+       "valuecents": 150000,
        "framed": "Not Framed",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -2617,7 +2810,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0097"
      },
      {
        "title": "He",
@@ -2630,6 +2824,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2014",
        "value": "$1,500.00",
+       "valuecents": 150000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -2644,7 +2839,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0098"
      },
      {
        "title": "God",
@@ -2657,6 +2853,7 @@
        "medium": "Wood Panel,Oil Paint",
        "year": "2017",
        "value": "$2,500.00",
+       "valuecents": 250000,
        "framed": "N/A",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -2671,7 +2868,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0099"
      },
      {
        "title": "Feast",
@@ -2684,6 +2882,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2013",
        "value": "$3,500.00",
+       "valuecents": 350000,
        "framed": "N/A",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -2698,7 +2897,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0100"
      },
      {
        "title": "Descent",
@@ -2711,6 +2911,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2016",
        "value": "$2,500.00",
+       "valuecents": 250000,
        "framed": "N/A",
        "stretched": "Stretched",
        "city": "Montreal, QC",
@@ -2725,7 +2926,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0101"
      },
      {
        "title": "Chaos Gods",
@@ -2738,6 +2940,7 @@
        "medium": "Canvas,Oil Paint",
        "year": "2014",
        "value": "$2,500.00",
+       "valuecents": 250000,
        "framed": "N/A",
        "stretched": "Not Stretched",
        "city": "Montreal, QC",
@@ -2752,7 +2955,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0102"
      },
      {
        "title": "��Ԓ�� �_㓤ۑ���__ (Pink Business)",
@@ -2765,6 +2969,7 @@
        "medium": "Film Print",
        "year": "2016",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2779,7 +2984,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0103"
      },
      {
        "title": "Petit Prince",
@@ -2792,6 +2998,7 @@
        "medium": "Film Print",
        "year": "2016",
        "value": "$150.00",
+       "valuecents": 15000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2806,7 +3013,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0104"
      },
      {
        "title": "Blue Lagoon",
@@ -2819,6 +3027,7 @@
        "medium": "Collage,Paper",
        "year": "2012",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2833,7 +3042,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0105"
      },
      {
        "title": "Oasis",
@@ -2846,6 +3056,7 @@
        "medium": "Collage,Paper",
        "year": "2012",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2860,7 +3071,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0106"
      },
      {
        "title": "Nightlife",
@@ -2873,6 +3085,7 @@
        "medium": "Collage,Paper",
        "year": "2012",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2887,7 +3100,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0107"
      },
      {
        "title": "By the Sea",
@@ -2900,6 +3114,7 @@
        "medium": "Collage,Paper",
        "year": "2016",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2914,7 +3129,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0108"
      },
      {
        "title": "The Museum Go-er",
@@ -2927,6 +3143,7 @@
        "medium": "Collage,Paper",
        "year": "2016",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2941,7 +3158,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0109"
      },
      {
        "title": "Untitled",
@@ -2954,6 +3172,7 @@
        "medium": "Collage,Paper",
        "year": "2012",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2968,7 +3187,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0110"
      },
      {
        "title": "Untitled",
@@ -2981,6 +3201,7 @@
        "medium": "Collage,Paper",
        "year": "2014",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -2995,7 +3216,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0111"
      },
      {
        "title": "Fjords",
@@ -3008,6 +3230,7 @@
        "medium": "Collage,Paper",
        "year": "2015",
        "value": "$20.00",
+       "valuecents": 2000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3022,7 +3245,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0112"
      },
      {
        "title": "No Name (French)",
@@ -3035,6 +3259,7 @@
        "medium": "Paper,Oil Paint,Graphite Pencil",
        "year": "2014",
        "value": "$160.00",
+       "valuecents": 16000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3049,7 +3274,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0113"
      },
      {
        "title": "No Name (Mama D)",
@@ -3062,6 +3288,7 @@
        "medium": "Paper,Oil Paint,Graphite Pencil",
        "year": "2014",
        "value": "$300.00",
+       "valuecents": 30000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3076,7 +3303,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0114"
      },
      {
        "title": "No Name (Lost D)",
@@ -3089,6 +3317,7 @@
        "medium": "Paper,Marker,Oil Paint",
        "year": "2014",
        "value": "$200.00",
+       "valuecents": 20000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3103,7 +3332,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0115"
      },
      {
        "title": "No Name (Porch)",
@@ -3116,6 +3346,7 @@
        "medium": "Paper,Oil Paint,Graphite Pencil",
        "year": "2014",
        "value": "$175.00",
+       "valuecents": 17500,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3130,7 +3361,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0116"
      },
      {
        "title": "No Name (Porch Close-up)",
@@ -3143,6 +3375,7 @@
        "medium": "Paper,Graphite Pencil,Oil Pastel",
        "year": "2014",
        "value": "$130.00",
+       "valuecents": 13000,
        "framed": "Not Framed",
        "stretched": "N/A",
        "city": "Montreal, QC",
@@ -3157,7 +3390,8 @@
        "genre": "",
        "size": "",
        "Descriptive Tags": "",
-       "Entry Timestamp": "6/13/2017 5:05pm"
+       "Entry Timestamp": "6/13/2017 5:05pm",
+       "uniqueid": "cfuid0117"
      }
     ]
 };
