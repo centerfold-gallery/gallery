@@ -107,7 +107,7 @@
 					Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.
                 </div>
 
-                <!-- <div class="art" id="art1">
+                <div class="art" id="artcfuid0001">
                     <div class="art-art shadow">
                         <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="assets/art/emile1.jpg">
                     </div>
@@ -120,12 +120,12 @@
                             $300 &mdash; <span class="buy-2d">Buy</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>
 
-        <div class="buy" id="buy1">
+        <div class="buy buycfuid0001" id="buycfuid0001">
             <div class="close">Back</div>
             <div class="close-full"></div>
             <div class="buy-flex">
@@ -1014,7 +1014,7 @@
 		<script type="text/javascript">
 			var s = skrollr.init();
 		</script>
-		<script>
+		<!-- <script>
 
 		    $(function() {
 
@@ -1023,7 +1023,7 @@
 
 		   $.getJSON('database/test.json', function(data) {
 		       $.each(data.items, function(i, f) {
-				  var art = "<div class='art' id='art1'>" + "<div class='art-art'>" + "<img " + "class='b-lazy shadow' src='" + f.image + "'>" + "</div>" + "<div class='artist-card-wrap'>" + "<div class='artist-card' id='card1'>" + "<span class='art-title'>" + f.title + "</span><br/>" + f.artist + "<br/>" + f.medium + "<br/>" + f.width + "&quot; x " + f.height + "&quot;<br/>" + f.value + " &mdash; <span class='buy-2d'>Buy</span></div></div></div>"
+				  var art = "<div class='art' id='art" + f.uniqueid + "'>" + "<div class='art-art'>" + "<img " + "class='b-lazy shadow' src='" + f.image + "'>" + "</div>" + "<div class='artist-card-wrap'>" + "<div class='artist-card' id='card1'>" + "<span class='art-title'>" + f.title + "</span><br/>" + f.artist + "<br/>" + f.medium + "<br/>" + f.width + "&quot; x " + f.height + "&quot;<br/>" + f.value + " &mdash; <span class='buy-2d'>Buy</span></div></div></div>"
 
 
 		          $(art).appendTo(".everything");
@@ -1042,7 +1042,7 @@
 
 		   $.getJSON('database/test.json', function(data) {
 		       $.each(data.items, function(i, f) {
-				  var buy = "<div class='buy' id='buy1'><div class='close'>Back</div><div class='close-full'></div><div class='buy-flex'><div class='buy-wrap'><div class='buy-art shadow'><img src='" + f.image + "data-action='zoom'></div><div class='buy-artist-card-wrap'><div class='buy-artist-card'><span class='buy-art-title'>" + f.title + "</span><br/><span class='buy-art-artist'>" + f.artist + "</span><br/><br/><br/>" + f.medium + "<br/>" + f.value + "<br/><br/>" + "<form action='https://centerfold-gallery.herokuapp.com/' method='POST'> <script src='https://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_live_XepHFzcvrSK1Qf1TpJubSGlp' data-name='Centerfold Gallery' data-description='" + f.title + "&mdash;" + f.artist + "' data-amount='" + f.valuecents + "'></script><input name='amount' value='" + f.valuecents + "' type='hidden'><input name='description' value='" + f.title + "&mdash;" + f.artist + "' type='hidden'></form></div></div></div></div></div>"
+				  var buy = "<div class='buy' id='buy" + f.uniqueid + "><div class='close'>Back</div><div class='close-full'></div><div class='buy-flex'><div class='buy-wrap'><div class='buy-art shadow'><img src='" + f.image + "' data-action='zoom'></div><div class='buy-artist-card-wrap'><div class='buy-artist-card'><span class='buy-art-title'>" + f.title + "</span><br/><span class='buy-art-artist'>" + f.artist + "</span><br/><br/><br/>" + f.medium + "<br/>" + f.value + "<br/><br/>" + "<form action='https://centerfold-gallery.herokuapp.com/' method='POST'> <script src='https://checkout.stripe.com/checkout.js' class='stripe-button' data-key='pk_live_XepHFzcvrSK1Qf1TpJubSGlp' data-name='Centerfold Gallery' data-description='" + f.title + "&mdash;" + f.artist + "' data-amount='" + f.valuecents + "'></script><input name='amount' value='" + f.valuecents + "' type='hidden'><input name='description' value='" + f.title + "&mdash;" + f.artist + "' type='hidden'></form></div></div></div></div></div>"
 
 				  $(buy).appendTo(".still");
 		     });
@@ -1050,6 +1050,15 @@
 		   });
 
 		});
+		</script> -->
+		<script>
+			$(function () {
+			    $("[id^=artcfuid]").click(function () {
+			        var num = this.id.slice(8);
+			        var $elem = $('.buycfuid'+num);
+					$elem.fadeIn(500);
+			    });
+			});
 		</script>
 		<script src="js/blazy.min.js"></script>
 		<script>
