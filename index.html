@@ -108,8 +108,8 @@
                 </div>
 
                 <div class="art" id="artcfuid0001">
-                    <div class="art-art shadow">
-                        <img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="assets/art/emile1.jpg">
+                    <div class="art-art">
+                        <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="assets/art/emile1.jpg">
                     </div>
                     <div class="artist-card-wrap">
                         <div class="artist-card" id="cardcfuid0001">
@@ -799,200 +799,6 @@
             });
         </script>
         <script>
-            $("#art1").hover(function(){
-                $('#card1').fadeIn();
-            },function(){
-                $('#card1').fadeOut();
-            });
-            $("#art2").hover(function(){
-                $('#card2').fadeIn();
-            },function(){
-                $('#card2').fadeOut();
-            });
-            $("#art3").hover(function(){
-                $('#card3').fadeIn();
-            },function(){
-                $('#card3').fadeOut();
-            });
-            $("#art4").hover(function(){
-                $('#card4').fadeIn();
-            },function(){
-                $('#card4').fadeOut();
-            });
-            $("#art5").hover(function(){
-                $('#card5').fadeIn();
-            },function(){
-                $('#card5').fadeOut();
-            });
-            $("#art6").hover(function(){
-                $('#card6').fadeIn();
-            },function(){
-                $('#card6').fadeOut();
-            });
-            $("#art7").hover(function(){
-                $('#card7').fadeIn();
-            },function(){
-                $('#card7').fadeOut();
-            });
-            $("#art72").hover(function(){
-                $('#card72').fadeIn();
-            },function(){
-                $('#card72').fadeOut();
-            });
-            $("#art73").hover(function(){
-                $('#card73').fadeIn();
-            },function(){
-                $('#card73').fadeOut();
-            });
-            $("#art8").hover(function(){
-                $('#card8').fadeIn();
-            },function(){
-                $('#card8').fadeOut();
-            });
-            $("#art82").hover(function(){
-                $('#card82').fadeIn();
-            },function(){
-                $('#card82').fadeOut();
-            });
-            $("#art83").hover(function(){
-                $('#card83').fadeIn();
-            },function(){
-                $('#card83').fadeOut();
-            });
-            $("#art9").hover(function(){
-                $('#card9').fadeIn();
-            },function(){
-                $('#card9').fadeOut();
-            });
-            $("#art10").hover(function(){
-                $('#card10').fadeIn();
-            },function(){
-                $('#card10').fadeOut();
-            });
-            $("#art102").hover(function(){
-                $('#card102').fadeIn();
-            },function(){
-                $('#card102').fadeOut();
-            });
-            $("#art103").hover(function(){
-                $('#card103').fadeIn();
-            },function(){
-                $('#card103').fadeOut();
-            });
-
-            $(document).ready(
-            function(){
-                $("#art1").click(function () {
-                    $("#buy1").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art2").click(function () {
-                    $("#buy2").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art3").click(function () {
-                    $("#buy3").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art4").click(function () {
-                    $("#buy4").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art5").click(function () {
-                    $("#buy5").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art6").click(function () {
-                    $("#buy6").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art7").click(function () {
-                    $("#buy7").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art72").click(function () {
-                    $("#buy72").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art73").click(function () {
-                    $("#buy73").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art8").click(function () {
-                    $("#buy8").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art82").click(function () {
-                    $("#buy82").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art83").click(function () {
-                    $("#buy83").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art9").click(function () {
-                    $("#buy9").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art10").click(function () {
-                    $("#buy10").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art102").click(function () {
-                    $("#buy102").fadeIn(500);
-                });
-
-            });
-            $(document).ready(
-            function(){
-                $("#art103").click(function () {
-                    $("#buy103").fadeIn(500);
-                });
-
-            });
-
             $(document).ready(
             function(){
                 $(".close").click(function () {
@@ -1023,12 +829,26 @@
 
 		   $.getJSON('database/test.json', function(data) {
 		       $.each(data.items, function(i, f) {
-				  var art = "<div class='art' id='art" + f.uniqueid + "'>" + "<div class='art-art'>" + "<img " + "class='b-lazy shadow' src='" + f.image + "'>" + "</div>" + "<div class='artist-card-wrap'>" + "<div class='artist-card' id='card" + f.uniqueid + "'>" + "<span class='art-title'>" + f.title + "</span><br/>" + f.artist + "<br/>" + f.medium + "<br/>" + f.width + "&quot; x " + f.height + "&quot;<br/>" + f.value + " &mdash; <span class='buy-2d'>Buy</span></div></div></div>"
+				  var art = "<div class='art' id='art" + f.uniqueid + "'>" + "<div class='art-art'>" + "<img " + "class='b-lazy shadow' src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src='" + f.image + "'>" + "</div>" + "<div class='artist-card-wrap'>" + "<div class='artist-card' id='card" + f.uniqueid + "'>" + "<span class='art-title'>" + f.title + "</span><br/>" + f.artist + "<br/>" + f.medium + "<br/>" + f.width + "&quot; x " + f.height + "&quot;<br/>" + f.value + " &mdash; <span class='buy-2d'>Buy</span></div></div></div>"
 
 				  var buy = "<div class='buy' id='buy" + f.uniqueid + "'>" + "<div class='close'>Back</div>" + "<div class='close-full'>" + "</div>" + "<div class='buy-flex'>" + "<div class='buy-wrap'>" + "<div class='buy-art shadow'>" + "<img src='" + f.image + "' data-action='zoom'>" + "</div>" + "<div class='buy-artist-card-wrap'>" + "<div class='buy-artist-card'>" + "<span class='buy-art-title'>" + f.title + "</span>" + "<br/>" + "<span class='buy-art-artist'>" + f.artist + "</span>" + "<br/><br/><br/>" + f.medium + "<br/>" + f.value + "<br/><br/>" + "</div>" + "</div>" + "</div>" + "</div>" + "</div>"
 
 		          $(art).appendTo(".everything");
 				  $(buy).appendTo("body");
+				  var bLazy = new Blazy({
+	  			        container: ".everything" // Default is window
+					,	loadInvisible: true
+	  			    });
+
+				  $("[id^=artcfuid]").hover(function(){
+					  var num = this.id.slice(8);
+					  var $elemcard = $('#cardcfuid'+num);
+					  $elemcard.fadeIn(500);
+				  },function(){
+					  var num = this.id.slice(8);
+					  var $elemcard = $('#cardcfuid'+num);
+					  $elemcard.fadeOut(500);
+				  });
 		     });
 
 		   });
@@ -1056,12 +876,12 @@
 			});
 		</script>
 		<script src="js/blazy.min.js"></script>
-		<script>
+		<!-- <script>
 		;(function() {
 			var bLazy = new Blazy({
-			        container: '.everything' // Default is window
+			        container: ".everything" // Default is window
 			    });
 		})();
-		</script>
+		</script> -->
 	</body>
 </html>
