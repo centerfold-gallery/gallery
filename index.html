@@ -840,6 +840,13 @@
 					,	loadInvisible: true
 	  			    });
 
+				  $(function () {
+	  	  			    $("[id^=artcfuid]").click(function () {
+	  	  			        var num = this.id.slice(8);
+	  	  			        var $elem = $('.buycfuid'+num);
+	  	  					$elem.fadeIn(500);
+	  	  			    });
+	  	  		  });
 				  $("[id^=artcfuid]").hover(function(){
 					  var num = this.id.slice(8);
 					  var $elemcard = $('#cardcfuid'+num);
