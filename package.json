@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/centerfold-gallery/gallery#readme",
   "dependencies": {
+    "airtable": "^0.5.0",
     "express": "^4.15.3"
   }
 }

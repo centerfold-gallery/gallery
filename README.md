@@ -2,7 +2,9 @@ The website and gallery for Centerfold.
 
 ## Installation
 
-Simply use:
+You'll need the config.json file for API keys. This file should not be in version control, since our repository is public. We could make the repo private, then version control the config.json.
+
+Nextm,simply use:
 
 ```console
 $ npm install
