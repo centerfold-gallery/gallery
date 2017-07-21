@@ -1015,6 +1015,28 @@ textarea:focus, input:focus{
     margin-top: 20px;
 }
 
+.cert-pop-up {
+    position: fixed;
+    z-index: 56;
+    top: 100px;
+    right: 100px;
+    font-family: $type-2;
+    font-size: 12px;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    padding: 25px;
+    cursor: ne-resize;
+}
+
+.cert-pop-up-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: $type-2;
+    cursor: help;
+}
+
 @media print {
     .cert-title {
         font-family: $type-3;
@@ -1074,7 +1096,8 @@ textarea:focus, input:focus{
         @include boxflex;
     }
 
-    .cert-pop-up {
+    .cert-pop-up,
+    .cert-pop-up-info {
         display: none;
     }
 }

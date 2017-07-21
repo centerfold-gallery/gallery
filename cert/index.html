@@ -74,8 +74,30 @@
 				</div>
 			</div>
 			<div class="cert-cf-logo"><img src="../assets/centerfold.png"</div>
-			<div class="cert-pop-up"></div>
-		</div>
+			<div class="cert-pop-up shadow">
+				Hi! You look like you are about to certify the authenticity of your artwork before you send it to us at Centerfold.
+				<br/></br>
+				Here's what to do:
+				<br/><br/>
+				1. Fill out all of the fields in the form denoted with "✎".<br/>
+				2. Print this form out (Please print in portrait! Also, please print without the URL at the top of the page!).<br/>
+				3. Sign and date your signature on the line in the last box.<br/>
+				4. Attach the form to the back of your artwork before you send it to us.<br/>
+				5. Repeat steps 1-4 for any other artworks you may have for us.<br/>
+				<br/><br/>
+				Thanks!
 
+
+			</div>
+			<div class="cert-pop-up-info">?</div>
+		</div>
+		<script>
+			$(".cert-pop-up").click(function(){
+				$(".cert-pop-up").fadeOut(500);
+			})
+			$(".cert-pop-up-info").click(function(){
+				$(".cert-pop-up").fadeToggle(500);
+			})
+		</script>
 	</body>
 </html>
