@@ -400,10 +400,10 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 .cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 26px; padding-left: 20%; padding-right: 20%; }
 
 /* line 937, ../sass/56.scss */
-.cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 40%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: scroll; }
+.cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 50%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 3%; overflow-y: scroll; }
 
 /* line 950, ../sass/56.scss */
-.cert-description::-webkit-scrollbar { display: none; }
+textarea.cert-description-input::-webkit-scrollbar { display: none; }
 
 /* line 954, ../sass/56.scss */
 .cert-description-input::-moz-selection { color: #fff; background-color: #000; }
@@ -451,10 +451,10 @@ textarea:focus, input:focus { outline: none; }
   /* line 1058, ../sass/56.scss */
   .cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
   /* line 1070, ../sass/56.scss */
-  .cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 60%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: scroll; }
-  /* line 1083, ../sass/56.scss */
+  .cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 60%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: hidden; }
+  /* line 1084, ../sass/56.scss */
   .cert-auth-2 { font-family: "caslon", caslon, serif; height: 8%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
-  /* line 1095, ../sass/56.scss */
+  /* line 1096, ../sass/56.scss */
   .cert-signature { font-family: "caslon", caslon, serif; width: 60%; height: 10%; font-size: 16px; padding-left: 20%; padding-right: 20%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
-  /* line 1105, ../sass/56.scss */
+  /* line 1106, ../sass/56.scss */
   .cert-pop-up, .cert-pop-up-info { display: none; } }

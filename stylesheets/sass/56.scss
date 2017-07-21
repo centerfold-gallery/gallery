@@ -936,18 +936,18 @@ body.zoom-overlay-open {
 
 .cert-description {
     font-family: $type-2;
-    height: 40%;
+    height: 50%;
     width: 90%;
     border-bottom: 1px solid black;
     font-size: 12px;
     line-height: 16px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
+    padding-top: 3%;
     overflow-y: scroll;
 }
 
-.cert-description::-webkit-scrollbar {
+textarea.cert-description-input::-webkit-scrollbar {
     display: none;
 }
 
@@ -1077,8 +1077,9 @@ textarea:focus, input:focus{
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 5%;
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
+
 
     .cert-auth-2 {
         font-family: $type-1;
