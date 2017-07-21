@@ -387,3 +387,66 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
   #overlay { display: none; }
   /* line 892, ../sass/56.scss */
   .still { display: none; } }
+/* line 899, ../sass/56.scss */
+.cert-full { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+
+/* line 908, ../sass/56.scss */
+.cert-box { width: 80%; height: 80%; border: 1pt solid black; }
+
+/* line 914, ../sass/56.scss */
+.cert-title { font-family: "Work Sans", sans-serif; font-weight: 800; font-size: 24px; height: 15%; width: 100%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; letter-spacing: 10px; }
+
+/* line 925, ../sass/56.scss */
+.cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 26px; padding-left: 20%; padding-right: 20%; }
+
+/* line 937, ../sass/56.scss */
+.cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 40%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: scroll; }
+
+/* line 950, ../sass/56.scss */
+.cert-description::-webkit-scrollbar { display: none; }
+
+/* line 954, ../sass/56.scss */
+.cert-description-input::-moz-selection { color: #fff; background-color: #000; }
+
+/* line 955, ../sass/56.scss */
+.cert-description-input::selection { color: #fff; background-color: #000; }
+
+/* line 957, ../sass/56.scss */
+textarea.cert-description-input { width: 100%; background-color: transparent; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; border: 0px solid; color: #333; display: inline-block; resize: none; }
+
+/* line 967, ../sass/56.scss */
+textarea:focus, input:focus { outline: none; }
+
+/* line 971, ../sass/56.scss */
+*:focus { outline: none; }
+
+/* line 975, ../sass/56.scss */
+.cert-auth-2 { font-family: "caslon", caslon, serif; height: 8%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 26px; padding-left: 20%; padding-right: 20%; }
+
+/* line 987, ../sass/56.scss */
+.cert-signature { font-family: "caslon", caslon, serif; width: 60%; height: 20%; font-size: 16px; padding-left: 20%; padding-right: 20%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
+
+/* line 997, ../sass/56.scss */
+.cert-signature-line-1, .cert-signature-line-2 { width: 100%; }
+
+/* line 1002, ../sass/56.scss */
+.cert-signature-line { display: inline-block; color: #e3e3e3; margin-left: 14px; }
+
+/* line 1008, ../sass/56.scss */
+.cert-signature-date { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 8px; float: right; }
+
+/* line 1014, ../sass/56.scss */
+.cert-cf-logo { margin-top: 20px; }
+
+@media print { /* line 1019, ../sass/56.scss */
+  .cert-title { font-family: "Work Sans", sans-serif; font-weight: 800; font-size: 24px; height: 10%; width: 100%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; letter-spacing: 10px; }
+  /* line 1030, ../sass/56.scss */
+  .cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
+  /* line 1042, ../sass/56.scss */
+  .cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 60%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: scroll; }
+  /* line 1055, ../sass/56.scss */
+  .cert-auth-2 { font-family: "caslon", caslon, serif; height: 8%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
+  /* line 1067, ../sass/56.scss */
+  .cert-signature { font-family: "caslon", caslon, serif; width: 60%; height: 10%; font-size: 16px; padding-left: 20%; padding-right: 20%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
+  /* line 1077, ../sass/56.scss */
+  .cert-pop-up { display: none; } }
