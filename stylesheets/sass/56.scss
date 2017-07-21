@@ -1024,7 +1024,7 @@ textarea:focus, input:focus{
     font-size: 12px;
     width: 300px;
     height: 350px;
-    background-color: #fff;
+    background-color: $background-color;
     padding: 25px;
     cursor: ne-resize;
 }
@@ -1038,6 +1038,12 @@ textarea:focus, input:focus{
 }
 
 @media print {
+    body {
+        background-color: none;
+        margin: 0;
+        overflow: hidden;
+    }
+
     .cert-title {
         font-family: $type-3;
         font-weight: 800;
