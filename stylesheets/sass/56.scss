@@ -893,3 +893,295 @@ body.zoom-overlay-open {
         display: none;
     }
 }
+
+// CERTIFICATE OF AUTHENTICATION
+
+.cert-full {
+    @include boxflex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cert-box {
+    width: 80%;
+    height: 80%;
+    border: 1pt solid black;
+}
+
+.cert-title {
+    font-family: $type-3;
+    font-weight: 800;
+    font-size: 24px;
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    @include boxflex;
+    letter-spacing: 10px;
+}
+
+.cert-auth {
+    font-family: $type-1;
+    height: 7%;
+    width: 60%;
+    border-bottom: 1px solid black;
+    @include boxflex;
+    font-size: 12px;
+    line-height: 26px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.cert-description {
+    font-family: $type-2;
+    height: 50%;
+    width: 90%;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    overflow-y: scroll;
+}
+
+textarea.cert-description-input::-webkit-scrollbar {
+    display: none;
+}
+
+.cert-description-input::-moz-selection { color: #fff; background-color: #000;}
+.cert-description-input::selection { color: #fff; background-color: #000;}
+
+textarea.cert-description-input {
+    width: 100%;
+    background-color: transparent;
+    font-family: $type-2;
+    border: 0px solid;
+    color: #333;
+    display: inline-block;
+    resize: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.cert-auth-2 {
+    font-family: $type-1;
+    height: 8%;
+    width: 60%;
+    border-bottom: 1px solid black;
+    @include boxflex;
+    font-size: 12px;
+    line-height: 26px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.cert-signature {
+    font-family: $type-1;
+    width: 60%;
+    height: 20%;
+    font-size: 16px;
+    padding-left: 20%;
+    padding-right: 20%;
+    @include boxflex;
+}
+
+.cert-signature-line-1,
+.cert-signature-line-2 {
+    width: 100%;
+}
+
+.cert-signature-line {
+    display: inline-block;
+    color: #e3e3e3;
+    margin-left: 14px;
+}
+
+.cert-signature-date {
+    font-family: $type-2;
+    font-size: 8px;
+    float: right;
+}
+
+.cert-cf-logo {
+    margin-top: 20px;
+}
+
+.cert-pop-up {
+    position: fixed;
+    z-index: 56;
+    top: 100px;
+    right: 100px;
+    font-family: $type-2;
+    font-size: 12px;
+    width: 300px;
+    height: 362px;
+    background-color: $background-color;
+    padding: 25px;
+    cursor: ne-resize;
+}
+
+.cert-pop-up-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: $type-2;
+    cursor: help;
+}
+
+
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.cert-print {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    width: 50px;
+    height: 25px;
+    background-color: #000;
+    background-image: url("../../assets/elements/print-button.png");
+    background-position: center;
+    background-size: contain;
+    font-family: $type-2;
+    font-size: 12px;
+    padding: 25px;
+    cursor: ne-resize;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    color: $background-color;
+    background-repeat: no-repeat;
+    margin: 1px;
+}
+
+.cert-print:hover {
+    cursor: pointer;
+}
+
+@media print {
+    body {
+        background-color: none;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .cert-title {
+        font-family: $type-3;
+        font-weight: 800;
+        font-size: 24px;
+        height: 10%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        @include boxflex;
+        letter-spacing: 10px;
+    }
+
+    .cert-auth {
+        font-family: $type-1;
+        height: 7%;
+        width: 60%;
+        border-bottom: 1px solid black;
+        @include boxflex;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .cert-description {
+        font-family: $type-2;
+        height: 60%;
+        width: 90%;
+        border-bottom: 1px solid black;
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        overflow-y: hidden;
+    }
+
+
+    .cert-auth-2 {
+        font-family: $type-1;
+        height: 8%;
+        width: 60%;
+        border-bottom: 1px solid black;
+        @include boxflex;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .cert-signature {
+        font-family: $type-1;
+        width: 60%;
+        height: 10%;
+        font-size: 16px;
+        padding-left: 20%;
+        padding-right: 20%;
+        @include boxflex;
+    }
+
+    .cert-pop-up,
+    .cert-pop-up-info {
+        display: none;
+    }
+
+    .cert-print {
+        display: none;
+    }
+}
