@@ -140,7 +140,7 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .art:last-child { margin-bottom: 16em; }
 
 /* line 369, ../sass/56.scss */
-.art-art, .art-art img { width: 350px; height: 350px; display: inline-block; }
+.art-art, .art-art img { width: 350px; height: auto; display: inline-block; }
 
 /* line 376, ../sass/56.scss */
 .artist-card-wrap { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; position: absolute; top: 0; margin-left: 1em; }
@@ -161,52 +161,52 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .shadow { background-color: rgba(0, 0, 0, 0.56); -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.56); }
 
 /* line 415, ../sass/56.scss */
-#art1 { margin-left: 30%; }
+.art:nth-child(16n+1) { margin-left: 30%; }
 
 /* line 419, ../sass/56.scss */
-#art2 { margin-left: 60%; }
+.art:nth-child(16n+2) { margin-left: 60%; }
 
 /* line 423, ../sass/56.scss */
-#art3 { margin-left: 45%; }
+.art:nth-child(16n+3) { margin-left: 45%; }
 
 /* line 427, ../sass/56.scss */
-#art4 { margin-left: 55%; }
+.art:nth-child(16n+4) { margin-left: 55%; }
 
 /* line 431, ../sass/56.scss */
-#art5 { margin-left: 15%; }
+.art:nth-child(16n+5) { margin-left: 15%; }
 
 /* line 435, ../sass/56.scss */
-#art6 { margin-left: 35%; }
+.art:nth-child(16n+6) { margin-left: 35%; }
 
 /* line 439, ../sass/56.scss */
-#art7 { margin-left: 25%; }
+.art:nth-child(16n+7) { margin-left: 25%; }
 
 /* line 443, ../sass/56.scss */
-#art72 { margin-left: 50%; }
+.art:nth-child(16n+8) { margin-left: 50%; }
 
 /* line 447, ../sass/56.scss */
-#art73 { margin-left: 35%; }
+.art:nth-child(16n+9) { margin-left: 35%; }
 
 /* line 451, ../sass/56.scss */
-#art8 { margin-left: 50%; }
+.art:nth-child(16n+10) { margin-left: 50%; }
 
 /* line 455, ../sass/56.scss */
-#art82 { margin-left: 10%; }
+.art:nth-child(16n+11) { margin-left: 10%; }
 
 /* line 459, ../sass/56.scss */
-#art83 { margin-left: 45%; }
+.art:nth-child(16n+12) { margin-left: 45%; }
 
 /* line 463, ../sass/56.scss */
-#art9 { margin-left: 30%; }
+.art:nth-child(16n+13) { margin-left: 30%; }
 
 /* line 467, ../sass/56.scss */
-#art10 { margin-left: 20%; }
+.art:nth-child(16n+14) { margin-left: 20%; }
 
 /* line 471, ../sass/56.scss */
-#art102 { margin-left: 40%; }
+.art:nth-child(16n+15) { margin-left: 40%; }
 
 /* line 475, ../sass/56.scss */
-#art103 { margin-left: 50%; }
+.art:nth-child(16n+16) { margin-left: 50%; }
 
 /* line 480, ../sass/56.scss */
 .buy { position: fixed; top: 0; left: 0; background-color: #fffbfb; width: 100%; height: 100%; z-index: 200; display: none; }
