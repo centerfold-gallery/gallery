@@ -1,5 +1,7 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const mustacheExpress = require('mustache-express');
+
 var path = require('path')
 var config = require('./config');
 
@@ -9,32 +11,34 @@ Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
     apiKey: config.storageConfig.airtableAPIKey,
 });
-var base = Airtable.base('app5Q0PlJanbLMzkB');
-
+var base = Airtable.base(config.storageConfig.airtableBase);
 
 // Static Asset Routes
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
 app.use('/assets', express.static('assets'))
 
+// Setup Mustache
+app.engine('html', mustacheExpress());
+app.set('view engine', 'html');
+
 
 // Page Routes
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'))
-})
-
-app.get('/services', function (req, res) {
-  res.sendFile(path.join(__dirname + '/services/index.html'))
-})
+  res.render('index.html', {});
+});
 
 app.get('/events', function (req, res) {
-  res.sendFile(path.join(__dirname + '/events/index.html'))
-})
+  res.render('events/index.html', {title: "Events"});
+});
+
+app.get('/services', function (req, res) {
+  res.render('services/index.html', {title: "Services"});
+});
 
 app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname + '/about/index.html'))
-})
-
+  res.render('about/index.html', {title: "About"});
+});
 
 // Airtable Queries
 base('Events').select({
@@ -45,7 +49,7 @@ base('Events').select({
     // This function (`page`) will get called for each page of records.
 
     records.forEach(function(record) {
-        console.log('Retrieved', record);
+        //console.log('Retrieved', record);
     });
 
     // To fetch the next page of records, call `fetchNextPage`.
