@@ -19,6 +19,12 @@ To deploy this site to Heroku:
 $ git push heroku master
 ```
 
+## Development
+If you're developing on the Node server and want to add a new dependency:
+```console
+$ npm install plugin_name --save
+```
+
 ## Issues
 
 Please file bugs here - https://github.com/centerfold-gallery/gallery/issues
