@@ -17,83 +17,53 @@
         <div class="still">
             <div class="everything-events">
                 <div class="events-pc">Upcoming Events</div>
+                {{# upcomingEvents}} 
                 <div class="event-card">
-                    <a href="https://airtable.com/shrll5j3GiiBY6zRV" target="_blank"><img class="event-image shadow" src="../assets/pages/events/call-for-artists.png"></a>
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
                     <div class="event-card-info">
                         <div class="event-card-title">
-                            Call for Artists
+                            {{fields.Name}}
                         </div>
                         <div class="event-card-description">
-                            Centerfold is opening a new marketplace online to sell work; we're also opening a physical gallery in Westmount, Montreal.<br/>
-                            <br/>
-                            Send us your portfolio for an opportunity to be included in either of our galleries! :)
+                            {{fields.Description}}
                         </div>
-                        <a href="https://airtable.com/shrll5j3GiiBY6zRV" target="_blank" class="event-view">Call for Artists</a>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">{{fields.Name}}</a>
                     </div>
                 </div>
+                {{/ upcomingEvents}}
                 <div class="events-pc">Past Events</div>
+                {{# pastEvents}}
                 <div class="event-card">
-                    <a href="https://www.facebook.com/events/1960153097575559/" target="_blank"><img class="event-image shadow" src="../assets/pages/events/cf-14.jpg"></a>
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
                     <div class="event-card-info">
                         <div class="event-card-title">
-                            Centerfold 14
+                            {{fields.Name}}
                         </div>
                         <div class="event-card-description">
-                            Centerfold partnered with Chromatic for our 14th exhibition, which featured the work of 10 visual artists who have gained popularity and praise on Instagram.
+                            {{{fields.Description}}}
 							<br/>
 							<br/>
-							This edition explored the intersections of Instagram and fine art.
-							<br/>
-							<br/>
-							Total Amount Raised: $856
+							Total Amount Raised: ${{fields.TotalAmountRaised}}
                         </div>
-                        <a href="https://www.facebook.com/events/1960153097575559/" target="_blank" class="event-view">View on Facebook</a>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">View on Facebook</a>
                     </div>
                 </div>
-                <div class="event-card">
-                    <a href="https://www.facebook.com/events/747823152035086/" target="_blank"><img class="event-image shadow" src="../assets/pages/events/cf-13.jpg"></a>
-                    <div class="event-card-info">
-                        <div class="event-card-title">
-                            Centerfold 13
-                        </div>
-                        <div class="event-card-description">
-                            For the 13th show in our series, we hosted our first multi-day exhibition.
-                            Two seperate groups of artists were displayed on two different days,
-							and curated along different artistic moods.
-							<br/>
-							<br/>
-							Total Amount Raised: $998
-                        </div>
-                        <a href="https://www.facebook.com/events/747823152035086/" target="_blank" class="event-view">View on Facebook</a>
-                    </div>
-                </div>
+                {{/ pastEvents}}
 				<div class="events-pc">Parties</div>
+                {{# parties}}
                 <div class="event-card">
-                    <a href="https://www.facebook.com/events/176316856196652/" target="_blank"><img class="event-image shadow" src="../assets/pages/events/cf-13-ap.jpg"></a>
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
                     <div class="event-card-info">
                         <div class="event-card-title">
-                            Centerfold 13 AP
+                            {{fields.Name}}
                         </div>
                         <div class="event-card-description">
-                            We wrapped up the 13th edition of the Centerfold series with Vancouver-based Flørist on the decks.
+                            {{fields.Description}}
                         </div>
-                        <a href="https://www.facebook.com/events/176316856196652/" target="_blank" class="event-view">View on Facebook</a>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">View on Facebook</a>
                     </div>
                 </div>
-				<div class="event-card">
-					<a href="https://www.facebook.com/events/691856087653230/" target="_blank"><img class="event-image shadow" src="../assets/pages/events/Tom-Noble-Event-Cover.jpg"></a>
-					<div class="event-card-info">
-						<div class="event-card-title">
-							Tom Noble AP
-						</div>
-						<div class="event-card-description">
-							On a stormy Friday night in Montreal's Mile-End, Centerfold hosted the New York-based "disco genius" Tom Noble, who played records to a fervent group of dancers all night long.
-						</div>
-						<a href="https://www.facebook.com/events/691856087653230/" target="_blank" class="event-view">View on Facebook</a>
-					</div>
-				</div>
-
-
+                {{/ parties}}
             </div>
         </div>
 

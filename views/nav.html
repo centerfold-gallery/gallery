@@ -1,5 +1,5 @@
     <div class="nav">
-        <a href="#" class="nav-active nav-link nav-art">ART</a>
+        <a href="#" class="nav-link nav-art">ART</a>
         <a href="events" class="nav-link nav-events">EVENTS</a>
         <a href="services" class="nav-link nav-services">SERVICES</a>
         <a href="about" class="nav-link nav-about">ABOUT</a>
@@ -9,7 +9,7 @@
             <a class="nav-link nav-social" href="https://instagram.com/centerfold.gallery" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
     </div>
-    <div class="logo"><a href="https://centerfold.gallery"><img src="assets/centerfold.svg"></a></div>
+    <div class="logo"><a href="/#"><img src="assets/centerfold.svg"></a></div>
     <div class="hello">
         This experience was designed to be viewed on a computer. You can <a href="mailto:?subject=Centerfold 3D Gallery&body=Experience the Centerfold 14 interactive gallery here: https://centerfold.gallery">click here</a> to send yourself an email to look at it later.
         <br/>
@@ -33,3 +33,13 @@
             </div>
         </div>
     </div>
+    <script>
+    var path = window.location.pathname;
+    path = path.replace("/", "");
+    $(".nav a").each(function(){
+        var href = $(this).attr('href');
+        if(path.substring(0, href.length) === href || href == "#"){
+            $(this).addClass('nav-active');
+        }
+    });
+    </script>

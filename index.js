@@ -27,9 +27,71 @@ app.set('view engine', 'html');
 app.get('/', function (req, res) {
   res.render('index.html', {});
 });
+app.get('/#', function (req, res) {
+  res.render('index.html', {});
+});
 
 app.get('/events', function (req, res) {
-  res.render('events/index.html', {title: "Events"});
+    context = {title: "Events"};
+
+    var getUpcomingEvents = new Promise(function(resolve, reject) {
+        base('Events')
+            .select({view: "All Events", filterByFormula: "{Type} = 'Upcoming Events'"})
+            .firstPage(function(err, upcomingEvents) {
+                if(err) { 
+                    reject(err) 
+                }
+                else {
+                    var jsonUpcomingEvents = upcomingEvents.map(function(upcomingEvent){
+                        return upcomingEvent['_rawJson']
+                    });
+                    resolve(jsonUpcomingEvents);                    
+                }
+        });
+    });
+
+    var getPastEvents = new Promise(function(resolve, reject) {
+        base('Events')
+            .select({view: "All Events", filterByFormula: "{Type} = 'Past Events'"})
+            .firstPage(function(err, pastEvents) {
+                if(err) { 
+                    reject(err) 
+                }
+                else {
+                    var jsonPastEvents = pastEvents.map(function(pastEvent){
+                        return pastEvent['_rawJson']
+                    });
+                    resolve(jsonPastEvents);                    
+                }
+        });
+    });
+
+    var getParties = new Promise(function(resolve, reject) {
+        base('Events')
+            .select({view: "All Events", filterByFormula: "{Type} = 'Parties'"})
+            .firstPage(function(err, Parties) {
+                if(err) { 
+                    reject(err) 
+                }
+                else {
+                    var jsonParties = Parties.map(function(party){
+                        return party['_rawJson']
+                    });
+                    resolve(jsonParties);                    
+                }
+        });
+    });
+
+    getUpcomingEvents.then(function (result){
+        context['upcomingEvents'] = result;
+        getPastEvents.then(function(result){
+            context['pastEvents'] = result;
+            getParties.then(function(result){
+                context['parties'] = result;
+                res.render('events/index.html', context);
+            });
+        });
+    });
 });
 
 app.get('/services', function (req, res) {
@@ -40,28 +102,27 @@ app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About"});
 });
 
-// Airtable Queries
-base('Events').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 10,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
 
-    records.forEach(function(record) {
-        //console.log('Retrieved', record);
-    });
+app.use(function(req, res, next){
+  res.status(404);
 
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
+  // respond with html page
+  if (req.accepts('html')) {
+    res.render('404', { url: req.url });
+    return;
+  }
 
-}, function done(err) {
-    if (err) { console.error(err); return; }
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: 'Not found' });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type('txt').send('Not found');
 });
 
-
-app.listen(3000, function () {
-  console.log('Centerfold app listening on port 3000.')
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+  console.log('Centerfold app listening on port ' + port)
 })
