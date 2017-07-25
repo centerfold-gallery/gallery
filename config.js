@@ -1,5 +1,5 @@
 // if running on heroku, get heroku config variables
-if(process.env){
+if(process.env.airtableAPIKey){
     var parsed = {"airtableAPIKey": process.env.airtableAPIKey,
                   "airtableBase": process.env.airtableBase}
 }
