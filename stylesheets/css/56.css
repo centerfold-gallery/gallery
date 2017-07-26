@@ -515,3 +515,21 @@ input::-moz-focus-inner, button::-moz-focus-inner { padding: 0; }
   .cert-print { display: none; } }
 /* line 1262, ../sass/56.scss */
 .heartbeat { background-image: url("http://i.imgur.com/3hZNcw5.png"); background-position: bottom right; background-repeat: no-repeat; background-size: 50%; z-index: 1000; pointer-events: none; display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* line 1277, ../sass/56.scss */
+.pop-up-circle-container { width: 100%; height: 100%; position: fixed; top: 0; left: 0; overflow: visible; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; z-index: 1000; }
+
+/* line 1288, ../sass/56.scss */
+.pop-up-circle { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1em; overflow: visible; }
+
+/* line 1294, ../sass/56.scss */
+.spin { -webkit-animation-name: spin; -webkit-animation-duration: 20000ms; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name: spin; -moz-animation-duration: 20000ms; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear; -ms-animation-name: spin; -ms-animation-duration: 20000ms; -ms-animation-iteration-count: infinite; -ms-animation-timing-function: linear; animation-name: spin; animation-duration: 20000ms; animation-iteration-count: infinite; animation-timing-function: linear; }
+
+@-ms-keyframes spin { from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); } }
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); } }
+@keyframes spin { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
