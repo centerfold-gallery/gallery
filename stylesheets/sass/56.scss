@@ -1258,3 +1258,18 @@ button::-moz-focus-inner {
         display: none;
     }
 }
+
+.heartbeat {
+    background-image: url('http://i.imgur.com/3hZNcw5.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    z-index: 1000;
+    pointer-events: none;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
