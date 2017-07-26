@@ -304,6 +304,11 @@ canvas {
     pointer-events: none;
 }
 
+.home-container-logo img {
+    width: 120px;
+    height: auto;
+}
+
 .home-container {
     @include boxflex;
     width: 100%;
