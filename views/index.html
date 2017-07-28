@@ -78,11 +78,11 @@
                                         {{fields.Width (in)}}" x {{fields.Height (in)}}<br/>
                                         ${{fields.Estimated Value (CAD)}}<br/>
                                         <br/>
-                                        <form action="https://centerfold-gallery.herokuapp.com/" method="POST">
+                                        <form action="/stripe/checkout" method="POST">
                                             <script
                                                 src="https://checkout.stripe.com/checkout.js"
                                                 class="stripe-button"
-                                                data-key="pk_live_XepHFzcvrSK1Qf1TpJubSGlp"
+                                                data-key="{{stripeAPIKey}}"
                                                 data-name="Centerfold Gallery"
                                                 data-description="{{fields.Title}} - {{fields.Artist}}"
                                                 data-amount="${{fields.Estimated Value (CAD)}}"

@@ -23,8 +23,7 @@ app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
 
 app.get('/', function(req, res){
-    
-    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/"};
+    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -123,7 +122,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/events', function (req, res) {
-    var context = {title: "Events", static_url: "https://s3.amazonaws.com/centerfold-website/"};
+    var context = {title: "Events", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getUpcomingEvents = new Promise(function(resolve, reject) {
         base('Events')
@@ -186,11 +185,11 @@ app.get('/events', function (req, res) {
 });
 
 app.get('/services', function (req, res) {
-  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/"});
+  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
 app.get('/about', function (req, res) {
-  res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
+  res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
 
