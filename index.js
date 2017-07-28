@@ -16,7 +16,7 @@ var base = Airtable.base(config.storageConfig.airtableBase);
 // Static Asset Routes
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
-app.use('/assets', express.static('assets'))
+app.use('/fonts', express.static('fonts'))
 
 // Setup Mustache
 app.engine('html', mustacheExpress());
@@ -24,7 +24,7 @@ app.set('view engine', 'html');
 
 app.get('/', function(req, res){
     
-    var context = {};
+    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/"};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -114,7 +114,6 @@ app.get('/', function(req, res){
                                 }
                             }
                         }
-                        console.log(context['artPageArtworks'])
                         res.render('index.html', context);
                     });
                 });
@@ -124,7 +123,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/events', function (req, res) {
-    var context = {title: "Events"};
+    var context = {title: "Events", static_host: "https://s3.amazonaws.com/centerfold-website/"};
 
     var getUpcomingEvents = new Promise(function(resolve, reject) {
         base('Events')
@@ -187,11 +186,11 @@ app.get('/events', function (req, res) {
 });
 
 app.get('/services', function (req, res) {
-  res.render('services/index.html', {title: "Services"});
+  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
 app.get('/about', function (req, res) {
-  res.render('about/index.html', {title: "About"});
+  res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
 
@@ -200,7 +199,7 @@ app.use(function(req, res, next){
 
   // respond with html page
   if (req.accepts('html')) {
-    res.render('404', { url: req.url });
+    res.render('404', { url: req.url, static_url: "https://s3.amazonaws.com/centerfold-website/", title: "Page Not Found"});
     return;
   }
 
