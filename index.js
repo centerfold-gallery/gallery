@@ -123,7 +123,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/events', function (req, res) {
-    var context = {title: "Events", static_host: "https://s3.amazonaws.com/centerfold-website/"};
+    var context = {title: "Events", static_url: "https://s3.amazonaws.com/centerfold-website/"};
 
     var getUpcomingEvents = new Promise(function(resolve, reject) {
         base('Events')
