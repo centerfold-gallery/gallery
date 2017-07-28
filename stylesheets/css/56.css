@@ -284,7 +284,7 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 .thank-you-link { border-bottom: #000 5px solid; }
 
 /* line 671, ../sass/56.scss */
-.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
+.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../fonts/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
 
 /* line 692, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
