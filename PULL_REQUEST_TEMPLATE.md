@@ -4,12 +4,8 @@
 
 ### Where should the reviewer start?
 
-### Does this require changes on the API side?
-
 ### How should this be manually tested?
 
 ### What are the relevant tickets?
 
 ### Screenshots (if appropriate)
-
-### Does the knowledge base need an update?
