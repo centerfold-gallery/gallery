@@ -11,8 +11,8 @@ html, body { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit
 ::selection { color: #0000ff; }
 
 /* ::-webkit-scrollbar { display: none; } */
-@font-face { font-family: caslon; src: url(../../assets/type/ACaslonPro-Italic.otf); }
-@font-face { font-family: pressura-mono; src: url(../../assets/type/GT-Pressura-Mono-Regular.woff) format("woff"), url(../../assets/type/GT-Pressura-Mono-Regular.otf) format("opentype"), url(../../assets/type/GT-Pressura-Mono-Regular.ttf) format("truetype"); }
+@font-face { font-family: caslon; src: url(../../fonts/ACaslonPro-Italic.otf); }
+@font-face { font-family: pressura-mono; src: url(../../fonts/GT-Pressura-Mono-Regular.woff) format("woff"), url(../../fonts/GT-Pressura-Mono-Regular.otf) format("opentype"), url(../../fonts/GT-Pressura-Mono-Regular.ttf) format("truetype"); }
 /* line 81, ../sass/56.scss */
 a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; cursor: pointer; }
 
@@ -284,7 +284,7 @@ body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 .thank-you-link { border-bottom: #000 5px solid; }
 
 /* line 671, ../sass/56.scss */
-.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
+.hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../fonts/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
 
 /* line 692, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
@@ -492,7 +492,7 @@ input::-moz-focus-inner, button::-moz-focus-inner { padding: 0; }
 [role="button"] { color: inherit; cursor: default; display: inline-block; text-align: center; text-decoration: none; white-space: pre; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
 
 /* line 1160, ../sass/56.scss */
-.cert-print { position: fixed; bottom: 50px; right: 100px; width: 50px; height: 25px; background-color: #000; background-image: url("../../assets/elements/print-button.png"); background-position: center; background-size: contain; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 12px; padding: 25px; cursor: ne-resize; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; color: #fffbfb; background-repeat: no-repeat; margin: 1px; }
+.cert-print { position: fixed; bottom: 50px; right: 100px; width: 50px; height: 25px; background-color: #000; background-image: url(("../../fonts/print-button.png"); background-position: center; background-size: contain; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 12px; padding: 25px; cursor: ne-resize; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; color: #fffbfb; background-repeat: no-repeat; margin: 1px; }
 
 /* line 1182, ../sass/56.scss */
 .cert-print:hover { cursor: pointer; }
