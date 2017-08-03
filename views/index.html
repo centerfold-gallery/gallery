@@ -81,7 +81,7 @@
                                         </span-->
                                         {{fields.Medium}}<br/>
                                         {{fields.Width (in)}}" x {{fields.Height (in)}}<br/>
-                                        ${{fields.Estimated Value (CAD)}}<br/>
+                                        ${{fields.Estimated Value (CAD)}}.00<br/>
                                         <br/>
                                         <form action="https://centerfold-gallery.herokuapp.com/" method="POST">
                                             <script
@@ -90,9 +90,9 @@
                                                 data-key="{{stripeAPIKey}}"
                                                 data-name="Centerfold Gallery"
                                                 data-description="{{fields.Title}} - {{fields.Artist}}"
-                                                data-amount="${{fields.Estimated Value (CAD)}}"
+                                                data-amount="{{fields.Estimated Value (CAD)}}00"
                                             ></script>
-                                            <input name="amount" value="{{fields.Estimated Value (CAD)}}" type="hidden">
+                                            <input name="amount" value="{{fields.Estimated Value (CAD)}}00" type="hidden">
                                             <input name="description" value="{{fields.Title}} - {{fields.Artist}}" type="hidden">
                                         </form>
                                     </div>
