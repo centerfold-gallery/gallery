@@ -15,7 +15,7 @@
         {{> head }}
     </head>
 	<body>
-        {{> nav }}
+        {{> nav-home }}
         <div class="still">
             <div class="everything">
 				<div class="home">
@@ -59,11 +59,6 @@
                         </div>
                     </div>
                     <div class="heartbeat"></div>
-                    <!-- <div class="pop-up-circle-container spin">
-                        <div class="pop-up-circle">
-                            WELCOME PRODUCT HUNT USERS! WANT TO FILL YOUR OFFICE WITH FRESH ARTWORK EVERY MONTH? USE CODE XXXXXXXX TO GET 15% OFF YOUR CENTERFOLD BUSINESS SUBSCRIPTION FOR THE FIRST 3 MONTHS!
-                        </div>
-                    </div> -->
                     <div class="buy buy{{fields.Unique-Artwork-ID}}" id="buy{{fields.Unique-Artwork-ID}}">
                         <div class="close">Back</div>
                         <div class="close-full"></div>
@@ -81,7 +76,7 @@
                                         </span-->
                                         {{fields.Medium}}<br/>
                                         {{fields.Width (in)}}" x {{fields.Height (in)}}<br/>
-                                        ${{fields.Estimated Value (CAD)}}.00<br/>
+                                        ${{fields.Estimated Value (CAD)}}<br/>
                                         <br/>
                                         <form action="https://centerfold-gallery.herokuapp.com/" method="POST">
                                             <script
