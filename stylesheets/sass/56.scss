@@ -678,7 +678,7 @@ body.zoom-overlay-open {
     background-color: $background-color;
     color: $color-1;
     font-family: $type-2;
-    background-image: url(../../fonts/mobile-bg.png);
+    background-image: url(../../assets/mobile-bg.png);
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1164,7 +1164,7 @@ button::-moz-focus-inner {
     width: 50px;
     height: 25px;
     background-color: #000;
-    background-image: url("../../font/print-button.png");
+    background-image: url("../../assets/elements/print-button.png");
     background-position: center;
     background-size: contain;
     font-family: $type-2;
