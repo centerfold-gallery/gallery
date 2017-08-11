@@ -30,14 +30,14 @@ app.get('/', function(req, res){
             base('Online Featured Collection')
                 .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
                 .firstPage(function(err, homepageArt) {
-                    if(err) {
-                        reject(err)
+                    if(err) { 
+                        reject(err) 
                     }
                     else {
                         var jsonHomepageArt = homepageArt.map(function(homepageArt){
                             return homepageArt['_rawJson']
                         });
-                        resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                        resolve(jsonHomepageArt[0]['fields']['Artworks']);                    
                     }
                 });
             });
@@ -48,14 +48,14 @@ app.get('/', function(req, res){
         base('Artworks')
             .select({view: "Grid view", filterByFormula: filterStatement})
             .firstPage(function(err, homepageArtworks) {
-                if(err) {
-                    reject(err)
+                if(err) { 
+                    reject(err) 
                 }
                 else {
                     var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
                         return homepageArtworks['_rawJson']
                     });
-                    resolve(jsonHomepageArtworks);
+                    resolve(jsonHomepageArtworks);                    
                 }
             });
         });
@@ -66,14 +66,14 @@ app.get('/', function(req, res){
         base('Artists')
             .select({view: "Grid view", filterByFormula: filterStatement})
             .firstPage(function(err, artists) {
-                if(err) {
-                    reject(err)
+                if(err) { 
+                    reject(err) 
                 }
                 else {
                     var jsonArtists = artists.map(function(artist){
                         return artist['_rawJson']
                     });
-                    resolve(jsonArtists);
+                    resolve(jsonArtists);                    
                 }
             });
         });
@@ -128,14 +128,14 @@ app.get('/events', function (req, res) {
         base('Events')
             .select({view: "All Events", filterByFormula: "{Type} = 'Upcoming Events'"})
             .firstPage(function(err, upcomingEvents) {
-                if(err) {
-                    reject(err)
+                if(err) { 
+                    reject(err) 
                 }
                 else {
                     var jsonUpcomingEvents = upcomingEvents.map(function(upcomingEvent){
                         return upcomingEvent['_rawJson']
                     });
-                    resolve(jsonUpcomingEvents);
+                    resolve(jsonUpcomingEvents);                    
                 }
         });
     });
@@ -144,14 +144,14 @@ app.get('/events', function (req, res) {
         base('Events')
             .select({view: "All Events", filterByFormula: "{Type} = 'Past Events'"})
             .firstPage(function(err, pastEvents) {
-                if(err) {
-                    reject(err)
+                if(err) { 
+                    reject(err) 
                 }
                 else {
                     var jsonPastEvents = pastEvents.map(function(pastEvent){
                         return pastEvent['_rawJson']
                     });
-                    resolve(jsonPastEvents);
+                    resolve(jsonPastEvents);                    
                 }
         });
     });
@@ -160,14 +160,14 @@ app.get('/events', function (req, res) {
         base('Events')
             .select({view: "All Events", filterByFormula: "{Type} = 'Parties'"})
             .firstPage(function(err, Parties) {
-                if(err) {
-                    reject(err)
+                if(err) { 
+                    reject(err) 
                 }
                 else {
                     var jsonParties = Parties.map(function(party){
                         return party['_rawJson']
                     });
-                    resolve(jsonParties);
+                    resolve(jsonParties);                    
                 }
         });
     });
