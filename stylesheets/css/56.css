@@ -47,24 +47,24 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .nav-art { position: fixed; top: 30px; left: 30px; }
 
 /* line 25, ../sass/_nav.scss */
-.nav-submit { position: fixed; top: 30px; left: 60px; }
-
-/* line 31, ../sass/_nav.scss */
-.nav-events { position: fixed; top: 30px; right: 30px; }
+.nav-submit { position: fixed; bottom: 30px; right: 190px; border: 1px solid #000; padding-left: 4px; padding-right: 4px; padding-top: 2px; padding-bottom: 0px; font-family: "caslon", caslon, serif; }
 
 /* line 37, ../sass/_nav.scss */
-.nav-services { position: fixed; bottom: 30px; left: 30px; }
+.nav-events { position: fixed; top: 30px; right: 30px; }
 
 /* line 43, ../sass/_nav.scss */
-.nav-about { position: fixed; bottom: 30px; right: 30px; }
+.nav-services { position: fixed; bottom: 30px; left: 30px; }
 
 /* line 49, ../sass/_nav.scss */
+.nav-about { position: fixed; bottom: 30px; right: 30px; }
+
+/* line 55, ../sass/_nav.scss */
 .nav-social-links { position: fixed; bottom: 30px; right: 100px; z-index: 560; padding-top: 3px; padding-left: 3px; padding-right: 3px; }
 
-/* line 59, ../sass/_nav.scss */
+/* line 65, ../sass/_nav.scss */
 .nav-social { display: inline-block; opacity: 0.2; }
 
-/* line 64, ../sass/_nav.scss */
+/* line 70, ../sass/_nav.scss */
 .nav-social:hover { opacity: 1; }
 
 /* line 130, ../sass/56.scss */
