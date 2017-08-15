@@ -1,0 +1,159 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        overflow: scroll;
+    }
+
+    .hello {
+        display: none;
+    }
+
+    canvas {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+    }
+
+    .still {
+    }
+
+    .home {
+        display: none;
+    }
+
+    .threed-mobile {
+        display: none;
+    }
+
+    .centerfold-14 {
+        padding-left: 0em;
+        margin-top: 3em;
+    }
+
+    img#threed.threed-mobile {
+        display: none;
+    }
+
+    .event-description {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .art {
+        width: 100%;
+    }
+
+    .art-art {
+        width: 100%;
+    }
+
+    .art-art img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .artist-card {
+        display: block;
+    }
+
+    .artist-card-wrap {
+        display: block;
+        position: relative;
+        margin-left: 10%;
+    }
+
+    .buy {
+        overflow-y: scroll;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+
+    .buy-art img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .art:nth-child(16n+1) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+2) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+3) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+4) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+5) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+6) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+7) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+8) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+9) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+10) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+11) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+12) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+13) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+14) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+15) {
+        margin-left: 0%;
+    }
+
+    .art:nth-child(16n+16) {
+        margin-left: 0%;
+    }
+}
+
+
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+//     .hello {
+//         display: none;
+//     }
+//
+//     canvas {
+//         display: none;
+//     }
+//
+//     #overlay {
+//         display: none;
+//     }
+//
+//     .still {
+//     }
+// }

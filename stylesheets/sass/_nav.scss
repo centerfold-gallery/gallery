@@ -1,0 +1,66 @@
+.nav {
+    font-family: $type-3;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.nav-link {
+    z-index: 560;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nav-active {
+    border-bottom: 0.6em solid $color-1;
+}
+
+.nav-art {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.nav-submit {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+
+.nav-events {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.nav-services {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.nav-about {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.nav-social-links {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    z-index: 560;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.nav-social {
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.nav-social:hover {
+    opacity: 1;
+}

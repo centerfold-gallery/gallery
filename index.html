@@ -57,6 +57,7 @@
 	<body>
         <div class="nav">
             <a href="#" class="nav-active nav-link nav-art">ART</a>
+			<a href="https://airtable.com/shr6Ae2PpCMMDm4Yc" class="nav-link nav-submit">&mdash; SUBMIT</a>
             <a href="events" class="nav-link nav-events">EVENTS</a>
             <a href="services" class="nav-link nav-services">SERVICES</a>
             <a href="about" class="nav-link nav-about">ABOUT</a>
@@ -107,7 +108,7 @@
 					</div>
 				</div>
                 <div class="centerfold-14">
-                    Centerfold Gallery <img id="threed" class="animated infinite pulse" src="assets/3d.png">
+                    Centerfold Gallery <img id="threed" class="threed-mobile" class="animated infinite pulse" src="assets/3d.png">
                 </div>
                 <div class="event-description">
                     <br/>
@@ -117,10 +118,10 @@
 					From delicate portraits of orphans wrapped in striking floral cloth, to large, expressionist studies of the human figure; below, you can find a collection of artworks that were not curated with any overarching theme or subject in mind. More accurately, this set of work was selected on the basis of our experiences in developing the Centerfold project over the past few years, and serves to represent the visual expression of some of the lovely individuals we’ve worked with along the way.  <i class="em em-pray"></i>
   					<br/>
 					<br/>
-					Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.
+					<span class="threed-mobile">Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.<span>
                 </div>
 
-                <!-- <div class="art" id="artcfuid0001">
+                <div class="art" id="artcfuid0001">
                     <div class="art-art">
                         <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="assets/art/emile1.jpg">
                     </div>
@@ -133,18 +134,13 @@
                             $300 &mdash; <span class="buy-2d">Buy</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>
 		<div class="heartbeat"></div>
-		<!-- <div class="pop-up-circle-container spin">
-			<div class="pop-up-circle">
-				WELCOME PRODUCT HUNT USERS! WANT TO FILL YOUR OFFICE WITH FRESH ARTWORK EVERY MONTH? USE CODE XXXXXXXX TO GET 15% OFF YOUR CENTERFOLD BUSINESS SUBSCRIPTION FOR THE FIRST 3 MONTHS!
-			</div>
-		</div> -->
 
-        <!-- <div class="buy buycfuid0001" id="buycfuid0001">
+        <div class="buy buycfuid0001" id="buycfuid0001">
             <div class="close">Back</div>
             <div class="close-full"></div>
             <div class="buy-flex">
@@ -179,7 +175,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
         <script src="js/three.js"></script>
@@ -218,10 +214,6 @@
             });
         </script>
         <script src="js/zoom-vanilla/zoom-vanilla.min.js"></script>
-		<script type="text/javascript" src="js/skrollr.min.js"></script>
-		<script type="text/javascript">
-			var s = skrollr.init();
-		</script>
 		<script src="js/json.js"></script>
 		<script>
 			$(function () {

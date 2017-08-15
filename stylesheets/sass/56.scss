@@ -125,66 +125,7 @@ canvas {
     height: auto;
 }
 
-.nav {
-    font-family: $type-3;
-    font-weight: 500;
-    font-size: 0.8em;
-}
-
-.nav-link {
-    z-index: 560;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.nav-active {
-    border-bottom: 0.6em solid $color-1;
-}
-
-.nav-art {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-}
-
-.nav-events {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-}
-
-.nav-services {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-}
-
-.nav-about {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
-.nav-social-links {
-    position: fixed;
-    bottom: 30px;
-    right: 100px;
-    z-index: 560;
-    padding-top: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.nav-social {
-    display: inline-block;
-    opacity: 0.2;
-}
-
-.nav-social:hover {
-    opacity: 1;
-}
+@import "nav";
 
 #overlay {
     position: absolute;
@@ -278,6 +219,7 @@ canvas {
     z-index: 100;
     overflow-y: scroll;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .everything {
@@ -931,42 +873,6 @@ body.zoom-overlay-open {
     cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .hello {
-        display: block;
-    }
-
-    canvas {
-        display: none;
-    }
-
-    #overlay {
-        display: none;
-    }
-
-    .still {
-        display: none;
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .hello {
-        display: block;
-    }
-
-    canvas {
-        display: none;
-    }
-
-    #overlay {
-        display: none;
-    }
-
-    .still {
-        display: none;
-    }
-}
-
 // CERTIFICATE OF AUTHENTICATION
 
 .cert-full {
@@ -1330,3 +1236,5 @@ button::-moz-focus-inner {
         transform:rotate(360deg);
     }
 }
+
+@import "mobile";
