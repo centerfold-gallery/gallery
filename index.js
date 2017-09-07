@@ -214,5 +214,5 @@ app.use(function(req, res, next){
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log('Centerfold app listening on port ' + port)
+  console.log('Centerfold App listening on port ' + port)
 })
