@@ -1,10 +1,6 @@
 .sass-cache/
 *.css.map
-
-.DS_Store
-
-# Secrets
+node_modules*
+npm-debug.log
 config.json
-
-# Dependency directories
-node_modules/
+.DS_Store
