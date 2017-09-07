@@ -17,14 +17,14 @@ body {
 
 @font-face {
     font-family: caslon;
-    src: url(../../assets/type/ACaslonPro-Italic.otf);
+    src: url(../../fonts/ACaslonPro-Italic.otf);
 }
 
 @font-face {
     font-family: pressura-mono;
-    src: url(../../assets/type/GT-Pressura-Mono-Regular.woff) format('woff'),
-        url(../../assets/type/GT-Pressura-Mono-Regular.otf)  format('opentype'),
-        url(../../assets/type/GT-Pressura-Mono-Regular.ttf)  format('truetype');
+    src: url(../../fonts/GT-Pressura-Mono-Regular.woff) format('woff'),
+        url(../../fonts/GT-Pressura-Mono-Regular.otf)  format('opentype'),
+        url(../../fonts/GT-Pressura-Mono-Regular.ttf)  format('truetype');
 }
 
 @mixin boxflex {
