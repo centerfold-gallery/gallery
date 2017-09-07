@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still">
+            <div class="everything">
+				<div class="home">
+					<div class="home-container-logo">
+						<img src="{{static_url}}assets/centerfold.svg">
+					</div>
+					<div class="home-container">
+						<div class="home-container-images">
+                            {{# homepageArtworks}}
+                                <a href="#art{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
+                            {{/ homepageArtworks}}
+						</div>
+					</div>
+				</div>
+                <div class="centerfold-14">
+                    Centerfold Gallery <img id="threed" class="threed-mobile animated infinite pulse" src="{{static_url}}assets/3d.png">
+                </div>
+                <div class="event-description">
+                    <br/>
+					Welcome.
+  					<br/>
+					<br/>
+					From delicate portraits of orphans wrapped in striking floral cloth, to large, expressionist studies of the human figure; below, you can find a collection of artworks that were not curated with any overarching theme or subject in mind. More accurately, this set of work was selected on the basis of our experiences in developing the Centerfold project over the past few years, and serves to represent the visual expression of some of the lovely individuals we’ve worked with along the way.  <i class="em em-pray"></i>
+  					<br/>
+					<br/>
+					Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.
+                </div>
+                {{# artPageArtworks}}
+                    <div class="art" id="art{{fields.Unique-Artwork-ID}}">
+                        <div class="art-art">
+                            <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg">
+                        </div>
+                        <div class="artist-card-wrap">
+                            <div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
+                                <span class="art-title">{{fields.Title}}</span><br/>
+                                {{fields.Artist}}<br/>
+                                {{fields.Medium}}<br/>
+                                {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
+                                ${{fields.Estimated Value (CAD)}} &mdash; <span class="buy-2d">Buy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heartbeat"></div>
+
+                    <div class="buy buy{{fields.Unique-Artwork-ID}}" id="buy{{fields.Unique-Artwork-ID}}">
+                        <div class="close">Back</div>
+                        <div class="close-full"></div>
+                        <div class="buy-flex">
+                            <div class="buy-wrap">
+                                <div class="buy-art shadow">
+                                    <img src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg" data-action="zoom">
+                                </div>
+                                <div class="buy-artist-card-wrap">
+                                    <div class="buy-artist-card">
+                                        <span class="buy-art-title">{{fields.Title}}</span><br/>
+                                        <span class="buy-art-artist">{{fields.Artist}}</span><br>
+                                        <!--span class="buy-art-description">
+                                            : ~ )
+                                        </span-->
+                                        {{fields.Medium}}<br/>
+                                        {{fields.Width (in)}}" x {{fields.Height (in)}}<br/>
+                                        ${{fields.Estimated Value (CAD)}}.00<br/>
+                                        <br/>
+                                        <form action="https://centerfold-gallery.herokuapp.com/" method="POST">
+                                            <script
+                                                src="https://checkout.stripe.com/checkout.js"
+                                                class="stripe-button"
+                                                data-key="{{stripeAPIKey}}"
+                                                data-name="Centerfold Gallery"
+                                                data-description="{{fields.Title}} - {{fields.Artist}}"
+                                                data-amount="{{fields.Estimated Value (CAD)}}00"
+                                            ></script>
+                                            <input name="amount" value="{{fields.Estimated Value (CAD)}}00" type="hidden">
+                                            <input name="description" value="{{fields.Title}} - {{fields.Artist}}" type="hidden">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/ artPageArtworks}}
+            </div>
+        </div>
+	</body>
+    <footer>
+        {{> footer}}
+    </footer>
+</html>
