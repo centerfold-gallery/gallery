@@ -2,4 +2,9 @@
 *.css.map
 
 .DS_Store
+
+# Secrets
 config.json
+
+# Dependency directories
+node_modules/
