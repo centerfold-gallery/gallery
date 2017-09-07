@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
+<html lang="en">
+    {{> head }}
+	<body>
+        {{> nav}}
+        <div class="still">
+            <div class="everything-events">
+                <div class="events-pc">Upcoming Events</div>
+                {{# upcomingEvents}} 
+                <div class="event-card">
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
+                    <div class="event-card-info">
+                        <div class="event-card-title">
+                            {{fields.Name}}
+                        </div>
+                        <div class="event-card-description">
+                            {{fields.Description}}
+                        </div>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">{{fields.Name}}</a>
+                    </div>
+                </div>
+                {{/ upcomingEvents}}
+                <div class="events-pc">Past Events</div>
+                {{# pastEvents}}
+                <div class="event-card">
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
+                    <div class="event-card-info">
+                        <div class="event-card-title">
+                            {{fields.Name}}
+                        </div>
+                        <div class="event-card-description">
+                            {{{fields.Description}}}
+							<br/>
+							<br/>
+							Total Amount Raised: ${{fields.TotalAmountRaised}}
+                        </div>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">View on Facebook</a>
+                    </div>
+                </div>
+                {{/ pastEvents}}
+				<div class="events-pc">Parties</div>
+                {{# parties}}
+                <div class="event-card">
+                    <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
+                    <div class="event-card-info">
+                        <div class="event-card-title">
+                            {{fields.Name}}
+                        </div>
+                        <div class="event-card-description">
+                            {{fields.Description}}
+                        </div>
+                        <a href="{{fields.Link}}" target="_blank" class="event-view">View on Facebook</a>
+                    </div>
+                </div>
+                {{/ parties}}
+            </div>
+        </div>
+	</body>
+    <footer>
+        {{> footer}}
+    </footer>
+</html>
