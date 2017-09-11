@@ -15,7 +15,7 @@
         {{> head }}
     </head>
 	<body>
-        {{> nav }}
+        {{> nav-home }}
         <div class="still">
             <div class="everything">
 				<div class="home">
@@ -99,6 +99,16 @@
             </div>
         </div>
 	</body>
+	<script>
+		$(".still").scroll(function () {
+			var y = $(this).scrollTop();
+			if (y > 700) {
+				$('.logo-home').fadeIn(500);
+			} else {
+				$('.logo-home').fadeOut(500);
+			}
+		});
+	</script>
     <footer>
         {{> footer}}
     </footer>
