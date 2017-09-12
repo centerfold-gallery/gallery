@@ -266,250 +266,250 @@ canvas { position: fixed; width: 100%; height: 100%; }
 .buy-art-title { display: inline-block; font-family: "caslon", caslon, serif; color: #000; font-size: 2em; pointer-events: all; }
 
 /* line 562, ../sass/56.scss */
-.buy-art-artist { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; color: #000; font-size: 2em; pointer-events: all; }
+.buy-art-artist { display: inline-block; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; color: #000; font-size: 2em; line-height: 0.8em; pointer-events: all; }
 
-/* line 570, ../sass/56.scss */
+/* line 571, ../sass/56.scss */
 .buy-art-description { width: 400px; display: inline-block; font-family: "caslon", caslon, serif; color: #000; font-size: 1.2em; pointer-events: all; }
 
-/* line 579, ../sass/56.scss */
+/* line 580, ../sass/56.scss */
 body.zoom-overlay-open { cursor: -webkit-zoom-out; pointer-events: all; }
 
-/* line 584, ../sass/56.scss */
+/* line 585, ../sass/56.scss */
 .success { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fffbfb; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 594, ../sass/56.scss */
+/* line 595, ../sass/56.scss */
 .thank-you { width: 35%; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.2em; color: #000; }
 
-/* line 602, ../sass/56.scss */
+/* line 603, ../sass/56.scss */
 .thank-you-title { display: inline-block; font-family: "caslon", caslon, serif; color: #000; font-size: 2em; }
 
-/* line 609, ../sass/56.scss */
+/* line 610, ../sass/56.scss */
 .thank-you-link { border-bottom: #000 5px solid; }
 
-/* line 613, ../sass/56.scss */
+/* line 614, ../sass/56.scss */
 .hello { display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background-color: #fffbfb; color: #000; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; background-image: url(../../assets/mobile-bg.png); background-position: bottom; background-size: 100%; background-repeat: no-repeat; font-size: 1em; line-height: 1.4em; z-index: 299; padding: 10%; padding-top: 30%; }
 
-/* line 634, ../sass/56.scss */
+/* line 635, ../sass/56.scss */
 .hello a { border-bottom: #000 5px solid; }
 
-/* line 638, ../sass/56.scss */
+/* line 639, ../sass/56.scss */
 #image-1 { display: none; }
 
 /* ABOUT PAGE */
-/* line 644, ../sass/56.scss */
+/* line 645, ../sass/56.scss */
 .about-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; line-height: 1.4em; color: #000; width: 30%; margin-top: 1em; }
 
-/* line 653, ../sass/56.scss */
+/* line 654, ../sass/56.scss */
 .about-description img { height: 2.4em; width: auto; display: inline-block; transform: translateY(9px); margin-right: 4px; }
 
-/* line 661, ../sass/56.scss */
+/* line 662, ../sass/56.scss */
 .about-description:nth-of-type(n+2) { margin-top: 8em; }
 
-/* line 665, ../sass/56.scss */
+/* line 666, ../sass/56.scss */
 #about-0 { font-family: "caslon", caslon, serif; font-size: 2em; color: #000; margin-top: 4em; padding-left: 1.2em; margin-left: 70%; transform: translateY(2em); }
 
-/* line 675, ../sass/56.scss */
+/* line 676, ../sass/56.scss */
 #about-0 img { display: inline-block; height: 1em; width: auto; margin-left: 1em; }
 
-/* line 682, ../sass/56.scss */
+/* line 683, ../sass/56.scss */
 #about-0 img:hover { cursor: pointer; }
 
-/* line 686, ../sass/56.scss */
+/* line 687, ../sass/56.scss */
 #about-1 { margin-left: 20%; margin-top: 0; }
 
-/* line 691, ../sass/56.scss */
+/* line 692, ../sass/56.scss */
 #about-2 { margin-left: 40%; }
 
-/* line 695, ../sass/56.scss */
+/* line 696, ../sass/56.scss */
 #about-3 { margin-left: 30%; }
 
-/* line 699, ../sass/56.scss */
+/* line 700, ../sass/56.scss */
 #about-4 { margin-left: 50%; }
 
-/* line 703, ../sass/56.scss */
+/* line 704, ../sass/56.scss */
 #about-5 { margin-left: 35%; }
 
-/* line 707, ../sass/56.scss */
+/* line 708, ../sass/56.scss */
 .about-img { width: 400px; height: auto; margin-top: 6em; }
 
-/* line 713, ../sass/56.scss */
+/* line 714, ../sass/56.scss */
 #about-img-1 { margin-left: 30%; }
 
-/* line 717, ../sass/56.scss */
+/* line 718, ../sass/56.scss */
 #about-img-2 { margin-left: 50%; }
 
-/* line 721, ../sass/56.scss */
+/* line 722, ../sass/56.scss */
 #about-img-3 { margin-left: 20%; }
 
-/* line 725, ../sass/56.scss */
+/* line 726, ../sass/56.scss */
 .centerfold-header { font-family: "caslon", caslon, serif; font-size: 2em; color: #000; width: 100%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; margin-top: 4em; }
 
-/* line 752, ../sass/56.scss */
+/* line 753, ../sass/56.scss */
 .contact-card:last-of-type { margin-top: 2em; width: 100%; }
 
-/* line 758, ../sass/56.scss */
+/* line 759, ../sass/56.scss */
 .contact-name { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1.2em; color: #000; }
 
-/* line 764, ../sass/56.scss */
+/* line 765, ../sass/56.scss */
 .contact-title { font-family: "caslon", caslon, serif; font-size: 0.8em; color: #000; }
 
-/* line 770, ../sass/56.scss */
+/* line 771, ../sass/56.scss */
 .contact-email { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; color: #000; }
 
-/* line 776, ../sass/56.scss */
+/* line 777, ../sass/56.scss */
 .about-press-logo-container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: row; width: 100%; height: 100px; margin-top: 3em; margin-bottom: 8em; }
 
-/* line 784, ../sass/56.scss */
+/* line 785, ../sass/56.scss */
 .about-press-logo { display: inline-block; margin-left: 25px; margin-right: 25px; opacity: 0.9; }
 
-/* line 791, ../sass/56.scss */
+/* line 792, ../sass/56.scss */
 .about-press-logo:hover { opacity: 1; }
 
-/* line 795, ../sass/56.scss */
+/* line 796, ../sass/56.scss */
 .about-press-logo img { max-height: 100px; max-width: 200px; }
 
-/* line 800, ../sass/56.scss */
+/* line 801, ../sass/56.scss */
 .service-space { height: 8em; }
 
-/* line 804, ../sass/56.scss */
+/* line 805, ../sass/56.scss */
 .everything-events { width: 60%; margin-left: 20%; }
 
-/* line 809, ../sass/56.scss */
+/* line 810, ../sass/56.scss */
 .everything-events:first-child { margin-top: 8em; }
 
-/* line 813, ../sass/56.scss */
+/* line 814, ../sass/56.scss */
 .everything-events:last-child { margin-bottom: 8em; }
 
-/* line 817, ../sass/56.scss */
+/* line 818, ../sass/56.scss */
 .events-pc { margin-top: 4em; font-family: "caslon", caslon, serif; font-size: 2em; }
 
-/* line 823, ../sass/56.scss */
+/* line 824, ../sass/56.scss */
 .event-card { margin-top: 4em; position: relative; }
 
-/* line 828, ../sass/56.scss */
+/* line 829, ../sass/56.scss */
 .event-image { max-width: 60%; height: auto; display: inline-block; }
 
-/* line 834, ../sass/56.scss */
+/* line 835, ../sass/56.scss */
 .event-card-info { width: 38%; margin-left: 0.4em; display: inline-block; position: absolute; top: 0; }
 
-/* line 842, ../sass/56.scss */
+/* line 843, ../sass/56.scss */
 .event-card-title { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 2em; }
 
-/* line 847, ../sass/56.scss */
+/* line 848, ../sass/56.scss */
 .event-card-description { font-family: "caslon", caslon, serif; font-size: 1em; line-height: 1.2em; margin-top: 16px; margin-bottom: 16px; }
 
-/* line 855, ../sass/56.scss */
+/* line 856, ../sass/56.scss */
 .event-view { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 0.8em; border-bottom: 0.6em solid #000; padding-left: 3px; padding-right: 3px; }
 
-/* line 863, ../sass/56.scss */
+/* line 864, ../sass/56.scss */
 .fourohno { width: 100%; height: 100%; position: fixed; top: 0; left: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 872, ../sass/56.scss */
+/* line 873, ../sass/56.scss */
 .fouromg { cursor: pointer; }
 
-/* line 878, ../sass/56.scss */
+/* line 879, ../sass/56.scss */
 .cert-full { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
 
-/* line 887, ../sass/56.scss */
+/* line 888, ../sass/56.scss */
 .cert-box { width: 80%; height: 80%; border: 1pt solid black; }
 
-/* line 893, ../sass/56.scss */
+/* line 894, ../sass/56.scss */
 .cert-title { font-family: "Work Sans", sans-serif; font-weight: 800; font-size: 24px; height: 15%; width: 100%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; letter-spacing: 10px; }
 
-/* line 904, ../sass/56.scss */
+/* line 905, ../sass/56.scss */
 .cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 26px; padding-left: 20%; padding-right: 20%; }
 
-/* line 916, ../sass/56.scss */
+/* line 917, ../sass/56.scss */
 .cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 50%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 3%; overflow-y: scroll; }
 
-/* line 929, ../sass/56.scss */
+/* line 930, ../sass/56.scss */
 textarea.cert-description-input::-webkit-scrollbar { display: none; }
 
-/* line 933, ../sass/56.scss */
+/* line 934, ../sass/56.scss */
 .cert-description-input::-moz-selection { color: #fff; background-color: #000; }
 
-/* line 934, ../sass/56.scss */
+/* line 935, ../sass/56.scss */
 .cert-description-input::selection { color: #fff; background-color: #000; }
 
-/* line 936, ../sass/56.scss */
+/* line 937, ../sass/56.scss */
 textarea.cert-description-input { width: 100%; background-color: transparent; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; border: 0px solid; color: #333; display: inline-block; resize: none; }
 
-/* line 946, ../sass/56.scss */
+/* line 947, ../sass/56.scss */
 textarea:focus, input:focus { outline: none; }
 
-/* line 950, ../sass/56.scss */
+/* line 951, ../sass/56.scss */
 *:focus { outline: none; }
 
-/* line 954, ../sass/56.scss */
+/* line 955, ../sass/56.scss */
 .cert-auth-2 { font-family: "caslon", caslon, serif; height: 8%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 26px; padding-left: 20%; padding-right: 20%; }
 
-/* line 966, ../sass/56.scss */
+/* line 967, ../sass/56.scss */
 .cert-signature { font-family: "caslon", caslon, serif; width: 60%; height: 20%; font-size: 16px; padding-left: 20%; padding-right: 20%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
 
-/* line 976, ../sass/56.scss */
+/* line 977, ../sass/56.scss */
 .cert-signature-line-1, .cert-signature-line-2 { width: 100%; }
 
-/* line 981, ../sass/56.scss */
+/* line 982, ../sass/56.scss */
 .cert-signature-line { display: inline-block; color: #e3e3e3; margin-left: 14px; }
 
-/* line 987, ../sass/56.scss */
+/* line 988, ../sass/56.scss */
 .cert-signature-date { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 8px; float: right; }
 
-/* line 993, ../sass/56.scss */
+/* line 994, ../sass/56.scss */
 .cert-cf-logo { margin-top: 20px; }
 
-/* line 997, ../sass/56.scss */
+/* line 998, ../sass/56.scss */
 .cert-pop-up { position: fixed; z-index: 56; top: 100px; right: 100px; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 12px; width: 300px; height: 362px; background-color: #fffbfb; padding: 25px; cursor: ne-resize; }
 
-/* line 1011, ../sass/56.scss */
+/* line 1012, ../sass/56.scss */
 .cert-pop-up-info { position: fixed; top: 10px; right: 10px; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; cursor: help; }
 
-/* line 1021, ../sass/56.scss */
+/* line 1022, ../sass/56.scss */
 [role="button"], input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
 
 /* Reset `button` and button-style `input` default styles */
-/* line 1032, ../sass/56.scss */
+/* line 1033, ../sass/56.scss */
 input[type="submit"], input[type="reset"], input[type="button"], button { border: 0; color: inherit; /* cursor: default; */ font: inherit; line-height: normal; overflow: visible; padding: 0; -webkit-appearance: button; /* for input */ -webkit-user-select: none; /* for button */ -moz-user-select: none; -ms-user-select: none; }
 
-/* line 1048, ../sass/56.scss */
+/* line 1049, ../sass/56.scss */
 input::-moz-focus-inner, button::-moz-focus-inner { padding: 0; }
 
 /* Make `a` like a button */
-/* line 1054, ../sass/56.scss */
+/* line 1055, ../sass/56.scss */
 [role="button"] { color: inherit; cursor: default; display: inline-block; text-align: center; text-decoration: none; white-space: pre; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
 
-/* line 1066, ../sass/56.scss */
+/* line 1067, ../sass/56.scss */
 .cert-print { position: fixed; bottom: 50px; right: 100px; width: 50px; height: 25px; background-color: #000; background-image: url("../../assets/elements/print-button.png"); background-position: center; background-size: contain; font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 12px; padding: 25px; cursor: ne-resize; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; color: #fffbfb; background-repeat: no-repeat; margin: 1px; }
 
-/* line 1088, ../sass/56.scss */
+/* line 1089, ../sass/56.scss */
 .cert-print:hover { cursor: pointer; }
 
-@media print { /* line 1093, ../sass/56.scss */
+@media print { /* line 1094, ../sass/56.scss */
   body { background-color: none; margin: 0; overflow: hidden; }
-  /* line 1099, ../sass/56.scss */
+  /* line 1100, ../sass/56.scss */
   .cert-title { font-family: "Work Sans", sans-serif; font-weight: 800; font-size: 24px; height: 10%; width: 100%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; letter-spacing: 10px; }
-  /* line 1110, ../sass/56.scss */
+  /* line 1111, ../sass/56.scss */
   .cert-auth { font-family: "caslon", caslon, serif; height: 7%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
-  /* line 1122, ../sass/56.scss */
+  /* line 1123, ../sass/56.scss */
   .cert-description { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; height: 60%; width: 90%; border-bottom: 1px solid black; font-size: 12px; line-height: 16px; padding-left: 5%; padding-right: 5%; padding-top: 5%; overflow-y: hidden; }
-  /* line 1136, ../sass/56.scss */
+  /* line 1137, ../sass/56.scss */
   .cert-auth-2 { font-family: "caslon", caslon, serif; height: 8%; width: 60%; border-bottom: 1px solid black; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; font-size: 12px; line-height: 20px; padding-left: 20%; padding-right: 20%; }
-  /* line 1148, ../sass/56.scss */
+  /* line 1149, ../sass/56.scss */
   .cert-signature { font-family: "caslon", caslon, serif; width: 60%; height: 10%; font-size: 16px; padding-left: 20%; padding-right: 20%; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
-  /* line 1158, ../sass/56.scss */
+  /* line 1159, ../sass/56.scss */
   .cert-pop-up, .cert-pop-up-info { display: none; }
-  /* line 1163, ../sass/56.scss */
+  /* line 1164, ../sass/56.scss */
   .cert-print { display: none; } }
-/* line 1168, ../sass/56.scss */
+/* line 1169, ../sass/56.scss */
 .heartbeat { background-image: url("http://i.imgur.com/3hZNcw5.png"); background-position: bottom right; background-repeat: no-repeat; background-size: 50%; z-index: 1000; pointer-events: none; display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
-/* line 1183, ../sass/56.scss */
+/* line 1184, ../sass/56.scss */
 .pop-up-circle-container { width: 100%; height: 100%; position: fixed; top: 0; left: 0; overflow: visible; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; z-index: 1000; }
 
-/* line 1194, ../sass/56.scss */
+/* line 1195, ../sass/56.scss */
 .pop-up-circle { font-family: "pressura-mono", pressura-mono, Andale-Mono, AndaleMono, monospace; font-size: 1em; overflow: visible; }
 
-/* line 1200, ../sass/56.scss */
+/* line 1201, ../sass/56.scss */
 .spin { -webkit-animation-name: spin; -webkit-animation-duration: 20000ms; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name: spin; -moz-animation-duration: 20000ms; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear; -ms-animation-name: spin; -ms-animation-duration: 20000ms; -ms-animation-iteration-count: infinite; -ms-animation-timing-function: linear; animation-name: spin; animation-duration: 20000ms; animation-iteration-count: infinite; animation-timing-function: linear; }
 
 @-ms-keyframes spin { from { -ms-transform: rotate(0deg); }
