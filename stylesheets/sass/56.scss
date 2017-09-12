@@ -127,6 +127,11 @@ canvas {
 
 @import "nav";
 
+.footer {
+    height: 16em;
+    width: 100%;
+}
+
 #overlay {
     position: absolute;
     width: 100%;
@@ -377,10 +382,6 @@ canvas {
     margin-top: 16em;
 }
 
-.art:last-child {
-    margin-bottom: 16em;
-}
-
 .art-art,
 .art-art img {
     width: 350px;
@@ -490,7 +491,6 @@ canvas {
 .art:nth-child(16n+16) {
     margin-left: 50%;
 }
-
 
 .buy {
     position: fixed;
