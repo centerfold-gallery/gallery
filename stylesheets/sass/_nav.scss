@@ -32,6 +32,12 @@
     padding-top: 2px;
     padding-bottom: 0px;
     font-family: $type-1;
+    cursor: e-resize;
+}
+
+.nav-submit:hover {
+    background-color: $color-1;
+    color: $color-2;
 }
 
 .nav-events {
