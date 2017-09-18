@@ -44,7 +44,7 @@
 					Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.
                 </div>
                 {{# artPageArtworks}}
-                    <div class="art" id="art{{fields.Unique-Artwork-ID}}">
+                    <div class="art tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}}" id="art{{fields.Unique-Artwork-ID}}">
                         <div class="art-art">
                             <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg">
                         </div>
@@ -52,7 +52,7 @@
                             <div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
                                 <span class="art-title">{{fields.Title}}</span><br/>
                                 {{fields.Artist}}<br/>
-                                {{fields.Medium}}<br/>
+                                <span class="art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
                                 {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
                                 ${{fields.Estimated Value (CAD)}} &mdash; <span class="buy-2d">Buy</span>
                             </div>

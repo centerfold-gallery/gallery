@@ -418,6 +418,10 @@ canvas {
     font-size: 1em;
 }
 
+.art-medium span:not(:last-of-type)::after {
+  content: ", "
+}
+
 .buy-2d {
     font-family: $type-1;
 }
