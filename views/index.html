@@ -75,7 +75,7 @@
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, laboriosam, quia! Numquam ad, incidunt nisi temporibus quas animi delectus tenetur possimus aspernatur ut maxime consectetur repellat eveniet obcaecati repudiandae dolor.
                                         </span><br/> -->
 										<br/>
-                                        <span class="buy-art-medium">{{fields.Medium}}</span><br/>
+                                        <span class="buy-art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
                                         {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
                                         ${{fields.Estimated Value (CAD)}}.00<br/>
                                         <br/>

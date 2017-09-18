@@ -582,6 +582,10 @@ canvas {
     pointer-events: all;
 }
 
+.buy-art-medium span:not(:last-of-type)::after {
+  content: ", "
+}
+
 body.zoom-overlay-open {
     cursor: -webkit-zoom-out;
     pointer-events: all;
