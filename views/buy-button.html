@@ -1,0 +1,12 @@
+<form action="https://centerfold-gallery.herokuapp.com/" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="{{stripeAPIKey}}"
+        data-name="Centerfold Gallery"
+        data-description="{{fields.Title}} - {{fields.Artist}}"
+        data-amount="{{fields.Estimated Value (CAD)}}00"
+    ></script>
+    <input name="amount" value="{{fields.Estimated Value (CAD)}}00" type="hidden">
+    <input name="description" value="{{fields.Title}} - {{fields.Artist}}" type="hidden">
+</form>
