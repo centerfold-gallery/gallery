@@ -68,7 +68,7 @@
         scene.add( light );
 
         image = document.createElement( 'img' );
-        //image.setAttribute("id", "image-1");
+        image.setAttribute("id", "image-1");
         document.body.appendChild( image );
         var texture2 = new THREE.Texture( image );
         texture2 = THREE.ImageUtils.loadTexture('https://s3.amazonaws.com/centerfold-website/assets/floor.jpg');
