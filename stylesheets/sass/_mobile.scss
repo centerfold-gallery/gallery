@@ -17,25 +17,13 @@ canvas {
 .nav-submit {
     position: fixed;
     bottom: 100px;
-    right: 30px;
-    border: 1px solid $color-1;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 0px;
-    font-family: $type-1;
-    cursor: e-resize;
-}
-
-.nav-submit:hover {
-    background-color: $color-1;
-    color: $color-2;
+    right: 33px;
 }
 
 .nav-social-links {
     position: fixed;
     bottom: 65px;
-    right: 30px;
+    right: 26px;
     z-index: 560;
     padding-top: 3px;
     padding-left: 3px;
@@ -44,11 +32,7 @@ canvas {
 
 .nav-social {
     display: inline-block;
-    opacity: 0.2;
-}
-
-.nav-social:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .logo img {
