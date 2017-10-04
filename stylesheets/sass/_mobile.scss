@@ -1,162 +1,144 @@
 body {
-        overflow: scroll;
+    overflow: scroll;
+}
+
+.hello {
+    display: none;
+}
+
+canvas {
+    display: none;
+}
+
+#overlay {
+    display: none;
+}
+
+.still {
     }
 
-    .hello {
-        display: none;
-    }
+.home {
+    display: none;
+}
 
-    canvas {
-        display: none;
-    }
+.threed-mobile {
+    display: none;
+}
 
-    #overlay {
-        display: none;
-    }
+.centerfold-14 {
+    padding-left: 0em;
+    margin-top: 3em;
+}
 
-    .still {
-    }
+img#threed.threed-mobile {
+    display: none;
+}
 
-    .home {
-        display: none;
-    }
+.event-description {
+    width: 80%;
+    margin-left: 10%;
+}
 
-    .threed-mobile {
-        display: none;
-    }
+.art {
+    width: 100%;
+}
 
-    .centerfold-14 {
-        padding-left: 0em;
-        margin-top: 3em;
-    }
+.art-art {
+    width: 100%;
+}
 
-    img#threed.threed-mobile {
-        display: none;
-    }
+.art-art img {
+    width: 80%;
+    margin-left: 10%;
+}
 
-    .event-description {
-        width: 80%;
-        margin-left: 10%;
-    }
+.artist-card {
+    display: block;
+}
 
-    .art {
-        width: 100%;
-    }
+.artist-card-wrap {
+    display: block;
+    position: relative;
+    margin-left: 10%;
+}
 
-    .art-art {
-        width: 100%;
-    }
+.buy {
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
 
-    .art-art img {
-        width: 80%;
-        margin-left: 10%;
-    }
+.buy-art img {
+    width: 80%;
+    margin-left: 10%;
+}
 
-    .artist-card {
-        display: block;
-    }
+.art:nth-child(16n+1) {
+    margin-left: 0%;
+}
 
-    .artist-card-wrap {
-        display: block;
-        position: relative;
-        margin-left: 10%;
-    }
+.art:nth-child(16n+2) {
+    margin-left: 0%;
+}
 
-    .buy {
-        overflow-y: scroll;
-        width: 100vw;
-        height: 100vh;
-        display: none;
-    }
+.art:nth-child(16n+3) {
+    margin-left: 0%;
+}
 
-    .buy-art img {
-        width: 80%;
-        margin-left: 10%;
-    }
+.art:nth-child(16n+4) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+1) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+5) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+2) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+6) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+3) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+7) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+4) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+8) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+5) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+9) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+6) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+10) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+7) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+11) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+8) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+12) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+9) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+13) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+10) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+14) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+11) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+15) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+12) {
-        margin-left: 0%;
-    }
+.art:nth-child(16n+16) {
+    margin-left: 0%;
+}
 
-    .art:nth-child(16n+13) {
-        margin-left: 0%;
-    }
-
-    .art:nth-child(16n+14) {
-        margin-left: 0%;
-    }
-
-    .art:nth-child(16n+15) {
-        margin-left: 0%;
-    }
-
-    .art:nth-child(16n+16) {
-        margin-left: 0%;
-    }
-
-    .about-description {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-
-// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-//     .hello {
-//         display: none;
-//     }
-//
-//     canvas {
-//         display: none;
-//     }
-//
-//     #overlay {
-//         display: none;
-//     }
-//
-//     .still {
-//     }
-// }
+.about-description {
+    width: 80%;
+    margin-left: 10%;
+}
