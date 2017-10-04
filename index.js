@@ -193,11 +193,11 @@ app.get('/about', function (req, res) {
 });
 
 app.get('/thanks', function (req, res) {
-  res.render('thanks/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('thanks/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
 app.get('/error', function (req, res) {
-  res.render('error/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('error/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
 
