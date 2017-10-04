@@ -16607,7 +16607,7 @@
 
 			prefixVertex = [
 
-	        
+
 				'precision ' + parameters.precision + ' float;',
 				'precision ' + parameters.precision + ' int;',
 
@@ -19782,7 +19782,7 @@
 			}
 
 			scope.numPlanes = nPlanes;
-			
+
 			return dstArray;
 
 		}
@@ -42852,7 +42852,7 @@
 			console.warn( 'THREE.ImageUtils.loadTextureCube has been deprecated. Use THREE.CubeTextureLoader() instead.' );
 
 			var loader = new CubeTextureLoader();
-			loader.setCrossOrigin( this.crossOrigin );
+			loader.setCrossOrigin( 'Anonymous');
 
 			var texture = loader.load( urls, onLoad, undefined, onError );
 
