@@ -1,5 +1,4 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
+body {
         overflow: scroll;
     }
 
@@ -138,7 +137,11 @@
     .art:nth-child(16n+16) {
         margin-left: 0%;
     }
-}
+
+    .about-description {
+        width: 80%;
+        margin-left: 10%;
+    }
 
 
 // @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
