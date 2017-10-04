@@ -141,3 +141,21 @@ img#threed.threed-mobile {
 .about-description {
     width: 80%;
 }
+
+.about-press-logo-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3em;
+    margin-bottom: 8em;
+}
+
+.about-press-logo {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.about-press-logo img {
+    max-height: 100px;
+    max-width: 100px;
+}
