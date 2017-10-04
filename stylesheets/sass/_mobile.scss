@@ -206,3 +206,61 @@ img#threed.threed-mobile {
     max-height: 100px;
     max-width: 100px;
 }
+
+.everything-events {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.everything-events:first-child {
+    margin-top: 8em;
+}
+
+.everything-events:last-child {
+    margin-bottom: 8em;
+}
+
+.events-pc {
+    margin-top: 4em;
+    font-family: $type-1;
+    font-size: 2em;
+}
+
+.event-card {
+    margin-top: 4em;
+    position: relative;
+}
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.event-card-info {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+    position: relative;
+}
+
+.event-card-title {
+    font-family: $type-2;
+    font-size: 1.2em;
+}
+
+.event-card-description {
+    font-family: $type-1;
+    font-size: 1em;
+    line-height: $line-height-1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.event-view {
+    font-family: $type-2;
+    font-size: $type-size-1;
+    border-bottom: 0.6em solid $color-1;
+    padding-left: 3px;
+    padding-right: 3px;
+}
