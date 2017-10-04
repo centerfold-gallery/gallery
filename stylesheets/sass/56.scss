@@ -1085,8 +1085,8 @@ button::-moz-focus-inner {
     right: 100px;
     width: 50px;
     height: 25px;
-    background-color: #000;
-    background-image: url("../../assets/elements/print-button.png");
+    background-color: $background-color;
+    background-image: url("../../print-button-hover.png");
     background-position: center;
     background-size: contain;
     font-family: $type-2;
@@ -1096,7 +1096,7 @@ button::-moz-focus-inner {
     -webkit-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
-    color: $background-color;
+    color: #000;
     background-repeat: no-repeat;
     margin: 1px;
 }
@@ -1146,6 +1146,9 @@ button::-moz-focus-inner {
         padding-right: 5%;
         padding-top: 5%;
         overflow-y: hidden;
+    }
+
+    .cert-description-input-3 {
     }
 
 
