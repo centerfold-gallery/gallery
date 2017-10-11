@@ -223,6 +223,7 @@ img#threed.threed-mobile {
     margin-left: 10%;
     float: none;
     pointer-events: all;
+    position: relative;
 }
 
 .buy-art img {
@@ -233,6 +234,9 @@ img#threed.threed-mobile {
     margin-left: none;
     float: none;
     pointer-events: all;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .buy-artist-card-wrap {
