@@ -1246,10 +1246,6 @@ button::-moz-focus-inner {
     }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-    @import "mobile";
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
     @import "mobile";
 }
