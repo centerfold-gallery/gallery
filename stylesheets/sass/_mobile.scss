@@ -215,13 +215,22 @@ img#threed.threed-mobile {
     pointer-events: all;
 }
 
-.buy-art,
+.buy-art {
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    margin-left: 10%;
+    float: none;
+    pointer-events: all;
+}
+
 .buy-art img {
     width: 80%;
     height: auto;
     max-height: none;
     max-width: none;
-    margin-left: 10%;
+    margin-left: none;
     float: none;
     pointer-events: all;
 }
