@@ -175,6 +175,94 @@ img#threed.threed-mobile {
     margin-left: 10%;
 }
 
+.buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $background-color;
+    width: 100%;
+    height: 130%;
+    z-index: 200;
+    display: none;
+}
+
+.buy-flex {
+    width: 100%;
+    height: 100%;
+    @include boxflex;
+    position: relative;
+    z-index:  601;
+    pointer-events: none;
+}
+
+.close {
+    position: fixed;
+    top: 75px;
+    left: 31px;
+    cursor: w-resize;
+    z-index: 602;
+    font-family: $type-2;
+    font-size: $type-size-1;
+    pointer-events: all;
+}
+
+.close-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 599;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: all;
+}
+
+.buy-art,
+.buy-art img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    max-width: 500px;
+    float: none;
+    pointer-events: all;
+}
+
+.buy-artist-card-wrap {
+    font-family: $type-2;
+    font-size: $type-size-1;
+    color: $color-1;
+    margin-left: 2em;
+    float: none;
+    pointer-events: all;
+}
+
+.buy-art-title {
+    display: inline-block;
+    font-family: $type-1;
+    color: $color-1;
+    font-size: 2em;
+    pointer-events: all;
+
+}
+
+.buy-art-artist {
+    display: inline-block;
+    font-family: $type-2;
+    color: $color-1;
+    font-size: 2em;
+    line-height: 0.8em;
+    pointer-events: all;
+}
+
+.buy-art-description {
+    width: 400px;
+    display: inline-block;
+    font-family: $type-1;
+    color: $color-1;
+    font-size: 1.2em;
+    pointer-events: all;
+}
+
 .about-img {
     width: 80%;
     height: auto;
