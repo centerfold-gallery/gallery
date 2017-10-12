@@ -67,6 +67,8 @@ body {
     flex-direction: row;
 }
 
+.boxflex { @include boxflex }
+
 $background-color: #fffbfb;
 
 $color-1: #000;
