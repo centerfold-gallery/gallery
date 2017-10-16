@@ -139,6 +139,19 @@ canvas {
     opacity: 1 !important;
 }
 
+#threed:hover {
+    cursor: pointer;
+}
+
+.threed-feat {
+    display: inline-block;
+}
+
+.threed-feat img {
+    height: 3em;
+    width: auto;
+}
+
 #overlay {
     position: absolute;
     width: 100%;
@@ -1201,11 +1214,21 @@ button::-moz-focus-inner {
     height: 100%;
 }
 
+.featured-collection-header {
+    font-family: $type-1;
+    font-size: 2em;
+    color: $color-1;
+    width: 100%;
+    @include boxflexh;
+    margin-top: 4em;
+    padding-left: 0em;
+}
+
 .featured-collection-header img {
     display: inline-block;
     height: auto;
     width: auto;
-    margin-left: 1em;
+    margin-left: 0em;
 }
 
 .spin {
