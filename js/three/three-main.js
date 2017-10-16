@@ -528,7 +528,7 @@
         scene.add( art10label );
 
 
-        var floorTexture = new THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/floor.jpg' ); //256x256
+        var floorTexture = new THREE.ImageUtils.loadTexture( 'https://s3.amazonaws.com/centerfold-website/assets/floor.jpg' ); //256x256
         floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
         floorTexture.repeat.set( 100, 100 );
         var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side: THREE.DoubleSide } );
