@@ -406,6 +406,44 @@ canvas {
     margin-top: 16em;
 }
 
+.art-filter-toggle {
+    z-index: 666;
+    position: fixed;
+    top: 120px;
+    left: 31px;
+    font-family: $type-2;
+    font-weight: 500;
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+.art-filter-box {
+    z-index: 666;
+    position: fixed;
+    top: 120px;
+    left: 31px;
+    font-family: $type-2;
+    font-weight: 500;
+    font-size: 0.6em;
+    max-width: 20%;
+    display: none;
+}
+
+.art-filter-box button {
+    padding: 4px;
+    margin-right: 1.2em;
+    margin-bottom: 0.8em;
+    border: 1px solid $color-1;
+    background: transparent;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+button.highlight {
+    background-color: $color-1;
+    color: $color-2;
+}
+
 .art-art,
 .art-art img {
     width: 350px;
@@ -902,6 +940,15 @@ body.zoom-overlay-open {
 
 .fouromg {
     cursor: pointer;
+    margin-right: 400px;
+}
+
+.four-text {
+    width: 40%;
+    font-family: $type-2;
+    font-size: $type-size-1;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 // CERTIFICATE OF AUTHENTICATION

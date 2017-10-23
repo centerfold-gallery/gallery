@@ -145,3 +145,36 @@
             }
         });
         </script>
+        <script src="{{static_url}}js/mixitup.min.js"></script>
+        <script>
+            var mixer = mixitup('.everything', {
+                animation: {
+                    enable: false,
+                    animateResizeContainer: false
+                }
+            });
+        </script>
+        <script>
+            jQuery(function ($) {
+                $('button').click(function () {
+                    $('button').removeClass('highlight')
+                })
+                $('button').click(function () {
+                    $(this).toggleClass('highlight')
+                })
+            });
+        </script>
+        <script>
+            $(function() {
+               var bLazy = new Blazy({
+                   container: ".buy-art",
+                   loadInvisible: true
+               });
+            });
+        </script>
+        <script>
+            jQuery('.art-filter-toggle').on('click', function(event) {
+                jQuery('.art-filter-toggle').fadeOut(500);
+                jQuery('.art-filter-box').fadeIn(500);
+            });
+        </script>
