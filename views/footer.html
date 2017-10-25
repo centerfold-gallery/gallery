@@ -179,7 +179,14 @@
             });
         </script>
         <script>
-              $("#art{{fields.Unique-Artwork-ID}}").on("click", function(){
+              $("[id^=artcfuid]").on("click", function(){
                 $("#buy-button-{{fields.Unique-Artwork-ID}}").load("buy-button/index.html");
+              });
+              $(function () {
+                  $("[id^=artcfuid]").click(function () {
+                      var num = this.id.slice(8);
+                      var $elem = $('.bbbcfuid'+num).load("buy-button/index.html");
+                      $elem.fadeIn(500);
+                  });
               });
         </script>
