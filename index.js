@@ -400,7 +400,7 @@ app.get('/error', function (req, res) {
   res.render('error/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
-app.get('/art/buy-button', function (req, res) {
+app.get('/art/buy-button/index.html', function (req, res) {
   res.render('art/buy-button/index.html', {title: "Buy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
