@@ -72,25 +72,12 @@
             $(".close-full").click(function () {
                 $(".buy").fadeOut(500);
             });
-        });
-    </script>
-    <script>
-        $(function () {
-            $("[id^=artcfuid]").click(function () {
-                var num = this.id.slice(8);
-                var $elem = $('.buycfuid'+num);
-                $elem.fadeIn(500);
-            });
-        });
-        $(function () {
-            $("[id^=artcfuid]").hover(function(){
-                var num = this.id.slice(8);
-                var $elemcard = $('#cardcfuid'+num);
-                $elemcard.fadeIn(500);
-            },function(){
-                var num = this.id.slice(8);
-                var $elemcard = $('#cardcfuid'+num);
-                $elemcard.fadeOut(500);
+            $(function () {
+                $("[id^=artCF]").click(function () {
+                    var num = this.id.slice(5);
+                    var $elem = $('#bbbcfuid'+num);
+                    $elem.load("buy-button/index.html");
+                });
             });
         });
     </script>
@@ -177,16 +164,4 @@
                 jQuery('.art-filter-toggle').fadeOut(500);
                 jQuery('.art-filter-box').fadeIn(500);
             });
-        </script>
-        <script>
-              $("[id^=artcfuid]").on("click", function(){
-                $("#buy-button-{{fields.Unique-Artwork-ID}}").load("buy-button/index.html");
-              });
-              $(function () {
-                  $("[id^=artcfuid]").click(function () {
-                      var num = this.id.slice(8);
-                      var $elem = $('.bbbcfuid'+num);
-                      $elem.load("buy-button/index.html");
-                  });
-              });
         </script>
