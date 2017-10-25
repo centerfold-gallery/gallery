@@ -178,3 +178,8 @@
                 jQuery('.art-filter-box').fadeIn(500);
             });
         </script>
+        <script>
+              $("#art{{fields.Unique-Artwork-ID}}").on("click", function(){
+                $("#buy-button-{{fields.Unique-Artwork-ID}}").load("../buy-button/index.html");
+              });
+        </script>
