@@ -72,12 +72,25 @@
             $(".close-full").click(function () {
                 $(".buy").fadeOut(500);
             });
-            $(function () {
-                $("[id^=artCF]").click(function () {
-                    var num = this.id.slice(5);
-                    var $elem = $('#bbbCF'+num);
-                    $elem.load("buy-button/index.html");
-                });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("[id^=artcfuid]").click(function () {
+                var num = this.id.slice(8);
+                var $elem = $('.buycfuid'+num);
+                $elem.fadeIn(500);
+            });
+        });
+        $(function () {
+            $("[id^=artcfuid]").hover(function(){
+                var num = this.id.slice(8);
+                var $elemcard = $('#cardcfuid'+num);
+                $elemcard.fadeIn(500);
+            },function(){
+                var num = this.id.slice(8);
+                var $elemcard = $('#cardcfuid'+num);
+                $elemcard.fadeOut(500);
             });
         });
     </script>
