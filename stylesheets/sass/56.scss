@@ -81,6 +81,15 @@ $type-3: 'Work Sans', sans-serif;
 $type-size-1: 0.8em;
 $line-height-1: 1.2em;
 
+@mixin kern {
+    -moz-font-feature-settings:"kern" 1;
+    -ms-font-feature-settings:"kern" 1;
+    -o-font-feature-settings:"kern" 1;
+    -webkit-font-feature-settings:"kern" 1;
+    font-feature-settings:"kern" 1;
+    font-kerning: normal;
+}
+
 a {
     text-decoration: none;
     color: inherit;
