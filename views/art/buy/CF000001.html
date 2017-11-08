@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still">
+            <div class="everything">
+
+                    <div class="buy-buy-page buy{{fields.Unique-Artwork-ID}}" id="buy{{fields.Unique-Artwork-ID}}">
+                        <div class="close">Back</div>
+                        <div class="close-full"></div>
+                        <div class="buy-flex">
+                            <div class="buy-wrap">
+                                <div class="buy-art shadow">
+									<img class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg" data-action="zoom">
+                                </div>
+                                <div class="buy-artist-card-wrap">
+                                    <div class="buy-artist-card">
+                                        <span class="buy-art-title">{{fields.Title}}</span><br/>
+                                        <span class="buy-art-artist">{{fields.Artist}}</span><br>
+                                        <!-- <span class="buy-art-description">
+                                            <br/>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, laboriosam, quia! Numquam ad, incidunt nisi temporibus quas animi delectus tenetur possimus aspernatur ut maxime consectetur repellat eveniet obcaecati repudiandae dolor.
+                                        </span><br/> -->
+										<br/>
+                                        <span class="buy-art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
+                                        {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
+                                        ${{fields.Estimated Value (CAD)}}.00<br/>
+                                        <br/>
+                                        {{> buy-button }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+			<div class="footer"></div>
+        </div>
+	</body>
+    <footer>
+        {{> footer}}
+    </footer>
+</html>

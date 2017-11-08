@@ -4,6 +4,7 @@ const mustacheExpress = require('mustache-express');
 
 var path = require('path')
 var config = require('./config');
+var routes = require('./routes/buy-pages')(app);
 
 // Airtable Configuration
 var Airtable = require('airtable');
