@@ -90,6 +90,18 @@ $line-height-1: 1.2em;
     font-kerning: normal;
 }
 
+.t1 {
+    font-family: $type-1;
+}
+
+.t2 {
+    font-family: $type-2;
+}
+
+.t3 {
+    font-family: $type-3;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -486,6 +498,7 @@ button.highlight {
     line-height: $line-height-1;
     color: $color-1;
     font-size: 1em;
+    @include kern;
 }
 
 .art-medium span:not(:last-of-type)::after {
