@@ -153,7 +153,7 @@
         var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
         //change x,y,z (might need to change heights for each image, leave z same)
-        momentslogo.position.set(-100,20,-350);
+        momentslogo.position.set(-100,24,-350);
         scene.add( momentslogo );
 
         var momentslogogeometry = new THREE.CubeGeometry(100,100,0);
@@ -161,7 +161,7 @@
         var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
         //change x,y,z (might need to change heights for each image, leave z same)
-        momentslogo.position.set(100,10,-350);
+        momentslogo.position.set(100,18,-350);
         scene.add( momentslogo );
 
         // var curatory1geometry = new THREE.CubeGeometry(50,50,0);
