@@ -27,6 +27,11 @@ body {
         url(../../fonts/GT-Pressura-Mono-Regular.ttf)  format('truetype');
 }
 
+@font-face {
+    font-family: authentic;
+    src: url(../../fonts/AUTHENTIC-Sans.woff) format('woff');
+}
+
 @mixin boxflex {
     display: -webkit-box;
     display: -moz-box;
@@ -77,6 +82,7 @@ $color-2: #fffbfb;
 $type-1: 'caslon', caslon, serif;
 $type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
 $type-3: 'Work Sans', sans-serif;
+$type-4: 'authentic', sans-serif;
 
 $type-size-1: 0.8em;
 $line-height-1: 1.2em;
@@ -88,6 +94,23 @@ $line-height-1: 1.2em;
     -webkit-font-feature-settings:"kern" 1;
     font-feature-settings:"kern" 1;
     font-kerning: normal;
+}
+
+.t1 {
+    font-family: $type-1;
+}
+
+.t1-link {
+    font-family: $type-1;
+    border-bottom: 1px solid $color-1;
+}
+
+.t2 {
+    font-family: $type-2;
+}
+
+.t3 {
+    font-family: $type-3;
 }
 
 a {
