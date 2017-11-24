@@ -146,12 +146,22 @@
         centerfoldlogo.position.set(0,15,-50);
         scene.add( centerfoldlogo );
 
-
-        var momentslogogeometry = new THREE.CubeGeometry(60,40,0);
-        var momentslogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/FC000001-header.png' );
+        // upload image to folder on S3, change address in block, change position and height
+        // change size of object or image
+        var momentslogogeometry = new THREE.CubeGeometry(100,100,0);
+        var momentslogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/date.png' );
         var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
-        momentslogo.position.set(0,10,-200);
+        //change x,y,z (might need to change heights for each image, leave z same)
+        momentslogo.position.set(-100,20,-350);
+        scene.add( momentslogo );
+
+        var momentslogogeometry = new THREE.CubeGeometry(100,100,0);
+        var momentslogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/andrew-statement.png' );
+        var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+        var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
+        //change x,y,z (might need to change heights for each image, leave z same)
+        momentslogo.position.set(100,10,-350);
         scene.add( momentslogo );
 
         // var curatory1geometry = new THREE.CubeGeometry(50,50,0);
@@ -161,19 +171,19 @@
         // curatory1.position.set(-75,10,-300);
         // scene.add( curatory1 );
 
-        var curatory2geometry = new THREE.CubeGeometry(50,50,0);
-        var curatory2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/curatorial-statement-2.png' );
-        var curatory2material = new THREE.MeshBasicMaterial( { map: curatory2texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
-        var curatory2 = new THREE.Mesh( curatory2geometry, curatory2material );
-        curatory2.position.set(-25,10,-300);
-        scene.add( curatory2 );
+        // var curatory2geometry = new THREE.CubeGeometry(50,50,0);
+        // var curatory2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/curatorial-statement-2.png' );
+        // var curatory2material = new THREE.MeshBasicMaterial( { map: curatory2texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+        // var curatory2 = new THREE.Mesh( curatory2geometry, curatory2material );
+        // curatory2.position.set(-25,10,-300);
+        // scene.add( curatory2 );
 
-        var curatory3geometry = new THREE.CubeGeometry(50,50,0);
-        var curatory3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/curatorial-statement-3.png' );
-        var curatory3material = new THREE.MeshBasicMaterial( { map: curatory3texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
-        var curatory3 = new THREE.Mesh( curatory3geometry, curatory3material );
-        curatory3.position.set(25,10,-300);
-        scene.add( curatory3 );
+        // var curatory3geometry = new THREE.CubeGeometry(50,50,0);
+        // var curatory3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/curatorial-statement-3.png' );
+        // var curatory3material = new THREE.MeshBasicMaterial( { map: curatory3texture, transparent: true, opacity: 1, color: 0xFFFFFF } );
+        // var curatory3 = new THREE.Mesh( curatory3geometry, curatory3material );
+        // curatory3.position.set(25,10,-300);
+        // scene.add( curatory3 );
 
         // var curatory4geometry = new THREE.CubeGeometry(50,50,0);
         // var curatory4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/curatorial-statement-4.png' );
@@ -186,21 +196,21 @@
 
 
         var art1geometry = new THREE.CubeGeometry(40,50,1);
-        var art1texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000005-full.jpg' );
+        var art1texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000266-large.jpg' );
         var art1material = new THREE.MeshBasicMaterial( { map: art1texture, side: THREE.DoubleSide } );
         var art1 = new THREE.Mesh( art1geometry, art1material );
         art1.position.set(-58,22,-450);
         scene.add( art1 );
 
         var art1labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art1labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000005-card.png' );
+        var art1labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000266-card.png' );
         var art1labelmaterial = new THREE.MeshBasicMaterial( { map: art1labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art1label = new THREE.Mesh( art1labelgeometry, art1labelmaterial );
         art1label.position.set(-58,-11,-450);
         scene.add( art1label );
 
         var art2geometry = new THREE.CubeGeometry(40,53,1);
-        var art2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000006-full.jpg' );
+        var art2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000267-large.jpg' );
         var art2material = new THREE.MeshBasicMaterial( { map: art2texture, side: THREE.DoubleSide } );
         var art2 = new THREE.Mesh( art2geometry, art2material );
         art2.position.set(56,24,-550);
@@ -208,7 +218,7 @@
         scene.add( art2 );
 
         var art2labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art2labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000006-card.png' );
+        var art2labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000267-card.png' );
         var art2labelmaterial = new THREE.MeshBasicMaterial( { map: art2labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art2label = new THREE.Mesh( art2labelgeometry, art2labelmaterial );
         art2label.position.set(56,-11,-550);
@@ -216,15 +226,15 @@
         scene.add( art2label );
 
         var art3geometry = new THREE.CubeGeometry(40,32,1);
-        var art3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000008-full.jpg' );
+        var art3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000268-large.jpg' );
         var art3material = new THREE.MeshBasicMaterial( { map: art3texture, side: THREE.DoubleSide } );
         var art3 = new THREE.Mesh( art3geometry, art3material );
-        art3.position.set(-100,22,-650);
+        art3.position.set(-100,13,-650);
         art3.rotation.y = Math.PI / 4;
         scene.add( art3 );
 
         var art3labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art3labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000008-card.png' );
+        var art3labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000268-card.png' );
         var art3labelmaterial = new THREE.MeshBasicMaterial( { map: art3labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art3label = new THREE.Mesh( art3labelgeometry, art3labelmaterial );
         art3label.position.set(-100,-11,-650);
@@ -232,7 +242,7 @@
         scene.add( art3label );
 
         var art4geometry = new THREE.CubeGeometry(40,53,1);
-        var art4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000084-full.jpg' );
+        var art4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000269-large.jpg' );
         var art4material = new THREE.MeshBasicMaterial( { map: art4texture, side: THREE.DoubleSide } );
         var art4 = new THREE.Mesh( art4geometry, art4material );
         art4.position.set(80,24,-750);
@@ -240,7 +250,7 @@
         scene.add( art4 );
 
         var art4labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art4labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000084-card.png' );
+        var art4labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000269-card.png' );
         var art4labelmaterial = new THREE.MeshBasicMaterial( { map: art4labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art4label = new THREE.Mesh( art4labelgeometry, art4labelmaterial );
         art4label.position.set(80,-11,-750);
@@ -248,7 +258,7 @@
         scene.add( art4label );
 
         var art5geometry = new THREE.CubeGeometry(40,53,1);
-        var art5texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000086-full.jpg' );
+        var art5texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000270-large.jpg' );
         var art5material = new THREE.MeshBasicMaterial( { map: art5texture, side: THREE.DoubleSide } );
         var art5 = new THREE.Mesh( art5geometry, art5material );
         art5.position.set(-60,24,-850);
@@ -256,7 +266,7 @@
         scene.add( art5 );
 
         var art5labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art5labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000086-card.png' );
+        var art5labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000270-card.png' );
         var art5labelmaterial = new THREE.MeshBasicMaterial( { map: art5labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art5label = new THREE.Mesh( art5labelgeometry, art5labelmaterial );
         art5label.position.set(-60,-11,-850);
@@ -264,7 +274,7 @@
         scene.add( art5label );
 
         var art6geometry = new THREE.CubeGeometry(40,53,1);
-        var art6texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000088-full.jpg' );
+        var art6texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000271-large.jpg' );
         var art6material = new THREE.MeshBasicMaterial( { map: art6texture, side: THREE.DoubleSide } );
         var art6 = new THREE.Mesh( art6geometry, art6material );
         art6.position.set(0,24,-950);
@@ -272,7 +282,7 @@
         scene.add( art6 );
 
         var art6labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art6labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000088-card.png' );
+        var art6labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000271-card.png' );
         var art6labelmaterial = new THREE.MeshBasicMaterial( { map: art6labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art6label = new THREE.Mesh( art6labelgeometry, art6labelmaterial );
         art6label.position.set(0,-11,-950);
@@ -280,7 +290,7 @@
         scene.add( art6label );
 
         var art7geometry = new THREE.CubeGeometry(40,50,1);
-        var art7texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000089-full.jpg' );
+        var art7texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000376-large.jpg' );
         var art7material = new THREE.MeshBasicMaterial( { map: art7texture, side: THREE.DoubleSide } );
         var art7 = new THREE.Mesh( art7geometry, art7material );
         art7.position.set(70,23,-1050);
@@ -288,7 +298,7 @@
         scene.add( art7 );
 
         var art7labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art7labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000089-card.png' );
+        var art7labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000376-card.png' );
         var art7labelmaterial = new THREE.MeshBasicMaterial( { map: art7labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art7label = new THREE.Mesh( art7labelgeometry, art7labelmaterial );
         art7label.position.set(70,-11,-1050);
@@ -296,7 +306,7 @@
         scene.add( art7label );
 
         var art8geometry = new THREE.CubeGeometry(40,53,1);
-        var art8texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000090-full.jpg' );
+        var art8texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000377-large.jpg' );
         var art8material = new THREE.MeshBasicMaterial( { map: art8texture, side: THREE.DoubleSide } );
         var art8 = new THREE.Mesh( art8geometry, art8material );
         art8.position.set(-30,24,-1150);
@@ -304,7 +314,7 @@
         scene.add( art8 );
 
         var art8labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art8labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000090-card.png' );
+        var art8labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000377-card.png' );
         var art8labelmaterial = new THREE.MeshBasicMaterial( { map: art8labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art8label = new THREE.Mesh( art8labelgeometry, art8labelmaterial );
         art8label.position.set(-30,-11,-1150);
@@ -312,7 +322,7 @@
         scene.add( art8label );
 
         var art9geometry = new THREE.CubeGeometry(40,52,1);
-        var art9texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000091-full.jpg' );
+        var art9texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000378-large.jpg' );
         var art9material = new THREE.MeshBasicMaterial( { map: art9texture, side: THREE.DoubleSide } );
         var art9 = new THREE.Mesh( art9geometry, art9material );
         art9.position.set(40,23,-1250);
@@ -320,13 +330,14 @@
         scene.add( art9 );
 
         var art9labelgeometry = new THREE.CubeGeometry(40,16,1);
-        var art9labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/featured-collections/FC000001/CF000091-card.png' );
+        var art9labeltexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/andrew-3D/CF000378-card.png' );
         var art9labelmaterial = new THREE.MeshBasicMaterial( { map: art9labeltexture,  transparent: true, opacity: 1, color: 0xFFFFFF } );
         var art9label = new THREE.Mesh( art9labelgeometry, art9labelmaterial );
         art9label.position.set(40,-11,-1250);
         art9label.rotation.y = Math.PI / 1.4;
         scene.add( art9label );
 
+        /*
         var art10geometry = new THREE.CubeGeometry(40,13,1);
         var art10texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000093-full.jpg' );
         var art10material = new THREE.MeshBasicMaterial( { map: art10texture, side: THREE.DoubleSide } );
@@ -401,7 +412,7 @@
         art14label.position.set(-60,-11,-1750);
         scene.add( art14label );
 
-
+        */
 
         //
 
