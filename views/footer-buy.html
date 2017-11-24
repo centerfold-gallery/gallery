@@ -1,0 +1,166 @@
+        <script src="https://s3.amazonaws.com/centerfold-website/js/cheet.min.js"></script>
+        <script>
+            cheet('4 0', function () {
+              $('.everything').css("background-color", "blue");
+              $('.still').css("background-color", "blue");
+            });
+
+            cheet('d r o', function () {
+              $('.everything').css("background-image", "url('http://i.imgur.com/BjimMRe.png')");
+              $('.still').css("background-image", "url('http://i.imgur.com/BjimMRe.png')");
+            });
+
+            cheet('u s', function () {
+              $('.still').css("background-image", "url('http://i.imgur.com/GSP2p6c.png')");
+              $('.still').css("background-position", "center");
+              $('.still').css("background-size", "contain");
+              $('.everything').css("background-color", "transparent");
+            });
+            cheet('m w 2', function () {
+                $('.heartbeat').toggle(500);
+            });
+        </script>
+        <script src="https://s3.amazonaws.com/centerfold-website/js/zoom-vanilla/zoom-vanilla.min.js"></script>
+    <script>
+         $(function() {
+            var bLazy = new Blazy({
+                container: ".buy-art",
+                loadInvisible: true
+            });
+            $(function () {
+                $("[id^=artCF]").click(function () {
+                    var num = this.id.slice(5);
+                    var $elem = $('#buyCF'+num);
+                    $elem.fadeIn(500);
+                });
+            });
+            $("[id^=artCF]").hover(function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardCF'+num);
+                $elemcard.fadeIn(500);
+            },function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardCF'+num);
+                $elemcard.fadeOut(500);
+            });
+            $("[id^=artFC]").hover(function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardFC'+num);
+                $elemcard.fadeIn(500);
+            },function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardFC'+num);
+                $elemcard.fadeOut(500);
+            });
+            $(".close").click(function () {
+                $(".buy").fadeOut(500);
+            });
+            $(".close-full").click(function () {
+                $(".buy").fadeOut(500);
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("[id^=artcfuid]").click(function () {
+                var num = this.id.slice(8);
+                var $elem = $('.buycfuid'+num);
+                $elem.fadeIn(500);
+            });
+        });
+        $(function () {
+            $("[id^=artcfuid]").hover(function(){
+                var num = this.id.slice(8);
+                var $elemcard = $('#cardcfuid'+num);
+                $elemcard.fadeIn(500);
+            },function(){
+                var num = this.id.slice(8);
+                var $elemcard = $('#cardcfuid'+num);
+                $elemcard.fadeOut(500);
+            });
+        });
+    </script>
+        <script src="https://s3.amazonaws.com/centerfold-website/js/blazy.min.js"></script>
+        <script>
+            $('#threed').click(function() {
+                $('.nav').fadeOut(500);
+            });
+            $(document).keyup(function(e) {
+                if (e.which == 27) {
+                    $('.nav').fadeIn(500);
+                }
+            });
+        </script>
+        <script>
+        $(".still").scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 700) {
+                $('.logo-home').fadeIn(500);
+            } else {
+                $('.logo-home').fadeOut(500);
+            }
+        });
+        </script>
+        <script>
+        $('a[href*="#"]')
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
+              location.hostname == this.hostname
+            ) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 0, function() {
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) {
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1');
+                    $target.focus();
+                  };
+                });
+              }
+            }
+        });
+        </script>
+        <script src="https://s3.amazonaws.com/centerfold-website/js/mixitup.min.js"></script>
+        <script>
+            var mixer = mixitup('.everything', {
+                animation: {
+                    enable: false,
+                    animateResizeContainer: false
+                }
+            });
+        </script>
+        <script>
+            jQuery(function ($) {
+                $('button').click(function () {
+                    $('button').removeClass('highlight')
+                })
+                $('button').click(function () {
+                    $(this).toggleClass('highlight')
+                })
+            });
+        </script>
+        <script>
+            $(function() {
+               var bLazy = new Blazy({
+                   container: ".buy-art",
+                   loadInvisible: true
+               });
+            });
+        </script>
+        <script>
+            jQuery('.art-filter-toggle').on('click', function(event) {
+                jQuery('.art-filter-toggle').fadeOut(500);
+                jQuery('.art-filter-box').fadeIn(500);
+            });
+        </script>

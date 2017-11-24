@@ -602,6 +602,17 @@ button.highlight {
     display: none;
 }
 
+.buy-buy-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $background-color;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    display: block;
+}
+
 .buy-flex {
     width: 100%;
     height: 100%;
