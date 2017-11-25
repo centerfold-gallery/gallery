@@ -39,9 +39,13 @@
 										<br/>
                                         <span class="buy-art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
                                         {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
-                                        ${{fields.Estimated Value (CAD)}}.00<br/>
-                                        <br/>
-                                        {{> buy-button-buy }}
+										<div class="sold-or-not">
+											<span class="sold-a{{fields.Sold}} buy-2d"><br/><br/><div class="sold-circle"></div> SOLD</span>
+					                        <span class="price">${{fields.Estimated Value (CAD)}}.00</span>
+	                                        <br/>
+											<br/>
+	                                        {{> buy-button-buy }}
+										</div>
                                     </div>
                                 </div>
                             </div>

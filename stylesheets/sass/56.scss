@@ -519,6 +519,30 @@ button.highlight {
     font-family: $type-1;
 }
 
+.price {
+
+}
+
+.sold-a { display: none }
+
+.sold-atrue { display: block }
+
+.sold-circle {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+    background-color: #ff0000;
+    display: inline-block;
+}
+
+.sold-atrue ~ .price {
+    display: none;
+}
+
+.sold-atrue ~ form {
+    display: none;
+}
+
 .shadow {
     background-color: rgba(0,0,0,0.56);
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
