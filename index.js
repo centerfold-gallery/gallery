@@ -393,11 +393,11 @@ app.get('/artist-focus', function(req, res){
         return filterStatement;
     }
 
-    getCollection('Artist Focus').then(function(result) {
+    getCollection('Artist Focus 01').then(function(result) {
         var filterStatement = constructFilterStatement(result);
         getArtwork(filterStatement).then(function(result){
             context['homepageArtworks'] = result;
-            getCollection('Artist Focus').then(function(result){
+            getCollection('Artist Focus 01').then(function(result){
                 var filterStatement = constructFilterStatement(result);
                 getArtwork(filterStatement).then(function(result){
                     context['artPageArtworks'] = result;
