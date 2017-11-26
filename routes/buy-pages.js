@@ -16,7 +16,8 @@ module.exports = function(app) {
 
             res.render(
                 'art/buy/buy-page.html',
-                record
+                record,
+                context
             );
         });
     });
