@@ -139,7 +139,7 @@
         scene.add(floor);
 
 
-        var centerfoldlogogeometry = new THREE.CubeGeometry(50,50,0);
+        var centerfoldlogogeometry = new THREE.CubeGeometry(40,40,0);
         var centerfoldlogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/assets/three-logo.png' );
         var centerfoldlogomaterial = new THREE.MeshBasicMaterial( { map: centerfoldlogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var centerfoldlogo = new THREE.Mesh( centerfoldlogogeometry, centerfoldlogomaterial );
@@ -148,20 +148,20 @@
 
         // upload image to folder on S3, change address in block, change position and height
         // change size of object or image
-        var momentslogogeometry = new THREE.CubeGeometry(100,100,0);
+        var momentslogogeometry = new THREE.CubeGeometry(40,40,0);
         var momentslogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/laurent-3D/date.png' );
         var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
         //change x,y,z (might need to change heights for each image, leave z same)
-        momentslogo.position.set(-100,36,-350);
+        momentslogo.position.set(-40,20,-350);
         scene.add( momentslogo );
 
-        var momentslogogeometry = new THREE.CubeGeometry(100,100,0);
+        var momentslogogeometry = new THREE.CubeGeometry(40,40,0);
         var momentslogotexture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/laurent-3D/laurent-statement.png' );
         var momentslogomaterial = new THREE.MeshBasicMaterial( { map: momentslogotexture, transparent: true, opacity: 1, color: 0xFFFFFF } );
         var momentslogo = new THREE.Mesh( momentslogogeometry, momentslogomaterial );
         //change x,y,z (might need to change heights for each image, leave z same)
-        momentslogo.position.set(100,36,-350);
+        momentslogo.position.set(40,20,-350);
         scene.add( momentslogo );
 
         // var curatory1geometry = new THREE.CubeGeometry(50,50,0);
@@ -195,11 +195,11 @@
 
 
 
-        var art1geometry = new THREE.CubeGeometry(50,50,1);
+        var art1geometry = new THREE.CubeGeometry(40,40,1);
         var art1texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000063-large.jpg' );
         var art1material = new THREE.MeshBasicMaterial( { map: art1texture, side: THREE.DoubleSide } );
         var art1 = new THREE.Mesh( art1geometry, art1material );
-        art1.position.set(-58,22,-450);
+        art1.position.set(-58,17,-450);
         scene.add( art1 );
 
         var art1labelgeometry = new THREE.CubeGeometry(40,16,1);
@@ -209,11 +209,11 @@
         art1label.position.set(-58,-11,-450);
         scene.add( art1label );
 
-        var art2geometry = new THREE.CubeGeometry(50,50,1);
+        var art2geometry = new THREE.CubeGeometry(40,40,1);
         var art2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000064-large.jpg' );
         var art2material = new THREE.MeshBasicMaterial( { map: art2texture, side: THREE.DoubleSide } );
         var art2 = new THREE.Mesh( art2geometry, art2material );
-        art2.position.set(56,24,-550);
+        art2.position.set(56,17,-550);
         art2.rotation.y = Math.PI / 1.4;
         scene.add( art2 );
 
@@ -225,11 +225,11 @@
         art2label.rotation.y = Math.PI / 1.4;
         scene.add( art2label );
 
-        var art3geometry = new THREE.CubeGeometry(50,50,1);
+        var art3geometry = new THREE.CubeGeometry(40,40,1);
         var art3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000065-large.jpg' );
         var art3material = new THREE.MeshBasicMaterial( { map: art3texture, side: THREE.DoubleSide } );
         var art3 = new THREE.Mesh( art3geometry, art3material );
-        art3.position.set(-100,13,-650);
+        art3.position.set(-100,17,-650);
         art3.rotation.y = Math.PI / 4;
         scene.add( art3 );
 
@@ -241,11 +241,11 @@
         art3label.rotation.y = Math.PI / 4;
         scene.add( art3label );
 
-        var art4geometry = new THREE.CubeGeometry(50,50,1);
+        var art4geometry = new THREE.CubeGeometry(40,40,1);
         var art4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000066-large.jpg' );
         var art4material = new THREE.MeshBasicMaterial( { map: art4texture, side: THREE.DoubleSide } );
         var art4 = new THREE.Mesh( art4geometry, art4material );
-        art4.position.set(80,24,-750);
+        art4.position.set(80,17,-750);
         art4.rotation.y = Math.PI / 1.4;
         scene.add( art4 );
 
@@ -257,11 +257,11 @@
         art4label.rotation.y = Math.PI / 1.4;
         scene.add( art4label );
 
-        var art5geometry = new THREE.CubeGeometry(50,50,1);
+        var art5geometry = new THREE.CubeGeometry(40,40,1);
         var art5texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000067-large.jpg' );
         var art5material = new THREE.MeshBasicMaterial( { map: art5texture, side: THREE.DoubleSide } );
         var art5 = new THREE.Mesh( art5geometry, art5material );
-        art5.position.set(-60,24,-850);
+        art5.position.set(-60,17,-850);
         art5.rotation.y = Math.PI / 4;
         scene.add( art5 );
 
@@ -273,11 +273,11 @@
         art5label.rotation.y = Math.PI / 4;
         scene.add( art5label );
 
-        var art6geometry = new THREE.CubeGeometry(50,50,1);
+        var art6geometry = new THREE.CubeGeometry(40,40,1);
         var art6texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000068-large.jpg' );
         var art6material = new THREE.MeshBasicMaterial( { map: art6texture, side: THREE.DoubleSide } );
         var art6 = new THREE.Mesh( art6geometry, art6material );
-        art6.position.set(0,24,-950);
+        art6.position.set(0,17,-950);
         art6.rotation.y = Math.PI / 3.6;
         scene.add( art6 );
 
