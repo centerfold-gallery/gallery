@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var compass = require('gulp-compass');
 var autoprefixer = require('gulp-autoprefixer');
-var livereload = require('gulp-livereload');
+var connect = require('gulp-connect');
 
 gulp.task('compass', function() {
   gulp.src('./stylesheets/*.scss')
@@ -16,14 +16,19 @@ gulp.task('compass', function() {
 
 gulp.task('html',function(){
     return gulp.src('views/**/*.html')
-    .pipe(livereload());
+    // .pipe(connect.reload());
 });
 
 gulp.task('watch', function() {
-    livereload.listen();
     gulp.watch('./stylesheets/**/*.scss', ['compass']);
     gulp.watch('views/**/*.html', ['html']);
 });
+
+// gulp.task('connect', function() {
+//     connect.server({
+//         livereload: true
+//     });
+// });
 
 gulp.task('server',function(){
     nodemon({
