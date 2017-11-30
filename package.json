@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/centerfold-gallery/gallery.git"
   },
-  "author": "Martin Weiss",
+  "author": "Mackenzie Davidson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/centerfold-gallery/gallery/issues"
@@ -26,5 +26,12 @@
     "express": "^4.15.3",
     "mustache": "^2.3.0",
     "mustache-express": "^1.2.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1"
   }
 }
