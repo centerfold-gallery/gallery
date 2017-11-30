@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still">
+            <div class="everything">
+                <div class="featured-collection-header">
+                    <img src="{{static_url}}featured-collections/FC000001-header.png">
+                </div>
+                <div class="event-description">
+                    <br/>
+					It’s always interesting to dwell on other people’s subjective experience of the world, for we can never know for certain how subjects are being interpreted by those around us. The crude philosophical chestnut comes to mind: “What if the blue I see is different from the one YOU see?” Fortunately, visual artists create windows through which we are able to see moments either encountered or envisioned outside of our own point of view.<br/>
+					<br/>
+					Our first featured collection works off of this idea. "Moments,, Distorted" puts together expressionistic artwork of ordinary moments in life, with portraiture and genre work comprising the main subject matter. Each of the works presents said moments in a distorted way: colours are improper, lines are loose or even non-existent, textures occur where they should not. To us, this distortion overlays the basic image with distinct moods and emotions, characterizing the artist’s expression, and ultimately offering a rich, layered snapshot of life through the mind of an other.
+  					<br/>
+					<br/>
+					<div class="threed-feat">
+						<img id="threed" class="threed-feat threed-mobile animated infinite pulse" src="{{static_url}}assets/3d.png">
+					</div>
+                </div>
+                {{# artPageArtworks}}
+					<div class="art mix tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}} {{#fields.Medium}}tag-medium-{{.}} {{/fields.Medium}} tag-width-{{fields.Width (in)}} tag-height-{{fields.Height (in)}} tag-price-{{fields.Estimated Value (CAD)}}" id="art{{fields.Unique-Artwork-ID}}">
+						<a href="../../art/{{fields.Unique-Artwork-ID}}">
+							<div class="art-art">
+								<img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg">
+							</div>
+							<div class="artist-card-wrap">
+								<div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
+									<span class="art-title">{{fields.Title}}</span><br/>
+									{{fields.Artist}}<br/>
+									<span class="art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
+									{{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
+									<div class="sold-or-not">
+										<span class="sold-a{{fields.Sold}} buy-2d"><div class="sold-circle"></div> SOLD</span>
+										<span class="price">${{fields.Estimated Value (CAD)}} &mdash; <span class="buy-2d">Buy</span></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+                {{/ artPageArtworks}}
+            </div>
+			<div class="footer"></div>
+        </div>
+	</body>
+	<script>
+		$(".still").scroll(function () {
+			var y = $(this).scrollTop();
+			if (y > 700) {
+				$('.logo-home').fadeIn(500);
+			} else {
+				$('.logo-home').fadeOut(500);
+			}
+		});
+	</script>
+    <footer>
+        {{> footer}}
+		<script src="{{static_url}}js/three/fc000002.js"></script>
+    </footer>
+</html>
