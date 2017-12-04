@@ -34,20 +34,11 @@
                     Centerfold Gallery <img id="threed" class="threed-mobile animated infinite pulse" src="{{static_url}}assets/3d.png">
                 </div>
                 <div class="event-description">
-                    <!--<br/>
-					Welcome.
-  					<br/>
-					<br/>
-					From delicate portraits of orphans wrapped in striking floral cloth, to large, expressionist studies of the human figure; below, you can find a collection of artworks that were not curated with any overarching theme or subject in mind. More accurately, this set of work was selected on the basis of our experiences in developing the Centerfold project over the past few years, and serves to represent the visual expression of some of the lovely individuals we’ve worked with along the way.  <i class="em em-pray"></i>
-  					<br/>
-					<br/>
-					Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above. -->
 					<br/>
 					Laurent Palardy is an oil painter based out of Montreal, whose work depicts abstract representations of urban environments. Complex metropolitan spaces are overlaid with Euclidian sophistication — buildings are represented as cuboids, street lights and shadows are cast across the canvas as planes. <br/>
 					<br/>
 					This mathematical styling stands in contrast to the painting’s colouring; sunset yellows, pastel pinks, and menthol greens comprise Laurent’s lighting and backgrounds, which accent the muted concrete greys of the various structures. These structures often extend and then diminish into the painting’s environment. The end-product borders on a dream-scape: structures of the everyday float in an impossible sun-soaked nothingness.
                 </div>
-				{{> filter }}
                 {{# artPageArtworks}}
                     <div class="art mix tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}} {{#fields.Medium}}tag-medium-{{.}} {{/fields.Medium}} tag-width-{{fields.Width (in)}} tag-height-{{fields.Height (in)}} tag-price-{{fields.Estimated Value (CAD)}}" id="art{{fields.Unique-Artwork-ID}}">
 					<a href="art/{{fields.Unique-Artwork-ID}}">
