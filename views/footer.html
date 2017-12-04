@@ -39,6 +39,15 @@
                 var $elemcard = $('#cardFC'+num);
                 $elemcard.fadeOut(500);
             });
+            $("[id^=artAF]").hover(function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardAF'+num);
+                $elemcard.fadeIn(500);
+            },function(){
+                var num = this.id.slice(5);
+                var $elemcard = $('#cardAF'+num);
+                $elemcard.fadeOut(500);
+            });
             // $(".close").click(function () {
             //     $(".buy").fadeOut(500);
             // });
