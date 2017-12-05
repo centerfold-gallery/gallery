@@ -175,6 +175,18 @@ canvas {
     cursor: pointer;
 }
 
+.threed-button {
+    color: $color-2;
+    font-family: $type-4;
+    font-size: 0.4em;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    margin-left: 1em;
+    background-color: rgba(0,0,0,100);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
+}
+
 .threed-feat {
     display: inline-block;
 }
