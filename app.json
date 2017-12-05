@@ -1,0 +1,27 @@
+{
+  "name": "gallery-staging",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "airtableAPIKey": {
+      "required": true
+    },
+    "airtableBase": {
+      "required": true
+    },
+    "stripeAPIKey": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
