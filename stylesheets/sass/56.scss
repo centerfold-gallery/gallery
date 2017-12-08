@@ -185,6 +185,9 @@ canvas {
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
+    @include boxflex;
+    width: 6em;
+    height: 1em;
 }
 
 .threed-feat {
