@@ -138,28 +138,6 @@ canvas {
     height: 100%;
 }
 
-.logo {
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    width: auto;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 300;
-}
-
-.logo-home {
-    display: none;
-}
-
-.logo a img {
-    width: 120px;
-    height: auto;
-}
-
 @import "nav";
 
 .footer {
