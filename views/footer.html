@@ -78,16 +78,6 @@
                 $('.heartbeat').toggle(500);
             });
         </script>
-        <script>
-            $('#threed').click(function() {
-                $('.still').fadeOut(500);
-            });
-            $(document).keyup(function(e) {
-                if (e.which == 27) {
-                    $('.still').fadeIn(500);
-                }
-            });
-        </script>
         <script src="{{static_url}}js/zoom-vanilla/zoom-vanilla.min.js"></script>
     <script>
         $(function () {
@@ -110,12 +100,14 @@
         });
     </script>
         <script>
-            $('#threed').click(function() {
+            $('.threed').click(function() {
                 $('.nav').fadeOut(500);
+                $('.still').fadeOut(500);
             });
             $(document).keyup(function(e) {
                 if (e.which == 27) {
                     $('.nav').fadeIn(500);
+                    $('.still').fadeIn(500);
                 }
             });
         </script>
