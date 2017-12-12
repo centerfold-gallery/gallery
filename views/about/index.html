@@ -48,7 +48,7 @@
 				<div class="centerfold-header">
                     Contact
                 </div>
-                <div class="contact">
+                <div class="contact" id="contact">
                     <div class="contact-card">
 						<center>
 	                        <div class="contact-name">General Inquiries</div>
@@ -73,7 +73,9 @@
         </div>
     </body>
     <footer>
-        {{> body-end}}
+        <footer>
+			{{> footer}}
+			{{> body-end}}
 		<script src="{{static_url}}js/three/laurent-3D.js"></script>
     </footer>
 </html>

@@ -1,0 +1,72 @@
+.footer-space {
+    height: 16em;
+    width: 100%;
+}
+
+.footer {
+    height: 20em;
+    width: 100%;
+    @include boxflexh;
+    font-family: $type-4;
+    font-size: 0.8em;
+}
+
+.footer-border {
+    width: 80%;
+    height: 1px;
+    margin-left: 10%;
+    background-color: $color-1;
+    opacity: 0.1;
+}
+
+.footer-column {
+    width: 15%;
+    display: inline-block;
+    line-height: 1.4em;
+}
+
+.footer-column img {
+    height: 2.4em;
+    width: auto;
+    display: inline-block;
+    transform: translateY(4px);
+    margin-top: -7px;
+    margin-right: 4px;
+}
+
+.footer-column:last-of-type {
+    width: 30%;
+    display: inline-block;
+    line-height: 1.4em;
+}
+
+.footer-link {
+    cursor: pointer;
+}
+
+.mc-field-group input {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid $color-1;
+    opacity: 0.2;
+    background-color: $background-color;
+}
+
+.mc-field-group input:focus {
+    outline: none;
+    border-bottom: 1px solid $color-1;
+    opacity: 1;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.mc-field-group .clear {
+    display: inline;
+}
+
+.mc-field-group .clear input {
+    cursor: pointer;
+}

@@ -41,8 +41,8 @@
     padding-left: 3px;
     padding-right: 3px;
     font-family: $type-4;
-    font-weight: 500;
     font-size: 0.6em;
+    text-transform: uppercase;
 }
 
 .nav-active {
@@ -93,6 +93,7 @@
 }
 
 .nav-submit {
+    z-index: 560;
     position: fixed;
     bottom: 30px;
     right: 46px;
@@ -102,6 +103,7 @@
     padding-top: 2px;
     padding-bottom: 0px;
     font-family: $type-4;
+    font-size: 0.6em;
     cursor: e-resize;
 }
 
