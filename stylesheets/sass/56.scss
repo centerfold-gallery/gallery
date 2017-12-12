@@ -113,6 +113,15 @@ $line-height-1: 1.2em;
     font-family: $type-3;
 }
 
+.t4 {
+    font-family: $type-4;
+}
+
+.super {
+    vertical-align: super;
+    font-size: 0.4em;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -805,7 +814,7 @@ body.zoom-overlay-open {
     height: 2.4em;
     width: auto;
     display: inline-block;
-    transform: translateY(9px);
+    transform: translateY(10px);
     margin-right: 4px;
 }
 
@@ -871,6 +880,14 @@ body.zoom-overlay-open {
 
 #about-img-3 {
     margin-left: 20%;
+}
+
+.gallery-hours-column {
+    display: inline-block;
+}
+
+.gallery-hours-column:last-of-type {
+    margin-left: 4em;
 }
 
 .centerfold-header {
