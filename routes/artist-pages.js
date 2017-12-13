@@ -1,16 +1,15 @@
 module.exports = function(app) {
     var config = require('./../config');
 
-    app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
-        //var Airtable = require('airtable');
+    app.get('/artists/CFAID000001', function(req, res){
+        var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-        var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
-        var context = {title: "Moments,, Distorted", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+        var context = {title: "Alexia McKindsey", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
-                base('Online Featured Collection')
-                    .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                base('Artists')
+                    .select({view: "Grid view", filterByFormula: "{Full Name} = '"+ title +"'"})
                     .firstPage(function(err, homepageArt) {
                         if(err) {
                             reject(err)
@@ -73,11 +72,11 @@ module.exports = function(app) {
             return filterStatement;
         }
 
-        getCollection('Moments,, Distorted').then(function(result) {
+        getCollection('Alexia McKindsey').then(function(result) {
             var filterStatement = constructFilterStatement(result);
             getArtwork(filterStatement).then(function(result){
                 context['homepageArtworks'] = result;
-                getCollection('Moments,, Distorted').then(function(result){
+                getCollection('Alexia McKindsey').then(function(result){
                     var filterStatement = constructFilterStatement(result);
                     getArtwork(filterStatement).then(function(result){
                         context['artPageArtworks'] = result;
@@ -95,7 +94,18 @@ module.exports = function(app) {
                                     }
                                 }
                             }
-                            res.render('featured-collections/FC000001-moments-distorted/index.html', context);
+
+
+                            base('Artists').find('recvVtAgROgMzKRvf', function(err, record) {
+                                if (err) {
+                                    console.error(err); return;
+                                }
+                                //res.json(record);
+                                console.log(record);
+                            });
+                            var record;
+
+                            res.render('artists/artists.html', context, record);
                         });
                     });
                 });

@@ -4,7 +4,6 @@ const mustacheExpress = require('mustache-express');
 
 var path = require('path')
 var config = require('./config');
-var routes = require('./routes/buy-pages')(app);
 
 // Airtable Configuration
 var Airtable = require('airtable');
@@ -606,6 +605,10 @@ app.get('/thanks', function (req, res) {
 app.get('/error', function (req, res) {
   res.render('error/index.html', {title: "Error", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
+
+
+var routes = require('./routes/buy-pages')(app);
+var routes = require('./routes/artist-pages')(app);
 
 
 app.use(function(req, res, next){
