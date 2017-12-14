@@ -220,6 +220,22 @@ app.get('/art', function(req, res){
     });
 });
 
+// app.get('/artists', function (req, res) {
+//
+//     var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base('appAxg6rhUJ9BZmV4');
+//     var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+//
+//     base('Artists').select({
+//         view: 'Grid view'
+//     }).firstPage(function(err, records) {
+//         if (err) { console.error(err); return; }
+//         {
+//             console.log(records);
+//             res.render('artists/index.html', records);
+//         }
+//     });
+// });
+
 // Featured Collection 1 Configuration
 
 app.get('/featured-collections/FC000001-moments-distorted', function(req, res){

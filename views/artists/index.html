@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still">
+            <div class="everything">
+                <div class="centerfold-14">
+                	Artists
+					<div id="threed" style="opacity:0;" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
+                </div>
+                <div class="event-description">
+					<br/>
+					This is a list of all the artists we currently represent.
+                </div>
+                <div class="artists-page-list">
+                    <a href="/artists/{{fields.Artist ID}}" class="artists-page-list">{{Full Name}}</a><br>
+                </div>
+            </div>
+        </div>
+		<div class="footer-space"></div>
+		{{> footer}}
+	</body>
+    <footer>
+		{{> body-end}}
+		<script src="{{static_url}}js/three/andrew-3D.js"></script>
+    </footer>
+</html>

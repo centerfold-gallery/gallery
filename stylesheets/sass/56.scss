@@ -622,6 +622,19 @@ button.highlight {
     margin-left: 50%;
 }
 
+.artists-page-list {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.artists-page-list-item {
+    font-family: $type-4;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $color-1;
+    border-bottom: 1px solid $color-1;
+}
+
 .artist-page-artist,
 .artist-page-bio {
     display: none;
