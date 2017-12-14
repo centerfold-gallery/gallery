@@ -363,7 +363,7 @@ canvas {
     width: 100%;
     @include boxflexh;
     margin-top: 4em;
-    padding-left: 1.2em;
+    padding-left: 2em;
 }
 
 .centerfold-14 img {
@@ -620,6 +620,16 @@ button.highlight {
 
 .art:nth-child(16n+16) {
     margin-left: 50%;
+}
+
+.artist-page-artist,
+.artist-page-bio {
+    display: none;
+}
+
+.artist-page-artist:last-of-type,
+.artist-page-bio:last-of-type {
+    display: block;
 }
 
 .buy {
