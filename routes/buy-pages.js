@@ -20,7 +20,7 @@ module.exports = function(app) {
             );
         });
     });
-app.get('/art/CF000002', function (req, res) {
+    app.get('/art/CF000002', function (req, res) {
 
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);

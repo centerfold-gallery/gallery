@@ -19,7 +19,7 @@
         <div class="still">
             <div class="everything">
                 <div id="about-0">
-                    <div id="threed" class="threed-mobile threed-button">View in 3D</div>
+                    <div id="threed" class="threed threed-mobile threed-button">View in 3D</div>
                 </div>
                 <div id="about-1" class="about-description">
                     <img src="{{static_url}}assets/centerfold.svg">is a Montreal-based organization with the aim of driving social and economic change in the art industry. Our goal is to enable artists to gain funding, visibility, and access while increasing art awareness within the community.
@@ -45,7 +45,7 @@
                     Since the project began, Centerfold has charitably raised over $12,000 for its featured artists, all-the-while facilitating the exchange between artists and proud new owners of their work.
                 </div>
 
-				<div class="centerfold-header">
+				<div class="centerfold-header" id="contact">
                     Contact
                 </div>
                 <div class="contact">
@@ -68,12 +68,12 @@
 					<a class="about-press-logo" href="http://decompz.com" target="_blank"><img src="{{static_url}}assets/press/decompoz-logo.png">
 					<a class="about-press-logo" href="http://graphitepublications.com/centerfold-a-re-envisioning/" target="_blank"><img src="{{static_url}}assets/press/graphite-logo.png"></a>
 				</div>
-
+				{{> footer}}
             </div>
         </div>
+		<footer>
+			{{> body-end}}
+			<script src="{{static_url}}js/three/laurent-3D.js"></script>
+	    </footer>
     </body>
-    <footer>
-        {{> footer}}
-		<script src="{{static_url}}js/three/laurent-3D.js"></script>
-    </footer>
 </html>

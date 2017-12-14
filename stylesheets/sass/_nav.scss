@@ -1,7 +1,37 @@
-.nav {
-    font-family: $type-3;
-    font-weight: 500;
-    font-size: 0.8em;
+.logo {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    width: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 300;
+}
+
+.logo-home {
+    display: none;
+}
+
+.logo a img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-left {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 560;
+}
+
+.nav-right {
+    position: fixed;
+    top: 30px;
+    right: 46px;
+    z-index: 560;
 }
 
 .nav-link {
@@ -10,6 +40,9 @@
     padding-top: 3px;
     padding-left: 3px;
     padding-right: 3px;
+    font-family: $type-4;
+    font-size: 0.6em;
+    text-transform: uppercase;
 }
 
 .nav-active {
@@ -17,51 +50,33 @@
 }
 
 .nav-art {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-}
-
-.nav-submit {
-    position: fixed;
-    bottom: 30px;
-    right: 190px;
-    border: 1px solid $color-1;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 0px;
-    font-family: $type-1;
-    cursor: e-resize;
-}
-
-.nav-submit:hover {
-    background-color: $color-1;
-    color: $color-2;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .nav-events {
-    position: fixed;
-    top: 30px;
-    right: 30px;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .nav-services {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .nav-about {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+    display: inline-block;
+}
+
+.nav-3d {
+    display: inline-block;
+    cursor: crosshair;
 }
 
 .nav-social-links {
     position: fixed;
     bottom: 30px;
-    right: 100px;
+    left: 30px;
     z-index: 560;
     padding-top: 3px;
     padding-left: 3px;
@@ -76,3 +91,22 @@
 .nav-social:hover {
     opacity: 1;
 }
+
+.nav-submit {
+    z-index: 560;
+    position: fixed;
+    bottom: 30px;
+    right: 46px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    font-family: $type-4;
+    font-size: 0.6em;
+    cursor: e-resize;
+}
+
+// .nav-submit:hover {
+//     background-color: $color-1;
+//     color: $color-2;
+// }

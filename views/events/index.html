@@ -17,7 +17,7 @@
         <div class="still">
             <div class="everything-events">
                 <div class="events-pc">Upcoming Events</div>
-                {{# upcomingEvents}} 
+                {{# upcomingEvents}}
                 <div class="event-card">
                     <a href="{{fields.Link}}" target="_blank"><img class="event-image shadow" src="{{fields.CoverPhoto.0.url}}"></a>
                     <div class="event-card-info">
@@ -64,10 +64,11 @@
                     </div>
                 </div>
                 {{/ parties}}
+                {{> footer}}
             </div>
         </div>
 	</body>
     <footer>
-        {{> footer}}
+        {{> body-end}}
     </footer>
 </html>

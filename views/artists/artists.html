@@ -19,35 +19,24 @@
         <div class="still">
             <div class="everything">
                 <div class="centerfold-14">
-                    Centerfold Gallery <div id="threed" class="threed threed-mobile threed-button">View in 3D</div>
+                	{{# artPageArtworks}}<span class="artist-page-artist">{{fields.Artist}}</span>{{/ artPageArtworks}}
+					<div id="threed" style="opacity:0;" class="threed threed-mobile threed-button">View in 3D</div>
                 </div>
-                <div class="event-description">
+                <!-- <div class="event-description">
 					<br/>
-					November 24th — December 1st
-					<br/>
-					<br/>
-					Welcome.
-					<br/>
-					<br/>
-					During this week, we'll be showcasing the work of Andrew Nowacki.
-					<br/>
-					<br/>
-					Andrew Nowacki is a self-taught photographer who uses his keen eye for detail and line to produce gorgeous images, often showcasing overlooked geometry found in mundane environments. As opposed to a stark mathematical tone, however, Andrew manipulates light and shadow to exude a measured sense of warmth. In addition to his work as a photographer, Andrew co-runs <a href="https://www.facebook.com/inversionscollective/" class="t1-link" target="_blank">Inversions Collective</a>: a not-for-profit group that fosters opportunity for up-and-coming artists within the industry.
-					<br/>
-					<br/>
-					See the exhibition in 3D by clicking on the “3D” icon above 🖼 💻.
-                </div>
+					{{# artPageArtworks}}<span class="artist-page-bio">{{fields.Bio}}</span>{{/ artPageArtworks}}
+                </div> -->
 				{{> filter }}
                 {{# artPageArtworks}}
                     <div class="art mix tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}} {{#fields.Medium}}tag-medium-{{.}} {{/fields.Medium}} tag-width-{{fields.Width (in)}} tag-height-{{fields.Height (in)}} tag-price-{{fields.Estimated Value (CAD)}}" id="art{{fields.Unique-Artwork-ID}}">
-					<a href="art/{{fields.Unique-Artwork-ID}}">
+					<a href="/art/{{fields.Unique-Artwork-ID}}">
                         <div class="art-art">
                             <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg">
                         </div>
 						<div class="artist-card-wrap">
                             <div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
                                 <span class="art-title">{{fields.Title}}</span><br/>
-                                <a href="/artists/{{fields.Artist ID}}">{{fields.Artist}}</a><br/>
+                                {{fields.Artist}}<br/>
                                 <span class="art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
                                 {{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
 								<div class="sold-or-not">

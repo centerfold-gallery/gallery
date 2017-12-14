@@ -113,6 +113,15 @@ $line-height-1: 1.2em;
     font-family: $type-3;
 }
 
+.t4 {
+    font-family: $type-4;
+}
+
+.super {
+    vertical-align: super;
+    font-size: 0.4em;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -138,37 +147,12 @@ canvas {
     height: 100%;
 }
 
-.logo {
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    width: auto;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 300;
-}
-
-.logo-home {
-    display: none;
-}
-
-.logo a img {
-    width: 120px;
-    height: auto;
-}
-
 @import "nav";
 
-.footer {
-    height: 16em;
-    width: 100%;
-}
+@import "footer";
 
 #threed {
-    opacity: 1 !important;
+    opacity: 1;
 }
 
 #threed:hover {
@@ -379,7 +363,7 @@ canvas {
     width: 100%;
     @include boxflexh;
     margin-top: 4em;
-    padding-left: 1.2em;
+    padding-left: 2em;
 }
 
 .centerfold-14 img {
@@ -483,6 +467,10 @@ canvas {
     border: 1px solid $color-1;
     background: transparent;
     border-radius: 0px;
+    cursor: pointer;
+}
+
+.art-filter-close {
     cursor: pointer;
 }
 
@@ -632,6 +620,16 @@ button.highlight {
 
 .art:nth-child(16n+16) {
     margin-left: 50%;
+}
+
+.artist-page-artist,
+.artist-page-bio {
+    display: none;
+}
+
+.artist-page-artist:last-of-type,
+.artist-page-bio:last-of-type {
+    display: block;
 }
 
 .buy {
@@ -826,7 +824,7 @@ body.zoom-overlay-open {
     height: 2.4em;
     width: auto;
     display: inline-block;
-    transform: translateY(9px);
+    transform: translateY(10px);
     margin-right: 4px;
 }
 
@@ -892,6 +890,14 @@ body.zoom-overlay-open {
 
 #about-img-3 {
     margin-left: 20%;
+}
+
+.gallery-hours-column {
+    display: inline-block;
+}
+
+.gallery-hours-column:last-of-type {
+    margin-left: 4em;
 }
 
 .centerfold-header {

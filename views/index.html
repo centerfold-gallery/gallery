@@ -25,13 +25,13 @@
 					<div class="home-container">
 						<div class="home-container-images">
                             {{# homepageArtworks}}
-                                <a href="art/#art{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
+                                <a href="art/{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
                             {{/ homepageArtworks}}
 						</div>
 					</div>
 				</div>
                 <div class="centerfold-14">
-                    Centerfold Gallery <div id="threed" class="threed-mobile threed-button">View in 3D</div>
+                    Centerfold Gallery <div id="threed" class="threed threed-mobile animated pulse infinite threed-button">View in 3D</div>
                 </div>
                 <div class="event-description">
                     <br/>
@@ -69,7 +69,8 @@
 					</div>
 				</div>
 
-			<div class="footer"></div>
+			<div class="footer-space"></div>
+			{{> footer}}
         </div>
 	</body>
 	<script>
@@ -83,7 +84,7 @@
 		});
 	</script>
     <footer>
-        {{> footer}}
+		{{> body-end}}
 		<script src="{{static_url}}js/three/laurent-3D.js"></script>
     </footer>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head}}
+    </head>
+	<body>
+        {{> nav}}
+        <div class="still">
+            <div class="everything">
+                <div id="about-0">
+                    <!-- <div id="threed" class="threed threed-mobile threed-button">View in 3D</div> -->
+                </div>
+                <div id="about-1" class="about-description">
+                    <img src="{{static_url}}assets/centerfold.svg">Gallery is located in Westmount's “Victoria Park” building.
+					<br/><br/>
+					Our brick-and-mortar gallery not only serves emerging artists with the opportunity to sell their work to eager buyers, but properly display the work listed on our online marketplace, giving even the most vigilant of shoppers assurances on the quality and condition of our available works.
+                </div>
+				<img class="about-img shadow" id="about-img-1" src="{{static_url}}assets/pages/gallery/gallery-1.png" data-action="zoom">
+                <div id="about-2" class="about-description">
+					<span class="t1">Hours</span><br/>
+					<br/>
+					<div class="gallery-hours-column t4" style="font-size:0.4em;vertical-align:top;">
+						M<br/>
+						T - F<br/>
+						S & S
+					</div>
+					<div class="gallery-hours-column" style="margin-left:2em;">
+						Closed<br/>
+						12 - 6pm<br/>
+						By Appointment
+					</div>
+					<br/><br/>
+					<span class="t4" style="font-size:0.4em;vertical-align:top;">NOTE</span> Please email <a href="mailto:hello@centerfold.gallery?subject=I would like to visit Centerfold"  target="_blank">hello@centerfold.gallery</a><br/>or call <a href="tel:5145911870">514 591 1870</a> for an appointment.
+					<br/><br/>
+					<div style="line-height:1em"><span class="t4" style="font-size:0.4em;vertical-align:top;">NOTE</span> The gallery will be closed during the holidays, from Dec 15<span class="super">th</span> until January 2<span class="super">nd</span>.</div>
+                    <br/><br/>
+                </div>
+				<img class="about-img shadow" id="about-img-2" src="{{static_url}}assets/pages/gallery/gallery-2.png" data-action="zoom">
+                <div id="about-3" class="about-description">
+					<span class="t1">Location</span><span style="opacity:0;cursor:default;">Address</span><br/>
+					<br/>
+					<a href="https://www.google.ca/maps/place/Centerfold+Gallery/@45.4784473,-73.6049808,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc910a6f30a582f:0x676d2e500a6fc4a3!8m2!3d45.4784436!4d-73.602792" target="_blank">
+					376 Avenue Victoria #110<br/>
+					Westmount, QC<br/>
+					Canada<br/>
+					H3Z 1C3<br/>
+					</a>
+                </div>
+				<img class="about-img shadow" id="about-img-3" src="{{static_url}}assets/pages/gallery/gallery-3.png" data-action="zoom">
+				<div class="footer-space"></div>
+				{{> footer}}
+            </div>
+        </div>
+		<footer>
+			{{> body-end}}
+			<script src="{{static_url}}js/three/laurent-3D.js"></script>
+	    </footer>
+    </body>
+</html>

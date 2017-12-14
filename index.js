@@ -4,7 +4,6 @@ const mustacheExpress = require('mustache-express');
 
 var path = require('path')
 var config = require('./config');
-var routes = require('./routes/buy-pages')(app);
 
 // Airtable Configuration
 var Airtable = require('airtable');
@@ -123,7 +122,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/art', function(req, res){
-    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -595,13 +594,21 @@ app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
+app.get('/gallery', function (req, res) {
+  res.render('gallery/index.html', {title: "Gallery", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 app.get('/thanks', function (req, res) {
-  res.render('thanks/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
+  res.render('thanks/index.html', {title: "Thanks!", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
 app.get('/error', function (req, res) {
-  res.render('error/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/"});
+  res.render('error/index.html', {title: "Error", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
+
+
+var routes = require('./routes/buy-pages')(app);
+var routes = require('./routes/artist-pages')(app);
 
 
 app.use(function(req, res, next){

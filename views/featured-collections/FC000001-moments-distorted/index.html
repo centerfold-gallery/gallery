@@ -29,7 +29,7 @@
   					<br/>
 					<br/>
 					<div class="threed-feat">
-						<div id="threed" class="threed-mobile threed-button">View in 3D</div>
+						<div id="threed" class="threed threed-mobile threed-button">View in 3D</div>
 					</div>
                 </div>
                 {{# artPageArtworks}}
@@ -41,7 +41,7 @@
 							<div class="artist-card-wrap">
 								<div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
 									<span class="art-title">{{fields.Title}}</span><br/>
-									{{fields.Artist}}<br/>
+									<a href="/artists/{{fields.Artist ID}}">{{fields.Artist}}</a><br/>
 									<span class="art-medium">{{#fields.Medium}}<span>{{.}}</span>{{/fields.Medium}}</span><br/>
 									{{fields.Width (in)}}" x {{fields.Height (in)}}"<br/>
 									<div class="sold-or-not">
@@ -54,7 +54,8 @@
 					</div>
                 {{/ artPageArtworks}}
             </div>
-			<div class="footer"></div>
+			<div class="footer-space"></div>
+			{{> footer}}
         </div>
 	</body>
 	<script>
@@ -68,7 +69,7 @@
 		});
 	</script>
     <footer>
-        {{> footer}}
+		{{> body-end}}
 		<script src="{{static_url}}js/three/three-moments-distorted.js"></script>
     </footer>
 </html>
