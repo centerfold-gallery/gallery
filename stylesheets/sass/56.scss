@@ -73,6 +73,14 @@ body {
 }
 
 .boxflex { @include boxflex }
+.boxflex100 {
+    @include boxflex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 $background-color: #fffbfb;
 

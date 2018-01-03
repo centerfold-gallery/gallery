@@ -29,7 +29,7 @@
 					From minimalist inspections of architechture, to large, expressionist studies of the human figure; below, you can find a collection of artworks that were not curated with any overarching theme or subject in mind. More accurately, this set of work was selected on the basis of our experiences in developing the Centerfold project over the past few years, and serves to represent the visual expression of some of the lovely individuals we’ve worked with along the way.  <i class="em em-pray"></i>
   					<br/>
 					<br/>
-					<span class="mobile-hide">Be sure to check out our 3D functionality to view the latest collection. Go virtual by clicking on the “3D” icon above 🔍.<span>
+					<span class="mobile-hide">Be sure to check out our 3D functionality to view the latest collection. Go virtual by clicking on the “3D” button above 🔍.<span>
 					<br/>
                 </div>
 				{{> filter }}
@@ -84,19 +84,29 @@
                 {{/ artPageArtworks}}
             </div>
 			<div class="footer-space"></div>
+			<!-- <div class="boxflex100">
+				<button id="next-test" method="post" action="art">NEXT</button>
+			</div> -->
 			{{> footer}}
         </div>
+		<footer>
+			{{> body-end}}
+	        <script>
+	            var cards = $(".art-rand");
+	                for(var i = 0; i < cards.length; i++){
+	                var target = Math.floor(Math.random() * cards.length -1) + 1;
+	                var target2 = Math.floor(Math.random() * cards.length -1) +1;
+	                cards.eq(target).before(cards.eq(target2));
+	            }
+	        </script>
+			<script src="{{static_url}}js/three/laurent-3D.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('#next-test').click(function () {
+						$.post("art");
+					});
+				 });
+			</script>
+	    </footer>
 	</body>
-    <footer>
-		{{> body-end}}
-        <script>
-            var cards = $(".art-rand");
-                for(var i = 0; i < cards.length; i++){
-                var target = Math.floor(Math.random() * cards.length -1) + 1;
-                var target2 = Math.floor(Math.random() * cards.length -1) +1;
-                cards.eq(target).before(cards.eq(target2));
-            }
-        </script>
-		<script src="{{static_url}}js/three/laurent-3D.js"></script>
-    </footer>
 </html>

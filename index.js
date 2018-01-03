@@ -5,6 +5,8 @@ const mustacheExpress = require('mustache-express');
 var path = require('path')
 var config = require('./config');
 
+var bodyParser = require('body-parser');
+
 // Airtable Configuration
 var Airtable = require('airtable');
 Airtable.configure({
@@ -21,6 +23,9 @@ app.use('/fonts', express.static('fonts'))
 // Setup Mustache
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
+
+// Setup Body Parser
+app.use(bodyParser.urlencoded({extended : false}));
 
 app.get('/', function(req, res){
     var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -127,17 +132,15 @@ app.get('/art', function(req, res){
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
             base('Online Featured Collection')
-                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
-                .firstPage(function(err, homepageArt) {
-                    if(err) {
-                        reject(err)
-                    }
-                    else {
-                        var jsonHomepageArt = homepageArt.map(function(homepageArt){
-                            return homepageArt['_rawJson']
-                        });
-                        resolve(jsonHomepageArt[0]['fields']['Artworks']);
-                    }
+                .select({view: "Grid view", pageSize: 3, filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
                 });
             });
         }
@@ -145,17 +148,15 @@ app.get('/art', function(req, res){
     var getArtwork = function(filterStatement){
         return new Promise(function(resolve, reject) {
         base('Artworks')
-            .select({view: "Grid view", filterByFormula: filterStatement})
-            .firstPage(function(err, homepageArtworks) {
-                if(err) {
-                    reject(err)
-                }
-                else {
-                    var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
-                        return homepageArtworks['_rawJson']
-                    });
-                    resolve(jsonHomepageArtworks);
-                }
+            .select({view: "Grid view", pageSize: 3, filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
             });
         });
     }
@@ -163,17 +164,15 @@ app.get('/art', function(req, res){
     var getArtists = function(filterStatement){
         return new Promise(function(resolve, reject) {
         base('Artists')
-            .select({view: "Grid view", filterByFormula: filterStatement})
-            .firstPage(function(err, artists) {
-                if(err) {
-                    reject(err)
-                }
-                else {
-                    var jsonArtists = artists.map(function(artist){
-                        return artist['_rawJson']
-                    });
-                    resolve(jsonArtists);
-                }
+            .select({view: "Grid view", pageSize: 3, filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
             });
         });
     }
@@ -218,6 +217,18 @@ app.get('/art', function(req, res){
             });
         });
     });
+});
+
+// var fooTest = function() {
+//     console.log("Fetching");
+// };
+
+app.post('/art', function(req, res) {
+    console.log(req.body);
+
+    console.log("Sent back");
+
+    // fooTest();
 });
 
 // app.get('/artists', function (req, res) {

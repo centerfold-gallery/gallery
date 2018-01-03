@@ -14,13 +14,6 @@
                 container: ".everything",
                 loadInvisible: true
             });
-            // $(function () {
-            //     $("[id^=artCF]").click(function () {
-            //         var num = this.id.slice(5);
-            //         var $elem = $('#buyCF'+num);
-            //         $elem.fadeIn(500);
-            //     });
-            // });
             $("[id^=artCF]").hover(function(){
                 var num = this.id.slice(5);
                 var $elemcard = $('#cardCF'+num);
@@ -48,12 +41,6 @@
                 var $elemcard = $('#cardAF'+num);
                 $elemcard.fadeOut(500);
             });
-            // $(".close").click(function () {
-            //     $(".buy").fadeOut(500);
-            // });
-            // $(".close-full").click(function () {
-            //     $(".buy").fadeOut(500);
-            // });
         });
     </script>
         <script src="{{static_url}}js/cheet.min.js"></script>
@@ -180,5 +167,5 @@
                 jQuery('.art-filter-toggle').fadeIn(500);
             });
         </script>
-        <script src="https://s3.amazonaws.com/centerfold-website/js/three.js"></script>
-        <script src="https://s3.amazonaws.com/centerfold-website/js/PointerLockControls.js"></script>
+        <script src="{{static_url}}js/three.js"></script>
+        <script src="{{static_url}}js/PointerLockControls.js"></script>
