@@ -132,7 +132,7 @@ app.get('/art', function(req, res){
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
             base('Online Featured Collection')
-                .select({view: "Grid view", pageSize: 3, filterByFormula: "{Title} = '"+ title +"'"})
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
                 .eachPage(function page(homepageArt, fetchNextPage) {
                     var jsonHomepageArt = homepageArt.map(function(homepageArt){
                         return homepageArt['_rawJson']
@@ -148,7 +148,7 @@ app.get('/art', function(req, res){
     var getArtwork = function(filterStatement){
         return new Promise(function(resolve, reject) {
         base('Artworks')
-            .select({view: "Grid view", pageSize: 3, filterByFormula: filterStatement})
+            .select({view: "Grid view", filterByFormula: filterStatement})
             .eachPage(function page(homepageArtworks, fetchNextPage) {
                 var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
                     return homepageArtworks['_rawJson']
@@ -164,7 +164,7 @@ app.get('/art', function(req, res){
     var getArtists = function(filterStatement){
         return new Promise(function(resolve, reject) {
         base('Artists')
-            .select({view: "Grid view", pageSize: 3, filterByFormula: filterStatement})
+            .select({view: "Grid view", filterByFormula: filterStatement})
             .eachPage(function page(artists, fetchNextPage) {
                 var jsonArtists = artists.map(function(artist){
                     return artist['_rawJson']
