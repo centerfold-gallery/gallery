@@ -1,7 +1,7 @@
 module.exports = function(app) {
     var config = require('./../config');
 
-    app.get('/artists/CFAID000001', function(req, res){
+    app.get('/artists/alexia-mckindsey', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Alexia McKindsey", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -108,7 +108,7 @@ module.exports = function(app) {
             });
         });
     });
-app.get('/artists/CFAID000002', function(req, res){
+app.get('/artists/ali-inay', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Ali Inay", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -215,7 +215,7 @@ app.get('/artists/CFAID000002', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000003', function(req, res){
+app.get('/artists/andrea-wilkin', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Andrea Wilkin", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -322,7 +322,7 @@ app.get('/artists/CFAID000003', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000004', function(req, res){
+app.get('/artists/ariel-shea', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Ariel Shea", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -429,7 +429,7 @@ app.get('/artists/CFAID000004', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000005', function(req, res){
+app.get('/artists/cairo-justice', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Cairo Justice", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -536,7 +536,7 @@ app.get('/artists/CFAID000005', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000006', function(req, res){
+app.get('/artists/cheyenne-jenkins', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Cheyenne Jenkins", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -643,7 +643,7 @@ app.get('/artists/CFAID000006', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000007', function(req, res){
+app.get('/artists/emile-seguin', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Emile Seguin", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -750,7 +750,7 @@ app.get('/artists/CFAID000007', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000008', function(req, res){
+app.get('/artists/eric-paulino', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Eric Paulino", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -857,7 +857,7 @@ app.get('/artists/CFAID000008', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000009', function(req, res){
+app.get('/artists/florence-yee', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Florence Yee", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -964,7 +964,7 @@ app.get('/artists/CFAID000009', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000010', function(req, res){
+app.get('/artists/gab-bois', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Gab Bois", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1071,7 +1071,7 @@ app.get('/artists/CFAID000010', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000011', function(req, res){
+app.get('/artists/genevieve-moreau', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Geneviève Moreau", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1178,7 +1178,7 @@ app.get('/artists/CFAID000011', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000012', function(req, res){
+app.get('/artists/hunter-mclean', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Hunter McLean", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1285,7 +1285,7 @@ app.get('/artists/CFAID000012', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000013', function(req, res){
+app.get('/artists/janna-yotte', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Janna Yotte", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1392,7 +1392,7 @@ app.get('/artists/CFAID000013', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000014', function(req, res){
+app.get('/artists/jessica-sallay-carrington', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jessica Sallay-Carrington", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1499,7 +1499,7 @@ app.get('/artists/CFAID000014', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000015', function(req, res){
+app.get('/artists/jonathan-bernier', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jonathan Bernier", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1606,7 +1606,7 @@ app.get('/artists/CFAID000015', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000016', function(req, res){
+app.get('/artists/kristal-kordich-crandall', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Kristal Kordich-Crandall", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1713,7 +1713,7 @@ app.get('/artists/CFAID000016', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000017', function(req, res){
+app.get('/artists/laurent-palardy', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Laurent Palardy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1820,7 +1820,7 @@ app.get('/artists/CFAID000017', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000018', function(req, res){
+app.get('/artists/maela-ohana', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Maela Ohana", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -1927,7 +1927,7 @@ app.get('/artists/CFAID000018', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000019', function(req, res){
+app.get('/artists/marianne-pon-layus', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Marianne Pon-Layus", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2034,7 +2034,7 @@ app.get('/artists/CFAID000019', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000020', function(req, res){
+app.get('/artists/marie-pier-leclerc', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Marie-Pier Leclerc", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2141,7 +2141,7 @@ app.get('/artists/CFAID000020', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000021', function(req, res){
+app.get('/artists/maxime-brown', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Maxime Brown", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2248,7 +2248,7 @@ app.get('/artists/CFAID000021', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000022', function(req, res){
+app.get('/artists/nikolay-gamurar', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Nikolay Gamurar", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2355,7 +2355,7 @@ app.get('/artists/CFAID000022', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000023', function(req, res){
+app.get('/artists/pascal-assaleh', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Pascal Assaleh", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2462,10 +2462,10 @@ app.get('/artists/CFAID000023', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000024', function(req, res){
+app.get('/artists/romane-bladou', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-        var context = {title: "Romane  Bladou", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+        var context = {title: "Romane Bladou", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
                 base('Artists')
@@ -2528,11 +2528,11 @@ app.get('/artists/CFAID000024', function(req, res){
             filterStatement = filterStatement + ")";
             return filterStatement;
         }
-        getCollection('Romane  Bladou').then(function(result) {
+        getCollection('Romane Bladou').then(function(result) {
             var filterStatement = constructFilterStatement(result);
             getArtwork(filterStatement).then(function(result){
                 context['homepageArtworks'] = result;
-                getCollection('Romane  Bladou').then(function(result){
+                getCollection('Romane Bladou').then(function(result){
                     var filterStatement = constructFilterStatement(result);
                     getArtwork(filterStatement).then(function(result){
                         context['artPageArtworks'] = result;
@@ -2569,7 +2569,7 @@ app.get('/artists/CFAID000024', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000025', function(req, res){
+app.get('/artists/ryan-lebel', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Ryan Lebel", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2676,7 +2676,7 @@ app.get('/artists/CFAID000025', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000026', function(req, res){
+app.get('/artists/sarah-bentivegna', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Sarah Bentivegna", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2783,7 +2783,7 @@ app.get('/artists/CFAID000026', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000027', function(req, res){
+app.get('/artists/schael-marceus', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Schaël Marcéus", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2890,7 +2890,7 @@ app.get('/artists/CFAID000027', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000028', function(req, res){
+app.get('/artists/stephanie-morin', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Stephanie Morin", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -2997,7 +2997,7 @@ app.get('/artists/CFAID000028', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000029', function(req, res){
+app.get('/artists/sylvie-adams', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Sylvie Adams", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3104,7 +3104,7 @@ app.get('/artists/CFAID000029', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000030', function(req, res){
+app.get('/artists/zeze-le-lin', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Zezé Le Lin", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3211,7 +3211,7 @@ app.get('/artists/CFAID000030', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000031', function(req, res){
+app.get('/artists/celia-spenard-ko', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Celia Spenard-Ko", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3318,7 +3318,7 @@ app.get('/artists/CFAID000031', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000032', function(req, res){
+app.get('/artists/jacob-cote', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jacob Côté", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3425,7 +3425,7 @@ app.get('/artists/CFAID000032', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000033', function(req, res){
+app.get('/artists/aydin-matlabi', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Aydin Matlabi", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3532,7 +3532,7 @@ app.get('/artists/CFAID000033', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000034', function(req, res){
+app.get('/artists/ariane-fairlie', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Ariane Fairlie", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3639,7 +3639,7 @@ app.get('/artists/CFAID000034', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000035', function(req, res){
+app.get('/artists/sayeh-gold', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Sayeh Gold", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3746,7 +3746,7 @@ app.get('/artists/CFAID000035', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000036', function(req, res){
+app.get('/artists/andrew-nowacki', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Andrew Nowacki", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3853,7 +3853,7 @@ app.get('/artists/CFAID000036', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000037', function(req, res){
+app.get('/artists/kathryn-shriver', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Kathryn Shriver", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -3960,7 +3960,7 @@ app.get('/artists/CFAID000037', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000038', function(req, res){
+app.get('/artists/devon-munro-menegon', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Devon Munro Menegon", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4067,7 +4067,7 @@ app.get('/artists/CFAID000038', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000039', function(req, res){
+app.get('/artists/william-wilson', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "William Wilson", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4174,7 +4174,7 @@ app.get('/artists/CFAID000039', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000040', function(req, res){
+app.get('/artists/jules-tomi', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jules Tomi", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4281,7 +4281,7 @@ app.get('/artists/CFAID000040', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000041', function(req, res){
+app.get('/artists/emmanuel-chieze', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Emmanuel Chieze", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4388,7 +4388,7 @@ app.get('/artists/CFAID000041', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000042', function(req, res){
+app.get('/artists/sean-vadaru', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Sean Vadaru", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4495,7 +4495,7 @@ app.get('/artists/CFAID000042', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000043', function(req, res){
+app.get('/artists/lianna-klassen', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Lianna Klassen", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4602,7 +4602,7 @@ app.get('/artists/CFAID000043', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000044', function(req, res){
+app.get('/artists/emily-spooner', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Emily Spooner", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4709,7 +4709,7 @@ app.get('/artists/CFAID000044', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000045', function(req, res){
+app.get('/artists/isobel-rae', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Isobel Rae", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4816,7 +4816,7 @@ app.get('/artists/CFAID000045', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000046', function(req, res){
+app.get('/artists/jordan-kasarjian', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jordan Kasarjian", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -4923,7 +4923,7 @@ app.get('/artists/CFAID000046', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000047', function(req, res){
+app.get('/artists/mahnoor-malik', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Mahnoor Malik", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5030,7 +5030,7 @@ app.get('/artists/CFAID000047', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000048', function(req, res){
+app.get('/artists/serge-demetrius-dube', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Serge Demetrius Dube", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5137,7 +5137,7 @@ app.get('/artists/CFAID000048', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000049', function(req, res){
+app.get('/artists/koku-awuye', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Koku Awuye", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5244,7 +5244,7 @@ app.get('/artists/CFAID000049', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000050', function(req, res){
+app.get('/artists/nastia-cloutier-ignatiev', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Nastia Cloutier-Ignatiev", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5351,7 +5351,7 @@ app.get('/artists/CFAID000050', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000051', function(req, res){
+app.get('/artists/jade-wulfraat', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Jade Wulfraat", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5458,7 +5458,7 @@ app.get('/artists/CFAID000051', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000052', function(req, res){
+app.get('/artists/laurence-belzile"', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Laurence Belzile", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5565,7 +5565,7 @@ app.get('/artists/CFAID000052', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000053', function(req, res){
+app.get('/artists/anna-sadofsky', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Anna Sadofsky", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5672,7 +5672,7 @@ app.get('/artists/CFAID000053', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000054', function(req, res){
+app.get('/artists/lesya-nakoneczny', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Lesya Nakoneczny", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5779,7 +5779,7 @@ app.get('/artists/CFAID000054', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000055', function(req, res){
+app.get('/artists/dalia-janian', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Dalia Janian", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5886,7 +5886,7 @@ app.get('/artists/CFAID000055', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000056', function(req, res){
+app.get('/artists/dustyn-lucas', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Dustyn Lucas", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -5993,7 +5993,7 @@ app.get('/artists/CFAID000056', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000057', function(req, res){
+app.get('/artists/grace-paraluch', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Grace Paraluch", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -6100,7 +6100,7 @@ app.get('/artists/CFAID000057', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000058', function(req, res){
+app.get('/artists/addison-bale', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Addison Bale", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -6207,7 +6207,7 @@ app.get('/artists/CFAID000058', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000059', function(req, res){
+app.get('/artists/minji-kim', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Minji Kim", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -6314,7 +6314,7 @@ app.get('/artists/CFAID000059', function(req, res){
             });
         });
     });
-app.get('/artists/CFAID000060', function(req, res){
+app.get('/artists/madeline-kinney', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Madeline Kinney", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
