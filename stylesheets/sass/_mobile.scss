@@ -28,9 +28,24 @@ canvas {
     @include boxflexh;
 }
 
+.nav-art {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.nav-events {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.nav-services {
+    display: inline-block;
+    margin-right: 0px;
+}
+
 .nav-about {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .nav-right {
