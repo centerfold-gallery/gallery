@@ -28,6 +28,11 @@ canvas {
     @include boxflexh;
 }
 
+.nav-about {
+    display: inline-block;
+    margin-right: 30px;
+}
+
 .nav-right {
     display: none;
 }
@@ -47,6 +52,7 @@ canvas {
     padding-top: 3px;
     padding-left: 3px;
     padding-right: 3px;
+    font-size: 1em;
 }
 
 .nav-social {
