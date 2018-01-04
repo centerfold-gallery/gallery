@@ -383,7 +383,6 @@ img#threed.threed-mobile {
 
 .footer {
     width: 80%;
-    background-color: yellow;
     margin-left: 10%;
     height: auto;
     font-size: 0.8em;
@@ -396,4 +395,11 @@ img#threed.threed-mobile {
     width: 100%;
     display: block;
     line-height: 1.4em;
+}
+
+.footer-column:first-of-type {
+    height: 2em;
+    overflow: hidden;
+    margin-top: 4em;
+    margin-bottom: 2em;
 }
