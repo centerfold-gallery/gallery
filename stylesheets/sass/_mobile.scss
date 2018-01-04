@@ -388,6 +388,7 @@ img#threed.threed-mobile {
     height: auto;
     font-size: 0.8em;
     margin-bottom: 8em;
+    @include boxflex-null;
 }
 
 .footer-column,
