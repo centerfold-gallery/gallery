@@ -22,11 +22,16 @@ canvas {
     background-color: #0000ff;
     position: fixed;
     top: 50px;
+    left: 0px;
     right: 0px;
     z-index: 560;
     width: 100%;
     height: 20px;
     @include boxflexh;
+}
+
+.nav-left .nav-link {
+    padding-left: 15px;
 }
 
 .nav-art {
