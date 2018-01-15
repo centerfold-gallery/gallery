@@ -551,6 +551,13 @@ button.highlight {
   content: ", "
 }
 
+.infinite-scroll-request {
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+    @include boxflex;
+}
+
 .buy-2d {
     font-family: $type-1;
 }
