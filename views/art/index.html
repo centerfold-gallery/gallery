@@ -158,10 +158,17 @@
 			                   $elemcard.fadeOut(500);
 			               });
 			           });
+					   var mixdes = mixitup('.everything').destroy();
 					   var mixer = mixitup('.everything', {
-		                   animation: {
+						   animation: {
 		                       enable: false,
 		                       animateResizeContainer: false
+		                   },
+		                   data: {
+		                       dirtyCheck: true
+		                   },
+		                   behavior: {
+		                       liveSort: true
 		                   }
 		               });
 					   var cards = $(".art-wall:last-of-type > .art-rand");
