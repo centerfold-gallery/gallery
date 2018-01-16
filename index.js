@@ -629,7 +629,7 @@ app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
 
 //Featured Collection 2 Configuration
 
-app.get('/featured-collections/FC000002-untitled', function(req, res){
+app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(req, res){
     var context = {title: "Untitled", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
@@ -698,11 +698,11 @@ app.get('/featured-collections/FC000002-untitled', function(req, res){
         return filterStatement;
     }
 
-    getCollection('Untitled').then(function(result) {
+    getCollection('Freckle, Blemish, Wrinkle, Scar').then(function(result) {
         var filterStatement = constructFilterStatement(result);
         getArtwork(filterStatement).then(function(result){
             context['homepageArtworks'] = result;
-            getCollection('Untitled').then(function(result){
+            getCollection('Freckle, Blemish, Wrinkle, Scar').then(function(result){
                 var filterStatement = constructFilterStatement(result);
                 getArtwork(filterStatement).then(function(result){
                     context['artPageArtworks'] = result;
