@@ -1109,6 +1109,48 @@ body.zoom-overlay-open {
     padding-right: 3px;
 }
 
+.night-mode {
+    background-color: #1f1a28 !important;
+    background: #1f1a28 !important;
+    color: #fff !important;
+}
+
+.night-shadow {
+    background-color: $background-color;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
+    box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
+}
+
+.night-threed-button {
+    color: #1f1a28;
+    font-family: $type-4;
+    font-size: 0.4em;
+    padding: 0.3em 0.8em 0.2em 0.8em;
+    margin-left: 1em;
+    background-color: rgba(255, 249, 249, 100);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 100);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 100);
+    box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 100);
+    @include boxflex;
+    width: 6em;
+    height: 1em;
+}
+
+.night-image {
+    -webkit-filter: brightness(1000%);
+    filter: brightness(1000%);
+}
+
+.night-mode-input {
+    border-bottom: 1px solid $background-color !important;
+    color: $background-color;
+}
+
+.night-footer-border {
+    background-color: $background-color;
+}
+
 // CERTIFICATE OF AUTHENTICATION
 
 .cert-full {
