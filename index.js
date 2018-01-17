@@ -653,7 +653,7 @@ app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(
     var getArtwork = function(filterStatement){
         return new Promise(function(resolve, reject) {
         base('Artworks')
-            .select({view: "Grid view", filterByFormula: filterStatement})
+            .select({view: "Grid view", sort: [{field: "Numbered In Collection", direction: "asc"}], filterByFormula: filterStatement})
             .firstPage(function(err, homepageArtworks) {
                 if(err) {
                     reject(err)
