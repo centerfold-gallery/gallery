@@ -78,6 +78,12 @@
 	</script>
     <footer>
 		{{> body-end}}
-		<script src="{{static_url}}js/three/three-moments-distorted.js"></script>
+		<script>
+		if (window.screen.width > 780) {
+			document.write(
+			'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
+			)
+		}
+		</script>
     </footer>
 </html>

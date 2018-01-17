@@ -198,7 +198,13 @@
 	                cards.eq(target).before(cards.eq(target2));
 	            }
 	        </script>
-			<script src="{{static_url}}js/three/laurent-3D.js"></script>
+			<script>
+			if (window.screen.width > 780) {
+				document.write(
+				'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
+				)
+			}
+			</script>
 			<script>
 				$(document).ready(function(){
 					$('#next-test').click(function () {
