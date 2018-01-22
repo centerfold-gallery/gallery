@@ -25,9 +25,10 @@
                 <div class="event-description">
 					<br/>
 					This is a list of all the artists we currently represent.
-                </div>
-                <div class="artists-page-list">
-                    <a href="/artists/{{fields.Artist ID String}}" class="artists-page-list">{{Full Name}}</a><br>
+					<br/>
+					<br/>
+					<br/>
+					{{fields.Full Name}}
                 </div>
             </div>
         </div>
@@ -36,12 +37,5 @@
 	</body>
     <footer>
 		{{> body-end}}
-		<script>
-if (window.screen.width > 780) {
-  document.write(
-  '<script src="{{static_url}}js/three/andrew-3D.js"><\/script>'
-  )
-}
-</script>
     </footer>
 </html>
