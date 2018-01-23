@@ -892,57 +892,41 @@ app.get('/events', function (req, res) {
     });
 });
 
-// app.get('/artists', function (req, res) {
-//   res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
-// });
-
 app.get('/artists', function (req, res) {
-
-    var Airtable = require('airtable');
-    var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-    var context = {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
-
-    var Airtable = require('airtable');
-    var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-
-    base('Artists').select({
-        // Selecting the first 3 records in Grid view:
-        maxRecords: 3,
-        view: "Grid view"
-    }).eachPage(function page(records, fetchNextPage) {
-        // This function (`page`) will get called for each page of records.
-
-        console.log(records);
-
-        records.forEach(function(record) {
-            console.log('Retrieved', record.get('Full Name'));
-        });
-
-        res.render(
-            'artists/index.html',
-            records
-            //context
-        );
-
-        fetchNextPage();
-
-    }, function done(err) {
-        if (err) { console.error(err); return; }
-    });
-
-    // base('Artists').find('recPxkmugLyHfDHZS', function(err, record) {
-    //     if (err) {
-    //         console.error(err); return;
-    //     }
-    //     //res.json(record);
-    //     console.log(record);
-    //
-    //     res.render(
-    //         'artists/index.html',
-    //         context
-    //     );
-    // });
+  res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
+
+// ARTISTS PAGE W AIRTABLE app.get('/artists', function (req, res) {
+//
+//     var Airtable = require('airtable');
+//     var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
+//     var context = {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+//
+//     base('Artists').select({
+//         // Selecting the first 3 records in Grid view:
+//         maxRecords: 3,
+//         view: "Grid view"
+//     }).eachPage(function page(records, fetchNextPage) {
+//         // This function (`page`) will get called for each page of records.
+//
+//         console.log(records);
+//
+//         records.forEach(function(record) {
+//             console.log('Retrieved', record.get('Full Name'));
+//         });
+//
+//         res.render(
+//             'artists/index.html',
+//             records
+//             //context
+//         );
+//
+//         fetchNextPage();
+//
+//     }, function done(err) {
+//         if (err) { console.error(err); return; }
+//     });
+// });
 
 app.get('/services', function (req, res) {
   res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
