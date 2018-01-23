@@ -675,6 +675,20 @@ button.highlight {
     border-bottom: 1px solid $color-1;
 }
 
+.artists-list {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: $type-2;
+    font-size: 0.8em;
+}
+
+.artists-list-columns {
+    padding-left: 15%;
+    column-count: 3;
+    column-width: 30%;
+}
+
 .artist-page-artist,
 .artist-page-bio {
     display: none;

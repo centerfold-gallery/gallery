@@ -141,6 +141,20 @@ img#threed.threed-mobile {
     margin-left: 10%;
 }
 
+.artists-list {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: $type-2;
+    font-size: 1.2em;
+}
+
+.artists-list-columns {
+    padding-left: 0%;
+    column-count: 1;
+    column-width: 100%;
+}
+
 .buy {
     overflow-y: scroll;
     width: 100vw;
