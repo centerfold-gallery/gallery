@@ -42,8 +42,12 @@
                         <div class="event-card-description">
                             {{{fields.Description}}}
 							<br/>
-							<br/>
-							Total Amount Raised: ${{fields.TotalAmountRaised}}
+                            {{#fields.TotalAmountRaised}}
+                                <br/>
+                                Total Amount Raised: ${{.}}
+                            {{/fields.TotalAmountRaised}}
+                            {{^fields.TotalAmountRaised}}
+                            {{/fields.TotalAmountRaised}}
                         </div>
                         <a href="{{fields.Link}}" target="_blank" class="event-view">View on Facebook</a>
                     </div>
