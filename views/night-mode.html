@@ -1,112 +1,115 @@
-<script src="{{static_url}}js/jquery.cookie.js"></script>
-<script>
-function nightMode() {
-    myCookieVal = $('.everything').hasClass('night-mode') ? 'On' : 'Off';
-    $.cookie('CenterfoldNightMode', myCookieVal, { path: '/' });
-}
+        <script src="https:&#x2F;&#x2F;s3.amazonaws.com&#x2F;centerfold-website&#x2F;js/jquery.cookie.js"></script>
+        <script>
+        function nightMode() {
+            myCookieVal = $('.everything').hasClass('night-mode') ? 'On' : 'Off';
+            $.cookie('CenterfoldNightMode', myCookieVal, { path: '/' });
+        }
 
-if ($.cookie('CenterfoldNightMode') == 'On') {
-        $('.everything').addClass('night-mode');
-        $('.still').addClass('night-mode');
-        $('.nav').addClass('night-mode');
-        $('.centerfold-14').addClass('night-mode');
-        $('.event-description').addClass('night-mode');
-        $('.artist-card-wrap').addClass('night-mode');
-        $('.art-title').addClass('night-mode');
-        $('.artists-page-list-item').addClass('night-mode');
-        $('.buy-artist-card-wrap').addClass('night-mode');
-        $('.buy-art-title').addClass('night-mode');
-        $('.buy-art-artist').addClass('night-mode');
-        $('.buy-art-description').addClass('night-mode');
-        $('.thank-you').addClass('night-mode');
-        $('.thank-you-title').addClass('night-mode');
-        $('.hello').addClass('night-mode');
-        $('.about-description').addClass('night-mode');
-        $('#about-0').addClass('night-mode');
-        $('.centerfold-header').addClass('night-mode');
-        $('.contact-name').addClass('night-mode');
-        $('.contact-title').addClass('night-mode');
-        $('.contact-email').addClass('night-mode');
-        $('.featured-collection-header').addClass('night-mode');
-        $('#mce-EMAIL').addClass('night-mode-input');
-        $('.footer-border').addClass('night-footer-border');
-        $('.zoom-overlay').addClass('night-mode');
-        $('.about-press-logo').addClass('night-image');
+        if ($.cookie('CenterfoldNightMode') == 'On') {
+                $('.everything').addClass('night-mode');
+                $('.still').addClass('night-mode');
+                $('.nav').addClass('night-mode');
+                $('.centerfold-14').addClass('night-mode');
+                $('.event-description').addClass('night-mode');
+                $('.artist-card-wrap').addClass('night-mode');
+                $('.art-title').addClass('night-mode');
+                $('.artists-page-list-item').addClass('night-mode');
+                $('.buy-buy-page').addClass('night-mode');
+                $('.buy-artist-card-wrap').addClass('night-mode');
+                $('.buy-art-title').addClass('night-mode');
+                $('.buy-art-artist').addClass('night-mode');
+                $('.buy-art-description').addClass('night-mode');
+                $('.thank-you').addClass('night-mode');
+                $('.thank-you-title').addClass('night-mode');
+                $('.hello').addClass('night-mode');
+                $('.about-description').addClass('night-mode');
+                $('#about-0').addClass('night-mode');
+                $('.centerfold-header').addClass('night-mode');
+                $('.contact-name').addClass('night-mode');
+                $('.contact-title').addClass('night-mode');
+                $('.contact-email').addClass('night-mode');
+                $('.featured-collection-header').addClass('night-mode');
+                $('#mce-EMAIL').addClass('night-mode-input');
+                $('.footer-border').addClass('night-footer-border');
+                $('.zoom-overlay').addClass('night-mode');
+                $('.about-press-logo').addClass('night-image');
 
-        $('.shadow').addClass('night-shadow');
-        $('.threed-button').addClass('night-threed-button');
+                $('.shadow').addClass('night-shadow');
+                $('.threed-button').addClass('night-threed-button');
 
-        $('.logo').find('img').toggle();
-        $('.home-container-logo').find('img').toggle();
-        $('.footer-column').find('img').toggle();
-        $('.inline-logo').find('img').toggle();
-} else {
-        $('.everything').removeClass('night-mode');
-        $('.still').removeClass('night-mode');
-        $('.nav').removeClass('night-mode');
-        $('.centerfold-14').removeClass('night-mode');
-        $('.event-description').removeClass('night-mode');
-        $('.artist-card-wrap').removeClass('night-mode');
-        $('.art-title').removeClass('night-mode');
-        $('.artists-page-list-item').removeClass('night-mode');
-        $('.buy-artist-card-wrap').removeClass('night-mode');
-        $('.buy-art-title').removeClass('night-mode');
-        $('.buy-art-artist').removeClass('night-mode');
-        $('.buy-art-description').removeClass('night-mode');
-        $('.thank-you').removeClass('night-mode');
-        $('.thank-you-title').removeClass('night-mode');
-        $('.hello').removeClass('night-mode');
-        $('.about-description').removeClass('night-mode');
-        $('#about-0').removeClass('night-mode');
-        $('.centerfold-header').removeClass('night-mode');
-        $('.contact-name').removeClass('night-mode');
-        $('.contact-title').removeClass('night-mode');
-        $('.contact-email').removeClass('night-mode');
-        $('.featured-collection-header').removeClass('night-mode');
-        $('.footer-border').removeClass('night-footer-border');
-        $('.zoom-overlay').removeClass('night-mode');
-        $('.about-press-logo').removeClass('night-image');
+                $('.logo').find('img').toggle();
+                $('.home-container-logo').find('img').toggle();
+                $('.footer-column').find('img').toggle();
+                $('.inline-logo').find('img').toggle();
+        } else {
+                $('.everything').removeClass('night-mode');
+                $('.still').removeClass('night-mode');
+                $('.nav').removeClass('night-mode');
+                $('.centerfold-14').removeClass('night-mode');
+                $('.event-description').removeClass('night-mode');
+                $('.artist-card-wrap').removeClass('night-mode');
+                $('.art-title').removeClass('night-mode');
+                $('.artists-page-list-item').removeClass('night-mode');
+                $('.buy-buy-page').removeClass('night-mode');
+                $('.buy-artist-card-wrap').removeClass('night-mode');
+                $('.buy-art-title').removeClass('night-mode');
+                $('.buy-art-artist').removeClass('night-mode');
+                $('.buy-art-description').removeClass('night-mode');
+                $('.thank-you').removeClass('night-mode');
+                $('.thank-you-title').removeClass('night-mode');
+                $('.hello').removeClass('night-mode');
+                $('.about-description').removeClass('night-mode');
+                $('#about-0').removeClass('night-mode');
+                $('.centerfold-header').removeClass('night-mode');
+                $('.contact-name').removeClass('night-mode');
+                $('.contact-title').removeClass('night-mode');
+                $('.contact-email').removeClass('night-mode');
+                $('.featured-collection-header').removeClass('night-mode');
+                $('.footer-border').removeClass('night-footer-border');
+                $('.zoom-overlay').removeClass('night-mode');
+                $('.about-press-logo').removeClass('night-image');
 
-        $('.shadow').removeClass('night-shadow');
-        $('.threed-button').removeClass('night-threed-button');
-        $('#mce-EMAIL').removeClass('night-mode-input');
-}
+                $('.shadow').removeClass('night-shadow');
+                $('.threed-button').removeClass('night-threed-button');
+                $('#mce-EMAIL').removeClass('night-mode-input');
+        }
 
-$("#night-mode").click(function () {
-    $('.everything').toggleClass('night-mode');
-    $('.still').toggleClass('night-mode');
-        $('.nav').toggleClass('night-mode');
-        $('.centerfold-14').toggleClass('night-mode');
-        $('.event-description').toggleClass('night-mode');
-        $('.artist-card-wrap').toggleClass('night-mode');
-        $('.art-title').toggleClass('night-mode');
-        $('.artists-page-list-item').toggleClass('night-mode');
-        $('.buy-artist-card-wrap').toggleClass('night-mode');
-        $('.buy-art-title').toggleClass('night-mode');
-        $('.buy-art-artist').toggleClass('night-mode');
-        $('.buy-art-description').toggleClass('night-mode');
-        $('.thank-you').toggleClass('night-mode');
-        $('.thank-you-title').toggleClass('night-mode');
-        $('.hello').toggleClass('night-mode');
-        $('.about-description').toggleClass('night-mode');
-        $('#about-0').toggleClass('night-mode');
-        $('.centerfold-header').toggleClass('night-mode');
-        $('.contact-name').toggleClass('night-mode');
-        $('.contact-title').toggleClass('night-mode');
-        $('.contact-email').toggleClass('night-mode');
-        $('.featured-collection-header').toggleClass('night-mode');
-        $('.footer-border').toggleClass('night-footer-border');
-        $('.zoom-overlay').toggleClass('night-mode');
-        $('.about-press-logo').toggleClass('night-image');
+        $("#night-mode").click(function () {
+            $('.everything').toggleClass('night-mode');
+            $('.still').toggleClass('night-mode');
+                $('.nav').toggleClass('night-mode');
+                $('.centerfold-14').toggleClass('night-mode');
+                $('.event-description').toggleClass('night-mode');
+                $('.artist-card-wrap').toggleClass('night-mode');
+                $('.art-title').toggleClass('night-mode');
+                $('.artists-page-list-item').toggleClass('night-mode');
+                $('.buy-buy-page').toggleClass('night-mode');
+                $('.buy-artist-card-wrap').toggleClass('night-mode');
+                $('.buy-art-title').toggleClass('night-mode');
+                $('.buy-art-artist').toggleClass('night-mode');
+                $('.buy-art-description').toggleClass('night-mode');
+                $('.thank-you').toggleClass('night-mode');
+                $('.thank-you-title').toggleClass('night-mode');
+                $('.hello').toggleClass('night-mode');
+                $('.about-description').toggleClass('night-mode');
+                $('#about-0').toggleClass('night-mode');
+                $('.centerfold-header').toggleClass('night-mode');
+                $('.contact-name').toggleClass('night-mode');
+                $('.contact-title').toggleClass('night-mode');
+                $('.contact-email').toggleClass('night-mode');
+                $('.featured-collection-header').toggleClass('night-mode');
+                $('.footer-border').toggleClass('night-footer-border');
+                $('.zoom-overlay').toggleClass('night-mode');
+                $('.about-press-logo').toggleClass('night-image');
 
-        $('.shadow').toggleClass('night-shadow');
-        $('.threed-button').toggleClass('night-threed-button');
-        $('#mce-EMAIL').toggleClass('night-mode-input');
+                $('.shadow').toggleClass('night-shadow');
+                $('.threed-button').toggleClass('night-threed-button');
+                $('#mce-EMAIL').toggleClass('night-mode-input');
 
-        $('.logo').find('img').toggle();
-        $('.home-container-logo').find('img').toggle();
-        $('.footer-column').find('img').toggle();
-        $('.inline-logo').find('img').toggle();
-    nightMode();
-});
-</script>
+                $('.logo').find('img').toggle();
+                $('.home-container-logo').find('img').toggle();
+                $('.footer-column').find('img').toggle();
+                $('.inline-logo').find('img').toggle();
+            nightMode();
+        });
+        </script>
