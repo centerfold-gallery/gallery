@@ -397,7 +397,7 @@ img#threed.threed-mobile {
     @include boxflex;
     pointer-events: none;
     z-index: 1;
-    margin-top: 1em;
+    margin-top: 2.4em;
     margin-bottom: 1em;
 }
 
@@ -416,6 +416,8 @@ img#threed.threed-mobile {
     font-size: 4em;
     line-height: 0.9em;
     letter-spacing: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .dinner-event-description {
