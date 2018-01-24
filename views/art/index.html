@@ -114,7 +114,7 @@
 			{{> body-end}}
 
 		    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-			<script>
+			<script defer>
 				$('.art-gallery').infiniteScroll({
 					path: '.pagination__next',
 					append: '.art-wall',
@@ -204,13 +204,6 @@
 				'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
 				)
 			}
-			</script>
-			<script>
-				$(document).ready(function(){
-					$('#next-test').click(function () {
-						$.post("art");
-					});
-				 });
 			</script>
 	    </footer>
 	</body>
