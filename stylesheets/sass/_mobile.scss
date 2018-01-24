@@ -402,7 +402,7 @@ img#threed.threed-mobile {
 }
 
 .dinner-event-floating img {
-    width: 80vh;
+    width: 80vw;
     height: auto;
     z-index: 1;
 }
@@ -416,6 +416,15 @@ img#threed.threed-mobile {
     font-size: 4em;
     line-height: 0.9em;
     letter-spacing: 0.04em;
+}
+
+.dinner-event-description {
+    font-family: $type-4;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2em;
+    font-size: 2em;
 }
 
 .featured-collection-header img {
