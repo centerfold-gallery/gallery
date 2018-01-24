@@ -1114,11 +1114,13 @@ body.zoom-overlay-open {
     right: 0;
     @include boxflex;
     pointer-events: none;
+    z-index: 1;
 }
 
 .dinner-event-floating img {
     height: 80%;
     width: auto;
+    z-index: 1;
 }
 
 .dinner-event-title {
