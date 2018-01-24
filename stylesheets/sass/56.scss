@@ -1208,10 +1208,12 @@ body.zoom-overlay-open {
 }
 
 .night-image {
-    // -webkit-filter: brightness(1000%);
-    // filter: brightness(1000%);
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.night-underline {
+    border-bottom: 0.1em solid $background-color;
 }
 
 .night-mode-input {
