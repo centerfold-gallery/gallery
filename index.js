@@ -219,18 +219,6 @@ app.get('/art', function(req, res){
     });
 });
 
-// var fooTest = function() {
-//     console.log("Fetching");
-// };
-
-app.post('/art', function(req, res) {
-    console.log(req.body);
-
-    console.log("Sent back");
-
-    // fooTest();
-});
-
 app.get('/art/2', function(req, res){
     var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
@@ -509,22 +497,6 @@ app.get('/art/4', function(req, res){
         });
     });
 });
-
-// app.get('/artists', function (req, res) {
-//
-//     var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base('appAxg6rhUJ9BZmV4');
-//     var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
-//
-//     base('Artists').select({
-//         view: 'Grid view'
-//     }).firstPage(function(err, records) {
-//         if (err) { console.error(err); return; }
-//         {
-//             console.log(records);
-//             res.render('artists/index.html', records);
-//         }
-//     });
-// });
 
 // Featured Collection 1 Configuration
 
