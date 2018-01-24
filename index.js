@@ -1,11 +1,10 @@
 const express = require('express');
+var compression = require('compression');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
 var path = require('path')
 var config = require('./config');
-
-var bodyParser = require('body-parser');
 
 // Airtable Configuration
 var Airtable = require('airtable');
@@ -20,12 +19,12 @@ app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
 app.use('/fonts', express.static('fonts'))
 
+// GZIP
+app.use(compression());
+
 // Setup Mustache
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
-
-// Setup Body Parser
-app.use(bodyParser.urlencoded({extended : false}));
 
 app.get('/', function(req, res){
     var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
@@ -33,7 +32,7 @@ app.get('/', function(req, res){
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
             base('Online Featured Collection')
-                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .select({view: "Grid view", maxRecords: 3, filterByFormula: "{Title} = '"+ title +"'"})
                 .firstPage(function(err, homepageArt) {
                     if(err) {
                         reject(err)
@@ -867,38 +866,6 @@ app.get('/events', function (req, res) {
 app.get('/artists', function (req, res) {
   res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
-
-// ARTISTS PAGE W AIRTABLE app.get('/artists', function (req, res) {
-//
-//     var Airtable = require('airtable');
-//     var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-//     var context = {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
-//
-//     base('Artists').select({
-//         // Selecting the first 3 records in Grid view:
-//         maxRecords: 3,
-//         view: "Grid view"
-//     }).eachPage(function page(records, fetchNextPage) {
-//         // This function (`page`) will get called for each page of records.
-//
-//         console.log(records);
-//
-//         records.forEach(function(record) {
-//             console.log('Retrieved', record.get('Full Name'));
-//         });
-//
-//         res.render(
-//             'artists/index.html',
-//             records
-//             //context
-//         );
-//
-//         fetchNextPage();
-//
-//     }, function done(err) {
-//         if (err) { console.error(err); return; }
-//     });
-// });
 
 app.get('/services', function (req, res) {
   res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
