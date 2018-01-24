@@ -397,10 +397,12 @@ img#threed.threed-mobile {
     @include boxflex;
     pointer-events: none;
     z-index: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .dinner-event-floating img {
-    height: 80%;
+    height: 80vh;
     width: auto;
     z-index: 1;
 }
