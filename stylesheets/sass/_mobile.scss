@@ -388,6 +388,34 @@ img#threed.threed-mobile {
     padding-right: 3px;
 }
 
+.dinner-event-floating {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    @include boxflex;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.dinner-event-floating img {
+    height: 80%;
+    width: auto;
+    z-index: 1;
+}
+
+.dinner-event-title {
+    font-family: $type-4;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0.8em;
+    font-size: 4em;
+    line-height: 0.9em;
+    letter-spacing: 0.04em;
+}
+
 .featured-collection-header img {
     display: inline-block;
     width: 80vw;
