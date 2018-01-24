@@ -146,8 +146,13 @@ $line-height-1: 1.2em;
 }
 
 .super {
-    vertical-align: super;
-    font-size: 0.4em;
+    vertical-align: text-top;
+    font-size: 0.6em;
+}
+
+.super-low {
+    vertical-align: baseline;
+    font-size: 0.6em;
 }
 
 a {
@@ -1101,6 +1106,21 @@ body.zoom-overlay-open {
     padding-right: 3px;
 }
 
+.dinner-event-floating {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    @include boxflex;
+    pointer-events: none;
+}
+
+.dinner-event-floating img {
+    height: 80%;
+    width: auto;
+}
+
 .dinner-event-title {
     font-family: $type-4;
     width: 90%;
@@ -1108,8 +1128,31 @@ body.zoom-overlay-open {
     padding-right: 5%;
     margin-top: 0.8em;
     font-size: 10em;
-    line-height: 1em;
+    line-height: 0.9em;
     letter-spacing: 0.04em;
+}
+
+.dinner-event-description {
+    font-family: $type-4;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.dinner-link {
+    border-bottom: 0.1em solid black;
+    margin-bottom: 0.2em;
+}
+
+.menu-collapse {
+    cursor: s-resize;
+}
+
+.menu {
+    cursor: n-resize;
+    display: none;
 }
 
 .fourohno {

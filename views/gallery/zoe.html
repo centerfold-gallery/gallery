@@ -18,8 +18,49 @@
         {{> nav}}
         <div class="still">
             <div class="everything">
+				<div class="dinner-event-floating">
+					<img class="shadow" src="{{static_url}}zoe-dinner/how-can-this-be-now.png">
+				</div>
                 <div class="dinner-event-title">
 					this is not an apology
+				</div>
+				<div class="dinner-event-description">
+					Zoe Pawlak shows figures and rugs, and a private dinner by Park Restaurant with a menu designed by Antonio Park at Centerfold Gallery.<br/>
+					<br/>
+					To follow:<br/>
+					Public Reception and Drinks by Kampai Garden and Flyjin.
+				</div>
+				<div class="dinner-event-description">
+					<span class="super-low">DINNER</span><br/>
+					8<span class="super">PM</span> &mdash; 10<span class="super">PM</span>, 02 February, 2018.<br/>
+					$150 <a href="https://www.eventbrite.ca" class="dinner-link">Tickets</a> &mdash; <span class="dinner-link menu-collapse">Menu</span> <span class="super-low">3 COURSE SET</span>
+					<div class="menu">
+						<br/>
+						<br/>
+						<span class="super-low">APP</span><br/>
+						Lorem ipsum dolor sit amet<br/>
+						Onsectetur adipisicing elit<br/>
+						Laboriosam saepe est quis<br/>
+						<br/>
+						<span class="super-low">MAIN</span><br/>
+						Voluptatibus culpa<br/>
+						Blanditiis rerum facere labore<br/>
+						Reprehenderit iusto molestias<br/>
+						<br/>
+						<span class="super-low">DESSERT</span><br/>
+						Sit incidunt ea ipsam rem<br/>
+						<br/>
+						<span class="super-low">WINE / SAKE</span><br/>
+						etc etc etc<br/>
+						etc etc etc<br/>
+					</div><br/>
+					<br/>
+					<span class="super-low">RECEPTION</span><br/>
+					10<span class="super">PM</span> &mdash; Late<span class="super">NIGHT</span><br/>
+					Free <a class="dinner-link">RSVP</a><br/>
+					<br/>
+					<a href="https://www.google.ca/maps/place/Centerfold+Gallery/@45.4784473,-73.6049808,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc910a6f30a582f:0x676d2e500a6fc4a3!8m2!3d45.4784436!4d-73.602792" target="_blank">376 Ave. Victoria,<br/>
+					Montreal, QC.</a>
 				</div>
 				<!-- <img class="about-img shadow" id="about-img-1" src="{{static_url}}assets/pages/gallery/gallery-1.png" data-action="zoom"> -->
 				<div class="footer-space"></div>
@@ -35,7 +76,14 @@
 			  )
 			}
 			</script>
-			<script src="{{static_url}}js/skrollr.min.js"></script>
+			<script>
+			$('.menu-collapse').click(function(){
+				$('.menu').slideToggle('slow');
+			});
+			$('.menu').click(function(){
+				$('.menu').slideToggle('slow');
+			});
+			</script>
 	    </footer>
     </body>
 </html>
