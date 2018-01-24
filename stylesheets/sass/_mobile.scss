@@ -402,17 +402,17 @@ img#threed.threed-mobile {
 }
 
 .dinner-event-floating img {
-    height: 80vh;
-    width: auto;
+    width: 80vh;
+    height: auto;
     z-index: 1;
 }
 
 .dinner-event-title {
     font-family: $type-4;
-    width: 90%;
+    width: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 0.8em;
+    margin-top: 2em;
     font-size: 4em;
     line-height: 0.9em;
     letter-spacing: 0.04em;
