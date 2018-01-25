@@ -1213,6 +1213,11 @@ body.zoom-overlay-open {
     color: #fff !important;
 }
 
+.night-mode-elements {
+    background-color: $background-color !important;
+    background: $background-color !important;
+}
+
 .night-shadow {
     background-color: $background-color;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
