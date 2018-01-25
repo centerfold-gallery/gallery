@@ -103,6 +103,7 @@ body {
 }
 
 $background-color: #fffbfb;
+$night-color: #1f1a28;
 
 $color-1: #000;
 $color-2: #fffbfb;
@@ -1207,8 +1208,8 @@ body.zoom-overlay-open {
 }
 
 .night-mode {
-    background-color: #1f1a28 !important;
-    background: #1f1a28 !important;
+    background-color: $night-color !important;
+    background: $night-color !important;
     color: #fff !important;
 }
 
@@ -1220,7 +1221,7 @@ body.zoom-overlay-open {
 }
 
 .night-threed-button {
-    color: #1f1a28;
+    color: $night-color;
     font-family: $type-4;
     font-size: 0.4em;
     padding: 0.3em 0.8em 0.2em 0.8em;
