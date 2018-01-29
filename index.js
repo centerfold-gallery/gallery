@@ -1,5 +1,6 @@
+const sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
-var compression = require('compression');
+const compression = require('compression');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
@@ -18,6 +19,9 @@ var base = Airtable.base(config.storageConfig.airtableBase);
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
 app.use('/fonts', express.static('fonts'))
+
+// SSL
+app.use(sslRedirect());
 
 // GZIP
 app.use(compression());
