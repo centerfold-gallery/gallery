@@ -1,6 +1,6 @@
-const sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
-const compression = require('compression');
+var compression = require('compression');
+var sslRedirect = require('heroku-ssl-redirect');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
