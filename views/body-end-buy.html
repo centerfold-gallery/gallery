@@ -130,15 +130,6 @@
             }
         });
         </script>
-        <script src="https://s3.amazonaws.com/centerfold-website/js/mixitup.min.js"></script>
-        <script>
-            var mixer = mixitup('.everything', {
-                animation: {
-                    enable: false,
-                    animateResizeContainer: false
-                }
-            });
-        </script>
         <script>
             jQuery(function ($) {
                 $('button').click(function () {
@@ -158,9 +149,16 @@
             });
         </script>
         <script>
-            jQuery('.art-filter-toggle').on('click', function(event) {
-                jQuery('.art-filter-toggle').fadeOut(500);
-                jQuery('.art-filter-box').fadeIn(500);
+            $('.shipping').hover(function(){
+                $(this).hide().text("Learn more about shipping").fadeIn("fast");
+            }, function() {
+                $(this).hide().text("+ ${{fields.Shipping Cost}}.00 Shipping").fadeIn("fast");
+            });
+            $('.shipping').click(function(){
+                $('.shipping-info').fadeToggle("fast", "linear");
+            });
+            $('.shipping-info').click(function(){
+                $('.shipping-info').fadeToggle("fast", "linear");
             });
         </script>
         {{> night-mode }}

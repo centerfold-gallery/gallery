@@ -577,6 +577,16 @@ button.highlight {
 
 }
 
+.shipping {
+    cursor: pointer;
+}
+
+.shipping-info {
+    display: none;
+    font-size: 0.8em;
+    line-height: 0em;
+}
+
 .sold-a { display: none }
 
 .sold-atrue { display: block }
@@ -589,10 +599,8 @@ button.highlight {
     display: inline-block;
 }
 
-.sold-atrue ~ .price {
-    display: none;
-}
-
+.sold-atrue ~ .price,
+.sold-atrue ~ .shipping,
 .sold-atrue ~ form {
     display: none;
 }
@@ -810,6 +818,11 @@ button.highlight {
 
 .buy-art-medium span:not(:last-of-type)::after {
   content: ", "
+}
+
+.sold-or-not {
+    width: 200px;
+    overflow-x: visible;
 }
 
 body.zoom-overlay-open {
