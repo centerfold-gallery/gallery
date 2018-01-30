@@ -23,9 +23,14 @@
 						<img src="{{static_url}}assets/centerfold.svg"><img src="{{static_url}}assets/centerfold-white.svg" style="display:none">
 					</div>
 					<div class="home-container">
-						<div class="home-container-images">
+						<!-- <div class="home-container-images">
                             {{# homepageArtworks}}
                                 <a href="art/{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
+                            {{/ homepageArtworks}}
+						</div> -->
+						<div class="home-container-images">
+                            {{# homepageArtworks}}
+                                <a href="gallery/arrival-measures"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
                             {{/ homepageArtworks}}
 						</div>
 					</div>
