@@ -43,6 +43,7 @@
     font-family: $type-4;
     font-size: 0.6em;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .nav-active {
@@ -72,13 +73,14 @@
     display: inline-block;
     opacity: 1;
     font-size: 0.6em;
-    margin-right: 30px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
 .nav-3d {
     display: inline-block;
     cursor: crosshair;
+    margin-left: 30px;
 }
 
 .nav-social-links {
