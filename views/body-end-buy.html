@@ -149,12 +149,7 @@
             });
         </script>
         <script>
-            $('.shipping').hover(function(){
-                $(this).hide().text("Learn more about shipping").fadeIn("fast");
-            }, function() {
-                $(this).hide().text("+ ${{fields.Shipping Cost}}.00 Shipping").fadeIn("fast");
-            });
-            $('.shipping').click(function(){
+            $('.shipping-container').click(function(){
                 $('.shipping-info').fadeToggle("fast", "linear");
             });
             $('.shipping-info').click(function(){

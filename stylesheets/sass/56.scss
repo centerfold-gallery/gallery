@@ -581,10 +581,28 @@ button.highlight {
     cursor: pointer;
 }
 
+.shipping-hover {
+    display: none;
+    cursor: pointer;
+}
+
+.shipping-container {
+    position: relative;
+}
+
+.shipping-container:hover .shipping {
+    display: none;
+}
+
+.shipping-container:hover .shipping-hover {
+    display: inline-block;
+}
+
 .shipping-info {
     display: none;
     font-size: 0.8em;
     line-height: 0em;
+    cursor: n-resize;
 }
 
 .sold-a { display: none }
@@ -600,7 +618,7 @@ button.highlight {
 }
 
 .sold-atrue ~ .price,
-.sold-atrue ~ .shipping,
+.sold-atrue ~ .shipping-container,
 .sold-atrue ~ form {
     display: none;
 }
