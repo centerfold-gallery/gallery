@@ -208,20 +208,10 @@ img#threed.threed-mobile {
 
 .buy-flex {
     width: 100%;
-    height: 100%;
-    @include boxflex;
-    position: relative;
-    overflow-y: scroll;
-    // pointer-events: none;
-}
-
-.buy-wrap {
-    width: 100%;
     height: 150%;
     @include boxflex;
     position: relative;
     z-index:  601;
-    // pointer-events: none;
 }
 
 .close {
