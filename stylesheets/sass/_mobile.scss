@@ -212,7 +212,7 @@ img#threed.threed-mobile {
     @include boxflex;
     position: relative;
     z-index:  601;
-    pointer-events: none;
+    // pointer-events: none;
 }
 
 .close {
