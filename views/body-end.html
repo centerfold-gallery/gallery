@@ -173,6 +173,17 @@
                 jQuery('.art-filter-toggle').fadeIn(500);
             });
         </script>
+        <script>
+            $(function() {
+                $(window).unload(function() {
+                  var scrollPosition = $("div#still").scrollTop();
+                  localStorage.setItem("scrollPosition", scrollPosition);
+                });
+                if(localStorage.scrollPosition) {
+                  $("div#still").scrollTop(localStorage.getItem("scrollPosition"));
+                }
+            });
+        </script>
         {{> night-mode }}
         <script src="{{static_url}}js/three.js"></script>
         <script src="{{static_url}}js/PointerLockControls.js"></script>
