@@ -211,12 +211,13 @@ img#threed.threed-mobile {
 }
 
 .buy-wrap {
-    margin-top: 3em;
+    margin-top: 6em;
     margin-bottom: 3em;
 }
 
 .buy-flex {
     width: 100%;
+    height: auto;
     position: relative;
     z-index:  601;
     // pointer-events: none;
@@ -450,6 +451,10 @@ img#threed.threed-mobile {
     width: 80vw;
     height: auto;
     margin-left: 0;
+}
+
+.footer-space-buy {
+    display: block;
 }
 
 .footer {
