@@ -751,6 +751,7 @@ button.highlight {
     height: 100%;
     z-index: 200;
     display: block;
+    overflow-y: scroll;
 }
 
 .buy-flex {
