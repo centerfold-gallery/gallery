@@ -879,6 +879,14 @@ app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
+app.get('/tools', function (req, res) {
+  res.render('tools/index.html', {title: "Tools", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
+app.get('/tools/hanging-guide', function (req, res) {
+  res.render('tools/hanging-guide.html', {title: "Hanging Guide", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 app.get('/gallery', function (req, res) {
   res.render('gallery/index.html', {title: "Gallery", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
