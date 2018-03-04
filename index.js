@@ -883,6 +883,10 @@ app.get('/tools', function (req, res) {
   res.render('tools/index.html', {title: "Tools", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
+app.get('/tools/cert', function (req, res) {
+  res.render('tools/cert.html', {title: "Certificate of Authenticity", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 app.get('/tools/hanging-guide', function (req, res) {
   res.render('tools/hanging-guide.html', {title: "Hanging Guide", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
