@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head}}
+    </head>
+	<body>
+        {{> nav}}
+		{{> 3d-overlay}}
+        <div class="still">
+            <div class="everything">
+				<div class="centerfold-14">
+                    Hanging Guide <div id="threed" style="opacity:0;" class="threed pulse animated infinite threed-mobile threed-button">View in 3D</div>
+                </div>
+                <div class="event-description">
+                    <!-- <br/>
+					Welcome.
+  					<br/>
+					<br/>
+					From minimalist inspections of architechture, to large, expressionist studies of the human figure; below, you can find a collection of artworks that were not curated with any overarching theme or subject in mind. More accurately, this set of work was selected on the basis of our experiences in developing the Centerfold project over the past few years, and serves to represent the visual expression of some of the lovely individuals we’ve worked with along the way.  <i class="em em-pray"></i>
+  					<br/>
+					<br/>
+					<span class="mobile-hide">Be sure to check out our 3D functionality to view the latest collection. Go virtual by clicking on the “3D” button above 🔍.<span> -->
+					<br/>
+                </div>
+
+				<div class="hanging-guide-viz">
+					<div class="hanging-guide-wall">
+						<div class="hanging-guide-art-container">
+							<div class="hanging-guide-artwork shadow" id="hanging-guide-artwork-1">
+								Artwork 1<br/>
+								<input id="hg-art1w" type="number" value="0" oninput="output();" />W
+								<span> x </span>
+								<input id="hg-art1h" type="number" value="0" oninput="output();" />H<br/>
+							</div>
+						</div>
+						<div class="hanging-guide-art-container">
+							<div class="hanging-guide-artwork shadow" id="hanging-guide-artwork-2">
+								Artwork 2<br/>
+								<input id="hg-art2w" type="number" value="0" oninput="output();" />W
+								<span> x </span>
+								<input id="hg-art2h" type="number" value="0" oninput="output();" />H<br/>
+							</div>
+						</div>
+						<div class="hanging-guide-art-container">
+							<div class="hanging-guide-artwork shadow" id="hanging-guide-artwork-3">
+								Artwork 3<br/>
+								<input id="hg-art3w" type="number" value="0" oninput="output();" />W
+								<span> x </span>
+								<input id="hg-art3h" type="number" value="0" oninput="output();" />H<br/>
+							</div>
+						</div>
+					</div>
+					Wall Width <input id="hg-wall-width" type="number" value="0" oninput="output();" /><br/>
+				</div>
+
+				<br/>
+
+				<br/>
+				<br/>
+
+				Distance between works: <span id="result">0 </span> Inches
+
+				<br/>
+				<br/>
+				:)
+
+				<div class="footer-space"></div>
+				{{> footer}}
+            </div>
+        </div>
+		<footer>
+			{{> body-end}}
+			<script type="text/javascript" language="javascript" charset="utf-8">
+
+
+
+				function output(){
+					var wallW = document.getElementById('hg-wall-width').value;
+					var art1H = document.getElementById('hg-art1h').value;
+				    var art1W = document.getElementById('hg-art1w').value;
+					var art1H = document.getElementById('hg-art1h').value;
+					var art2W = document.getElementById('hg-art2w').value;
+					var art2H = document.getElementById('hg-art2h').value;
+					var art3W = document.getElementById('hg-art3w').value;
+					var art3H = document.getElementById('hg-art3h').value;
+
+					// change width and height of artworks
+					document.getElementById('hanging-guide-artwork-1').style.width = parseInt(art1W) + "0px";
+					document.getElementById('hanging-guide-artwork-1').style.height = parseInt(art1H) + "0px";
+					document.getElementById('hanging-guide-artwork-2').style.width = parseInt(art2W) + "0px";
+					document.getElementById('hanging-guide-artwork-2').style.height = parseInt(art2H) + "0px";
+					document.getElementById('hanging-guide-artwork-3').style.width = parseInt(art3W) + "0px";
+					document.getElementById('hanging-guide-artwork-3').style.height = parseInt(art3H) + "0px";
+
+					// document.getElementsByClassName('hanging-guide-artwork').style.marginLeft = eval(" [parseInt(art1W) + parseInt(art2W) + parseInt(art3W)] * 100 / parseInt(wallW) / 4; ") + "%";
+					// document.getElementsByClassName('hanging-guide-artwork:last-of-type').style.marginRight = eval(" [parseInt(art1W) + parseInt(art2W) + parseInt(art3W)] * 100 / parseInt(wallW) / 4; ") + "%";
+
+					var disBtwArt = eval(" [parseInt(wallW) - parseInt(art1W) - parseInt(art2W) - parseInt(art3W)] / 4; ");
+
+				    document.getElementById('result').innerHTML = parseInt(disBtwArt);
+				}
+
+			</script>
+			<script>
+			if (window.screen.width > 780) {
+			  document.write(
+			  '<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
+			  )
+			}
+			</script>
+	    </footer>
+    </body>
+</html>
