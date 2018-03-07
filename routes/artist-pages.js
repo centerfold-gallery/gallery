@@ -5458,7 +5458,7 @@ app.get('/artists/jade-wulfraat', function(req, res){
             });
         });
     });
-app.get('/artists/laurence-belzile"', function(req, res){
+app.get('/artists/laurence-belzile', function(req, res){
         var Airtable = require('airtable');
         var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
         var context = {title: "Laurence Belzile", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
