@@ -867,6 +867,12 @@ app.get('/events', function (req, res) {
     });
 });
 
+// SERIES
+
+app.get('/series', function (req, res) {
+  res.render('series/encrypted.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 app.get('/artists', function (req, res) {
   res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
