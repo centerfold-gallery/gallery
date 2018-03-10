@@ -640,6 +640,14 @@ button.highlight {
 }
 
 .shadow {
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0,
+Color='#444')";
+	filter: url("https://s3.amazonaws.com/centerfold-website/assets/shadow.svg");
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.56));
+	filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.56));
+}
+
+.shadow-fallback {
     background-color: $background-color;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
@@ -1274,16 +1282,21 @@ body.zoom-overlay-open {
     color: #fff !important;
 }
 
+.night-mode-no-bg {
+    color: #fff !important;
+}
+
 .night-mode-elements {
     background-color: $background-color !important;
     background: $background-color !important;
 }
 
 .night-shadow {
-    background-color: $background-color;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
-    box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0,
+Color='#fff9f9')";
+	filter: url("https://s3.amazonaws.com/centerfold-website/assets/shadow-night.svg");
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(255, 249, 249, 0.56));
+	filter: drop-shadow(0px 0px 20px rgba(255, 249, 249, 0.56));
 }
 
 .night-threed-button {
