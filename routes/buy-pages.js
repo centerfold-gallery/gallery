@@ -1,7 +1,7 @@
 module.exports = function(app) {
     var config = require('./../config');
 
-    app.get('/artCF000001', function (req, res) {
+    app.get('/art/CF000001', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -20,7 +20,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000002', function (req, res) {
+    app.get('/art/CF000002', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -39,7 +39,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000003', function (req, res) {
+    app.get('/art/CF000003', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -58,7 +58,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000004', function (req, res) {
+    app.get('/art/CF000004', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -77,7 +77,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000005', function (req, res) {
+    app.get('/art/CF000005', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -96,7 +96,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000006', function (req, res) {
+    app.get('/art/CF000006', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -115,7 +115,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000007', function (req, res) {
+    app.get('/art/CF000007', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -134,7 +134,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000008', function (req, res) {
+    app.get('/art/CF000008', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -153,7 +153,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000009', function (req, res) {
+    app.get('/art/CF000009', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -172,7 +172,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000010', function (req, res) {
+    app.get('/art/CF000010', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -191,7 +191,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000011', function (req, res) {
+    app.get('/art/CF000011', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -210,7 +210,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000012', function (req, res) {
+    app.get('/art/CF000012', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -229,7 +229,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000013', function (req, res) {
+    app.get('/art/CF000013', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -248,7 +248,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000014', function (req, res) {
+    app.get('/art/CF000014', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -267,7 +267,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000015', function (req, res) {
+    app.get('/art/CF000015', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -286,7 +286,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000016', function (req, res) {
+    app.get('/art/CF000016', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -305,7 +305,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000017', function (req, res) {
+    app.get('/art/CF000017', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -324,7 +324,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000018', function (req, res) {
+    app.get('/art/CF000018', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -343,7 +343,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000019', function (req, res) {
+    app.get('/art/CF000019', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -362,7 +362,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000020', function (req, res) {
+    app.get('/art/CF000020', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -381,7 +381,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000021', function (req, res) {
+    app.get('/art/CF000021', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -400,7 +400,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000022', function (req, res) {
+    app.get('/art/CF000022', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -419,7 +419,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000023', function (req, res) {
+    app.get('/art/CF000023', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -438,7 +438,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000024', function (req, res) {
+    app.get('/art/CF000024', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -457,7 +457,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000025', function (req, res) {
+    app.get('/art/CF000025', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -476,7 +476,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000026', function (req, res) {
+    app.get('/art/CF000026', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -495,7 +495,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000027', function (req, res) {
+    app.get('/art/CF000027', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -514,7 +514,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000028', function (req, res) {
+    app.get('/art/CF000028', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -533,7 +533,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000029', function (req, res) {
+    app.get('/art/CF000029', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -552,7 +552,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000030', function (req, res) {
+    app.get('/art/CF000030', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -571,7 +571,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000031', function (req, res) {
+    app.get('/art/CF000031', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -590,7 +590,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000032', function (req, res) {
+    app.get('/art/CF000032', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -609,7 +609,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000033', function (req, res) {
+    app.get('/art/CF000033', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -628,7 +628,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000034', function (req, res) {
+    app.get('/art/CF000034', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -647,7 +647,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000035', function (req, res) {
+    app.get('/art/CF000035', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -666,7 +666,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000036', function (req, res) {
+    app.get('/art/CF000036', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -685,7 +685,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000037', function (req, res) {
+    app.get('/art/CF000037', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -704,7 +704,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000038', function (req, res) {
+    app.get('/art/CF000038', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -723,7 +723,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000039', function (req, res) {
+    app.get('/art/CF000039', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -742,7 +742,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000040', function (req, res) {
+    app.get('/art/CF000040', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -761,7 +761,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000041', function (req, res) {
+    app.get('/art/CF000041', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -780,7 +780,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000042', function (req, res) {
+    app.get('/art/CF000042', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -799,7 +799,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000043', function (req, res) {
+    app.get('/art/CF000043', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -818,7 +818,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000044', function (req, res) {
+    app.get('/art/CF000044', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -837,7 +837,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000045', function (req, res) {
+    app.get('/art/CF000045', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -856,7 +856,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000046', function (req, res) {
+    app.get('/art/CF000046', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -875,7 +875,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000047', function (req, res) {
+    app.get('/art/CF000047', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -894,7 +894,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000048', function (req, res) {
+    app.get('/art/CF000048', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -913,7 +913,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000049', function (req, res) {
+    app.get('/art/CF000049', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -932,7 +932,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000050', function (req, res) {
+    app.get('/art/CF000050', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -951,7 +951,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000051', function (req, res) {
+    app.get('/art/CF000051', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -970,7 +970,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000052', function (req, res) {
+    app.get('/art/CF000052', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -989,7 +989,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000053', function (req, res) {
+    app.get('/art/CF000053', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1008,7 +1008,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000054', function (req, res) {
+    app.get('/art/CF000054', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1027,7 +1027,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000055', function (req, res) {
+    app.get('/art/CF000055', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1046,7 +1046,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000056', function (req, res) {
+    app.get('/art/CF000056', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1065,7 +1065,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000057', function (req, res) {
+    app.get('/art/CF000057', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1084,7 +1084,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000058', function (req, res) {
+    app.get('/art/CF000058', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1103,7 +1103,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000059', function (req, res) {
+    app.get('/art/CF000059', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1122,7 +1122,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000060', function (req, res) {
+    app.get('/art/CF000060', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1141,7 +1141,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000061', function (req, res) {
+    app.get('/art/CF000061', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1160,7 +1160,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000062', function (req, res) {
+    app.get('/art/CF000062', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1179,7 +1179,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000069', function (req, res) {
+    app.get('/art/CF000069', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1198,7 +1198,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000070', function (req, res) {
+    app.get('/art/CF000070', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1217,7 +1217,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000071', function (req, res) {
+    app.get('/art/CF000071', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1236,7 +1236,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000072', function (req, res) {
+    app.get('/art/CF000072', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1255,7 +1255,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000073', function (req, res) {
+    app.get('/art/CF000073', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1274,7 +1274,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000074', function (req, res) {
+    app.get('/art/CF000074', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1293,7 +1293,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000075', function (req, res) {
+    app.get('/art/CF000075', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1312,7 +1312,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000076', function (req, res) {
+    app.get('/art/CF000076', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1331,7 +1331,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000077', function (req, res) {
+    app.get('/art/CF000077', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1350,7 +1350,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000078', function (req, res) {
+    app.get('/art/CF000078', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1369,7 +1369,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000079', function (req, res) {
+    app.get('/art/CF000079', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1388,7 +1388,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000080', function (req, res) {
+    app.get('/art/CF000080', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1407,7 +1407,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000081', function (req, res) {
+    app.get('/art/CF000081', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1426,7 +1426,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000082', function (req, res) {
+    app.get('/art/CF000082', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1445,7 +1445,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000083', function (req, res) {
+    app.get('/art/CF000083', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1464,7 +1464,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000084', function (req, res) {
+    app.get('/art/CF000084', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1483,7 +1483,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000085', function (req, res) {
+    app.get('/art/CF000085', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1502,7 +1502,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000086', function (req, res) {
+    app.get('/art/CF000086', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1521,7 +1521,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000087', function (req, res) {
+    app.get('/art/CF000087', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1540,7 +1540,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000088', function (req, res) {
+    app.get('/art/CF000088', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1559,7 +1559,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000089', function (req, res) {
+    app.get('/art/CF000089', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1578,7 +1578,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000090', function (req, res) {
+    app.get('/art/CF000090', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1597,7 +1597,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000091', function (req, res) {
+    app.get('/art/CF000091', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1616,7 +1616,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000092', function (req, res) {
+    app.get('/art/CF000092', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1635,7 +1635,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000093', function (req, res) {
+    app.get('/art/CF000093', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1654,7 +1654,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000094', function (req, res) {
+    app.get('/art/CF000094', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1673,7 +1673,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000095', function (req, res) {
+    app.get('/art/CF000095', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1692,7 +1692,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000096', function (req, res) {
+    app.get('/art/CF000096', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1711,7 +1711,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000097', function (req, res) {
+    app.get('/art/CF000097', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1730,7 +1730,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000098', function (req, res) {
+    app.get('/art/CF000098', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1749,7 +1749,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000099', function (req, res) {
+    app.get('/art/CF000099', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1768,7 +1768,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000119', function (req, res) {
+    app.get('/art/CF000119', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1787,7 +1787,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000122', function (req, res) {
+    app.get('/art/CF000122', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1806,7 +1806,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000123', function (req, res) {
+    app.get('/art/CF000123', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1825,7 +1825,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000124', function (req, res) {
+    app.get('/art/CF000124', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1844,7 +1844,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000125', function (req, res) {
+    app.get('/art/CF000125', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1863,7 +1863,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000126', function (req, res) {
+    app.get('/art/CF000126', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1882,7 +1882,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000127', function (req, res) {
+    app.get('/art/CF000127', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1901,7 +1901,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000128', function (req, res) {
+    app.get('/art/CF000128', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1920,7 +1920,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000129', function (req, res) {
+    app.get('/art/CF000129', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1939,7 +1939,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000130', function (req, res) {
+    app.get('/art/CF000130', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1958,7 +1958,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000131', function (req, res) {
+    app.get('/art/CF000131', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1977,7 +1977,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000132', function (req, res) {
+    app.get('/art/CF000132', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -1996,7 +1996,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000133', function (req, res) {
+    app.get('/art/CF000133', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2015,7 +2015,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000134', function (req, res) {
+    app.get('/art/CF000134', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2034,7 +2034,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000135', function (req, res) {
+    app.get('/art/CF000135', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2053,7 +2053,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000136', function (req, res) {
+    app.get('/art/CF000136', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2072,7 +2072,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000137', function (req, res) {
+    app.get('/art/CF000137', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2091,7 +2091,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000138', function (req, res) {
+    app.get('/art/CF000138', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2110,7 +2110,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000139', function (req, res) {
+    app.get('/art/CF000139', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2129,7 +2129,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000140', function (req, res) {
+    app.get('/art/CF000140', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2148,7 +2148,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000141', function (req, res) {
+    app.get('/art/CF000141', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2167,7 +2167,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000144', function (req, res) {
+    app.get('/art/CF000144', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2186,7 +2186,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000145', function (req, res) {
+    app.get('/art/CF000145', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2205,7 +2205,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000146', function (req, res) {
+    app.get('/art/CF000146', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2224,7 +2224,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000147', function (req, res) {
+    app.get('/art/CF000147', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2243,7 +2243,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000148', function (req, res) {
+    app.get('/art/CF000148', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2262,7 +2262,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000149', function (req, res) {
+    app.get('/art/CF000149', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2281,7 +2281,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000150', function (req, res) {
+    app.get('/art/CF000150', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2300,7 +2300,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000151', function (req, res) {
+    app.get('/art/CF000151', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2319,7 +2319,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000152', function (req, res) {
+    app.get('/art/CF000152', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2338,7 +2338,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000153', function (req, res) {
+    app.get('/art/CF000153', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2357,7 +2357,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000160', function (req, res) {
+    app.get('/art/CF000160', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2376,7 +2376,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000161', function (req, res) {
+    app.get('/art/CF000161', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2395,7 +2395,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000172', function (req, res) {
+    app.get('/art/CF000172', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2414,7 +2414,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000173', function (req, res) {
+    app.get('/art/CF000173', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2433,7 +2433,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000174', function (req, res) {
+    app.get('/art/CF000174', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2452,7 +2452,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000175', function (req, res) {
+    app.get('/art/CF000175', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2471,7 +2471,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000176', function (req, res) {
+    app.get('/art/CF000176', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2490,7 +2490,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000177', function (req, res) {
+    app.get('/art/CF000177', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2509,7 +2509,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000185', function (req, res) {
+    app.get('/art/CF000185', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2528,7 +2528,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000186', function (req, res) {
+    app.get('/art/CF000186', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2547,7 +2547,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000187', function (req, res) {
+    app.get('/art/CF000187', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2566,7 +2566,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000188', function (req, res) {
+    app.get('/art/CF000188', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2585,7 +2585,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000189', function (req, res) {
+    app.get('/art/CF000189', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2604,7 +2604,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000190', function (req, res) {
+    app.get('/art/CF000190', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2623,7 +2623,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000191', function (req, res) {
+    app.get('/art/CF000191', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2642,7 +2642,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000192', function (req, res) {
+    app.get('/art/CF000192', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2661,7 +2661,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000200', function (req, res) {
+    app.get('/art/CF000200', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2680,7 +2680,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000201', function (req, res) {
+    app.get('/art/CF000201', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2699,7 +2699,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000202', function (req, res) {
+    app.get('/art/CF000202', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2718,7 +2718,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000213', function (req, res) {
+    app.get('/art/CF000213', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2737,7 +2737,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000214', function (req, res) {
+    app.get('/art/CF000214', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2756,7 +2756,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000215', function (req, res) {
+    app.get('/art/CF000215', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2775,7 +2775,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000216', function (req, res) {
+    app.get('/art/CF000216', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2794,7 +2794,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000217', function (req, res) {
+    app.get('/art/CF000217', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2813,7 +2813,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000218', function (req, res) {
+    app.get('/art/CF000218', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2832,7 +2832,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000219', function (req, res) {
+    app.get('/art/CF000219', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2851,7 +2851,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000252', function (req, res) {
+    app.get('/art/CF000252', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2870,7 +2870,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000253', function (req, res) {
+    app.get('/art/CF000253', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2889,7 +2889,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000254', function (req, res) {
+    app.get('/art/CF000254', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2908,7 +2908,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000255', function (req, res) {
+    app.get('/art/CF000255', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2927,7 +2927,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000256', function (req, res) {
+    app.get('/art/CF000256', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2946,7 +2946,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000257', function (req, res) {
+    app.get('/art/CF000257', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2965,7 +2965,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000258', function (req, res) {
+    app.get('/art/CF000258', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -2984,7 +2984,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000259', function (req, res) {
+    app.get('/art/CF000259', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3003,7 +3003,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000260', function (req, res) {
+    app.get('/art/CF000260', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3022,7 +3022,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000261', function (req, res) {
+    app.get('/art/CF000261', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3041,7 +3041,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000263', function (req, res) {
+    app.get('/art/CF000263', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3060,7 +3060,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000264', function (req, res) {
+    app.get('/art/CF000264', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3079,7 +3079,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000265', function (req, res) {
+    app.get('/art/CF000265', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3098,7 +3098,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000274', function (req, res) {
+    app.get('/art/CF000274', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3117,7 +3117,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000309', function (req, res) {
+    app.get('/art/CF000309', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3136,7 +3136,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000310', function (req, res) {
+    app.get('/art/CF000310', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3155,7 +3155,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000311', function (req, res) {
+    app.get('/art/CF000311', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3174,7 +3174,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000323', function (req, res) {
+    app.get('/art/CF000323', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3193,7 +3193,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000325', function (req, res) {
+    app.get('/art/CF000325', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3212,7 +3212,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000326', function (req, res) {
+    app.get('/art/CF000326', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3231,7 +3231,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000327', function (req, res) {
+    app.get('/art/CF000327', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3250,7 +3250,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000338', function (req, res) {
+    app.get('/art/CF000338', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3269,7 +3269,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000339', function (req, res) {
+    app.get('/art/CF000339', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3288,7 +3288,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000340', function (req, res) {
+    app.get('/art/CF000340', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3307,7 +3307,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000341', function (req, res) {
+    app.get('/art/CF000341', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3326,7 +3326,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000350', function (req, res) {
+    app.get('/art/CF000350', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3345,7 +3345,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000351', function (req, res) {
+    app.get('/art/CF000351', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3364,7 +3364,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000352', function (req, res) {
+    app.get('/art/CF000352', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3383,7 +3383,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000353', function (req, res) {
+    app.get('/art/CF000353', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3402,7 +3402,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000354', function (req, res) {
+    app.get('/art/CF000354', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3421,7 +3421,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000355', function (req, res) {
+    app.get('/art/CF000355', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3440,7 +3440,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000356', function (req, res) {
+    app.get('/art/CF000356', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3459,7 +3459,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000357', function (req, res) {
+    app.get('/art/CF000357', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3478,7 +3478,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000358', function (req, res) {
+    app.get('/art/CF000358', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3497,7 +3497,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000359', function (req, res) {
+    app.get('/art/CF000359', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3516,7 +3516,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000360', function (req, res) {
+    app.get('/art/CF000360', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3535,7 +3535,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000361', function (req, res) {
+    app.get('/art/CF000361', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3554,7 +3554,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000362', function (req, res) {
+    app.get('/art/CF000362', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3573,7 +3573,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000363', function (req, res) {
+    app.get('/art/CF000363', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3592,7 +3592,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000364', function (req, res) {
+    app.get('/art/CF000364', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3611,7 +3611,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000365', function (req, res) {
+    app.get('/art/CF000365', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3630,7 +3630,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000366', function (req, res) {
+    app.get('/art/CF000366', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3649,7 +3649,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000367', function (req, res) {
+    app.get('/art/CF000367', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3668,7 +3668,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000368', function (req, res) {
+    app.get('/art/CF000368', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3687,7 +3687,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000369', function (req, res) {
+    app.get('/art/CF000369', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3706,7 +3706,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000370', function (req, res) {
+    app.get('/art/CF000370', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3725,7 +3725,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000371', function (req, res) {
+    app.get('/art/CF000371', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3744,7 +3744,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000372', function (req, res) {
+    app.get('/art/CF000372', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3763,7 +3763,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000373', function (req, res) {
+    app.get('/art/CF000373', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3782,7 +3782,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000374', function (req, res) {
+    app.get('/art/CF000374', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3801,7 +3801,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000375', function (req, res) {
+    app.get('/art/CF000375', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3820,7 +3820,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000379', function (req, res) {
+    app.get('/art/CF000379', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3839,7 +3839,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000383', function (req, res) {
+    app.get('/art/CF000383', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3858,7 +3858,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000384', function (req, res) {
+    app.get('/art/CF000384', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3877,7 +3877,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000385', function (req, res) {
+    app.get('/art/CF000385', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3896,7 +3896,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000392', function (req, res) {
+    app.get('/art/CF000392', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3915,7 +3915,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000393', function (req, res) {
+    app.get('/art/CF000393', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3934,7 +3934,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000394', function (req, res) {
+    app.get('/art/CF000394', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3953,7 +3953,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000395', function (req, res) {
+    app.get('/art/CF000395', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3972,7 +3972,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000396', function (req, res) {
+    app.get('/art/CF000396', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -3991,7 +3991,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000397', function (req, res) {
+    app.get('/art/CF000397', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4010,7 +4010,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000398', function (req, res) {
+    app.get('/art/CF000398', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4029,7 +4029,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000399', function (req, res) {
+    app.get('/art/CF000399', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4048,7 +4048,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000400', function (req, res) {
+    app.get('/art/CF000400', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4067,7 +4067,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000401', function (req, res) {
+    app.get('/art/CF000401', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4086,7 +4086,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000402', function (req, res) {
+    app.get('/art/CF000402', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4105,7 +4105,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000403', function (req, res) {
+    app.get('/art/CF000403', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4124,7 +4124,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000404', function (req, res) {
+    app.get('/art/CF000404', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4143,7 +4143,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000405', function (req, res) {
+    app.get('/art/CF000405', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4162,7 +4162,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000406', function (req, res) {
+    app.get('/art/CF000406', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4181,7 +4181,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000407', function (req, res) {
+    app.get('/art/CF000407', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4200,7 +4200,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000408', function (req, res) {
+    app.get('/art/CF000408', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4219,7 +4219,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000409', function (req, res) {
+    app.get('/art/CF000409', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4238,7 +4238,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000410', function (req, res) {
+    app.get('/art/CF000410', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4257,7 +4257,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000411', function (req, res) {
+    app.get('/art/CF000411', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4276,7 +4276,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000412', function (req, res) {
+    app.get('/art/CF000412', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4295,7 +4295,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000413', function (req, res) {
+    app.get('/art/CF000413', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4314,7 +4314,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000414', function (req, res) {
+    app.get('/art/CF000414', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4333,7 +4333,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000415', function (req, res) {
+    app.get('/art/CF000415', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4352,7 +4352,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000416', function (req, res) {
+    app.get('/art/CF000416', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4371,7 +4371,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000417', function (req, res) {
+    app.get('/art/CF000417', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4390,7 +4390,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000418', function (req, res) {
+    app.get('/art/CF000418', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4409,7 +4409,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000419', function (req, res) {
+    app.get('/art/CF000419', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4428,7 +4428,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000420', function (req, res) {
+    app.get('/art/CF000420', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4447,7 +4447,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000421', function (req, res) {
+    app.get('/art/CF000421', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4466,7 +4466,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000422', function (req, res) {
+    app.get('/art/CF000422', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4485,7 +4485,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000423', function (req, res) {
+    app.get('/art/CF000423', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4504,7 +4504,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000424', function (req, res) {
+    app.get('/art/CF000424', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4523,7 +4523,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000425', function (req, res) {
+    app.get('/art/CF000425', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4542,7 +4542,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000426', function (req, res) {
+    app.get('/art/CF000426', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4561,7 +4561,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000427', function (req, res) {
+    app.get('/art/CF000427', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4580,7 +4580,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000428', function (req, res) {
+    app.get('/art/CF000428', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4599,7 +4599,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000429', function (req, res) {
+    app.get('/art/CF000429', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4618,7 +4618,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000430', function (req, res) {
+    app.get('/art/CF000430', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4637,7 +4637,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000431', function (req, res) {
+    app.get('/art/CF000431', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4656,7 +4656,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000432', function (req, res) {
+    app.get('/art/CF000432', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4675,7 +4675,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000433', function (req, res) {
+    app.get('/art/CF000433', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4694,7 +4694,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000434', function (req, res) {
+    app.get('/art/CF000434', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4713,7 +4713,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000435', function (req, res) {
+    app.get('/art/CF000435', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4732,7 +4732,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000436', function (req, res) {
+    app.get('/art/CF000436', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4751,7 +4751,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000437', function (req, res) {
+    app.get('/art/CF000437', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4770,7 +4770,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000438', function (req, res) {
+    app.get('/art/CF000438', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4789,7 +4789,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000439', function (req, res) {
+    app.get('/art/CF000439', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4808,7 +4808,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000440', function (req, res) {
+    app.get('/art/CF000440', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4827,7 +4827,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000441', function (req, res) {
+    app.get('/art/CF000441', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4846,7 +4846,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000442', function (req, res) {
+    app.get('/art/CF000442', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4865,7 +4865,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000443', function (req, res) {
+    app.get('/art/CF000443', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4884,7 +4884,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000444', function (req, res) {
+    app.get('/art/CF000444', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4903,7 +4903,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000445', function (req, res) {
+    app.get('/art/CF000445', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4922,7 +4922,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000446', function (req, res) {
+    app.get('/art/CF000446', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4941,7 +4941,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000447', function (req, res) {
+    app.get('/art/CF000447', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4960,7 +4960,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000448', function (req, res) {
+    app.get('/art/CF000448', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4979,7 +4979,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000449', function (req, res) {
+    app.get('/art/CF000449', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -4998,7 +4998,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000450', function (req, res) {
+    app.get('/art/CF000450', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5017,7 +5017,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000451', function (req, res) {
+    app.get('/art/CF000451', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5036,7 +5036,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000452', function (req, res) {
+    app.get('/art/CF000452', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5055,7 +5055,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000453', function (req, res) {
+    app.get('/art/CF000453', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5074,7 +5074,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000454', function (req, res) {
+    app.get('/art/CF000454', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5093,7 +5093,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000455', function (req, res) {
+    app.get('/art/CF000455', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5112,7 +5112,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000456', function (req, res) {
+    app.get('/art/CF000456', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5131,7 +5131,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000457', function (req, res) {
+    app.get('/art/CF000457', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5150,7 +5150,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000458', function (req, res) {
+    app.get('/art/CF000458', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5169,7 +5169,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000459', function (req, res) {
+    app.get('/art/CF000459', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5188,7 +5188,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000460', function (req, res) {
+    app.get('/art/CF000460', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5207,7 +5207,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000461', function (req, res) {
+    app.get('/art/CF000461', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5226,7 +5226,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000462', function (req, res) {
+    app.get('/art/CF000462', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5245,7 +5245,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000463', function (req, res) {
+    app.get('/art/CF000463', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5264,7 +5264,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000464', function (req, res) {
+    app.get('/art/CF000464', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5283,7 +5283,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000465', function (req, res) {
+    app.get('/art/CF000465', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5302,7 +5302,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000466', function (req, res) {
+    app.get('/art/CF000466', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5321,7 +5321,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000467', function (req, res) {
+    app.get('/art/CF000467', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5340,7 +5340,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000468', function (req, res) {
+    app.get('/art/CF000468', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5359,7 +5359,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000469', function (req, res) {
+    app.get('/art/CF000469', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5378,7 +5378,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000470', function (req, res) {
+    app.get('/art/CF000470', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5397,7 +5397,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000471', function (req, res) {
+    app.get('/art/CF000471', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5416,7 +5416,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000472', function (req, res) {
+    app.get('/art/CF000472', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5435,7 +5435,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000473', function (req, res) {
+    app.get('/art/CF000473', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5454,7 +5454,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000474', function (req, res) {
+    app.get('/art/CF000474', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5473,7 +5473,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000475', function (req, res) {
+    app.get('/art/CF000475', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5492,7 +5492,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000476', function (req, res) {
+    app.get('/art/CF000476', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5511,7 +5511,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000477', function (req, res) {
+    app.get('/art/CF000477', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5530,7 +5530,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000478', function (req, res) {
+    app.get('/art/CF000478', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5549,7 +5549,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000479', function (req, res) {
+    app.get('/art/CF000479', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5568,7 +5568,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000480', function (req, res) {
+    app.get('/art/CF000480', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5587,7 +5587,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000481', function (req, res) {
+    app.get('/art/CF000481', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5606,7 +5606,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000482', function (req, res) {
+    app.get('/art/CF000482', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5625,7 +5625,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000483', function (req, res) {
+    app.get('/art/CF000483', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5644,7 +5644,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000484', function (req, res) {
+    app.get('/art/CF000484', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5663,7 +5663,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000485', function (req, res) {
+    app.get('/art/CF000485', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5682,7 +5682,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000486', function (req, res) {
+    app.get('/art/CF000486', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5701,7 +5701,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000487', function (req, res) {
+    app.get('/art/CF000487', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5720,7 +5720,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000488', function (req, res) {
+    app.get('/art/CF000488', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5739,7 +5739,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000489', function (req, res) {
+    app.get('/art/CF000489', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5758,7 +5758,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000490', function (req, res) {
+    app.get('/art/CF000490', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5777,7 +5777,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000491', function (req, res) {
+    app.get('/art/CF000491', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5796,7 +5796,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000492', function (req, res) {
+    app.get('/art/CF000492', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5815,7 +5815,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000493', function (req, res) {
+    app.get('/art/CF000493', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5834,7 +5834,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000494', function (req, res) {
+    app.get('/art/CF000494', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5853,7 +5853,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000495', function (req, res) {
+    app.get('/art/CF000495', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5872,7 +5872,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000496', function (req, res) {
+    app.get('/art/CF000496', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5891,7 +5891,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000497', function (req, res) {
+    app.get('/art/CF000497', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5910,7 +5910,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000498', function (req, res) {
+    app.get('/art/CF000498', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5929,7 +5929,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000499', function (req, res) {
+    app.get('/art/CF000499', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5948,7 +5948,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000500', function (req, res) {
+    app.get('/art/CF000500', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5967,7 +5967,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000501', function (req, res) {
+    app.get('/art/CF000501', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -5986,7 +5986,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000502', function (req, res) {
+    app.get('/art/CF000502', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6005,7 +6005,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000503', function (req, res) {
+    app.get('/art/CF000503', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6024,7 +6024,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000504', function (req, res) {
+    app.get('/art/CF000504', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6043,7 +6043,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000505', function (req, res) {
+    app.get('/art/CF000505', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6062,7 +6062,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000506', function (req, res) {
+    app.get('/art/CF000506', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6081,7 +6081,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000507', function (req, res) {
+    app.get('/art/CF000507', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6100,7 +6100,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000508', function (req, res) {
+    app.get('/art/CF000508', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6119,7 +6119,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000509', function (req, res) {
+    app.get('/art/CF000509', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6138,7 +6138,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000510', function (req, res) {
+    app.get('/art/CF000510', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6157,7 +6157,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000511', function (req, res) {
+    app.get('/art/CF000511', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6176,7 +6176,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000512', function (req, res) {
+    app.get('/art/CF000512', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6195,7 +6195,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000513', function (req, res) {
+    app.get('/art/CF000513', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6214,7 +6214,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000514', function (req, res) {
+    app.get('/art/CF000514', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6233,7 +6233,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000515', function (req, res) {
+    app.get('/art/CF000515', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6252,7 +6252,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000516', function (req, res) {
+    app.get('/art/CF000516', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6271,7 +6271,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000517', function (req, res) {
+    app.get('/art/CF000517', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6290,7 +6290,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000518', function (req, res) {
+    app.get('/art/CF000518', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6309,7 +6309,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000519', function (req, res) {
+    app.get('/art/CF000519', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6328,7 +6328,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000520', function (req, res) {
+    app.get('/art/CF000520', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6347,7 +6347,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000521', function (req, res) {
+    app.get('/art/CF000521', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6366,7 +6366,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000522', function (req, res) {
+    app.get('/art/CF000522', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6385,7 +6385,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000523', function (req, res) {
+    app.get('/art/CF000523', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6404,7 +6404,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000524', function (req, res) {
+    app.get('/art/CF000524', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6423,7 +6423,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000525', function (req, res) {
+    app.get('/art/CF000525', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6442,7 +6442,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000526', function (req, res) {
+    app.get('/art/CF000526', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6461,7 +6461,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000527', function (req, res) {
+    app.get('/art/CF000527', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6480,7 +6480,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000528', function (req, res) {
+    app.get('/art/CF000528', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6499,7 +6499,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000529', function (req, res) {
+    app.get('/art/CF000529', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6518,7 +6518,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000530', function (req, res) {
+    app.get('/art/CF000530', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6537,7 +6537,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000531', function (req, res) {
+    app.get('/art/CF000531', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6556,7 +6556,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000532', function (req, res) {
+    app.get('/art/CF000532', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6575,7 +6575,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000533', function (req, res) {
+    app.get('/art/CF000533', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6594,7 +6594,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000534', function (req, res) {
+    app.get('/art/CF000534', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6613,7 +6613,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000535', function (req, res) {
+    app.get('/art/CF000535', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6632,7 +6632,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000536', function (req, res) {
+    app.get('/art/CF000536', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6651,7 +6651,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000537', function (req, res) {
+    app.get('/art/CF000537', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6670,7 +6670,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000538', function (req, res) {
+    app.get('/art/CF000538', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6689,7 +6689,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000539', function (req, res) {
+    app.get('/art/CF000539', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6708,7 +6708,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000540', function (req, res) {
+    app.get('/art/CF000540', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6727,7 +6727,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000541', function (req, res) {
+    app.get('/art/CF000541', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6746,7 +6746,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000542', function (req, res) {
+    app.get('/art/CF000542', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6765,7 +6765,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000543', function (req, res) {
+    app.get('/art/CF000543', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6784,7 +6784,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000544', function (req, res) {
+    app.get('/art/CF000544', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6803,7 +6803,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000545', function (req, res) {
+    app.get('/art/CF000545', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6822,7 +6822,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000546', function (req, res) {
+    app.get('/art/CF000546', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6841,7 +6841,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000063', function (req, res) {
+    app.get('/art/CF000063', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6860,7 +6860,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000064', function (req, res) {
+    app.get('/art/CF000064', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6879,7 +6879,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000065', function (req, res) {
+    app.get('/art/CF000065', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6898,7 +6898,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000066', function (req, res) {
+    app.get('/art/CF000066', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6917,7 +6917,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000067', function (req, res) {
+    app.get('/art/CF000067', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6936,7 +6936,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000068', function (req, res) {
+    app.get('/art/CF000068', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6955,7 +6955,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000100', function (req, res) {
+    app.get('/art/CF000100', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6974,7 +6974,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000101', function (req, res) {
+    app.get('/art/CF000101', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -6993,7 +6993,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000102', function (req, res) {
+    app.get('/art/CF000102', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7012,7 +7012,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000103', function (req, res) {
+    app.get('/art/CF000103', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7031,7 +7031,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000104', function (req, res) {
+    app.get('/art/CF000104', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7050,7 +7050,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000105', function (req, res) {
+    app.get('/art/CF000105', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7069,7 +7069,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000106', function (req, res) {
+    app.get('/art/CF000106', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7088,7 +7088,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000107', function (req, res) {
+    app.get('/art/CF000107', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7107,7 +7107,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000108', function (req, res) {
+    app.get('/art/CF000108', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7126,7 +7126,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000109', function (req, res) {
+    app.get('/art/CF000109', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7145,7 +7145,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000110', function (req, res) {
+    app.get('/art/CF000110', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7164,7 +7164,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000111', function (req, res) {
+    app.get('/art/CF000111', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7183,7 +7183,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000112', function (req, res) {
+    app.get('/art/CF000112', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7202,7 +7202,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000113', function (req, res) {
+    app.get('/art/CF000113', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7221,7 +7221,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000114', function (req, res) {
+    app.get('/art/CF000114', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7240,7 +7240,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000115', function (req, res) {
+    app.get('/art/CF000115', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7259,7 +7259,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000116', function (req, res) {
+    app.get('/art/CF000116', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7278,7 +7278,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000117', function (req, res) {
+    app.get('/art/CF000117', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7297,7 +7297,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000118', function (req, res) {
+    app.get('/art/CF000118', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7316,7 +7316,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000120', function (req, res) {
+    app.get('/art/CF000120', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7335,7 +7335,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000121', function (req, res) {
+    app.get('/art/CF000121', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7354,7 +7354,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000142', function (req, res) {
+    app.get('/art/CF000142', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7373,7 +7373,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000143', function (req, res) {
+    app.get('/art/CF000143', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7392,7 +7392,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000162', function (req, res) {
+    app.get('/art/CF000162', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7411,7 +7411,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000163', function (req, res) {
+    app.get('/art/CF000163', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7430,7 +7430,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000164', function (req, res) {
+    app.get('/art/CF000164', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7449,7 +7449,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000165', function (req, res) {
+    app.get('/art/CF000165', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7468,7 +7468,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000166', function (req, res) {
+    app.get('/art/CF000166', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7487,7 +7487,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000167', function (req, res) {
+    app.get('/art/CF000167', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7506,7 +7506,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000168', function (req, res) {
+    app.get('/art/CF000168', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7525,7 +7525,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000169', function (req, res) {
+    app.get('/art/CF000169', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7544,7 +7544,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000170', function (req, res) {
+    app.get('/art/CF000170', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7563,7 +7563,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000171', function (req, res) {
+    app.get('/art/CF000171', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7582,7 +7582,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000178', function (req, res) {
+    app.get('/art/CF000178', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7601,7 +7601,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000179', function (req, res) {
+    app.get('/art/CF000179', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7620,7 +7620,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000180', function (req, res) {
+    app.get('/art/CF000180', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7639,7 +7639,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000181', function (req, res) {
+    app.get('/art/CF000181', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7658,7 +7658,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000182', function (req, res) {
+    app.get('/art/CF000182', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7677,7 +7677,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000183', function (req, res) {
+    app.get('/art/CF000183', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7696,7 +7696,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000184', function (req, res) {
+    app.get('/art/CF000184', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7715,7 +7715,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000193', function (req, res) {
+    app.get('/art/CF000193', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7734,7 +7734,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000194', function (req, res) {
+    app.get('/art/CF000194', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7753,7 +7753,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000195', function (req, res) {
+    app.get('/art/CF000195', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7772,7 +7772,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000196', function (req, res) {
+    app.get('/art/CF000196', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7791,7 +7791,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000197', function (req, res) {
+    app.get('/art/CF000197', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7810,7 +7810,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000198', function (req, res) {
+    app.get('/art/CF000198', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7829,7 +7829,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000199', function (req, res) {
+    app.get('/art/CF000199', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7848,7 +7848,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000203', function (req, res) {
+    app.get('/art/CF000203', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7867,7 +7867,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000204', function (req, res) {
+    app.get('/art/CF000204', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7886,7 +7886,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000205', function (req, res) {
+    app.get('/art/CF000205', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7905,7 +7905,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000206', function (req, res) {
+    app.get('/art/CF000206', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7924,7 +7924,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000207', function (req, res) {
+    app.get('/art/CF000207', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7943,7 +7943,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000208', function (req, res) {
+    app.get('/art/CF000208', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7962,7 +7962,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000209', function (req, res) {
+    app.get('/art/CF000209', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -7981,7 +7981,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000210', function (req, res) {
+    app.get('/art/CF000210', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8000,7 +8000,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000211', function (req, res) {
+    app.get('/art/CF000211', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8019,7 +8019,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000212', function (req, res) {
+    app.get('/art/CF000212', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8038,7 +8038,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000221', function (req, res) {
+    app.get('/art/CF000221', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8057,7 +8057,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000222', function (req, res) {
+    app.get('/art/CF000222', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8076,7 +8076,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000223', function (req, res) {
+    app.get('/art/CF000223', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8095,7 +8095,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000224', function (req, res) {
+    app.get('/art/CF000224', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8114,7 +8114,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000225', function (req, res) {
+    app.get('/art/CF000225', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8133,7 +8133,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000226', function (req, res) {
+    app.get('/art/CF000226', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8152,7 +8152,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000227', function (req, res) {
+    app.get('/art/CF000227', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8171,7 +8171,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000228', function (req, res) {
+    app.get('/art/CF000228', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8190,7 +8190,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000229', function (req, res) {
+    app.get('/art/CF000229', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8209,7 +8209,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000230', function (req, res) {
+    app.get('/art/CF000230', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8228,7 +8228,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000231', function (req, res) {
+    app.get('/art/CF000231', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8247,7 +8247,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000232', function (req, res) {
+    app.get('/art/CF000232', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8266,7 +8266,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000233', function (req, res) {
+    app.get('/art/CF000233', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8285,7 +8285,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000234', function (req, res) {
+    app.get('/art/CF000234', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8304,7 +8304,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000235', function (req, res) {
+    app.get('/art/CF000235', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8323,7 +8323,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000236', function (req, res) {
+    app.get('/art/CF000236', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8342,7 +8342,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000237', function (req, res) {
+    app.get('/art/CF000237', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8361,7 +8361,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000238', function (req, res) {
+    app.get('/art/CF000238', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8380,7 +8380,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000239', function (req, res) {
+    app.get('/art/CF000239', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8399,7 +8399,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000240', function (req, res) {
+    app.get('/art/CF000240', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8418,7 +8418,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000241', function (req, res) {
+    app.get('/art/CF000241', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8437,7 +8437,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000242', function (req, res) {
+    app.get('/art/CF000242', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8456,7 +8456,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000243', function (req, res) {
+    app.get('/art/CF000243', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8475,7 +8475,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000244', function (req, res) {
+    app.get('/art/CF000244', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8494,7 +8494,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000245', function (req, res) {
+    app.get('/art/CF000245', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8513,7 +8513,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000246', function (req, res) {
+    app.get('/art/CF000246', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8532,7 +8532,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000247', function (req, res) {
+    app.get('/art/CF000247', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8551,7 +8551,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000248', function (req, res) {
+    app.get('/art/CF000248', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8570,7 +8570,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000249', function (req, res) {
+    app.get('/art/CF000249', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8589,7 +8589,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000250', function (req, res) {
+    app.get('/art/CF000250', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8608,7 +8608,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000266', function (req, res) {
+    app.get('/art/CF000266', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8627,7 +8627,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000267', function (req, res) {
+    app.get('/art/CF000267', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8646,7 +8646,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000268', function (req, res) {
+    app.get('/art/CF000268', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8665,7 +8665,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000269', function (req, res) {
+    app.get('/art/CF000269', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8684,7 +8684,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000270', function (req, res) {
+    app.get('/art/CF000270', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8703,7 +8703,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000271', function (req, res) {
+    app.get('/art/CF000271', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8722,7 +8722,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000276', function (req, res) {
+    app.get('/art/CF000276', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8741,7 +8741,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000277', function (req, res) {
+    app.get('/art/CF000277', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8760,7 +8760,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000278', function (req, res) {
+    app.get('/art/CF000278', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8779,7 +8779,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000280', function (req, res) {
+    app.get('/art/CF000280', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8798,7 +8798,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000284', function (req, res) {
+    app.get('/art/CF000284', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8817,7 +8817,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000285', function (req, res) {
+    app.get('/art/CF000285', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8836,7 +8836,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000286', function (req, res) {
+    app.get('/art/CF000286', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8855,7 +8855,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000287', function (req, res) {
+    app.get('/art/CF000287', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8874,7 +8874,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000288', function (req, res) {
+    app.get('/art/CF000288', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8893,7 +8893,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000289', function (req, res) {
+    app.get('/art/CF000289', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8912,7 +8912,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000290', function (req, res) {
+    app.get('/art/CF000290', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8931,7 +8931,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000291', function (req, res) {
+    app.get('/art/CF000291', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8950,7 +8950,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000292', function (req, res) {
+    app.get('/art/CF000292', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8969,7 +8969,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000293', function (req, res) {
+    app.get('/art/CF000293', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -8988,7 +8988,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000294', function (req, res) {
+    app.get('/art/CF000294', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9007,7 +9007,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000295', function (req, res) {
+    app.get('/art/CF000295', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9026,7 +9026,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000296', function (req, res) {
+    app.get('/art/CF000296', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9045,7 +9045,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000297', function (req, res) {
+    app.get('/art/CF000297', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9064,7 +9064,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000298', function (req, res) {
+    app.get('/art/CF000298', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9083,7 +9083,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000299', function (req, res) {
+    app.get('/art/CF000299', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9102,7 +9102,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000300', function (req, res) {
+    app.get('/art/CF000300', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9121,7 +9121,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000301', function (req, res) {
+    app.get('/art/CF000301', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9140,7 +9140,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000302', function (req, res) {
+    app.get('/art/CF000302', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9159,7 +9159,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000303', function (req, res) {
+    app.get('/art/CF000303', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9178,7 +9178,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000304', function (req, res) {
+    app.get('/art/CF000304', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9197,7 +9197,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000305', function (req, res) {
+    app.get('/art/CF000305', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9216,7 +9216,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000306', function (req, res) {
+    app.get('/art/CF000306', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9235,7 +9235,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000307', function (req, res) {
+    app.get('/art/CF000307', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9254,7 +9254,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000332', function (req, res) {
+    app.get('/art/CF000332', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9273,7 +9273,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000333', function (req, res) {
+    app.get('/art/CF000333', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9292,7 +9292,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000334', function (req, res) {
+    app.get('/art/CF000334', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9311,7 +9311,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000335', function (req, res) {
+    app.get('/art/CF000335', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9330,7 +9330,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000344', function (req, res) {
+    app.get('/art/CF000344', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9349,7 +9349,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000347', function (req, res) {
+    app.get('/art/CF000347', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9368,7 +9368,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000348', function (req, res) {
+    app.get('/art/CF000348', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9387,7 +9387,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000349', function (req, res) {
+    app.get('/art/CF000349', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9406,7 +9406,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000376', function (req, res) {
+    app.get('/art/CF000376', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9425,7 +9425,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000377', function (req, res) {
+    app.get('/art/CF000377', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9444,7 +9444,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000378', function (req, res) {
+    app.get('/art/CF000378', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9463,7 +9463,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000380', function (req, res) {
+    app.get('/art/CF000380', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9482,7 +9482,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000381', function (req, res) {
+    app.get('/art/CF000381', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9501,7 +9501,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000382', function (req, res) {
+    app.get('/art/CF000382', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9520,7 +9520,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000386', function (req, res) {
+    app.get('/art/CF000386', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9539,7 +9539,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000387', function (req, res) {
+    app.get('/art/CF000387', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9558,7 +9558,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000388', function (req, res) {
+    app.get('/art/CF000388', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9577,7 +9577,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000389', function (req, res) {
+    app.get('/art/CF000389', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9596,7 +9596,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000390', function (req, res) {
+    app.get('/art/CF000390', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
@@ -9615,7 +9615,7 @@ module.exports = function(app) {
                 );
             });
         });
-    app.get('/artCF000391', function (req, res) {
+    app.get('/art/CF000391', function (req, res) {
 
             var Airtable = require('airtable');
             var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
