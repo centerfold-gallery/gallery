@@ -25,7 +25,7 @@
 					<div class="home-container">
 						<div class="home-container-images">
                             {{# homepageArtworks}}
-                                <a href="#art{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}art/{{fields.Unique-Artwork-ID}}-large.png"></a>
+                                <a href="#art{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
                             {{/ homepageArtworks}}
 						</div>
 					</div>
@@ -43,7 +43,7 @@
                     <div class="art mix tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}} {{#fields.Medium}}tag-medium-{{.}} {{/fields.Medium}} tag-width-{{fields.Width (in)}} tag-height-{{fields.Height (in)}} tag-price-{{fields.Estimated Value (CAD)}}" id="art{{fields.Unique-Artwork-ID}}">
 					<a href="art/{{fields.Unique-Artwork-ID}}">
                         <div class="art-art">
-                            <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}art/{{fields.Unique-Artwork-ID}}-large.png">
+                            <img class="b-lazy shadow" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg">
                         </div>
 						<div class="artist-card-wrap">
                             <div class="artist-card" id="card{{fields.Unique-Artwork-ID}}">
