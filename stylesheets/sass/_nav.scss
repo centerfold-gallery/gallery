@@ -9,6 +9,12 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 300;
+    font-family: $type-4;
+    font-size: 0.3em;
+}
+
+.beta-fix {
+    -webkit-filter: blur(0.000001px);
 }
 
 .logo-home {
