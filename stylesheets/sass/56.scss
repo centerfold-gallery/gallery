@@ -587,7 +587,7 @@ button.highlight {
     @include type-1;
     line-height: $line-height-1;
     color: $color-1;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .art-medium span:not(:last-of-type)::after {
