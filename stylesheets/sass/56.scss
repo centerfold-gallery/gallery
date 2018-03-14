@@ -526,6 +526,20 @@ button.highlight {
     display: inline-block;
 }
 
+.b-lazy {
+    -webkit-transition: -webkit-filter 500ms ease-in-out;
+    -moz-transition: filter 500ms ease-in-out;
+    -o-transition: filter 500ms ease-in-out;
+    transition: filter 500ms ease-in-out;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.b-lazy.b-loaded {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
 .artist-card-wrap {
     display: inline-block;
     font-family: $type-2;
