@@ -186,7 +186,7 @@
 
 
         var art1geometry = new THREE.CubeGeometry(40,50,1);
-        var art1texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000005-full.jpg' );
+        var art1texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000005-full.jpg' );
         var art1material = new THREE.MeshBasicMaterial( { map: art1texture, side: THREE.DoubleSide } );
         var art1 = new THREE.Mesh( art1geometry, art1material );
         art1.position.set(-58,22,-450);
@@ -200,7 +200,7 @@
         scene.add( art1label );
 
         var art2geometry = new THREE.CubeGeometry(40,53,1);
-        var art2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000006-full.jpg' );
+        var art2texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000006-full.jpg' );
         var art2material = new THREE.MeshBasicMaterial( { map: art2texture, side: THREE.DoubleSide } );
         var art2 = new THREE.Mesh( art2geometry, art2material );
         art2.position.set(56,24,-550);
@@ -216,7 +216,7 @@
         scene.add( art2label );
 
         var art3geometry = new THREE.CubeGeometry(40,32,1);
-        var art3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000008-full.jpg' );
+        var art3texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000008-full.jpg' );
         var art3material = new THREE.MeshBasicMaterial( { map: art3texture, side: THREE.DoubleSide } );
         var art3 = new THREE.Mesh( art3geometry, art3material );
         art3.position.set(-100,22,-650);
@@ -232,7 +232,7 @@
         scene.add( art3label );
 
         var art4geometry = new THREE.CubeGeometry(40,53,1);
-        var art4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000084-full.jpg' );
+        var art4texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000084-full.jpg' );
         var art4material = new THREE.MeshBasicMaterial( { map: art4texture, side: THREE.DoubleSide } );
         var art4 = new THREE.Mesh( art4geometry, art4material );
         art4.position.set(80,24,-750);
@@ -248,7 +248,7 @@
         scene.add( art4label );
 
         var art5geometry = new THREE.CubeGeometry(40,53,1);
-        var art5texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000086-full.jpg' );
+        var art5texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000086-full.jpg' );
         var art5material = new THREE.MeshBasicMaterial( { map: art5texture, side: THREE.DoubleSide } );
         var art5 = new THREE.Mesh( art5geometry, art5material );
         art5.position.set(-60,24,-850);
@@ -264,7 +264,7 @@
         scene.add( art5label );
 
         var art6geometry = new THREE.CubeGeometry(40,53,1);
-        var art6texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000088-full.jpg' );
+        var art6texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000088-full.jpg' );
         var art6material = new THREE.MeshBasicMaterial( { map: art6texture, side: THREE.DoubleSide } );
         var art6 = new THREE.Mesh( art6geometry, art6material );
         art6.position.set(0,24,-950);
@@ -280,7 +280,7 @@
         scene.add( art6label );
 
         var art7geometry = new THREE.CubeGeometry(40,50,1);
-        var art7texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000089-full.jpg' );
+        var art7texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000089-full.jpg' );
         var art7material = new THREE.MeshBasicMaterial( { map: art7texture, side: THREE.DoubleSide } );
         var art7 = new THREE.Mesh( art7geometry, art7material );
         art7.position.set(70,23,-1050);
@@ -296,7 +296,7 @@
         scene.add( art7label );
 
         var art8geometry = new THREE.CubeGeometry(40,53,1);
-        var art8texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000090-full.jpg' );
+        var art8texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000090-full.jpg' );
         var art8material = new THREE.MeshBasicMaterial( { map: art8texture, side: THREE.DoubleSide } );
         var art8 = new THREE.Mesh( art8geometry, art8material );
         art8.position.set(-30,24,-1150);
@@ -312,7 +312,7 @@
         scene.add( art8label );
 
         var art9geometry = new THREE.CubeGeometry(40,52,1);
-        var art9texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000091-full.jpg' );
+        var art9texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000091-full.jpg' );
         var art9material = new THREE.MeshBasicMaterial( { map: art9texture, side: THREE.DoubleSide } );
         var art9 = new THREE.Mesh( art9geometry, art9material );
         art9.position.set(40,23,-1250);
@@ -328,7 +328,7 @@
         scene.add( art9label );
 
         var art10geometry = new THREE.CubeGeometry(40,13,1);
-        var art10texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000093-full.jpg' );
+        var art10texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000093-full.jpg' );
         var art10material = new THREE.MeshBasicMaterial( { map: art10texture, side: THREE.DoubleSide } );
         var art10 = new THREE.Mesh( art10geometry, art10material );
         art10.position.set(-60,13,-1350);
@@ -342,7 +342,7 @@
         scene.add( art10label );
 
         var art11geometry = new THREE.CubeGeometry(40,53,1);
-        var art11texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000097-full.jpg' );
+        var art11texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000097-full.jpg' );
         var art11material = new THREE.MeshBasicMaterial( { map: art11texture, side: THREE.DoubleSide } );
         var art11 = new THREE.Mesh( art11geometry, art11material );
         art11.position.set(60,24,-1450);
@@ -356,7 +356,7 @@
         scene.add( art11label );
 
         var art12geometry = new THREE.CubeGeometry(40,53,1);
-        var art12texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000172-full.jpg' );
+        var art12texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000172-full.jpg' );
         var art12material = new THREE.MeshBasicMaterial( { map: art12texture, side: THREE.DoubleSide } );
         var art12 = new THREE.Mesh( art12geometry, art12material );
         art12.position.set(-40,24,-1550);
@@ -372,7 +372,7 @@
         scene.add( art12label );
 
         var art13geometry = new THREE.CubeGeometry(40,53,1);
-        var art13texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000173-full.jpg' );
+        var art13texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000173-full.jpg' );
         var art13material = new THREE.MeshBasicMaterial( { map: art13texture, side: THREE.DoubleSide } );
         var art13 = new THREE.Mesh( art13geometry, art13material );
         art13.position.set(30,24,-1650);
@@ -388,7 +388,7 @@
         scene.add( art13label );
 
         var art14geometry = new THREE.CubeGeometry(40,53,1);
-        var art14texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/CF000174-full.jpg' );
+        var art14texture = THREE.ImageUtils.loadTexture( 'https://centerfold-website.s3.amazonaws.com/art/jpg/CF000174-full.jpg' );
         var art14material = new THREE.MeshBasicMaterial( { map: art14texture, side: THREE.DoubleSide } );
         var art14 = new THREE.Mesh( art14geometry, art14material );
         art14.position.set(-60,24,-1750);
