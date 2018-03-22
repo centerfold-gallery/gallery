@@ -130,7 +130,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/art', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", current_page: "1", next_page: "2", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -214,7 +214,7 @@ app.get('/art', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/full.html', context);
                     });
                 });
             });
@@ -223,7 +223,7 @@ app.get('/art', function(req, res){
 });
 
 app.get('/art/2', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "../", current_page: "2", next_page: "3", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -307,7 +307,7 @@ app.get('/art/2', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/bare.html', context);
                     });
                 });
             });
@@ -316,7 +316,7 @@ app.get('/art/2', function(req, res){
 });
 
 app.get('/art/3', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "2", current_page: "3", next_page: "4", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -400,7 +400,7 @@ app.get('/art/3', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/bare.html', context);
                     });
                 });
             });
@@ -409,7 +409,7 @@ app.get('/art/3', function(req, res){
 });
 
 app.get('/art/4', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "3", current_page: "4", next_page: "5", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -493,7 +493,7 @@ app.get('/art/4', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/bare.html', context);
                     });
                 });
             });
@@ -502,7 +502,7 @@ app.get('/art/4', function(req, res){
 });
 
 app.get('/art/5', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "4", current_page: "5", next_page: "6", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -586,7 +586,7 @@ app.get('/art/5', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/bare.html', context);
                     });
                 });
             });
@@ -595,7 +595,7 @@ app.get('/art/5', function(req, res){
 });
 
 app.get('/art/6', function(req, res){
-    var context = {title: "Art", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "5", current_page: "6", next_page: "7", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -679,7 +679,1309 @@ app.get('/art/6', function(req, res){
                                 }
                             }
                         }
-                        res.render('art/index.html', context);
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/7', function(req, res){
+    var context = {title: "Art", prev_page: "6", current_page: "7", next_page: "8", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 7').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/8', function(req, res){
+    var context = {title: "Art", prev_page: "7", current_page: "8", next_page: "9", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 8').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/9', function(req, res){
+    var context = {title: "Art", prev_page: "8", current_page: "9", next_page: "10", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 9').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/10', function(req, res){
+    var context = {title: "Art", prev_page: "9", current_page: "10", next_page: "11", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 10').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/11', function(req, res){
+    var context = {title: "Art", prev_page: "10", current_page: "11", next_page: "12", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 11').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/12', function(req, res){
+    var context = {title: "Art", prev_page: "11", current_page: "12", next_page: "13", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 12').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/13', function(req, res){
+    var context = {title: "Art", prev_page: "12", current_page: "13", next_page: "14", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 13').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/14', function(req, res){
+    var context = {title: "Art", prev_page: "13", current_page: "14", next_page: "15", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 14').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/15', function(req, res){
+    var context = {title: "Art", prev_page: "14", current_page: "15", next_page: "16", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 15').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/16', function(req, res){
+    var context = {title: "Art", prev_page: "15", current_page: "16", next_page: "17", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 16').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/17', function(req, res){
+    var context = {title: "Art", prev_page: "16", current_page: "17", next_page: "18", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 17').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/18', function(req, res){
+    var context = {title: "Art", prev_page: "17", current_page: "18", next_page: "19", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 18').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/19', function(req, res){
+    var context = {title: "Art", prev_page: "18", current_page: "19", next_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 19').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+app.get('/art/20', function(req, res){
+    var context = {title: "Art", prev_page: "19", current_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .eachPage(function page(homepageArt, fetchNextPage) {
+                    var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                        return homepageArt['_rawJson']
+                    });
+                    resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    fetchNextPage();
+                }, function done(err) {
+                    if (err) { console.error(err); return; }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(homepageArtworks, fetchNextPage) {
+                var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                    return homepageArtworks['_rawJson']
+                });
+                resolve(jsonHomepageArtworks);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .eachPage(function page(artists, fetchNextPage) {
+                var jsonArtists = artists.map(function(artist){
+                    return artist['_rawJson']
+                });
+                resolve(jsonArtists);
+                fetchNextPage();
+            }, function done(err) {
+                if (err) { console.error(err); return; }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Homepage').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Art Page 20').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('art/bare.html', context);
                     });
                 });
             });
