@@ -223,7 +223,7 @@ app.get('/art', function(req, res){
 });
 
 app.get('/art/2', function(req, res){
-    var context = {title: "Art", prev_page: "../", current_page: "2", next_page: "3", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "../art", current_page: "2", next_page: "3", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {

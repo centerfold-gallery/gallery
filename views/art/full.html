@@ -97,7 +97,7 @@
 				{{> art/art }}
 				<div class="art-pagin art-pagin-bottom">
 					<div class="art-pagin-container">
-						<a class="art-pagin-prev" href="{{prev_page}}">Forever Ago</a> <div class="art-pagin-curr">{{current_page}}</div> <a class="art-pagin-next" href="{{next_page}}">Thereafter</a>
+						{{# prev_page}}<a class="art-pagin-prev" href="{{prev_page}}">Forever Ago</a>{{/ prev_page}}<div class="art-pagin-curr">{{current_page}}</div> <a class="art-pagin-next" href="art/{{next_page}}">Thereafter</a>
 					</div>
 				</div>
 
