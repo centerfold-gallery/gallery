@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still" id="still">
+            <div class="everything" id="everything">
+                <div class="featured-collection-header">
+                    <img src="{{static_url}}featured-collections/FC000001-header.png">
+                </div>
+                <div class="event-description">
+                    <br/>
+					{{# artPageArtworks}}<span class="artist-page-bio">{{{fields.Model Text}}}</span>{{/ artPageArtworks}}
+					{{{fields.Title}}}
+					{{{fields.Description}}}
+  					<br/>
+					<br/>
+					<div class="threed-feat">
+						<div id="threed" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
+					</div>
+                </div>
+				{{> art/art }}
+            </div>
+			<div class="footer-space"></div>
+			<div class="model-form-container">
+				<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrudrxSa36bpMzUq?backgroundColor=green" frameborder="0" onmousewheel="" width="60%" height="1037" style="background: transparent; border: 1px solid #ccc;"></iframe>
+			</div>
+			<div class="footer-space"></div>
+			{{> footer}}
+        </div>
+	</body>
+	<script>
+		$(".still").scroll(function () {
+			var y = $(this).scrollTop();
+			if (y > 700) {
+				$('.logo-home').fadeIn(500);
+			} else {
+				$('.logo-home').fadeOut(500);
+			}
+		});
+	</script>
+    <footer>
+		{{> body-end}}
+		<!-- <script>
+		if (window.screen.width > 780) {
+			document.write(
+			'<script src="{{static_url}}js/three/three-moments-distorted.js"><\/script>'
+			)
+		}
+		</script> -->
+    </footer>
+</html>

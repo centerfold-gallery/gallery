@@ -1719,6 +1719,12 @@ button::-moz-focus-inner {
     margin-left: 0em;
 }
 
+.model-form-container {
+    height: 1037px;
+    width: 100%;
+    @include boxflex;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
