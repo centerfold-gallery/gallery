@@ -26,8 +26,8 @@
 					{{# artPageArtworks}}<span class="artist-page-bio">{{{fields.Model Text}}}</span>{{/ artPageArtworks}}
   					<br/>
 					<br/>
-					<h1>Hello people !</h1>
-				    <input type="TEXT" id="name" size="40"><br>
+				    <input type="name" id="name" size="40"><br>
+					<input type="email" id="email" size="40"><br>
 				    <input type="vote1" id="vote1" size="40"><br>
 					<input type="vote2" id="vote2" size="40"><br>
 					<input type="vote3" id="vote3" size="40"><br>
@@ -39,7 +39,7 @@
 						<div id="threed" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
 					</div>
                 </div>
-				{{> art/art }}
+				{{> art/art-series }}
             </div>
 			<div class="footer-space"></div>
 			<div class="model-form-container">
@@ -64,10 +64,11 @@
 			var user,pass;
 			$("#submit").click(function(){
 			  name=$("#name").val();
+			  email=$("#email").val();
 			  vote1=$("#vote1").val();
 			  vote2=$("#vote2").val();
 			  vote3=$("#vote3").val();
-			  $.post("http://localhost:3000/vote",{name: name, vote1: vote1, vote2: vote2, vote3: vote3}, function(data){
+			  $.post("http://localhost:3000/vote",{name: name, email: email, vote1: vote1, vote2: vote2, vote3: vote3}, function(data){
 				if(data==='done')
 				  {
 					alert("Vote success");

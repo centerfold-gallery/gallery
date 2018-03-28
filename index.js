@@ -2116,6 +2116,7 @@ app.post('/vote', function(req, res) {
     var base = new Airtable({apiKey: 'keyy1OWD9fbKh3xIL'}).base('appAxg6rhUJ9BZmV4');
 
     var name = req.body.name;
+    var email = req.body.email;
     var vote1 = req.body.vote1;
     var vote2 = req.body.vote2;
     var vote3 = req.body.vote3;
@@ -2128,7 +2129,7 @@ app.post('/vote', function(req, res) {
 
         base('Voting').replace(newrecord, {
           "Name": name,
-          "Email": "ur@boy.catest",
+          "Email": email,
           "Vote 1": [
             "recyLu8aFvNB5Ba2H"
           ],
@@ -2140,11 +2141,10 @@ app.post('/vote', function(req, res) {
           ]
         }, function(err, record) {
             if (err) { console.error(err); return; }
-            console.log(record.get('Name'));
+            console.log("Name = "+name+", Voted for "+vote1+", "+vote2+", "+vote3);
         });
     });
 
-    console.log("Name = "+name+", Voting for "+vote1+", "+vote2+", "+vote3);
     res.end("yes");
 });
 
