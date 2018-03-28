@@ -1725,6 +1725,13 @@ button::-moz-focus-inner {
     @include boxflex;
 }
 
+.series-voting-card {
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    padding: 2em;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;

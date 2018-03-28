@@ -18,6 +18,14 @@
         {{> nav }}
         <div class="still" id="still">
             <div class="everything" id="everything">
+				<div class="series-voting-card">
+					<input type="name" id="name" size="40"><br>
+					<input type="email" id="email" size="40"><br>
+					<input type="vote1" id="vote1" size="40"><br>
+					<input type="vote2" id="vote2" size="40"><br>
+					<input type="vote3" id="vote3" size="40"><br>
+					<input type="button" id="submit" value="Submit">
+				</div>
                 <div class="featured-collection-header">
                     <img src="{{static_url}}featured-collections/FC000001-header.png">
                 </div>
@@ -26,13 +34,6 @@
 					{{# artPageArtworks}}<span class="artist-page-bio">{{{fields.Model Text}}}</span>{{/ artPageArtworks}}
   					<br/>
 					<br/>
-				    <input type="name" id="name" size="40"><br>
-					<input type="email" id="email" size="40"><br>
-				    <input type="vote1" id="vote1" size="40"><br>
-					<input type="vote2" id="vote2" size="40"><br>
-					<input type="vote3" id="vote3" size="40"><br>
-				    <input type="button" id="submit" value="Submit">
-					</form>
 					<br/>
 					<br/>
 					<div class="threed-feat">
