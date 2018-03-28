@@ -27,7 +27,11 @@ app.use(sslRedirect());
 app.use(compression());
 
 // Body Parser for POST requests
-
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 // Setup Mustache
 app.engine('html', mustacheExpress());
@@ -2106,7 +2110,43 @@ app.get('/series/test', function(req, res){
         });
     });
 
+app.post('/vote', function(req, res) {
 
+    var Airtable = require('airtable');
+    var base = new Airtable({apiKey: 'keyy1OWD9fbKh3xIL'}).base('appAxg6rhUJ9BZmV4');
+
+    var name = req.body.name;
+    var vote1 = req.body.vote1;
+    var vote2 = req.body.vote2;
+    var vote3 = req.body.vote3;
+
+    base('Voting').create({}, function(err, record) {
+        if (err) { console.error(err); return; }
+        console.log(record.getId());
+
+        var newrecord = record.getId();
+
+        base('Voting').replace(newrecord, {
+          "Name": name,
+          "Email": "ur@boy.catest",
+          "Vote 1": [
+            "recyLu8aFvNB5Ba2H"
+          ],
+          "Vote 2": [
+            "rec33Zq3Nr19AqnoK"
+          ],
+          "Vote 3": [
+            "recuWofSqOpHHWHEp"
+          ]
+        }, function(err, record) {
+            if (err) { console.error(err); return; }
+            console.log(record.get('Name'));
+        });
+    });
+
+    console.log("Name = "+name+", Voting for "+vote1+", "+vote2+", "+vote3);
+    res.end("yes");
+});
 
 // Featured Collection 1 Configuration
 

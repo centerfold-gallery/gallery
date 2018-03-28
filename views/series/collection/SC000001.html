@@ -24,9 +24,16 @@
                 <div class="event-description">
                     <br/>
 					{{# artPageArtworks}}<span class="artist-page-bio">{{{fields.Model Text}}}</span>{{/ artPageArtworks}}
-					{{{fields.Title}}}
-					{{{fields.Description}}}
   					<br/>
+					<br/>
+					<h1>Hello people !</h1>
+				    <input type="TEXT" id="name" size="40"><br>
+				    <input type="vote1" id="vote1" size="40"><br>
+					<input type="vote2" id="vote2" size="40"><br>
+					<input type="vote3" id="vote3" size="40"><br>
+				    <input type="button" id="submit" value="Submit">
+					</form>
+					<br/>
 					<br/>
 					<div class="threed-feat">
 						<div id="threed" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
@@ -51,6 +58,23 @@
 				$('.logo-home').fadeOut(500);
 			}
 		});
+	</script>
+	<script>
+		  $(document).ready(function(){
+			var user,pass;
+			$("#submit").click(function(){
+			  name=$("#name").val();
+			  vote1=$("#vote1").val();
+			  vote2=$("#vote2").val();
+			  vote3=$("#vote3").val();
+			  $.post("http://localhost:3000/vote",{name: name, vote1: vote1, vote2: vote2, vote3: vote3}, function(data){
+				if(data==='done')
+				  {
+					alert("Vote success");
+				  }
+			  });
+			});
+		  });
 	</script>
     <footer>
 		{{> body-end}}
