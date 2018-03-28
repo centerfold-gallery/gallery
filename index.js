@@ -2113,7 +2113,7 @@ app.get('/series/test', function(req, res){
 app.post('/vote', function(req, res) {
 
     var Airtable = require('airtable');
-    var base = new Airtable({apiKey: 'keyy1OWD9fbKh3xIL'}).base('appAxg6rhUJ9BZmV4');
+    var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base('appAxg6rhUJ9BZmV4');
 
     var name = req.body.name;
     var email = req.body.email;
@@ -2141,7 +2141,7 @@ app.post('/vote', function(req, res) {
           ]
         }, function(err, record) {
             if (err) { console.error(err); return; }
-            console.log("Name = "+name+", Voted for "+vote1+", "+vote2+", "+vote3);
+            console.log("Name = "+name+", Email = "+email+", Voted for "+vote1+", "+vote2+", "+vote3);
         });
     });
 
