@@ -2530,6 +2530,10 @@ app.get('/faqs', function (req, res) {
   res.render('faqs/index.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
+app.get('/privacy', function (req, res) {
+  res.render('privacy/index.html', {title: "Privacy Policy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 app.get('/agreement', function (req, res) {
   res.render('agreement/index.html', {title: "Artist Agreement", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
