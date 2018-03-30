@@ -2526,8 +2526,12 @@ app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
-app.get('/faqs', function (req, res) {
-  res.render('faqs/index.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+app.get('/faqs/marketplace', function (req, res) {
+  res.render('faqs/marketplace.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
+app.get('/faqs/series', function (req, res) {
+  res.render('faqs/series.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
 app.get('/privacy', function (req, res) {
