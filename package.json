@@ -23,7 +23,6 @@
   "homepage": "https://github.com/centerfold-gallery/gallery#readme",
   "dependencies": {
     "airtable": "^0.5.0",
-    "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "express": "^4.15.3",
     "heroku-ssl-redirect": "0.0.4",

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head}}
+    </head>
+	<body>
+        {{> nav}}
+		{{> 3d-overlay}}
+        <div class="still" id="still">
+            <div class="everything" id="everything">
+                <div id="about-0">
+                    <img id="threed" class="animated infinite pulse" src="{{static_url}}assets/3d.png">
+                </div>
+                <div id="about-1" class="about-description">
+                    <span class="inline-logo"><img src="{{static_url}}assets/centerfold.svg"><img src="{{static_url}}assets/centerfold-white.svg" style="display:none"></span>is a Montreal-based organization with the aim of driving social and economic change in the art industry. Our goal is to enable artists to gain funding, visibility, and access while increasing art awareness within the community.
+                </div>
+				<img class="about-img shadow" id="about-img-1" src="{{static_url}}assets/pages/about/cf7-bw.jpg" data-action="zoom">
+                <div id="about-2" class="about-description">
+                    Primarily, Centerfold is an online art marketplace that presents some of the best artwork Montreal has to offer in a clean and accessible way. Additionally, our 3D functionality replicates the experience of being in a physical gallery, and as a result, brings the gallery experience into the comfort of our visitors’ home. We encourage you to check this feature out by clicking on the “3D” icon above. <br/>
+                    <br/>
+                    However, Centerfold originated as an event series. This series continues to operate, and showcases local visual art under a new economic model where creators are funded through the audience’s experience.
+                </div>
+				<img class="about-img shadow" id="about-img-2" src="{{static_url}}assets/pages/about/cf13-warm.jpg" data-action="zoom">
+                <div id="about-3" class="about-description">
+                    Our series began as an idea to enable artists’ endeavours by putting money in the pockets of artists. This idea has since flourished into a series of pop-up exhibitions that feature local artists and crowd-source funds for those featured. The revenue from the exhibition is distributed back to the artists based on the popularity of their contributions. If you would like to know a little more about how this works, please visit our <a class="inline-link" href="/events" target="_blank">events page</a>.
+                </div>
+				<img class="about-img shadow" id="about-img-3" src="{{static_url}}assets/pages/about/cf14-cold.jpg" data-action="zoom">
+                <div id="about-4" class="about-description">
+					In addition to the online marketplace and event series, we are proud and excited to open our permanent physical location in Westmount's “Victoria Park” building. Our brick-and-mortar gallery will not only serve local artists with the opportunity to sell their work to eager buyers, but will properly display the work listed on our online marketplace, giving even the most vigilant of shoppers assurances on the quality and condition of our available works. Look out for our doors to open in late July of 2017. <br/>
+					<br/>
+					Outside of art dealing, Centerfold specializes in artistic curation, event production, and artist management; attending closely to the needs of our clients on a case-by-case basis. We invite you to head over to our <a class="inline-link" href="/services" target="_blank">services page</a> for more information.
+
+                </div>
+                <div id="about-5" class="about-description">
+                    Since the project began, Centerfold has charitably raised over $10,000 for its featured artists, all-the-while facilitating the exchange between artists and proud new owners of their work.
+                </div>
+
+				<div class="centerfold-header">
+                    Contact
+                </div>
+                <div class="contact">
+                    <div class="contact-card">
+						<center>
+	                        <div class="contact-name">General Inquiries</div>
+	                        <a class="contact-email inline-link" href="mailto:hello@centerfold.gallery" target="_blank">hello@centerfold.gallery</a>
+						</center>
+					</div>
+                </div>
+				<br/>
+				<br/>
+				<div class="centerfold-header">
+                    Press
+                </div>
+				<div class="about-press-logo-container">
+					<a class="about-press-logo" href="https://www.thefader.com/2016/09/15/art-montreal-centerfold" target="_blank"><img src="{{static_url}}assets/press/fader-logo.png"></a>
+					<a class="about-press-logo" href="https://hoverstat.es/features/centerfold-gallery" target="_blank"><img src="{{static_url}}assets/press/hoverstates-logo.png"></a>
+					<a class="about-press-logo" href="https://twitter.com/cbcHomerun/status/870011066402586624" target="_blank"><img src="{{static_url}}assets/press/cbc-logo.png"></a>
+					<a class="about-press-logo" href="" target="_blank"><img src="{{static_url}}assets/press/decompoz-logo.png">
+					<a class="about-press-logo" href="https://graphitepublications.com/centerfold-a-re-envisioning/" target="_blank"><img src="{{static_url}}assets/press/graphite-logo.png"></a>
+				</div>
+				{{> footer}}
+            </div>
+        </div>
+    </body>
+    <footer>
+		{{> body-end}}
+    </footer>
+</html>
