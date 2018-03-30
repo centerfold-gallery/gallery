@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+		{{> 3d-overlay }}
+        <div class="still" id="still">
+            <div class="everything" id="everything">
+                <div class="centerfold-14">
+                    Centerfold Gallery <div id="threed" class="threed pulse animated infinite threed-mobile threed-button">View in 3D</div>
+                </div>
+				{{! filter }}
+				<div class="art-pagin art-pagin-top">
+					<div class="art-pagin-container">
+						<a class="art-pagin-prev" href="{{prev_page}}">Forever Ago</a> <div class="art-pagin-curr">{{current_page}}</div> <a class="art-pagin-next" href="{{next_page}}">Thereafter</a>
+					</div>
+				</div>
+				{{> art/art }}
+				<div class="art-pagin art-pagin-bottom">
+					<div class="art-pagin-container">
+						<a class="art-pagin-prev" href="{{prev_page}}">Forever Ago</a> <div class="art-pagin-curr">{{current_page}}</div> <a class="art-pagin-next" href="{{next_page}}">Thereafter</a>
+					</div>
+				</div>
+            </div>
+			{{> footer}}
+        </div>
+		<footer>
+			{{> body-end}}
+			<script>
+			if (window.screen.width > 780) {
+				document.write(
+				'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
+				)
+			}
+			</script>
+		    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+			<script>
+				$('.art-gallery').infiniteScroll({
+					path: '.pagination__next',
+					append: '.art-wall',
+					elementScroll: '.still',
+					history: 'replace',
+					status: '.scroller-status',
+					hideNav: '.pagination',
+					debug: true
+				});
+
+				$('.art-gallery').on( 'append.infiniteScroll', function( event, response, path, items ) {
+
+		               var bLazy = new Blazy({
+		                   container: ".everything",
+		                   loadInvisible: true
+		               });
+		               $("[id^=artCF]").hover(function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardCF'+num);
+		                   $elemcard.fadeIn(500);
+		               },function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardCF'+num);
+		                   $elemcard.fadeOut(500);
+		               });
+		               $("[id^=artFC]").hover(function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardFC'+num);
+		                   $elemcard.fadeIn(500);
+		               },function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardFC'+num);
+		                   $elemcard.fadeOut(500);
+		               });
+		               $("[id^=artAF]").hover(function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardAF'+num);
+		                   $elemcard.fadeIn(500);
+		               },function(){
+		                   var num = this.id.slice(5);
+		                   var $elemcard = $('#cardAF'+num);
+		                   $elemcard.fadeOut(500);
+		               });
+			           $(function () {
+			               $("[id^=artcfuid]").hover(function(){
+			                   var num = this.id.slice(8);
+			                   var $elemcard = $('#cardcfuid'+num);
+			                   $elemcard.fadeIn(500);
+			               },function(){
+			                   var num = this.id.slice(8);
+			                   var $elemcard = $('#cardcfuid'+num);
+			                   $elemcard.fadeOut(500);
+			               });
+			           });
+					   var mixdes = mixitup('.everything').destroy();
+					   var mixer = mixitup('.everything', {
+						   animation: {
+		                       enable: false,
+		                       animateResizeContainer: false
+		                   },
+		                   data: {
+		                       dirtyCheck: true
+		                   },
+		                   behavior: {
+		                       liveSort: true
+		                   }
+		               });
+					   var cards = $(".art-wall:last-of-type > .art-rand");
+	   	               	   for(var i = 0; i < cards.length; i++){
+	   	               	   var target = Math.floor(Math.random() * cards.length -1) + 1;
+	   	               	   var target2 = Math.floor(Math.random() * cards.length -1) +1;
+	   	               	   cards.eq(target).before(cards.eq(target2));
+	   	               }
+				});
+			</script>
+	        <script>
+	            var cards = $(".art-rand");
+	                for(var i = 0; i < cards.length; i++){
+	                var target = Math.floor(Math.random() * cards.length -1) + 1;
+	                var target2 = Math.floor(Math.random() * cards.length -1) +1;
+	                cards.eq(target).before(cards.eq(target2));
+	            }
+	        </script>
+	    </footer>
+	</body>
+</html>

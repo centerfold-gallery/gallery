@@ -110,7 +110,6 @@ $color-2: #fffbfb;
 
 $type-1: 'caslon', caslon, serif;
 $type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
-$type-3: 'Work Sans', sans-serif;
 $type-4: 'authentic', sans-serif;
 
 $type-size-1: 0.8em;
@@ -136,10 +135,6 @@ $line-height-1: 1.2em;
 
 .t2 {
     font-family: $type-2;
-}
-
-.t3 {
-    font-family: $type-3;
 }
 
 .t4 {
@@ -526,6 +521,20 @@ button.highlight {
     display: inline-block;
 }
 
+.b-lazy {
+    -webkit-transition: -webkit-filter 500ms ease-in-out;
+    -moz-transition: filter 500ms ease-in-out;
+    -o-transition: filter 500ms ease-in-out;
+    transition: filter 500ms ease-in-out;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.b-lazy.b-loaded {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
 .artist-card-wrap {
     display: inline-block;
     font-family: $type-2;
@@ -562,11 +571,37 @@ button.highlight {
   content: ", "
 }
 
-.infinite-scroll-request {
+.art-pagin {
     width: 100%;
-    height: 10%;
-    margin-top: 10%;
     @include boxflex;
+    font-family: $type-4;
+    font-size: 0.6em;
+}
+
+.art-pagin-top {
+    margin-top: 16em;
+    margin-bottom: 10em;
+}
+
+.art-pagin-bottom {
+    margin-top: 10em;
+    margin-bottom: 4em;
+}
+
+.art-pagin-prev {
+    cursor: w-resize;
+    margin-right: 4em;
+}
+
+.art-pagin-curr {
+    font-family: $type-1;
+    font-size: 1.6em;
+    display: inline-block;
+}
+
+.art-pagin-next {
+    cursor: e-resize;
+    margin-left: 4em;
 }
 
 .buy-2d {
@@ -605,6 +640,12 @@ button.highlight {
     cursor: n-resize;
 }
 
+.live-a { display: none; }
+.live-atrue { display: block }
+
+.art-a { display: none; }
+.art-atrue { display: block; }
+
 .sold-a { display: none }
 
 .sold-atrue { display: block }
@@ -623,7 +664,24 @@ button.highlight {
     display: none;
 }
 
+.inquire-a { display: none }
+
+.inquire-atrue { display: block }
+
+.inquire-atrue ~ .price,
+.inquire-atrue ~ .shipping-container,
+.inquire-atrue ~ form {
+    display: none;
+}
+
 .shadow {
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+	filter: url("https://s3.amazonaws.com/centerfold-website/assets/shadow.svg");
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.56));
+	filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.56));
+}
+
+.shadow-fallback {
     background-color: $background-color;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
@@ -751,6 +809,7 @@ button.highlight {
     height: 100%;
     z-index: 200;
     display: block;
+    overflow-y: scroll;
 }
 
 .buy-flex {
@@ -1229,6 +1288,73 @@ body.zoom-overlay-open {
     right: 0.1em;
 }
 
+.faqs-toc {
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.faqs-toc-main-header {
+    font-family: $type-4;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.faqs-toc-header {
+    font-family: $type-4;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.faqs-toc-question {
+    font-family: $type-4;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.faqs-container {
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.faqs-main-header {
+    font-family: $type-4;
+    font-size: 2em;
+    width: 100%;
+    @include boxflex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.faqs-header {
+    font-family: $type-4;
+    font-size: 2em;
+    @include boxflex;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.faqs-question {
+    font-family: $type-4;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+.faqs-answer {
+    font-family: $type-4;
+    font-size: 1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    opacity: 0.8;
+    line-height: 1.4em;
+}
+
 .fourohno {
     width: 100%;
     height: 100%;
@@ -1257,16 +1383,20 @@ body.zoom-overlay-open {
     color: #fff !important;
 }
 
+.night-mode-no-bg {
+    color: #fff !important;
+}
+
 .night-mode-elements {
     background-color: $background-color !important;
     background: $background-color !important;
 }
 
 .night-shadow {
-    background-color: $background-color;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
-    box-shadow: 0px 0px 25px 0px rgba(255, 249, 249, 0.56);
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff9f9')";
+	filter: url("https://s3.amazonaws.com/centerfold-website/assets/shadow-night.svg");
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(255, 249, 249, 0.56));
+	filter: drop-shadow(0px 0px 20px rgba(255, 249, 249, 0.56));
 }
 
 .night-threed-button {
@@ -1320,7 +1450,7 @@ body.zoom-overlay-open {
 }
 
 .cert-title {
-    font-family: $type-3;
+    font-family: $type-4;
     font-weight: 800;
     font-size: 24px;
     height: 15%;
@@ -1499,7 +1629,7 @@ button::-moz-focus-inner {
     width: 50px;
     height: 25px;
     background-color: $background-color;
-    background-image: url("../../print-button-hover.png");
+    background-image: url("https://s3.amazonaws.com/centerfold-website/assets/tools/cert/print-button-hover.png");
     background-position: center;
     background-size: contain;
     font-family: $type-2;
@@ -1526,7 +1656,7 @@ button::-moz-focus-inner {
     }
 
     .cert-title {
-        font-family: $type-3;
+        font-family: $type-4;
         font-weight: 800;
         font-size: 24px;
         height: 10%;
@@ -1597,6 +1727,33 @@ button::-moz-focus-inner {
     }
 }
 
+// HANGING GUIDE
+
+.hanging-guide-viz {
+    width: 100%;
+    height: 600px;
+    @include boxflex;
+}
+
+.hanging-guide-wall {
+    width: 80%;
+    height: 80%;
+    border: 1px solid $color-1;
+    @include boxflexh;
+}
+
+// .hanging-guide-art-container {
+//     width: 33%;
+//     height: 100%;
+//     @include boxflex;
+// }
+
+.hanging-guide-artwork {
+    border: 1px solid $color-1;
+    width: 100px;
+    height: 140px;
+}
+
 .heartbeat {
     background-image: url('https://i.imgur.com/3hZNcw5.png');
     background-position: bottom right;
@@ -1627,6 +1784,19 @@ button::-moz-focus-inner {
     height: auto;
     width: auto;
     margin-left: 0em;
+}
+
+.model-form-container {
+    height: 1037px;
+    width: 100%;
+    @include boxflex;
+}
+
+.series-voting-card {
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    padding: 2em;
 }
 
 .spin {

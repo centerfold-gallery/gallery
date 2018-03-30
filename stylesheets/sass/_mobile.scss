@@ -164,7 +164,7 @@ img#threed.threed-mobile {
 
 .buy-art img {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 .art:nth-child(16n+1),
@@ -206,13 +206,21 @@ img#threed.threed-mobile {
     overflow-y: scroll;
 }
 
+.buy-buy-page {
+    overflow-y: scroll;
+}
+
+.buy-wrap {
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+
 .buy-flex {
     width: 100%;
-    height: 150%;
-    @include boxflex;
+    height: auto;
     position: relative;
     z-index:  601;
-    pointer-events: none;
+    // pointer-events: none;
 }
 
 .close {
@@ -443,6 +451,10 @@ img#threed.threed-mobile {
     width: 80vw;
     height: auto;
     margin-left: 0;
+}
+
+.footer-space-buy {
+    display: block;
 }
 
 .footer {

@@ -15,22 +15,18 @@
         {{> head }}
     </head>
 	<body>
-        {{> nav-home }}
-        <div class="still">
-            <div class="everything">
+        {{> nav-series-home }}
+		{{> 3d-overlay }}
+        <div class="still" id="still">
+            <div class="everything" id="everything">
 				<div class="home">
 					<div class="home-container-logo">
 						<img src="{{static_url}}assets/centerfold.svg"><img src="{{static_url}}assets/centerfold-white.svg" style="display:none">
 					</div>
 					<div class="home-container">
-						<!-- <div class="home-container-images">
-                            {{# homepageArtworks}}
-                                <a href="art/{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
-                            {{/ homepageArtworks}}
-						</div> -->
 						<div class="home-container-images">
                             {{# homepageArtworks}}
-                                <a href="gallery/arrival-measures"><img class="shadow" src="{{static_url}}{{fields.Unique-Artwork-ID}}-large.jpg"></a>
+                                <a href="art/{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}art/{{fields.Image Type}}/{{fields.Unique-Artwork-ID}}-large.{{fields.Image Type}}"></a>
                             {{/ homepageArtworks}}
 						</div>
 					</div>
@@ -41,21 +37,27 @@
                 <div class="event-description">
                     <br/>
 					Built with love and gratitude for both the artists that make our world more beautiful, and those that enable artists to create.
+					<br/>
+					<br/>
+					This month we are centering women, People of Color, Indigenous peoples, and queer, trans and non-binary individuals. The curatorial process will be suspended in order to refocus and delineate our mission of supporting artists. Thank you for everything.
   					<br/>
+					<br/>
+					We aim to promote and further these artists and their practices and hope that people who possess these identities will be encouraged to <a class="inline-link" href="https://airtable.com/shreAnW1Ggm3fVolL" target="_blank">submit</a>.
+					<br/>
 					<br/>
 					<span class="mobile-hide">Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.</span>
                 </div>
-				<div class="art mix" id="artFC000003">
-					<a href="/gallery/arrival-measures" class="art-art">
-						<img class="shadow" src="{{static_url}}arrival-measures/arrival-measures-2-small.png">
+				<!-- <div class="art mix" id="artFC000004">
+					<a href="https://airtable.com/shrdzPVM6qmTZcsZN" target="_blank" class="art-art">
+						<img class="shadow" src="{{static_url}}gallery/inversions/cfa.png">
 					</a>
 					<div class="artist-card-wrap">
-						<div class="artist-card" id="cardFC000003">
-							<span class="art-title">Arrival Measures</span><br/>
-							Dinner &amp; Vernissage &mdash; <span class="buy-2d">More</span><br/>
+						<div class="artist-card" id="cardFC000004">
+							<span class="art-title">Inversions x Centerfold</span><br/>
+							Call for Artists &mdash; <span class="buy-2d">Submit</span><br/>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="art mix" id="artFC000002">
 					<a href="featured-collections/FC000002-freckle-blemish-wrinkle-scar" class="art-art">
 						<img class="shadow" src="{{static_url}}featured-collections/FC000002-header.png">
@@ -67,7 +69,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="art mix" id="artAF000001">
+				<!-- <div class="art mix" id="artAF000001">
 					<a href="/artist-focus" class="art-art">
 						<video class="shadow" loop autoplay>
 							<source src="{{static_url}}laurent-3D/lp.mp4" type="video/mp4">
@@ -80,7 +82,7 @@
 							Artist Feature &mdash; <span class="buy-2d">View</span><br/>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="art" id="artFC000001">
 					<a href="featured-collections/FC000001-moments-distorted" class="art-art">
@@ -112,7 +114,7 @@
 	</script>
     <footer>
 		{{> body-end}}
-		<script>
+		<script async>
 		if (window.screen.width > 780) {
 			document.write(
 			'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
