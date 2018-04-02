@@ -32,6 +32,11 @@ body {
     src: url(../../fonts/AUTHENTIC-Sans.woff) format('woff');
 }
 
+@font-face {
+    font-family: pressuru;
+    src: url(../../fonts/pressuru.otf) format('opentype');
+}
+
 @mixin boxflex {
     display: -webkit-box;
     display: -moz-box;
@@ -1780,9 +1785,10 @@ button::-moz-focus-inner {
 }
 
 .featured-collection-header-bg {
-    font-family: $type-1;
+    font-family: 'pressuru', 'Impact';
+    // text-transform: uppercase;
     font-size: 8em;
-    color: #fff9f9;
+    color: #9e0806;
     width: 100%;
     height: 100vh;
     @include boxflex;
