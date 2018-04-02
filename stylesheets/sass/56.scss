@@ -32,6 +32,11 @@ body {
     src: url(../../fonts/AUTHENTIC-Sans.woff) format('woff');
 }
 
+@font-face {
+    font-family: pressuru;
+    src: url(../../fonts/pressuru.otf) format('opentype');
+}
+
 @mixin boxflex {
     display: -webkit-box;
     display: -moz-box;
@@ -1712,10 +1717,24 @@ button::-moz-focus-inner {
     padding-left: 0em;
 }
 
+.featured-collection-header-bg {
+    font-family: 'pressuru', 'Impact';
+    // text-transform: uppercase;
+    font-size: 8em;
+    color: #9e0806;
+    width: 100%;
+    height: 100vh;
+    @include boxflex;
+    margin-bottom: 1em;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+
 .featured-collection-header img {
     display: inline-block;
     height: auto;
-    width: auto;
+    width: 75%;
     margin-left: 0em;
 }
 

@@ -2241,7 +2241,7 @@ app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
                                 }
                             }
                         }
-                        res.render('featured-collections/FC000001-moments-distorted/index.html', context);
+                        res.render('featured-collections/FC000001-moments-distorted.html', context);
                     });
                 });
             });
@@ -2252,7 +2252,7 @@ app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
 //Featured Collection 2 Configuration
 
 app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(req, res){
-    var context = {title: "Untitled", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Freckle Blemish Wrinkle Scar", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2342,7 +2342,108 @@ app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(
                                 }
                             }
                         }
-                        res.render('featured-collections/FC000002-untitled/index.html', context);
+                        res.render('featured-collections/FC000002-untitled.html', context);
+                    });
+                });
+            });
+        });
+    });
+});
+
+//Featured Collection 3 Configuration
+
+app.get('/featured-collections/FC000003-knowing-yourself', function(req, res){
+    var context = {title: "Knowing Yourself Lets You Understand Others", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+
+    var getCollection = function(title) {
+        return new Promise(function(resolve, reject) {
+            base('Online Featured Collection')
+                .select({view: "Grid view", filterByFormula: "{Title} = '"+ title +"'"})
+                .firstPage(function(err, homepageArt) {
+                    if(err) {
+                        reject(err)
+                    }
+                    else {
+                        var jsonHomepageArt = homepageArt.map(function(homepageArt){
+                            return homepageArt['_rawJson']
+                        });
+                        resolve(jsonHomepageArt[0]['fields']['Artworks']);
+                    }
+                });
+            });
+        }
+
+    var getArtwork = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artworks')
+            .select({view: "Grid view", sort: [{field: "Numbered In Collection", direction: "asc"}], filterByFormula: filterStatement})
+            .firstPage(function(err, homepageArtworks) {
+                if(err) {
+                    reject(err)
+                }
+                else {
+                    var jsonHomepageArtworks = homepageArtworks.map(function(homepageArtworks){
+                        return homepageArtworks['_rawJson']
+                    });
+                    resolve(jsonHomepageArtworks);
+                }
+            });
+        });
+    }
+
+    var getArtists = function(filterStatement){
+        return new Promise(function(resolve, reject) {
+        base('Artists')
+            .select({view: "Grid view", filterByFormula: filterStatement})
+            .firstPage(function(err, artists) {
+                if(err) {
+                    reject(err)
+                }
+                else {
+                    var jsonArtists = artists.map(function(artist){
+                        return artist['_rawJson']
+                    });
+                    resolve(jsonArtists);
+                }
+            });
+        });
+    }
+
+    function constructFilterStatement(records){
+        var filterStatement = "OR("
+        for (var i = 0; i < records.length; i++) {
+            filterStatement = filterStatement + "RECORD_ID() = '" + records[i] + "'";
+            if (i < records.length - 1){
+                filterStatement = filterStatement + ',';
+            }
+        }
+        filterStatement = filterStatement + ")";
+        return filterStatement;
+    }
+
+    getCollection('Knowing Yourself Lets You Understand Others').then(function(result) {
+        var filterStatement = constructFilterStatement(result);
+        getArtwork(filterStatement).then(function(result){
+            context['homepageArtworks'] = result;
+            getCollection('Knowing Yourself Lets You Understand Others').then(function(result){
+                var filterStatement = constructFilterStatement(result);
+                getArtwork(filterStatement).then(function(result){
+                    context['artPageArtworks'] = result;
+                    // Parse the list of all the artist's ids
+                    var artistIDs = [];
+                    for (var i = 0; i < result.length; i++) {
+                        artistIDs[i] = result[i].fields.Artist[0];
+                    }
+                    var artPageArtistsFilterStatement = constructFilterStatement(artistIDs)
+                    getArtists(artPageArtistsFilterStatement).then(function(result){
+                        for(var i = 0; i < context['artPageArtworks'].length; i++){
+                            for(var j = 0; j < result.length; j++){
+                                if(result[j].id == context['artPageArtworks'][i].fields.Artist[0]){
+                                    context['artPageArtworks'][i].fields.Artist = result[j].fields['Full Name'];
+                                }
+                            }
+                        }
+                        res.render('featured-collections/FC000003.html', context);
                     });
                 });
             });
