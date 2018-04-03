@@ -1288,6 +1288,35 @@ body.zoom-overlay-open {
     right: 0.1em;
 }
 
+.faqs-cyoa {
+    width: 100%;
+    height: 50vh;
+    margin-top: 1em;
+    @include boxflexh;
+    font-family: $type-4;
+    font-size: 4em;
+}
+
+.faqs-box {
+    width: 42.5%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    @include boxflex;
+}
+
+.faqs-box:first-of-type {
+    margin-left: 5%;
+    margin-right: 2.5%;
+    background-color: #0000ff;
+}
+
+.faqs-box:last-of-type {
+    margin-right: 5%;
+    margin-left: 2.5%;
+    background-color: #ff0000;
+}
+
 .faqs-toc {
     margin-left: 20%;
     width: 60%;
@@ -1350,9 +1379,10 @@ body.zoom-overlay-open {
     font-family: $type-4;
     font-size: 1em;
     margin-bottom: 2em;
-    margin-left: 2em;
+    padding-left: 2em;
     opacity: 0.8;
     line-height: 1.4em;
+    border-left: 0.4em solid $color-1;
 }
 
 .fourohno {
