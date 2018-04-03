@@ -9,7 +9,6 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-transform: translate3d(0,0,0);
 }
 
 ::-moz-selection { color: #0000ff; }
@@ -321,6 +320,7 @@ canvas {
 .everything {
     width: 100%;
     background-size: cover;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .home {
