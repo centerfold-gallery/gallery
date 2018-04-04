@@ -2131,13 +2131,13 @@ app.post('/vote', function(req, res) {
           "Name": name,
           "Email": email,
           "Vote 1": [
-            "recyLu8aFvNB5Ba2H"
+            req.body.vote1
           ],
           "Vote 2": [
-            "rec33Zq3Nr19AqnoK"
+            req.body.vote2
           ],
           "Vote 3": [
-            "recuWofSqOpHHWHEp"
+            req.body.vote3
           ]
         }, function(err, record) {
             if (err) { console.error(err); return; }

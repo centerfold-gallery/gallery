@@ -20,11 +20,22 @@
         <div class="still" id="still">
             <div class="everything" id="everything">
 				<div class="series-voting-card">
-					<input type="name" id="name" size="40"><br>
-					<input type="email" id="email" size="40"><br>
-					<input type="vote1" id="vote1" size="40"><br>
-					<input type="vote2" id="vote2" size="40"><br>
-					<input type="vote3" id="vote3" size="40"><br>
+					Name<br/>
+					<input type="name" id="name" size="40"><br/>
+					<br/>
+					Email<br/>
+					<input type="email" id="email" size="40"><br/>
+					<br/>
+					<div class="vote-container">
+
+					</div>
+					<!-- <div class="vote-title" id="vote-title1"></div><br/>
+					<div class="vote-title" id="vote-title2"></div><br/>
+					<div class="vote-title" id="vote-title3"></div><br/>
+					<div class="vote-loaded" id="vote1"></div><br/>
+					<div class="vote-loaded" id="vote2"></div><br/>
+					<div class="vote-loaded" id="vote3"></div><br/> -->
+					<br/>
 					<input type="button" id="submit" value="Submit">
 				</div>
                 <div class="featured-collection-header">
@@ -52,13 +63,35 @@
         </div>
 	</body>
 	<script>
-		$(".still").scroll(function () {
-			var y = $(this).scrollTop();
-			if (y > 700) {
-				$('.logo-home').fadeIn(500);
-			} else {
-				$('.logo-home').fadeOut(500);
-			}
+		// $('.art-vote').on('click', function() {
+		// 	$('.vote-container').append('<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div></div>');
+		// 	$('.vote-set:last-of-type > .vote-title').html($(this).find('.art-vote-title').text());
+		// 	$('.vote-set:last-of-type > .vote-loaded').html($(this).find('.art-vote-rec').text());
+		// });
+
+		var $containers = $('.vote-container');
+		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div></div>';
+
+		$('.art-vote').on('click', function () {
+
+		  var childAdded = false;
+
+			$containers.each(function () {
+				var $container = $(this);
+		    	if ($container.children().length < 3) {
+		      		$container.append($set);
+		      		childAdded = true;
+		      		return false;
+		  		}
+		  	});
+
+			$('.vote-set:last-of-type > .vote-title').html($(this).find('.art-vote-title').text());
+			$('.vote-set:last-of-type > .vote-loaded').html($(this).find('.art-vote-rec').text());
+
+		 	if (!childAdded) {
+		    	console.log('No child added!');
+		  	}
+
 		});
 	</script>
 	<script>
@@ -67,9 +100,9 @@
 			$("#submit").click(function(){
 			  name=$("#name").val();
 			  email=$("#email").val();
-			  vote1=$("#vote1").val();
-			  vote2=$("#vote2").val();
-			  vote3=$("#vote3").val();
+			  vote1=$(".vote-container > .vote-set:nth-of-type(1) > .vote-loaded").text();
+			  vote2=$(".vote-container > .vote-set:nth-of-type(2) > .vote-loaded").text();
+			  vote3=$(".vote-container > .vote-set:nth-of-type(3) > .vote-loaded").text();
 			  $.post("http://localhost:3000/vote",{name: name, email: email, vote1: vote1, vote2: vote2, vote3: vote3}, function(data){
 				if(data==='done')
 				  {

@@ -1836,6 +1836,15 @@ button::-moz-focus-inner {
     padding: 2em;
 }
 
+.series-vote-button {
+    padding: 0.3em;
+    font-family: 1.4em;
+    background-color: #0000ff;
+    border-radius: 0.4em;
+    @include boxflex;
+    color: $background-color;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
