@@ -1303,18 +1303,21 @@ body.zoom-overlay-open {
     margin-top: 5%;
     margin-bottom: 5%;
     @include boxflex;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
 }
 
 .faqs-box:first-of-type {
     margin-left: 5%;
     margin-right: 2.5%;
-    background-color: #0000ff;
+    background-color: #b278c9;
 }
 
 .faqs-box:last-of-type {
     margin-right: 5%;
     margin-left: 2.5%;
-    background-color: #ff0000;
+    background-color: #c978b7;
 }
 
 .faqs-toc {
