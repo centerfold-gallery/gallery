@@ -2350,8 +2350,6 @@ app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(
     });
 });
 
-// ArtistFocus01 Configuration
-
 app.get('/artist-focus', function(req, res){
     var context = {title: "Artist Focus", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
 
@@ -2443,7 +2441,7 @@ app.get('/artist-focus', function(req, res){
                                 }
                             }
                         }
-                        res.render('artist-focus/index.html', context);
+                        res.render('artist-focus/af000002.html', context);
                     });
                 });
             });
@@ -2524,9 +2522,11 @@ app.get('/artists', function (req, res) {
   res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
-app.get('/services', function (req, res) {
-  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
-});
+// Marked for deletion
+
+// app.get('/services', function (req, res) {
+//   res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+// });
 
 app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});

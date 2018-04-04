@@ -66,13 +66,7 @@
         </div>
 		<footer>
 			{{> body-end}}
-			<script>
-				if (window.screen.width > 780) {
-				  document.write(
-				  '<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
-				  )
-				}
-			</script>
+			{{> 3d-site-wide }}
 	    </footer>
     </body>
 </html>
