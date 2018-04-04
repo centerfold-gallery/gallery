@@ -57,7 +57,7 @@
 	</body>
 	<script>
 		var $containers = $('.vote-container');
-		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div></div>';
+		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div><div class="vote-remove">X</div></div>';
 
 		$('.art-vote').on('click', function () {
 
@@ -79,6 +79,10 @@
 		    	// console.log('Only 3 votes!');
 		  	}
 
+		});
+
+		$(document).on("click", ".vote-remove", function() {
+			$(this).parent().remove();
 		});
 	</script>
 	<script>
