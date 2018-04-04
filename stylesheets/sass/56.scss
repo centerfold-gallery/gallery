@@ -1845,6 +1845,12 @@ button::-moz-focus-inner {
     color: $background-color;
 }
 
+.art-vote-title,
+.art-vote-rec,
+.vote-loaded {
+    display: none;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;

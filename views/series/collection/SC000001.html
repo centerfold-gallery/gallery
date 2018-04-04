@@ -27,14 +27,7 @@
 					<input type="email" id="email" size="40"><br/>
 					<br/>
 					<div class="vote-container">
-
 					</div>
-					<!-- <div class="vote-title" id="vote-title1"></div><br/>
-					<div class="vote-title" id="vote-title2"></div><br/>
-					<div class="vote-title" id="vote-title3"></div><br/>
-					<div class="vote-loaded" id="vote1"></div><br/>
-					<div class="vote-loaded" id="vote2"></div><br/>
-					<div class="vote-loaded" id="vote3"></div><br/> -->
 					<br/>
 					<input type="button" id="submit" value="Submit">
 				</div>
@@ -63,12 +56,6 @@
         </div>
 	</body>
 	<script>
-		// $('.art-vote').on('click', function() {
-		// 	$('.vote-container').append('<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div></div>');
-		// 	$('.vote-set:last-of-type > .vote-title').html($(this).find('.art-vote-title').text());
-		// 	$('.vote-set:last-of-type > .vote-loaded').html($(this).find('.art-vote-rec').text());
-		// });
-
 		var $containers = $('.vote-container');
 		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div></div>';
 
@@ -89,7 +76,7 @@
 			$('.vote-set:last-of-type > .vote-loaded').html($(this).find('.art-vote-rec').text());
 
 		 	if (!childAdded) {
-		    	console.log('No child added!');
+		    	// console.log('Only 3 votes!');
 		  	}
 
 		});
