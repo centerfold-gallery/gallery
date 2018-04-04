@@ -457,14 +457,14 @@ img#threed.threed-mobile {
     width: 100%;
     height: 100vh;
     margin-top: 1em;
-    @include boxflexh;
+    @include boxflex;
     font-family: $type-4;
     font-size: 2.4em;
 }
 
 .faqs-box {
     width: 90%;
-    height: 100%;
+    height: 40%;
     margin-top: 5%;
     margin-bottom: 5%;
     display: block;
