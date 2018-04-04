@@ -1302,6 +1302,7 @@ body.zoom-overlay-open {
     height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    display: inline-block;
     @include boxflex;
     background-image: url();
     background-position: center;
