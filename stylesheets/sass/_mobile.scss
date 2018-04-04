@@ -456,7 +456,7 @@ img#threed.threed-mobile {
 .faqs-cyoa {
     width: 100%;
     height: 100vh;
-    margin-top: 1em;
+    margin-top: 0em;
     @include boxflex;
     font-family: $type-4;
     font-size: 2.4em;
@@ -465,14 +465,12 @@ img#threed.threed-mobile {
 .faqs-box {
     width: 90%;
     height: 40%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     display: block;
     @include boxflex;
     background-image: url();
     background-position: center;
     background-size: cover;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .faqs-box:first-of-type {
