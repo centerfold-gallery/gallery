@@ -2545,11 +2545,11 @@ app.get('/faqs/series', function (req, res) {
 });
 
 app.get('/privacy', function (req, res) {
-  res.render('privacy/index.html', {title: "Privacy Policy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('faqs/privacy.html', {title: "Privacy Policy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
-app.get('/agreement', function (req, res) {
-  res.render('agreement/index.html', {title: "Artist Agreement", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+app.get('/terms', function (req, res) {
+  res.render('faqs/terms.html', {title: "Terms of Use", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
 app.get('/tools', function (req, res) {
