@@ -467,22 +467,85 @@ img#threed.threed-mobile {
     height: 40%;
     display: block;
     @include boxflex;
-    background-image: url();
-    background-position: center;
-    background-size: cover;
     margin-bottom: 1em;
 }
 
 .faqs-box:first-of-type {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #b278c9;
 }
 
 .faqs-box:last-of-type {
     margin-right: 5%;
     margin-left: 5%;
-    background-color: #c978b7;
+}
+
+.faqs-toc {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 2em;
+}
+
+.faqs-toc-main-header {
+    font-family: $type-4;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.faqs-toc-header {
+    font-family: $type-4;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.faqs-toc-question {
+    font-family: $type-4;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.faqs-container {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 4em;
+}
+
+.faqs-main-header {
+    font-family: $type-4;
+    font-size: 1.4em;
+    width: 100%;
+    @include boxflex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.faqs-header {
+    font-family: $type-4;
+    font-size: 1.4em;
+    @include boxflex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.faqs-question {
+    font-family: $type-4;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+.faqs-answer {
+    font-family: $type-4;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-left: 2em;
+    opacity: 0.8;
+    line-height: 1.4em;
+    border-left: 0.4em solid $color-1;
 }
 
 .footer-space-buy {
