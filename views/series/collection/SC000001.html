@@ -19,17 +19,15 @@
 		{{> 3d-overlay }}
         <div class="still" id="still">
             <div class="everything" id="everything">
-				<div class="series-voting-card">
-					Name<br/>
-					<input type="name" id="name" size="40"><br/>
+				<div class="series-voting-card shadow">
+					<input type="name" id="name" size="40" placeholder="Name"><br/>
 					<br/>
-					Email<br/>
-					<input type="email" id="email" size="40"><br/>
+					<input type="email" id="email" size="40" placeholder="Email"><br/>
 					<br/>
 					<div class="vote-container">
 					</div>
 					<br/>
-					<input type="button" id="submit" value="Submit">
+					<button class="series-submit" id="submit">Submit</button>
 				</div>
                 <div class="featured-collection-header">
                     <img src="{{static_url}}featured-collections/FC000001-header.png">
@@ -53,7 +51,7 @@
 	</body>
 	<script>
 		var $containers = $('.vote-container');
-		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div><div class="vote-remove">X</div></div>';
+		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div><div class="vote-remove">&#10007;</div></div>';
 
 		$('.art-vote').on('click', function () {
 
@@ -85,28 +83,19 @@
 		  $(document).ready(function(){
 			var user,pass;
 			$("#submit").click(function(){
-			  name=$("#name").val();
-			  email=$("#email").val();
-			  vote1=$(".vote-container > .vote-set:nth-of-type(1) > .vote-loaded").text();
-			  vote2=$(".vote-container > .vote-set:nth-of-type(2) > .vote-loaded").text();
-			  vote3=$(".vote-container > .vote-set:nth-of-type(3) > .vote-loaded").text();
-			  $.post("http://localhost:3000/vote",{name: name, email: email, vote1: vote1, vote2: vote2, vote3: vote3}, function(data){
-				if(data==='done')
-				  {
-					alert("Vote success");
-				  }
-			  });
+			 	name=$("#name").val();
+			 	email=$("#email").val();
+			 	vote1=$(".vote-container > .vote-set:nth-of-type(1) > .vote-loaded").text();
+			 	vote2=$(".vote-container > .vote-set:nth-of-type(2) > .vote-loaded").text();
+			 	vote3=$(".vote-container > .vote-set:nth-of-type(3) > .vote-loaded").text();
+			 	$.post("http://localhost:3000/vote",{name: name, email: email, vote1: vote1, vote2: vote2, vote3: vote3}, function() {
+					alert("Vote success!!!!!!!!!! Wow democracy!!!! Fuck art lmao");
+			  	});
 			});
 		  });
 	</script>
     <footer>
 		{{> body-end}}
-		<!-- <script>
-		if (window.screen.width > 780) {
-			document.write(
-			'<script src="{{static_url}}js/three/three-moments-distorted.js"><\/script>'
-			)
-		}
-		</script> -->
+		{{! 3D GOES HERE }}
     </footer>
 </html>

@@ -1830,10 +1830,63 @@ button::-moz-focus-inner {
 }
 
 .series-voting-card {
+    font-family: $type-4;
     position: fixed;
     top: 60px;
     left: 60px;
     padding: 2em;
+    border-radius: 0.4em;
+    background-color: #000;;
+    // background-image: url('https://pencils.com/wp-content/uploads/2014/06/Fotolia_56162394_Subscription_Monthly_XL1.jpg');
+    // background-size: cover;
+    // background-position: center;
+}
+
+.series-voting-card > input#name,
+.series-voting-card > input#email {
+    outline: none;
+    border: none;
+    color: #fff9f9;
+    border-bottom: 1px solid #fff9f9;
+    background-color: transparent;
+    background: transparent;
+    z-index: 900;
+}
+
+.vote-set {
+    color: #fff9f9;
+    width: 100%;
+}
+
+.art-vote-title,
+.art-vote-rec,
+.vote-loaded {
+    display: none;
+}
+
+.vote-title,
+.vote-remove {
+    display: inline-block;
+}
+
+.vote-title {
+    text-align: left;
+}
+
+.vote-remove {
+    float: right;
+    cursor: pointer;
+}
+
+.series-submit {
+    color: #fff9f9;
+    background-color: #000;
+    font-size: 0.8em;
+    border-radius: 0.1em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border: 1px solid #fff9f9;
+    margin-top: 1em;
+    cursor: pointer;
 }
 
 .series-vote-button {
@@ -1843,12 +1896,6 @@ button::-moz-focus-inner {
     border-radius: 0.4em;
     @include boxflex;
     color: $background-color;
-}
-
-.art-vote-title,
-.art-vote-rec,
-.vote-loaded {
-    display: none;
 }
 
 .spin {
