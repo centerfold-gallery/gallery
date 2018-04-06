@@ -1836,10 +1836,17 @@ button::-moz-focus-inner {
     left: 60px;
     padding: 2em;
     border-radius: 0.4em;
-    background-color: #000;;
-    // background-image: url('https://pencils.com/wp-content/uploads/2014/06/Fotolia_56162394_Subscription_Monthly_XL1.jpg');
-    // background-size: cover;
-    // background-position: center;
+    background-color: #000;
+    z-index: 9000;
+    // cursor: grab;
+    // cursor: -moz-grab;
+    // cursor: -webkit-grab;
+}
+
+.series-voting-card:active {
+    // cursor: grabbing;
+    // cursor: -moz-grabbing;
+    // cursor: -webkit-grabbing;
 }
 
 .series-voting-card > input#name,
@@ -1891,6 +1898,7 @@ button::-moz-focus-inner {
 
 .series-vote-button {
     padding: 0.3em;
+    width: 7em;
     font-family: 1.4em;
     background-color: #0000ff;
     border-radius: 0.4em;
