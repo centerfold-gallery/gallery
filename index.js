@@ -2140,7 +2140,9 @@ app.post('/vote', function(req, res) {
             req.body.vote3
           ]
         }, function(err, record) {
-            if (err) { console.error(err); return; }
+            if (err) {
+                console.log("Airtable Error"); return;
+            }
             console.log("Name = "+name+", Email = "+email+", Voted for "+vote1+", "+vote2+", "+vote3);
         });
     });
