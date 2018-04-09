@@ -15,9 +15,21 @@
         {{> head }}
     </head>
 	<body>
-        {{> nav-series }}
+        {{> nav-series-home }}
         <div class="still" id="still">
             <div class="everything" id="everything">
+				<div class="home">
+					<div class="home-container-logo">
+						<img src="{{static_url}}assets/centerfold.svg"><img src="{{static_url}}assets/centerfold-white.svg" style="display:none">
+					</div>
+					<div class="home-container">
+						<div class="home-container-images">
+                            {{# homepageArtworks}}
+                                <a href="art/{{fields.Unique-Artwork-ID}}"><img class="shadow" src="{{static_url}}art/{{fields.Image Type}}/{{fields.Unique-Artwork-ID}}-large.{{fields.Image Type}}"></a>
+                            {{/ homepageArtworks}}
+						</div>
+					</div>
+				</div>
 				<div class="series-explainer-header">
                     Centerfold Series 000001
                 </div>
