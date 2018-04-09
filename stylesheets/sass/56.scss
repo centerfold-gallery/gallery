@@ -1823,6 +1823,26 @@ button::-moz-focus-inner {
     margin-left: 0em;
 }
 
+.series-explainer {
+    margin-left: 20%;
+    width: 60%;
+    font-family: $type-4;
+    font-size: 1em;
+}
+
+.series-explainer-header {
+    font-family: $type-4;
+    font-size: 2em;
+    @include boxflex;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.series-explainer-list {
+    padding-left: 0.8em;
+    text-indent: -0.8em;
+}
+
 .model-form-container {
     height: 1037px;
     width: 100%;
@@ -1897,7 +1917,7 @@ button::-moz-focus-inner {
 }
 
 .series-vote-button {
-    padding: 0.3em;
+    padding: 0.4em;
     width: 7em;
     font-family: 1.4em;
     background-color: #0000ff;
