@@ -14380,7 +14380,52 @@ module.exports = function(app) {
             );
         });
     });
+    app.get('/art/CF000617', function(req, res) {
+        var Airtable = require('airtable');
+        var base = new Airtable({
+            apiKey: config.storageConfig.airtableAPIKey
+        }).base(config.storageConfig.airtableBase);
+        var context = {
+            static_url: "https://s3.amazonaws.com/centerfold-website/",
+            stripeAPIKey: config.storageConfig.stripeAPIKey
+        };
+        base('Artworks').find('recGe3em85gloC6Ev', function(err, record) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            //res.json(record);
+            console.log(record);
 
+            res.render(
+                'art/buy/buy-page.html',
+                record
+            );
+        });
+    });
+    app.get('/art/CF000618', function(req, res) {
+        var Airtable = require('airtable');
+        var base = new Airtable({
+            apiKey: config.storageConfig.airtableAPIKey
+        }).base(config.storageConfig.airtableBase);
+        var context = {
+            static_url: "https://s3.amazonaws.com/centerfold-website/",
+            stripeAPIKey: config.storageConfig.stripeAPIKey
+        };
+        base('Artworks').find('recRslaEtD4ENxOkh', function(err, record) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            //res.json(record);
+            console.log(record);
+
+            res.render(
+                'art/buy/buy-page.html',
+                record
+            );
+        });
+    });
 
 
 }
