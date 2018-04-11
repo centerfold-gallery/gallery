@@ -1843,11 +1843,37 @@ button::-moz-focus-inner {
     text-indent: -0.8em;
 }
 
-.model-form-container {
-    height: 1037px;
+.series-donate-box {
     width: 100%;
+    margin-top: 2em;
+    @include boxflexh;
+}
+
+.series-donate-object {
+    margin: 2em;
+    height: 16em;
+    background-color: #0000ff;
+    border-radius: 0.4em;
+    width: 30%;
     @include boxflex;
 }
+
+.series-donate-header {
+    font-family: $type-4;
+    font-size: 1.4em;
+    margin: 1em;
+}
+
+.series-donate-button {
+    display: inline-block;
+    margin: 1em;
+}
+
+// .model-form-container {
+//     height: 1037px;
+//     width: 100%;
+//     @include boxflex;
+// }
 
 .series-voting-card {
     font-family: $type-4;

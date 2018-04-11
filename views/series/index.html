@@ -57,6 +57,73 @@
 					This series is a direct rebuttal to the art gallery model &mdash; we believe artists should be compensated for the work they do, regardless of whether it sells or not.<br/>
 					<br/>
 					There’s a reason why working artists only make 57% of the median household income and only 10% of art grads actually work as artists, the system just doesn’t work. This, is our response.
+					<br/>
+					<br/>
+					<div class="series-explainer-header">
+	                    Series Donate
+	                </div>
+					<div class="series-donate-box">
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$5 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="500"
+								    ></script>
+								    <input name="amount" value="500" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
+						</div>
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$10 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="1000"
+								    ></script>
+								    <input name="amount" value="1000" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
+						</div>
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$20 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="2000"
+								    ></script>
+								    <input name="amount" value="2000" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="footer-space"></div>
 				{{> footer}}
