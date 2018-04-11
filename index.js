@@ -2451,6 +2451,12 @@ app.get('/featured-collections/FC000003-knowing-yourself', function(req, res){
     });
 });
 
+// Shirts Configuration
+
+app.get('/merch', function (req, res) {
+  res.render('featured-collections/shirts.html', {title: "Merch", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 // ArtistFocus01 Configuration
 
 app.get('/artist-focus', function(req, res){
