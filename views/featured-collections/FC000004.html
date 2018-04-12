@@ -22,23 +22,27 @@
 				<div class="featured-collection-header">
                     <img src="{{static_url}}featured-collections/FC000004-header.png">
                 </div>
-                <div class="event-description">
-                    <br/>
 					<br/>
 					<br/>
-					<br/>
-					<span class="t1">Parts of a Whole</span> is a collection of work that explores the collage as a medium and art-form. By definition, collage is a process by which differing forms are assembled to create a new whole. Unrelated media from digital or physical sources are compiled, ordered, re-ordered, and edited to create a brand new image&mdash; one that purveys a meaning not found in its individual sources.
-					<br/>
-					Just as the media within the artworks themselves are collected from different sources, these works were created by different artists and assembled into a kind of meta-collage.
-					<br/>
-					<br/>
+				<div id="about-1" class="about-description">
+						Just as the media within the artworks themselves are collected from different sources, these works were created by different artists and assembled into a kind of meta-collage.
+				</div>
+				<div id="about-2" class="about-description">
+					By definition, collage is a process by which differing forms are assembled to create a new whole.
+				</div>
+				<div id="about-3" class="about-description">
+						<span class="t1">Parts of a Whole</span> is a collection of work that explores the collage as a medium and art-form.
+				</div>
+				<div id="about-4" class="about-description">
 					We hope you enjoy it.
-					<br/>
-					<br/>
+				</div>
+				<div id="about-5" class="about-description">
+					Unrelated media from digital or physical sources are compiled, ordered, re-ordered, and edited to create a brand new image&mdash; one that purveys a meaning not found in its individual sources.
+				</div>
+
 					<!-- <div class="threed-feat">
 						<div id="threed" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
 					</div> -->
-                </div>
                 {{# artPageArtworks}}
 					<div class="art live-a{{fields.Live?}}  mix tag-arttype-{{fields.Art Type}} tag-year-{{field.Year Created}} tag-framed-{{field.Framed}} tag-stretched-{{Streched}} {{#fields.Medium}}tag-medium-{{.}} {{/fields.Medium}} tag-width-{{fields.Width (in)}} tag-height-{{fields.Height (in)}} tag-price-{{fields.Estimated Value (CAD)}}" id="art{{fields.Unique-Artwork-ID}}">
 						<a href="../../art/{{fields.Unique-Artwork-ID}}">
