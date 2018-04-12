@@ -2514,21 +2514,9 @@ app.get('/events', function (req, res) {
     });
 });
 
-// SERIES
-
-app.get('/series', function (req, res) {
-  res.render('series/encrypted.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
-});
-
 app.get('/artists', function (req, res) {
   res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
-
-// Marked for deletion
-
-// app.get('/services', function (req, res) {
-//   res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
-// });
 
 app.get('/about', function (req, res) {
   res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
