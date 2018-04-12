@@ -9,7 +9,7 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 300;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.3em;
 }
 
@@ -46,7 +46,7 @@
     padding-top: 3px;
     padding-left: 3px;
     padding-right: 3px;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.6em;
     text-transform: uppercase;
     display: inline-block;
@@ -118,7 +118,7 @@
     padding-right: 4px;
     padding-top: 2px;
     padding-bottom: 0px;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.6em;
     cursor: e-resize;
 }

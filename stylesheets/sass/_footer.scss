@@ -13,7 +13,7 @@
     height: 20em;
     width: 100%;
     @include boxflexh;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.8em;
 }
 

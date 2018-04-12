@@ -108,9 +108,26 @@ $night-color: #1f1a28;
 $color-1: #000;
 $color-2: #fffbfb;
 
-$type-1: 'caslon', caslon, serif;
-$type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
-$type-4: 'authentic', sans-serif;
+// $type-1: 'caslon', caslon, serif;
+// $type-2: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
+// $type-4: 'authentic', sans-serif;
+
+@mixin type-1i {
+    font-family: TimesNewRoman, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+@mixin type-1 {
+    font-family: TimesNewRoman, "Times New Roman", Times, serif;
+}
+
+@mixin type-2 {
+    font-family: 'authentic', sans-serif;
+}
+
+@mixin type-3 { 
+    font-family: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
+}
 
 $type-size-1: 0.8em;
 $line-height-1: 1.2em;
@@ -125,20 +142,20 @@ $line-height-1: 1.2em;
 }
 
 .t1 {
-    font-family: $type-1;
+    @include type-1i;
 }
 
 .t1-link {
-    font-family: $type-1;
+    @include type-1i;
     border-bottom: 1px solid $color-1;
 }
 
 .t2 {
-    font-family: $type-2;
+    @include type-2;
 }
 
 .t4 {
-    font-family: $type-4;
+    @include type-2;
 }
 
 .super {
@@ -190,7 +207,7 @@ canvas {
 
 .threed-button {
     color: $color-2;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.4em;
     padding: 0.3em 0.8em 0.2em 0.8em;
     margin-left: 1em;
@@ -246,7 +263,7 @@ canvas {
 .instructions {
     width: 600px;
     background-color: $background-color;
-    font-family: $type-2;
+    @include type-2;
     font-size: 1em;
     line-height: 1.4em;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.56);
@@ -391,7 +408,7 @@ canvas {
 }
 
 .centerfold-14 {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 2em;
     color: $color-1;
     width: 100%;
@@ -439,7 +456,7 @@ canvas {
 }
 
 .event-description {
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
     color: $color-1;
@@ -449,7 +466,7 @@ canvas {
 }
 
 .results-emp {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 1.2em;
 }
 
@@ -476,7 +493,7 @@ canvas {
     position: fixed;
     top: 120px;
     left: 31px;
-    font-family: $type-2;
+    @include type-2;
     font-weight: 500;
     font-size: 0.6em;
     cursor: pointer;
@@ -487,7 +504,7 @@ canvas {
     position: fixed;
     top: 120px;
     left: 31px;
-    font-family: $type-2;
+    @include type-2;
     font-weight: 500;
     font-size: 0.6em;
     max-width: 20%;
@@ -537,7 +554,7 @@ button.highlight {
 
 .artist-card-wrap {
     display: inline-block;
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
     color: $color-1;
@@ -561,7 +578,7 @@ button.highlight {
 
 .art-title {
     display: inline-block;
-    font-family: $type-1;
+    @include type-1i;
     line-height: $line-height-1;
     color: $color-1;
     font-size: 1em;
@@ -574,7 +591,7 @@ button.highlight {
 .art-pagin {
     width: 100%;
     @include boxflex;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.6em;
 }
 
@@ -594,7 +611,7 @@ button.highlight {
 }
 
 .art-pagin-curr {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 1.6em;
     display: inline-block;
 }
@@ -605,7 +622,7 @@ button.highlight {
 }
 
 .buy-2d {
-    font-family: $type-1;
+    @include type-1i;
 }
 
 .price {
@@ -758,7 +775,7 @@ button.highlight {
 }
 
 .artists-page-list-item {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1em;
     line-height: 1.2em;
     color: $color-1;
@@ -769,7 +786,7 @@ button.highlight {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: $type-2;
+    @include type-2;
     font-size: 0.8em;
 }
 
@@ -827,7 +844,7 @@ button.highlight {
 //     left: 31px;
 //     cursor: w-resize;
 //     z-index: 602;
-//     font-family: $type-2;
+//     @include type-2;
 //     font-size: $type-size-1;
 //     pointer-events: all;
 // }
@@ -859,7 +876,7 @@ button.highlight {
 }
 
 .buy-artist-card-wrap {
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     color: $color-1;
     margin-left: 2em;
@@ -869,7 +886,7 @@ button.highlight {
 
 .buy-art-title {
     display: inline-block;
-    font-family: $type-1;
+    @include type-1i;
     color: $color-1;
     font-size: 2em;
     pointer-events: all;
@@ -877,7 +894,7 @@ button.highlight {
 
 .buy-art-artist {
     display: inline-block;
-    font-family: $type-2;
+    @include type-2;
     color: $color-1;
     font-size: 2em;
     line-height: 0.8em;
@@ -887,7 +904,7 @@ button.highlight {
 .buy-art-description {
     width: 400px;
     display: inline-block;
-    font-family: $type-1;
+    @include type-1i;
     color: $color-1;
     font-size: 1.2em;
     pointer-events: all;
@@ -926,7 +943,7 @@ body.zoom-overlay-open {
 
 .thank-you {
     width: 35%;
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
     color: $color-1;
@@ -934,7 +951,7 @@ body.zoom-overlay-open {
 
 .thank-you-title {
     display: inline-block;
-    font-family: $type-1;
+    @include type-1i;
     color: $color-1;
     font-size: 2em;
 }
@@ -952,7 +969,7 @@ body.zoom-overlay-open {
     height: 80%;
     background-color: $background-color;
     color: $color-1;
-    font-family: $type-2;
+    @include type-2;
     background-image: url(../../assets/mobile-bg.png);
     background-position: bottom;
     background-size: 100%;
@@ -975,7 +992,7 @@ body.zoom-overlay-open {
 /* ABOUT PAGE */
 
 .about-description {
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     line-height: 1.4em;
     color: $color-1;
@@ -996,7 +1013,7 @@ body.zoom-overlay-open {
 }
 
 #about-0 {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 2em;
     color: $color-1;
     margin-top: 4em;
@@ -1064,7 +1081,7 @@ body.zoom-overlay-open {
 }
 
 .centerfold-header {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 2em;
     color: $color-1;
     width: 100%;
@@ -1097,19 +1114,19 @@ body.zoom-overlay-open {
 }
 
 .contact-name {
-    font-family: $type-2;
+    @include type-2;
     font-size: 1.2em;
     color: $color-1;
 }
 
 .contact-title {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 0.8em;
     color: $color-1;
 }
 
 .contact-email {
-    font-family: $type-2;
+    @include type-2;
     font-size: 0.8em;
     color: $color-1;
 }
@@ -1153,7 +1170,7 @@ body.zoom-overlay-open {
 
 .events-pc {
     margin-top: 4em;
-    font-family: $type-1;
+    @include type-1i;
     font-size: 2em;
 }
 
@@ -1177,12 +1194,12 @@ body.zoom-overlay-open {
 }
 
 .event-card-title {
-    font-family: $type-2;
+    @include type-2;
     font-size: 2em;
 }
 
 .event-card-description {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 1em;
     line-height: $line-height-1;
     margin-top: 16px;
@@ -1190,7 +1207,7 @@ body.zoom-overlay-open {
 }
 
 .event-view {
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     border-bottom: 0.6em solid $color-1;
     padding-left: 3px;
@@ -1215,7 +1232,7 @@ body.zoom-overlay-open {
 }
 
 .dinner-event-title {
-    font-family: $type-4;
+    @include type-2;
     width: 50%;
     padding-left: 5%;
     padding-right: 5%;
@@ -1226,7 +1243,7 @@ body.zoom-overlay-open {
 }
 
 .dinner-event-description {
-    font-family: $type-4;
+    @include type-2;
     width: 40%;
     padding-left: 5%;
     padding-right: 5%;
@@ -1293,7 +1310,7 @@ body.zoom-overlay-open {
     height: 50vh;
     margin-top: 1em;
     @include boxflexh;
-    font-family: $type-4;
+    @include type-2;
     font-size: 4em;
 }
 
@@ -1328,13 +1345,13 @@ body.zoom-overlay-open {
 }
 
 .faqs-toc-main-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1.4em;
     margin-top: 2em;
 }
 
 .faqs-toc-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.6em;
     text-transform: uppercase;
     width: 100%;
@@ -1342,7 +1359,7 @@ body.zoom-overlay-open {
 }
 
 .faqs-toc-question {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1em;
     line-height: 1.4em;
 }
@@ -1353,7 +1370,7 @@ body.zoom-overlay-open {
 }
 
 .faqs-main-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 2em;
     width: 100%;
     @include boxflex;
@@ -1361,7 +1378,7 @@ body.zoom-overlay-open {
 }
 
 .faqs-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 2em;
     @include boxflex;
     margin-top: 3em;
@@ -1369,7 +1386,7 @@ body.zoom-overlay-open {
 }
 
 .faqs-question {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -1377,7 +1394,7 @@ body.zoom-overlay-open {
 }
 
 .faqs-answer {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1em;
     margin-bottom: 2em;
     padding-left: 2em;
@@ -1387,7 +1404,7 @@ body.zoom-overlay-open {
 }
 
 .effective-date-copy {
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.6em;
     opacity: 0.4;
 }
@@ -1408,7 +1425,7 @@ body.zoom-overlay-open {
 
 .four-text {
     width: 40%;
-    font-family: $type-2;
+    @include type-2;
     font-size: $type-size-1;
     padding-left: 3px;
     padding-right: 3px;
@@ -1438,7 +1455,7 @@ body.zoom-overlay-open {
 
 .night-threed-button {
     color: $night-color;
-    font-family: $type-4;
+    @include type-2;
     font-size: 0.4em;
     padding: 0.3em 0.8em 0.2em 0.8em;
     margin-left: 1em;
@@ -1487,7 +1504,7 @@ body.zoom-overlay-open {
 }
 
 .cert-title {
-    font-family: $type-4;
+    @include type-2;
     font-weight: 800;
     font-size: 24px;
     height: 15%;
@@ -1498,7 +1515,7 @@ body.zoom-overlay-open {
 }
 
 .cert-auth {
-    font-family: $type-1;
+    @include type-1i;
     height: 7%;
     width: 60%;
     border-bottom: 1px solid black;
@@ -1510,7 +1527,7 @@ body.zoom-overlay-open {
 }
 
 .cert-description {
-    font-family: $type-2;
+    @include type-2;
     height: 50%;
     width: 90%;
     border-bottom: 1px solid black;
@@ -1532,7 +1549,7 @@ textarea.cert-description-input::-webkit-scrollbar {
 textarea.cert-description-input {
     width: 100%;
     background-color: transparent;
-    font-family: $type-2;
+    @include type-2;
     border: 0px solid;
     color: #333;
     display: inline-block;
@@ -1548,7 +1565,7 @@ textarea:focus, input:focus{
 }
 
 .cert-auth-2 {
-    font-family: $type-1;
+    @include type-1i;
     height: 8%;
     width: 60%;
     border-bottom: 1px solid black;
@@ -1560,7 +1577,7 @@ textarea:focus, input:focus{
 }
 
 .cert-signature {
-    font-family: $type-1;
+    @include type-1i;
     width: 60%;
     height: 20%;
     font-size: 16px;
@@ -1581,7 +1598,7 @@ textarea:focus, input:focus{
 }
 
 .cert-signature-date {
-    font-family: $type-2;
+    @include type-2;
     font-size: 8px;
     float: right;
 }
@@ -1595,7 +1612,7 @@ textarea:focus, input:focus{
     z-index: 56;
     top: 100px;
     right: 100px;
-    font-family: $type-2;
+    @include type-2;
     font-size: 12px;
     width: 300px;
     height: 362px;
@@ -1608,7 +1625,7 @@ textarea:focus, input:focus{
     position: fixed;
     top: 10px;
     right: 10px;
-    font-family: $type-2;
+    @include type-2;
     cursor: help;
 }
 
@@ -1669,7 +1686,7 @@ button::-moz-focus-inner {
     background-image: url("https://s3.amazonaws.com/centerfold-website/assets/tools/cert/print-button-hover.png");
     background-position: center;
     background-size: contain;
-    font-family: $type-2;
+    @include type-2;
     font-size: 12px;
     padding: 25px;
     cursor: ne-resize;
@@ -1693,7 +1710,7 @@ button::-moz-focus-inner {
     }
 
     .cert-title {
-        font-family: $type-4;
+        @include type-2;
         font-weight: 800;
         font-size: 24px;
         height: 10%;
@@ -1704,7 +1721,7 @@ button::-moz-focus-inner {
     }
 
     .cert-auth {
-        font-family: $type-1;
+        @include type-1i;
         height: 7%;
         width: 60%;
         border-bottom: 1px solid black;
@@ -1716,7 +1733,7 @@ button::-moz-focus-inner {
     }
 
     .cert-description {
-        font-family: $type-2;
+        @include type-2;
         height: 60%;
         width: 90%;
         border-bottom: 1px solid black;
@@ -1733,7 +1750,7 @@ button::-moz-focus-inner {
 
 
     .cert-auth-2 {
-        font-family: $type-1;
+        @include type-1i;
         height: 8%;
         width: 60%;
         border-bottom: 1px solid black;
@@ -1745,7 +1762,7 @@ button::-moz-focus-inner {
     }
 
     .cert-signature {
-        font-family: $type-1;
+        @include type-1i;
         width: 60%;
         height: 10%;
         font-size: 16px;
@@ -1807,7 +1824,7 @@ button::-moz-focus-inner {
 }
 
 .featured-collection-header {
-    font-family: $type-1;
+    @include type-1i;
     font-size: 2em;
     color: $color-1;
     width: 100%;
@@ -1826,12 +1843,12 @@ button::-moz-focus-inner {
 .series-explainer {
     margin-left: 20%;
     width: 60%;
-    font-family: $type-4;
+    @include type-2;
     font-size: 1em;
 }
 
 .series-explainer-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 2em;
     @include boxflex;
     margin-top: 4em;
@@ -1859,7 +1876,7 @@ button::-moz-focus-inner {
 }
 
 .series-donate-header {
-    font-family: $type-4;
+    @include type-2;
     font-size: 1.4em;
     margin: 1em;
 }
@@ -1876,7 +1893,7 @@ button::-moz-focus-inner {
 // }
 
 .series-voting-card {
-    font-family: $type-4;
+    @include type-2;
     position: fixed;
     top: 60px;
     left: 60px;
