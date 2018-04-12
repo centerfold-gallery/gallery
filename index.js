@@ -128,7 +128,7 @@ app.get('/', function(req, res){
                                 }
                             }
                         }
-                        res.render('series/index.html', context);
+                        res.render('index.html', context);
                     });
                 });
             });

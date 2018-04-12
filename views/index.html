@@ -7,7 +7,7 @@
 | |   ⛲️   🌃  | |      :) © Centerfold 2017
 | |           | |
 |╱ ￣￣￣￣￣￣￣|╱
- ￣￣￣ 🚶￣￣👭￣
+ ￣￣￣🚶🚶￣￣👬￣
 
 -->
 <html lang="en">
@@ -16,7 +16,6 @@
     </head>
 	<body>
         {{> nav-series-home }}
-		{{> 3d-overlay }}
         <div class="still" id="still">
             <div class="everything" id="everything">
 				<div class="home">
@@ -31,95 +30,107 @@
 						</div>
 					</div>
 				</div>
-                <div class="centerfold-14">
-                    Centerfold Gallery <div id="threed" class="threed threed-mobile animated pulse infinite threed-button">View in 3D</div>
+				<div class="series-explainer-header">
+                    Centerfold Series 000001
                 </div>
-                <div class="event-description">
-                    <br/>
-					Built with love and gratitude for both the artists that make our world more beautiful, and those that enable artists to create.
+				<div class="series-explainer">
+					Built with love and gratitude for both the artists that make our world more beautiful, and those that enable artists to create. Our goal is to promote art and creativity by funding those who create. Our approach &mdash; a little different than what you might find elsewhere.<br/>
 					<br/>
+					How it works&mdash;<br/>
 					<br/>
-					This month we are centering women, People of Color, Indigenous peoples, and queer, trans and non-binary individuals. The curatorial process will be suspended in order to refocus and delineate our mission of supporting artists. Thank you for everything.
-  					<br/>
-					<br/>
-					We aim to promote and further these artists and their practices and hope that people who possess these identities will be encouraged to <a class="inline-link" href="https://airtable.com/shreAnW1Ggm3fVolL" target="_blank">submit</a>.
-					<br/>
-					<br/>
-					<span class="mobile-hide">Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.</span>
-                </div>
-				<!-- <div class="art mix" id="artFC000004">
-					<a href="https://airtable.com/shrdzPVM6qmTZcsZN" target="_blank" class="art-art">
-						<img class="shadow" src="{{static_url}}gallery/inversions/cfa.png">
-					</a>
-					<div class="artist-card-wrap">
-						<div class="artist-card" id="cardFC000004">
-							<span class="art-title">Inversions x Centerfold</span><br/>
-							Call for Artists &mdash; <span class="buy-2d">Submit</span><br/>
-						</div>
+					<div class="series-explainer-list">
+						&#8226; We’ve curated an exhibition by a number of artists around the world.
 					</div>
-				</div> -->
-				<div class="art mix" id="artFC000002">
-					<a href="featured-collections/FC000002-freckle-blemish-wrinkle-scar" class="art-art">
-						<img class="shadow" src="{{static_url}}featured-collections/FC000002-header.png">
-					</a>
-					<div class="artist-card-wrap">
-						<div class="artist-card" id="cardFC000002">
-							<span class="art-title">Freckle, Blemish, Wrinkle, Scar</span><br/>
-							Featured Collection &mdash; <span class="buy-2d">View</span><br/>
+					<div class="series-explainer-list">
+						&#8226; To view the exhibit, you must pay an admission fee below.
+					</div>
+					<div class="series-explainer-list">
+						&#8226; Once you’ve paid, you can view the exhibition and vote for your three favourite artworks
+					</div>
+					<div class="series-explainer-list">
+						&#8226; The admission fees are pooled and then distributed amongst the participating artists based on the percentage of votes each artist receives:
+					</div>
+					<br/>
+					Artist winnings = (100% of admission fees + 5% of sales) * (artist votes/total votes)<br/>
+					<br/>
+					<br/>
+					This series is a direct rebuttal to the art gallery model &mdash; we believe artists should be compensated for the work they do, regardless of whether it sells or not.<br/>
+					<br/>
+					There’s a reason why working artists only make 57% of the median household income and only 10% of art grads actually work as artists, the system just doesn’t work. This, is our response.
+					<br/>
+					<br/>
+					<div class="series-explainer-header">
+	                    Donate to Enter
+	                </div>
+					<div class="series-donate-box">
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$5 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="500"
+								    ></script>
+								    <input name="amount" value="500" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
+						</div>
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$10 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="1000"
+								    ></script>
+								    <input name="amount" value="1000" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
+						</div>
+						<div class="series-donate-object shadow">
+							<div class="series-donate-header">
+								$20 &mdash;
+							</div>
+							<div class="series-donate-button">
+								<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+								    <script
+								        defer
+								        src="https://checkout.stripe.com/checkout.js"
+								        class="stripe-button"
+								        data-key="{{stripeAPIKey}}"
+								        data-name="Centerfold Gallery"
+								        data-description="test donate"
+								        data-amount="2000"
+								    ></script>
+								    <input name="amount" value="2000" type="hidden">
+								    <input name="description" value="test donate" type="hidden">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="art mix" id="artAF000001">
-					<a href="/artist-focus" class="art-art">
-						<video class="shadow" loop autoplay>
-							<source src="{{static_url}}laurent-3D/lp.mp4" type="video/mp4">
-							<source src="{{static_url}}laurent-3D/lp.ogg" type="video/ogg">
-						</video>
-					</a>
-					<div class="artist-card-wrap">
-						<div class="artist-card" id="cardAF000002">
-							<span class="art-title">Laurent Palardy</span><br/>
-							Artist Feature &mdash; <span class="buy-2d">View</span><br/>
-						</div>
-					</div>
-				</div> -->
-
-				<div class="art" id="artFC000001">
-					<a href="featured-collections/FC000001-moments-distorted" class="art-art">
-						<video class="shadow" loop autoplay>
-						<source src="{{static_url}}featured-collections/FC000001.mp4" type="video/mp4">
-						<source src="{{static_url}}featured-collections/FC000001.ogg" type="video/ogg">
-					</a>
-					<div class="artist-card-wrap">
-						<div class="artist-card" id="cardFC000001">
-							<span class="art-title">Moments,, Distorted</span><br/>
-							Featured Collection &mdash; <span class="buy-2d">View</span><br/>
-						</div>
-					</div>
-				</div>
-
-			<div class="footer-space"></div>
-			{{> footer}}
+				<div class="footer-space"></div>
+				{{> footer}}
+            </div>
         </div>
-	</body>
-	<script>
-		$(".still").scroll(function () {
-			var y = $(this).scrollTop();
-			if (y > 700) {
-				$('.logo-home').fadeIn(500);
-			} else {
-				$('.logo-home').fadeOut(500);
-			}
-		});
-	</script>
+    </body>
     <footer>
 		{{> body-end}}
-		<script async>
-		if (window.screen.width > 780) {
-			document.write(
-			'<script src="{{static_url}}js/three/laurent-3D.js"><\/script>'
-			)
-		}
-		</script>
     </footer>
 </html>
