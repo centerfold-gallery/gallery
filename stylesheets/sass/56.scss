@@ -461,8 +461,12 @@ canvas {
     line-height: $line-height-1;
     color: $color-1;
     width: 30%;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-left: 50%;
+}
+
+.para {
+    text-indent: 4em;
 }
 
 .results-emp {
