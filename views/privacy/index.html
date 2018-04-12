@@ -7,17 +7,17 @@
 	<body>
         {{> nav}}
 		{{> 3d-overlay}}
-        <div class="still" id="still">
-            <div class="everything" id="everything">
+        <div class="still">
+            <div class="everything">
                 <div id="about-0">
-                    <img id="threed" class="animated infinite pulse" src="{{static_url}}assets/3d.png">
+                    <div id="threed" class="threed animated pulse infinite threed-mobile threed-button">View in 3D</div>
                 </div>
                 <div id="about-1" class="about-description">
                     <span class="inline-logo"><img src="{{static_url}}assets/centerfold.svg"><img src="{{static_url}}assets/centerfold-white.svg" style="display:none"></span>is a Montreal-based organization with the aim of driving social and economic change in the art industry. Our goal is to enable artists to gain funding, visibility, and access while increasing art awareness within the community.
                 </div>
 				<img class="about-img shadow" id="about-img-1" src="{{static_url}}assets/pages/about/cf7-bw.jpg" data-action="zoom">
                 <div id="about-2" class="about-description">
-                    Primarily, Centerfold is an online art marketplace that presents some of the best artwork Montreal has to offer in a clean and accessible way. Additionally, our 3D functionality replicates the experience of being in a physical gallery, and as a result, brings the gallery experience into the comfort of our visitors’ home. We encourage you to check this feature out by clicking on the “3D” icon above. <br/>
+                    Primarily, Centerfold is an online art marketplace that presents some of the best artwork Montreal has to offer in a clean and accessible way. Additionally, our 3D functionality replicates the experience of being in a physical gallery, and as a result, brings the gallery experience into the comfort of our visitors’ home. <!--We encourage you to check this feature out by clicking on the “3D” icon above.--> <br/>
                     <br/>
                     However, Centerfold originated as an event series. This series continues to operate, and showcases local visual art under a new economic model where creators are funded through the audience’s experience.
                 </div>
@@ -27,16 +27,16 @@
                 </div>
 				<img class="about-img shadow" id="about-img-3" src="{{static_url}}assets/pages/about/cf14-cold.jpg" data-action="zoom">
                 <div id="about-4" class="about-description">
-					In addition to the online marketplace and event series, we are proud and excited to open our permanent physical location in Westmount's “Victoria Park” building. Our brick-and-mortar gallery will not only serve local artists with the opportunity to sell their work to eager buyers, but will properly display the work listed on our online marketplace, giving even the most vigilant of shoppers assurances on the quality and condition of our available works. Look out for our doors to open in late July of 2017. <br/>
+					In addition to the online marketplace and event series, we operate a physical gallery in Westmount's “Victoria Park” building. Our brick-and-mortar gallery not only serves local artists with the opportunity to sell their work to eager buyers, but properly display the work listed on our online marketplace, giving even the most vigilant of shoppers assurances on the quality and condition of our available works. <br/>
 					<br/>
 					Outside of art dealing, Centerfold specializes in artistic curation, event production, and artist management; attending closely to the needs of our clients on a case-by-case basis. We invite you to head over to our <a class="inline-link" href="/services" target="_blank">services page</a> for more information.
 
                 </div>
                 <div id="about-5" class="about-description">
-                    Since the project began, Centerfold has charitably raised over $10,000 for its featured artists, all-the-while facilitating the exchange between artists and proud new owners of their work.
+                    Since the project began, Centerfold has charitably raised over $12,000 for its featured artists, all-the-while facilitating the exchange between artists and proud new owners of their work.
                 </div>
 
-				<div class="centerfold-header">
+				<div class="centerfold-header" id="contact">
                     Contact
                 </div>
                 <div class="contact">
@@ -62,8 +62,8 @@
 				{{> footer}}
             </div>
         </div>
+		<footer>
+			{{> body-end}}
+	    </footer>
     </body>
-    <footer>
-		{{> body-end}}
-    </footer>
 </html>
