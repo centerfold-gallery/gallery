@@ -63,6 +63,12 @@
 	</script>
     <footer>
 		{{> body-end}}
-		{{! 3d-site-wide }}
+		<script>
+		if (window.screen.width > 780) {
+			document.write(
+			'<script src="{{static_url}}js/three/three-moments-distorted.js"><\/script>'
+			)
+		}
+		</script>
     </footer>
 </html>
