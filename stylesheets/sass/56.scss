@@ -17,24 +17,38 @@ body {
 
 @font-face {
     font-family: caslon;
-    src: url(../../fonts/ACaslonPro-Italic.otf);
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/ACaslonPro-Italic.otf');
 }
 
 @font-face {
     font-family: pressura-mono;
-    src: url(../../fonts/GT-Pressura-Mono-Regular.woff) format('woff'),
-        url(../../fonts/GT-Pressura-Mono-Regular.otf)  format('opentype'),
-        url(../../fonts/GT-Pressura-Mono-Regular.ttf)  format('truetype');
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/GT-Pressura-Mono-Regular.woff') format('woff'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/GT-Pressura-Mono-Regular.otf')  format('opentype'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/GT-Pressura-Mono-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: lunchtype22-r;
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-regular-webfont.otf')  format('opentype'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-regular-webfont.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: lunchtype22-l;
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-light-webfont.woff') format('woff'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-light-webfont.otf')  format('opentype'),
+         url('https://s3.amazonaws.com/centerfold-website/fonts/lunchtype22-light-webfont.ttf')  format('truetype');
 }
 
 @font-face {
     font-family: authentic;
-    src: url(../../fonts/AUTHENTIC-Sans.woff) format('woff');
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/AUTHENTIC-Sans.woff') format('woff');
 }
 
 @font-face {
     font-family: pressuru;
-    src: url(../../fonts/pressuru.otf) format('opentype');
+    src: url('https://s3.amazonaws.com/centerfold-website/fonts/pressuru.otf') format('opentype');
 }
 
 @mixin boxflex {
@@ -127,11 +141,15 @@ $color-2: #fffbfb;
 }
 
 @mixin type-2 {
-    font-family: 'authentic', sans-serif;
+    font-family: 'lunchtype22-r', sans-serif;
 }
 
 @mixin type-3 {
     font-family: 'pressura-mono', pressura-mono, Andale-Mono, AndaleMono, monospace;
+}
+
+@mixin type-4 {
+    font-family: 'authentic', sans-serif;
 }
 
 $type-size-1: 0.8em;
