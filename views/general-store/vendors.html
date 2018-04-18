@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{{> ascii }}
+<html lang="en">
+	<head>
+        {{> head}}
+    </head>
+	<body>
+        {{> nav}}
+		{{> 3d-overlay}}
+        <div class="still">
+            <div class="everything">
+				<div class="gs-header">
+					<img src="{{static_url}}general-store/general-store-logo.png"><img src="{{static_url}}general-store/general-store-logo-white.png" style="display:none;">
+				</div>
+				<div class="event-description">
+					In order to reserve a spot in the next Centerfold General Store event, you are required to pay a deposit that represents 50% of the total vendor fee. You can pay that fee below. Please remember to accurately fill in your name and email.<br/>
+					<br/>
+					<br/>
+					<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+					    <script
+					        defer
+					        src="https://checkout.stripe.com/checkout.js"
+					        class="stripe-button"
+					        data-key="{{stripeAPIKey}}"
+					        data-name="Centerfold Gallery"
+					        data-description="General Store Vendor Deposit"
+					        data-amount="10320"
+					        data-billing-address="true"
+					    ></script>
+					    <input name="amount" value="10320" type="hidden">
+					    <input name="description" value="General Store Vendor Deposit" type="hidden">
+					</form>
+				</div>
+				<div class="footer-space"></div>
+				{{> footer}}
+            </div>
+        </div>
+		<footer>
+			{{> body-end}}
+	    </footer>
+    </body>
+</html>

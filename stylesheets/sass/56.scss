@@ -1757,6 +1757,23 @@ button::-moz-focus-inner {
     padding: 2em;
 }
 
+// General Store
+
+.gs-header {
+    font-family: $type-4;
+    font-size: 2em;
+    color: $color-1;
+    width: 100%;
+    @include boxflex;
+    margin-top: 6em;
+    padding-left: 0em;
+}
+
+.gs-header img {
+    width: 10em;
+    height: auto;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
