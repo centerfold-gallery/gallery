@@ -2067,7 +2067,7 @@ button::-moz-focus-inner {
 // General Store
 
 .gs-header {
-    font-family: $type-4;
+    @include type-4;
     font-size: 2em;
     color: $color-1;
     width: 100%;
