@@ -137,7 +137,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/explore', function(req, res){
-    res.redirect('/art');
+    res.render('art/explore.html', {title: "Explore", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
 app.get('/art', function(req, res){
