@@ -1108,22 +1108,6 @@ body.zoom-overlay-open {
     margin-top: 0;
 }
 
-#about-2 {
-    margin-left: 40%;
-}
-
-#about-3 {
-    margin-left: 30%;
-}
-
-#about-4 {
-    margin-left: 50%;
-}
-
-#about-5 {
-    margin-left: 35%;
-}
-
 .about-img {
     width: 400px;
     height: auto;
@@ -1140,6 +1124,22 @@ body.zoom-overlay-open {
 
 #about-img-3 {
     margin-left: 20%;
+}
+
+#about-2 {
+    margin-left: 40%;
+}
+
+#about-3 {
+    margin-left: 30%;
+}
+
+#about-4 {
+    margin-left: 50%;
+}
+
+#about-5 {
+    margin-left: 35%;
 }
 
 .gallery-hours-column {
@@ -2064,6 +2064,23 @@ button::-moz-focus-inner {
     color: $background-color;
 }
 
+// General Store
+
+.gs-header {
+    font-family: $type-4;
+    font-size: 2em;
+    color: $color-1;
+    width: 100%;
+    @include boxflex;
+    margin-top: 6em;
+    padding-left: 0em;
+}
+
+.gs-header img {
+    width: 10em;
+    height: auto;
+}
+
 .spin {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
@@ -2104,6 +2121,27 @@ button::-moz-focus-inner {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    @import "mobile";
+@media only screen and (max-width: 768px) {
+        @import "mobile";
+}
+
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        @import "mobile";
+}
+
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        @import "mobile";
+}
+
+@media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+        @import "mobile";
 }

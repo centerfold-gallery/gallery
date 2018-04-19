@@ -556,6 +556,21 @@ img#threed.threed-mobile {
     border-left: 0.4em solid $color-1;
 }
 
+.gs-header {
+    font-size: 3em;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3em;
+}
+
+.gs-header img {
+    display: inline-block;
+    width: 80vw;
+    height: auto;
+    margin-left: 0;
+}
+
 .footer-space-buy {
     display: block;
 }
