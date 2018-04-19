@@ -807,18 +807,39 @@ button.highlight {
     margin-left: 50%;
 }
 
+.explore-description {
+    height: 100vh;
+    @include boxflex;
+}
+
+.explore-box-header {
+    height: 80vh;
+    @include boxflex;
+    margin-top: 4em;
+}
+
 .explore-box {
     height: 80vh;
     @include boxflexh;
     margin-top: 6em;
 }
 
+.art-editorial {
+    display: inline-block;
+}
+
 .art-editorial:last-child {
     margin-left: 10%;
 }
 
-.art-editorial {
-    display: inline-block;
+.explore-box-header .art-editorial:last-child {
+    margin-left: 0;
+}
+
+.art-editorial-featured {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12em;
 }
 
 .art-editorial .art-art {
@@ -830,8 +851,11 @@ button.highlight {
     height: auto;
 }
 
+.editorial-art {
+    width: 60%;
+}
+
 .editorial-card-wrap {
-    display: inline-block;
     @include type-2;
     font-size: $type-size-1;
     line-height: $line-height-1;
