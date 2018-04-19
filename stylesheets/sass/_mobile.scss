@@ -180,11 +180,7 @@ img#threed.threed-mobile {
 }
 
 .editorial-card-wrap {
-    @include type-2;
-    font-size: $type-size-1;
-    line-height: $line-height-1;
-    color: $color-1;
-    position: absolute;
+    display: block;
 }
 
 .artist-card-wrap {
