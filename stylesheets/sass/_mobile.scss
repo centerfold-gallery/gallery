@@ -135,13 +135,18 @@ img#threed.threed-mobile {
     display: block;
 }
 
+.explore-header {
+    padding-left: 0em;
+    margin-top: 3em;
+}
+
 .explore-description {
-    height: 100vh;
-    @include boxflex;
+    height: auto;
+    @include boxflex-null;
 }
 
 .explore-box-header {
-    height: 100vh;
+    height: auto;
     @include boxflex-null;
     margin-top: 4em;
 }
