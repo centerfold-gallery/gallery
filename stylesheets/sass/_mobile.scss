@@ -135,6 +135,58 @@ img#threed.threed-mobile {
     display: block;
 }
 
+.explore-description {
+    height: 100vh;
+    @include boxflex;
+}
+
+.explore-box-header {
+    height: 80vh;
+    @include boxflex-null;
+    margin-top: 4em;
+}
+
+.explore-box {
+    height: 80vh;
+    @include boxflex-null;
+    margin-top: 6em;
+}
+
+.art-editorial {
+    display: block;
+}
+
+.art-editorial:last-child {
+    margin-left: 0;
+}
+
+.explore-box-header .art-editorial:last-child {
+    margin-left: 0;
+}
+
+.art-editorial-featured {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 12em;
+}
+
+.art-editorial .art-art {
+    width: auto;
+}
+
+.art-editorial .art-art img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.editorial-card-wrap {
+    @include type-2;
+    font-size: $type-size-1;
+    line-height: $line-height-1;
+    color: $color-1;
+    position: absolute;
+}
+
 .artist-card-wrap {
     display: block;
     position: relative;
