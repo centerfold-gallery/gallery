@@ -807,6 +807,38 @@ button.highlight {
     margin-left: 50%;
 }
 
+.explore-box {
+    height: 80vh;
+    @include boxflexh;
+    margin-top: 6em;
+}
+
+.art-editorial:last-child {
+    margin-left: 10%;
+}
+
+.art-editorial {
+    display: inline-block;
+}
+
+.art-editorial .art-art {
+    width: 25em;
+}
+
+.art-editorial .art-art img {
+    width: 100%;
+    height: auto;
+}
+
+.editorial-card-wrap {
+    display: inline-block;
+    @include type-2;
+    font-size: $type-size-1;
+    line-height: $line-height-1;
+    color: $color-1;
+    position: absolute;
+}
+
 .artists-page-list {
     width: 80%;
     padding-left: 10%;
