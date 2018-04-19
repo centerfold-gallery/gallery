@@ -134,10 +134,12 @@ $color-2: #fffbfb;
 @mixin type-1i {
     font-family: TimesNewRoman, "Times New Roman", Times, serif;
     font-style: italic;
+    font-size: 1.1em;
 }
 
 @mixin type-1 {
     font-family: TimesNewRoman, "Times New Roman", Times, serif;
+    font-size: 1.1em;
 }
 
 @mixin type-2 {
@@ -232,7 +234,7 @@ canvas {
     color: $color-2;
     @include type-2;
     font-size: 0.4em;
-    padding: 0.3em 0.8em 0.2em 0.8em;
+    padding: 0.3em 0.8em 0.4em 0.8em;
     margin-left: 1em;
     background-color: rgba(0,0,0,100);
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,100);
@@ -241,6 +243,7 @@ canvas {
     @include boxflex;
     width: 6em;
     height: 1em;
+    font-style: normal;
 }
 
 .threed-feat {
@@ -614,7 +617,6 @@ button.highlight {
     @include type-1i;
     line-height: $line-height-1;
     color: $color-1;
-    font-size: 1em;
 }
 
 .art-medium span:not(:last-of-type)::after {
@@ -656,6 +658,7 @@ button.highlight {
 
 .buy-2d {
     @include type-1i;
+    font-size: 1em;
 }
 
 .price {
