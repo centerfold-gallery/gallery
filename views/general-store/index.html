@@ -56,18 +56,80 @@
 						</div>
 					</div>
 				</div>
-				<div class="centerfold-14">Coming Soon!</div>
+				<div class="dinner-event-title">
+					GRAND OPENING
+				</div>
+				<div class="dinner-event-description">
+					Centerfold</span><span class="accent"></span></span> is hosting an artists' market at Oatbox!<br/>
+					<br/>
+					<span class="dinner-link menu-collapse">VENDORS</span> <span class="super-low"><i class="em em-innocent"></i></span>
+					<div class="menu">
+						<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+					</div><br/>
+				</div>
+				<div class="dinner-event-description">
+					<span class="super-low">WEEKEND</span><br/>
+					6<span class="super">PM</span> &mdash; 8<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span> 09 February, 2018.<br/>
+					<br/>
+					<span class="super-low">WOW ANOTHER ONE ???</span><br/>
+					8<span class="super">PM</span> &mdash; Midnight<span class="super"></span><br/>
+					<span class="super-low">DJ</span> Gene Tellem<br/>
+					$10 <a target="_blank" href="https://www.facebook.com/events/187108975210045/" class="dinner-link">RSVP</a> <span class="super-low">OPEN BAR</span><br/>
+					<br/>
+					<br/>
+					<a href="https://goo.gl/maps/E5R4otV6LP42" target="_blank">3450 Saint Dominique Street Suite 100,<br/>
+					Montreal, QC.</a><br/>
+				</div>
+				<div class="dinner-event-description">
+					<br/>
+					<br/>
+					<br/>
+					<span class="super-low">BUYER PREVIEW</span> &mdash; <a target="_blank" href="mailto:nadim@centerfold.gallery?subject=Buyer Preview Request&body=I would like to receive a buyer preview of Zoe Pawlak's artworks." class="dinner-link">Request</a><br/>
+					<br/>
+					<span class="super-low">PRESS</span> &mdash; <a target="_blank" href="/gallery/arrival-measures/press" class="dinner-link">Info &amp; Resources</a>
+				</div>
 				<div class="footer-space"></div>
 				{{> footer}}
             </div>
+			<div class="dinner-event-floating">
+				<img class="shadow dinner-event-floating-image" src="{{static_url}}arrival-measures/first-light.jpg">
+			</div>
         </div>
 		<footer>
 			{{> body-end}}
+			<script>
+				$(".still").scroll(function () {
+					var y = $(this).scrollTop();
+					if (y > 700) {
+						$('.dinner-event-floating-image').fadeIn(0);
+					} else {
+						$('.dinner-event-floating-image').fadeOut(0);
+					}
+				});
+			</script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 			<script>
 				var scene = document.getElementById('gs-parallax');
 				var parallaxInstance = new Parallax(scene, {
 				  relativeInput: true
+				});
+			</script>
+			<script>
+				$('.menu-collapse').click(function(){
+					$('.menu').slideToggle('slow');
+				});
+				$('.menu').click(function(){
+					$('.menu').slideToggle('slow');
 				});
 			</script>
 	    </footer>
