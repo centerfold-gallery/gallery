@@ -13,12 +13,14 @@
 					<img src="{{static_url}}general-store/general-store-logo.png"><img src="{{static_url}}general-store/general-store-logo-white.png" style="display:none;">
 				</div>
 				<div class="event-description">
-					In order to reserve a spot in the next Centerfold General Store event, you are required to pay a deposit that represents 50% of the total vendor fee. You can pay that fee below. Please remember to accurately fill in your name and email. Please also include your business name in the "Name" field during payment.<br/>
+					In order to reserve a spot in the next Centerfold General Store event, you are required to pay your total vendor fee. You can pay that fee below. The cost is $51.75 to secure a table for 1 day, and $103.20 for 2 days. Please remember to accurately fill in your name and email. Please also include your business name in the "Name" field during payment.<br/>
 					<br/>
-					You will receive email confirmation from Brittne in the next 12 hours confirming your vendor status. If you have any questions, please don't hesitate to contact us at <a class="inline-link" href="mailto:generalstore@centerfold.gallery?subject=Vendor Question" target="_blank">generalstore@centerfold.gallery</a>.<br/>
+					You will receive email confirmation from Brittne in the next 12 hours confirming your vendor status, at which time you can confirm what day you would like to show your goods. If you have any questions, please don't hesitate to contact us at <a class="inline-link" href="mailto:generalstore@centerfold.gallery?subject=Vendor Question" target="_blank">generalstore@centerfold.gallery</a>.<br/>
 					<br/>
 					Thanks!<br/>
 					<br/>
+					<br/>
+					1 Day &mdash; $51.75<br/>
 					<br/>
 					<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
 					    <script
@@ -27,12 +29,31 @@
 					        class="stripe-button"
 					        data-key="{{stripeAPIKey}}"
 					        data-name="Centerfold Gallery"
-					        data-description="General Store Vendor Deposit"
+					        data-description="General Store Vendor - 1 Day"
+					        data-amount="5175"
+					        data-billing-address="true"
+					    ></script>
+					    <input name="amount" value="5175" type="hidden">
+					    <input name="description" value="General Store Vendor - 1 Day" type="hidden">
+					</form>
+					<br/>
+					<br/>
+					<br/>
+					2 Days &mdash; $103.20<br/>
+					<br/>
+					<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+					    <script
+					        defer
+					        src="https://checkout.stripe.com/checkout.js"
+					        class="stripe-button"
+					        data-key="{{stripeAPIKey}}"
+					        data-name="Centerfold Gallery"
+					        data-description="General Store Vendor - 2 Days"
 					        data-amount="10320"
 					        data-billing-address="true"
 					    ></script>
 					    <input name="amount" value="10320" type="hidden">
-					    <input name="description" value="General Store Vendor Deposit" type="hidden">
+					    <input name="description" value="General Store Vendor - 2 Days" type="hidden">
 					</form>
 				</div>
 				<div class="footer-space"></div>
