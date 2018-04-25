@@ -1042,26 +1042,7 @@ body.zoom-overlay-open {
     cursor: zoom-out !important;
 }
 
-.stripe-button-el {
-    width: 120px;
-    border-radius: 0.2em !important;
-    border: 0 !important;
-    background-image: none !important;
-    background-color: #0000ff !important;
-    font-weight: normal !important;
-}
-
-.stripe-button-el span {
-    font-family: 'authentic', sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    font-weight: normal !important;
-    font-size: 1em;
-    border-radius: 0.2em !important;
-    border: 0 !important;
-    background-image: none !important;
-    background: #0000ff !important;
-    background-color: #0000ff !important;
-}
+@import "buy-button";
 
 .success {
     position: fixed;
