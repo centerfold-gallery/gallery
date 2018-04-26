@@ -1115,8 +1115,8 @@ body.zoom-overlay-open {
     height: 2.4em;
     width: auto;
     display: inline-block;
-    transform: translateY(10px);
-    margin-right: 4px;
+    transform: translateY(9px) translateX(-3px);
+    margin-right: 0px;
 }
 
 .about-description:nth-of-type(n+2) {
@@ -1130,7 +1130,7 @@ body.zoom-overlay-open {
     margin-top: 4em;
     padding-left: 1.2em;
     margin-left: 70%;
-    transform: translateY(2em);
+    transform: translateY(1.2em);
 }
 
 #about-0 img {
