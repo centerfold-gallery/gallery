@@ -13,7 +13,7 @@
 					<img src="{{static_url}}general-store/general-store-logo.png"><img src="{{static_url}}general-store/general-store-logo-white.png" style="display:none;">
 				</div>
 				<div class="event-description">
-					In order to reserve a spot in the next Centerfold General Store event, you are required to pay your total vendor fee. You can pay that fee below. The cost is $51.75 to secure a table for 1 day, and $103.20 for 2 days. Please remember to accurately fill in your name and email. Please also include your business name in the "Name" field during payment.<br/>
+					In order to reserve a spot in the next Centerfold General Store event, you are required to pay your total vendor fee. You can pay that fee below. The cost is $51.75 to secure a table for 1 day, $103.20 for 2 days, and $154.65 for 3 days. Please remember to accurately fill in your name and email. Please also include your business name in the "Name" field during payment.<br/>
 					<br/>
 					You will receive email confirmation from Brittne in the next 12 hours confirming your vendor status, at which time you can confirm what day you would like to show your goods. If you have any questions, please don't hesitate to contact us at <a class="inline-link" href="mailto:generalstore@centerfold.gallery?subject=Vendor Question" target="_blank">generalstore@centerfold.gallery</a>.<br/>
 					<br/>
@@ -54,6 +54,25 @@
 					    ></script>
 					    <input name="amount" value="10320" type="hidden">
 					    <input name="description" value="General Store Vendor - 2 Days" type="hidden">
+					</form>
+					<br/>
+					<br/>
+					<br/>
+					3 Days &mdash; $154.65<br/>
+					<br/>
+					<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+					    <script
+					        defer
+					        src="https://checkout.stripe.com/checkout.js"
+					        class="stripe-button"
+					        data-key="{{stripeAPIKey}}"
+					        data-name="Centerfold Gallery"
+					        data-description="General Store Vendor - 3 Days"
+					        data-amount="15465"
+					        data-billing-address="true"
+					    ></script>
+					    <input name="amount" value="15465" type="hidden">
+					    <input name="description" value="General Store Vendor - 3 Days" type="hidden">
 					</form>
 				</div>
 				<div class="footer-space"></div>
