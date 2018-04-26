@@ -15,6 +15,9 @@ Airtable.configure({
 });
 var base = Airtable.base(config.storageConfig.airtableBase);
 
+app.locals.static_url = "https://s3.amazonaws.com/centerfold-website/";
+app.locals.stripeAPIKey = config.storageConfig.stripeAPIKey;
+
 // Static Asset Routes
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))

@@ -1329,7 +1329,7 @@ body.zoom-overlay-open {
 
 .dinner-event-floating {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -1339,9 +1339,13 @@ body.zoom-overlay-open {
 }
 
 .dinner-event-floating img {
-    height: 80%;
+    height: 80vh;
     width: auto;
     z-index: 1;
+}
+
+.dinner-event-floating-image {
+    display: none;
 }
 
 .dinner-event-title {
@@ -1524,7 +1528,7 @@ body.zoom-overlay-open {
 
 .fourohno {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -2122,6 +2126,156 @@ button::-moz-focus-inner {
 .gs-header img {
     width: 10em;
     height: auto;
+}
+
+.gs-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.gs-parallax {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gs-para-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gs-para-layer-container {
+    width: 100%;
+    height: 100%;
+    @include boxflex;
+}
+
+.gs-para-layer-container img {
+    width: 10%;
+    height: auto;
+}
+
+#gs-para-layer-4 img {
+    width: 6%;
+    height: auto;
+}
+
+#gs-para-layer-1 {
+    transform: translate(-300px,250px);
+}
+
+#gs-para-layer-2 {
+    transform: translate(50px,150px);
+}
+
+#gs-para-layer-3 {
+    transform: translate(350px,100px);
+}
+
+#gs-para-layer-4 {
+    transform: translate(-100px,-200px);
+}
+
+#gs-para-layer-5 {
+    transform: translate(-350px,50px);
+}
+
+#gs-para-layer-6 {
+    transform: translate(400px,-200px);
+}
+
+#gs-para-layer-7 {
+    transform: translate(-400px,-180px);
+}
+
+#gs-para-layer-8 {
+    transform: translate(150px,-150px);
+}
+
+#gs-float-delay-1 {
+    animation-delay: -2s;
+}
+
+#gs-float-delay-2 {
+    animation-delay: -4s;
+}
+
+#gs-float-delay-3 {
+    animation-delay: -6s;
+}
+
+#gs-float-delay-4 {
+    animation-delay: -8s;
+}
+
+#gs-float-delay-5 {
+    animation-delay: -10s;
+}
+
+#gs-float-delay-6 {
+    animation-delay: -12s;
+}
+
+#gs-float-delay-7 {
+    animation-delay: -14s;
+}
+
+#gs-float-delay-8 {
+    animation-delay: -16s;
+}
+
+.gs-parallax-header {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include boxflex;
+    z-index: 56;
+}
+
+.gs-parallax-header img {
+    width: 40%;
+    height: auto;
+    z-index: 56;
+}
+
+.floating {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateX(00%) translateY(00%);
+    }
+    20% {
+        transform: translateX(5%) translateY(30%);
+    }
+    40% {
+        transform: translateX(-15%) translateY(20%);;
+    }
+    60% {
+        transform: translateX(5%) translateY(40%);
+    }
+  	80% {
+        transform: translateX(-10%) translateY(20%);
+    }
+    100% {
+        transform: translateX(00%) translateY(00%);
+    }
 }
 
 .spin {

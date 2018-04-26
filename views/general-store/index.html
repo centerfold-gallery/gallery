@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{{> ascii }}
+<html lang="en">
+	<head>
+        {{> head}}
+    </head>
+	<body>
+        {{> nav}}
+		{{> 3d-overlay}}
+        <div class="still">
+            <div class="everything">
+				<div class="gs-container">
+					<div class="gs-parallax-header">
+						<img src="{{static_url}}general-store/general-store-logo.png"><img src="{{static_url}}general-store/general-store-logo-white.png" style="display:none;">
+					</div>
+					<div class="gs-parallax" id="gs-parallax">
+						<div class="gs-para-layer" data-depth="0.4">
+							<div class="gs-para-layer-container" id="gs-para-layer-1">
+								<img class="shadow floating" id="gs-float-delay-1" src="{{static_url}}general-store/assets/bowls.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.2">
+							<div class="gs-para-layer-container" id="gs-para-layer-2">
+								<img class="shadow floating" id="gs-float-delay-2" src="{{static_url}}general-store/assets/chair.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.3">
+							<div class="gs-para-layer-container" id="gs-para-layer-3">
+								<img class="shadow floating" id="gs-float-delay-3" src="{{static_url}}general-store/assets/jewellery.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.3">
+							<div class="gs-para-layer-container" id="gs-para-layer-4">
+								<img class="shadow floating" id="gs-float-delay-4" src="{{static_url}}general-store/assets/plant.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.4">
+							<div class="gs-para-layer-container" id="gs-para-layer-5">
+								<img class="shadow floating" id="gs-float-delay-5" src="{{static_url}}general-store/assets/tag.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.4">
+							<div class="gs-para-layer-container" id="gs-para-layer-6">
+								<img class="shadow floating" id="gs-float-delay-6" src="{{static_url}}general-store/assets/tee.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.5">
+							<div class="gs-para-layer-container" id="gs-para-layer-7">
+								<img class="shadow floating" id="gs-float-delay-7" src="{{static_url}}general-store/assets/wine.svg">
+							</div>
+						</div>
+						<div class="gs-para-layer" data-depth="0.3">
+							<div class="gs-para-layer-container" id="gs-para-layer-8">
+								<img class="shadow floating" id="gs-float-delay-8" src="{{static_url}}general-store/assets/zine.svg">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dinner-event-title">
+					GRAND OPENING
+				</div>
+				<div class="dinner-event-description">
+					Centerfold</span><span class="accent"></span></span> is hosting an artists' market at Oatbox!<br/>
+					<br/>
+					<span class="dinner-link menu-collapse">VENDORS</span> <span class="super-low"><i class="em em-innocent"></i></span>
+					<div class="menu">
+						<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+						<span class="super-low">VENDOR</span><br/>
+						TBA<br/>
+						<br/>
+					</div><br/>
+				</div>
+				<div class="dinner-event-description">
+					<span class="super-low">WEEKEND</span><br/>
+					6<span class="super">PM</span> &mdash; 8<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span> 09 February, 2018.<br/>
+					<br/>
+					<span class="super-low">WOW ANOTHER ONE ???</span><br/>
+					8<span class="super">PM</span> &mdash; Midnight<span class="super"></span><br/>
+					<span class="super-low">DJ</span> Gene Tellem<br/>
+					$10 <a target="_blank" href="https://www.facebook.com/events/187108975210045/" class="dinner-link">RSVP</a> <span class="super-low">OPEN BAR</span><br/>
+					<br/>
+					<br/>
+					<a href="https://goo.gl/maps/E5R4otV6LP42" target="_blank">3450 Saint Dominique Street Suite 100,<br/>
+					Montreal, QC.</a><br/>
+				</div>
+				<div class="dinner-event-description">
+					<br/>
+					<br/>
+					<br/>
+					<span class="super-low">BUYER PREVIEW</span> &mdash; <a target="_blank" href="mailto:nadim@centerfold.gallery?subject=Buyer Preview Request&body=I would like to receive a buyer preview of Zoe Pawlak's artworks." class="dinner-link">Request</a><br/>
+					<br/>
+					<span class="super-low">PRESS</span> &mdash; <a target="_blank" href="/gallery/arrival-measures/press" class="dinner-link">Info &amp; Resources</a>
+				</div>
+				<div class="footer-space"></div>
+				{{> footer}}
+            </div>
+			<div class="dinner-event-floating">
+				<img class="shadow dinner-event-floating-image" src="{{static_url}}arrival-measures/first-light.jpg">
+			</div>
+        </div>
+		<footer>
+			{{> body-end}}
+			<script>
+				$(".still").scroll(function () {
+					var y = $(this).scrollTop();
+					if (y > 700) {
+						$('.dinner-event-floating-image').fadeIn(0);
+					} else {
+						$('.dinner-event-floating-image').fadeOut(0);
+					}
+				});
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+			<script>
+				var scene = document.getElementById('gs-parallax');
+				var parallaxInstance = new Parallax(scene, {
+				  relativeInput: true
+				});
+			</script>
+			<script>
+				$('.menu-collapse').click(function(){
+					$('.menu').slideToggle('slow');
+				});
+				$('.menu').click(function(){
+					$('.menu').slideToggle('slow');
+				});
+			</script>
+	    </footer>
+    </body>
+</html>
