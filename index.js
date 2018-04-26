@@ -2724,9 +2724,9 @@ app.get('/events', function (req, res) {
 
 // General Store
 
-// app.get('/general-store', function (req, res) {
-//   res.render('general-store/index.html', {title: "General Store", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
-// });
+app.get('/general-store', function (req, res) {
+  res.render('general-store/index.html', {title: "General Store", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
 
 app.get('/general-store/vendors', function (req, res) {
   res.render('general-store/vendors.html', {title: "Vendors", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
