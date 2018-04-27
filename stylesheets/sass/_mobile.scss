@@ -470,15 +470,19 @@ img#threed.threed-mobile {
     padding-left: 0em;
 }
 
-.gs-header img {
-    width: 10em;
-    height: auto;
+.gs-header {
+    font-size: 3em;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3em;
 }
 
-.gs-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+.gs-header img {
+    display: inline-block;
+    width: 80vw;
+    height: auto;
+    margin-left: 0;
 }
 
 .gs-parallax {
@@ -499,22 +503,27 @@ img#threed.threed-mobile {
 
 .gs-para-layer-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     @include boxflex;
 }
 
 .gs-para-layer-container img {
-    width: 100%;
+    width: 20%;
     height: auto;
 }
 
 #gs-para-layer-4 img {
-    width: 6%;
+    width: 14%;
+    height: auto;
+}
+
+#gs-para-layer-7 img {
+    width: 28%;
     height: auto;
 }
 
 #gs-para-layer-1 {
-    transform: translate(-100px,10px);
+    transform: translate(-30px, 60px);
 }
 
 #gs-para-layer-2 {
@@ -522,75 +531,37 @@ img#threed.threed-mobile {
 }
 
 #gs-para-layer-3 {
-    transform: translate(50px,100px);
+    transform: translate(100px, 40px);
 }
 
 #gs-para-layer-4 {
-    transform: translate(-80px,-100px);
+    transform: translate(-40px, -100px);
 }
 
 #gs-para-layer-5 {
-    transform: translate(-80px,25px);
+    transform: translate(-80px, 140px);
 }
 
 #gs-para-layer-6 {
-    transform: translate(150px,-80px);
+    transform: translate(40px, -170px);
 }
 
 #gs-para-layer-7 {
-    transform: translate(-100px,-40px);
+    transform: translate(-100px, -170px);
 }
 
 #gs-para-layer-8 {
-    transform: translate(150px,-150px);
-}
-
-#gs-float-delay-1 {
-    animation-delay: -2s;
-}
-
-#gs-float-delay-2 {
-    animation-delay: -4s;
-}
-
-#gs-float-delay-3 {
-    animation-delay: -6s;
-}
-
-#gs-float-delay-4 {
-    animation-delay: -8s;
-}
-
-#gs-float-delay-5 {
-    animation-delay: -10s;
-}
-
-#gs-float-delay-6 {
-    animation-delay: -12s;
-}
-
-#gs-float-delay-7 {
-    animation-delay: -14s;
-}
-
-#gs-float-delay-8 {
-    animation-delay: -16s;
+    transform: translate(100px, -100px);
 }
 
 .gs-parallax-header {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include boxflex;
-    z-index: 56;
+    height: 90vh;
 }
 
 .gs-parallax-header img {
-    width: 40%;
-    height: auto;
-    z-index: 56;
+    display: inline-block;
+    width: 80vw;
+    margin-left: 0;
 }
 
 .footer-space-buy {
