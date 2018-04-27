@@ -32,14 +32,14 @@
 					<br/>
 					<span class="mobile-hide">Be sure to check out our 3D functionality, which can be accessed through clicking on the “3D” icon above.</span>
                 </div>
-				<div class="art mix" id="shirts">
-					<a href="/merch" class="art-art">
-						<img class="shadow" src="{{static_url}}merch/shirts01/shirts-header.png">
+				<div class="art mix" id="art-general-store">
+					<a href="/general-store" class="art-art">
+						<img style="height:350px;width:auto;transform:translateX(150px);" class="shadow" src="{{static_url}}general-store/assets/plant.svg">
 					</a>
 					<div class="artist-card-wrap">
-						<div class="artist-card" id="card-shirts">
-							<span class="art-title"><i class="em em-shirt"></i><i class="em em-shirt"></i><i class="em em-shirt"></i></span><br/>
-							Merch &mdash; <span class="buy-2d">View</span><br/>
+						<div class="artist-card" id="card-general-store">
+							<span class="art-title">Centerfold General Store</span><br/>
+							Info &mdash; <span class="buy-2d">View</span><br/>
 						</div>
 					</div>
 				</div>
@@ -51,6 +51,17 @@
 						<div class="artist-card" id="cardFC000004">
 							<span class="art-title">Parts of a Whole</span><br/>
 							Featured Collection &mdash; <span class="buy-2d">View</span><br/>
+						</div>
+					</div>
+				</div>
+				<div class="art mix" id="shirts">
+					<a href="/merch" class="art-art">
+						<img class="shadow" src="{{static_url}}merch/shirts01/shirts-header.png">
+					</a>
+					<div class="artist-card-wrap">
+						<div class="artist-card" id="card-shirts">
+							<span class="art-title"><i class="em em-shirt"></i><i class="em em-shirt"></i><i class="em em-shirt"></i></span><br/>
+							Merch &mdash; <span class="buy-2d">View</span><br/>
 						</div>
 					</div>
 				</div>
@@ -125,6 +136,13 @@
 				$elemcard.fadeIn(500);
 			},function(){
 				var $elemcard = $('#card-shirts');
+				$elemcard.fadeOut(500);
+			});
+			$("#art-general-store").hover(function(){
+				var $elemcard = $('#card-general-store');
+				$elemcard.fadeIn(500);
+			},function(){
+				var $elemcard = $('#card-general-store');
 				$elemcard.fadeOut(500);
 			});
 		</script>
