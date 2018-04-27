@@ -60,32 +60,52 @@
 					GRAND OPENING
 				</div>
 				<div class="dinner-event-description">
-					Centerfold</span><span class="accent"></span></span> is hosting an artists' market at Oatbox!<br/>
-					<br/>
-					<span class="dinner-link menu-collapse">VENDORS</span> <span class="super-low"><i class="em em-innocent"></i></span>
-					<div class="menu">
-						<br/>
-						<br/>
-						<span class="super-low">VENDOR</span><br/>
-						TBA<br/>
-						<br/>
-						<span class="super-low">VENDOR</span><br/>
-						TBA<br/>
-						<br/>
-						<span class="super-low">VENDOR</span><br/>
-						TBA<br/>
-						<br/>
-					</div><br/>
+					Centerfold is hosting an artists' market at Oatbox!<br/>
 				</div>
 				<div class="dinner-event-description">
-					<span class="super-low">WEEKEND</span><br/>
-					6<span class="super">PM</span> &mdash; 8<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span> 09 February, 2018.<br/>
+					<span class="super-low">GENERAL STORE 001</span><br/>
+					04 May, 2018 &mdash; 06 May, 2018.<br/>
+					<a target="_blank" href="https://www.facebook.com/events/187108975210045/" class="dinner-link">RSVP</a><br/>
 					<br/>
-					<span class="super-low">WOW ANOTHER ONE ???</span><br/>
-					8<span class="super">PM</span> &mdash; Midnight<span class="super"></span><br/>
-					<span class="super-low">DJ</span> Gene Tellem<br/>
-					$10 <a target="_blank" href="https://www.facebook.com/events/187108975210045/" class="dinner-link">RSVP</a> <span class="super-low">OPEN BAR</span><br/>
 					<br/>
+					<span class="super-low">Friday, May 4</span><br/>
+					6<span class="super">PM</span> &mdash; 9<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span><br/>
+					<span class="super-low"><i class="em em-innocent"></i></span> <span class="dinner-link menu-collapse" id="menu-collapse-1">VENDORS</span><br/>
+					<div class="menu" id="menu-1">
+						<br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+					</div><br/>
+					<br/>
+					<span class="super-low">Saturday, May 5</span><br/>
+					10<span class="super">AM</span> &mdash; 6<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span><br/>
+					<span class="super-low"><i class="em em-innocent"></i></span> <span class="dinner-link menu-collapse" id="menu-collapse-2">VENDORS</span><br/>
+					<div class="menu" id="menu-2">
+						<br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+					</div><br/>
+					<br/>
+					<span class="super-low">Sunday, May 6</span><br/>
+					10<span class="super">AM</span> &mdash; 6<span class="super">PM</span><span class="hard-comma-container"> <span class="wow-i-am-good-at-typography">,</span></span><br/>
+					<span class="super-low"><i class="em em-innocent"></i></span> <span class="dinner-link menu-collapse" id="menu-collapse-3">VENDORS</span><br/>
+					<div class="menu" id="menu-3">
+						<br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+						VENDOR<br/>
+						<span class="super">LINK 1 &mdash; LINK 2</span><br/>
+					</div><br/>
 					<br/>
 					<a href="https://goo.gl/maps/E5R4otV6LP42" target="_blank">3450 Saint Dominique Street Suite 100,<br/>
 					Montreal, QC.</a><br/>
@@ -94,7 +114,6 @@
 					<br/>
 					<br/>
 					<br/>
-					<span class="super-low">BUYER PREVIEW</span> &mdash; <a target="_blank" href="mailto:nadim@centerfold.gallery?subject=Buyer Preview Request&body=I would like to receive a buyer preview of Zoe Pawlak's artworks." class="dinner-link">Request</a><br/>
 					<br/>
 					<span class="super-low">PRESS</span> &mdash; <a target="_blank" href="/gallery/arrival-measures/press" class="dinner-link">Info &amp; Resources</a>
 				</div>
@@ -102,7 +121,7 @@
 				{{> footer}}
             </div>
 			<div class="dinner-event-floating">
-				<img class="shadow dinner-event-floating-image" src="{{static_url}}arrival-measures/first-light.jpg">
+				<img class="shadow dinner-event-floating-image" src="{{static_url}}general-store/assets/plant.svg">
 			</div>
         </div>
 		<footer>
@@ -110,7 +129,7 @@
 			<script>
 				$(".still").scroll(function () {
 					var y = $(this).scrollTop();
-					if (y > 700) {
+					if (y > 690) {
 						$('.dinner-event-floating-image').fadeIn(0);
 					} else {
 						$('.dinner-event-floating-image').fadeOut(0);
@@ -125,11 +144,14 @@
 				});
 			</script>
 			<script>
-				$('.menu-collapse').click(function(){
-					$('.menu').slideToggle('slow');
+				$('#menu-collapse-1').click(function(){
+					$('#menu-1').slideToggle('slow');
 				});
-				$('.menu').click(function(){
-					$('.menu').slideToggle('slow');
+				$('#menu-collapse-2').click(function(){
+					$('#menu-2').slideToggle('slow');
+				});
+				$('#menu-collapse-3').click(function(){
+					$('#menu-3').slideToggle('slow');
 				});
 			</script>
 	    </footer>
