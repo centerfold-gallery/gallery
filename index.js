@@ -2780,6 +2780,12 @@ app.get('/error', function (req, res) {
   res.render('error/index.html', {title: "Error", static_url: "https://s3.amazonaws.com/centerfold-website/"});
 });
 
+// Private Buyers
+
+app.get('/private/sophie-clement-cousineau', function (req, res) {
+  res.render('private-buy/sophie-cousineau.html', {title: "Sophie Clement Cousineau", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 
 var routes = require('./routes/buy-pages')(app);
 var routes = require('./routes/artist-pages')(app);

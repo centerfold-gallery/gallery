@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣🚶🚶￣￣👬￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+    </head>
+	<body>
+        {{> nav }}
+        <div class="still">
+            <div class="everything" style="height:100%;">
+				<div class="boxflex100">
+					<div class="about-description">
+	                    Hi Sophie &mdash; Thank you for your interest in <span class="t1">Transition</span> by Claudia Rynkowski. Below is a button we've made for you to complete the payment. This amount shipping quoted at $130 CAD and is included in this transaction.
+						<br/>
+						<br/>
+						If you're interested in buying another artwork please send Brittne an email at <a class="thank-you-link" target="_blank" href="mailto:brittne@centerfold.gallery?subject=I'm interested in another artwork from Centerfold">brittne@centerfold.gallery</a> and let us know what you're interested in, and we will give you a 10% discount on your next purchase for you or a friend.
+						<br/>
+						<br/>
+						If you would like to be notified of new art please <a class="thank-you-link" href="http://eepurl.com/c7kSq5">join our mailing list</a>.
+						<br/>
+						<br/>
+						We appreciate your business! <i class="em em-blush"></i>
+	                </div><br/><br/>
+					<form action="https://centerfold-checkout.herokuapp.com/" method="POST">
+					    <script
+					        defer
+					        src="https://checkout.stripe.com/checkout.js"
+					        class="stripe-button"
+					        data-key="{{stripeAPIKey}}"
+					        data-name="Centerfold Gallery"
+					        data-description='"Transition" - Claudia Rynkowski'
+					        data-amount="98000"
+					        data-billing-address="true"
+					        data-shipping-address="true"
+					    ></script>
+					    <input name="amount" value="98000" type="hidden">
+					    <input name="description" value='"Transition" - Claudia Rynkowski' type="hidden">
+					</form>
+				</div>
+            </div>
+			<div class="footer-space-buy"></div>
+			{{> footer }}
+        </div>
+    </body>
+    <footer>
+        {{> body-end-buy }}
+    </footer>
+</html>
