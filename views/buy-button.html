@@ -4,8 +4,9 @@
         src="https://checkout.stripe.com/checkout.js"
         class="stripe-button"
         data-key="{{stripeAPIKey}}"
+        data-image="{{static_url}}assets/stripe.png"
         data-name="Centerfold Gallery"
-        data-description="{{fields.Title}} - {{fields.Artist No Artist}}"
+        data-description='"{{fields.Title}}" - {{fields.Artist No Artist}}'
         data-amount="{{fields.Total Cost (CAD)}}00"
         data-billing-address="true"
         data-shipping-address="true"
@@ -13,5 +14,5 @@
 
     ></script>
     <input name="amount" value="{{fields.Total Cost (CAD)}}00" type="hidden">
-    <input name="description" value="{{fields.Title}} - {{fields.Artist No Artist}} - ({{fields.Record-ID}})" type="hidden">
+    <input name="description" value='"{{fields.Title}}" - {{fields.Artist No Artist}} ({{fields.Record-ID}})' type="hidden">
 </form>
