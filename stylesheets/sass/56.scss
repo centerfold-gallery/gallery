@@ -1760,11 +1760,92 @@ button::-moz-focus-inner {
     @include boxflex;
 }
 
+.artist-card-series {
+    display: inline-block;
+}
+
 .series-voting-card {
     position: fixed;
     top: 60px;
     left: 60px;
     padding: 2em;
+}
+
+.series-voting-card {
+    font-family: $type-4;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    padding: 2em;
+    border-radius: 0.4em;
+    background-color: #000;
+    z-index: 9000;
+    // cursor: grab;
+    // cursor: -moz-grab;
+    // cursor: -webkit-grab;
+}
+
+.series-voting-card:active {
+    // cursor: grabbing;
+    // cursor: -moz-grabbing;
+    // cursor: -webkit-grabbing;
+}
+
+.series-voting-card > input#name,
+.series-voting-card > input#email {
+    outline: none;
+    border: none;
+    color: #fff9f9;
+    border-bottom: 1px solid #fff9f9;
+    background-color: transparent;
+    background: transparent;
+    z-index: 900;
+}
+
+.vote-set {
+    color: #fff9f9;
+    width: 100%;
+}
+
+.art-vote-title,
+.art-vote-rec,
+.vote-loaded {
+    display: none;
+}
+
+.vote-title,
+.vote-remove {
+    display: inline-block;
+}
+
+.vote-title {
+    text-align: left;
+}
+
+.vote-remove {
+    float: right;
+    cursor: pointer;
+}
+
+.series-submit {
+    color: #fff9f9;
+    background-color: #000;
+    font-size: 0.8em;
+    border-radius: 0.1em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border: 1px solid #fff9f9;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.series-vote-button {
+    padding: 0.4em;
+    width: 7em;
+    font-family: 1.4em;
+    background-color: #0000ff;
+    border-radius: 0.4em;
+    @include boxflex;
+    color: $background-color;
 }
 
 // General Store

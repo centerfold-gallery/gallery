@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+
+  ______________
+ ╱|_____________╱|
+| |            | |
+| |   ⛲️   🌃  | |      :) © Centerfold 2017
+| |           | |
+|╱ ￣￣￣￣￣￣￣|╱
+ ￣￣￣ 🚶￣￣👭￣
+
+-->
+<html lang="en">
+	<head>
+        {{> head }}
+		<!-- <script src="{{static_url}}js/jQuery.dragmove.js"></script> -->
+    </head>
+	<body>
+        {{> nav }}
+		{{> 3d-overlay }}
+		<div class="series-voting-card shadow">
+			<input type="name" id="name" size="40" placeholder="Name"><br/>
+			<br/>
+			<input type="email" id="email" size="40" placeholder="Email"><br/>
+			<br/>
+			<div class="vote-container">
+			</div>
+			<br/>
+			<button class="series-submit" id="submit">Submit</button>
+		</div>
+        <div class="still" id="still">
+            <div class="everything" id="everything">
+                <div class="event-description" style="margin-top: 8em">
+                    <br/>
+					Please select your favorite artworks from the following collection. You may pick and choose the work to fit your scope and budget.
+  					<br/>
+					<br/>
+					<br/>
+					<br/>
+                </div>
+				{{> art/art-price-sheet }}
+            </div>
+			<div class="footer-space"></div>
+			{{> footer}}
+        </div>
+		<div class="price-sheet-sum">
+			
+		</div>
+	</body>
+	<script>
+		// $(function() {
+		// 	$('.series-voting-card').dragmove();
+		// });
+	</script>
+	<script>
+		var $containers = $('.vote-container');
+		var $set = '<div class="vote-set"><div class="vote-title"></div><div class="vote-loaded"></div><div class="vote-remove">&#10007;</div></div>';
+
+		$('.art-vote').on('click', function () {
+
+		  var childAdded = false;
+
+			$containers.each(function () {
+				var $container = $(this);
+				$container.append($set);
+				childAdded = true;
+				return;
+		  	});
+
+			$('.vote-set:last-of-type > .vote-title').html($(this).find('.art-vote-title').text());
+			$('.vote-set:last-of-type > .vote-loaded').html($(this).find('.art-vote-rec').text());
+
+		 	if (!childAdded) {
+		    	// console.log('Only 3 votes!');
+		  	}
+
+		});
+
+		$(document).on("click", ".vote-remove", function() {
+			$(this).parent().remove();
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+			 	name=$("#name").val();
+			 	email=$("#email").val();
+			 	vote1=$(".vote-container > .vote-set:nth-of-type(1) > .vote-loaded").text();
+			 	vote2=$(".vote-container > .vote-set:nth-of-type(2) > .vote-loaded").text();
+			 	vote3=$(".vote-container > .vote-set:nth-of-type(3) > .vote-loaded").text();
+				$.ajax({
+				    url: "http://localhost:3000/vote",
+				    type: "POST",
+				    data: {name: name, email: email, vote1: vote1, vote2: vote2, vote3: vote3},
+				    success: function (response) {
+						alert("Success");
+					},
+				    error: function (request, status, error) {
+						// alert("Error");
+					}
+				});
+			});
+		});
+	</script>
+    <footer>
+		{{> body-end-private }}
+    </footer>
+</html>
