@@ -14426,6 +14426,215 @@ module.exports = function(app) {
             );
         });
     });
+    app.get('/art/CF000637', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recs3I1keSMXiCkmU', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000638', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recPst1vw44aTJ8yc', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000639', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recD6edZbzNZijqly', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000640', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recZHyeM3GQyjTkfT', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000641', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recyzpr2HWP33rCfX', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000642', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recPWCoZ2sYO2JAMw', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000643', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('rec7ZuqBgdZ5ef6H7', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000644', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recUfpWS90bnJ8rGE', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+app.get('/art/CF000645', function(req, res) {
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: config.storageConfig.airtableAPIKey
+    }).base(config.storageConfig.airtableBase);
+    var context = {
+        static_url: "https://s3.amazonaws.com/centerfold-website/",
+        stripeAPIKey: config.storageConfig.stripeAPIKey
+    };
+    base('Artworks').find('recTbax8Wd1YV8sdk', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        //res.json(record);
+        console.log(record);
+
+        res.render(
+            'art/buy/buy-page.html',
+            record
+        );
+    });
+});
+
+
 
 
 }
