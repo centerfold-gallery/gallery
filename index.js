@@ -2796,7 +2796,7 @@ app.use(function(req, res, next){
 
   // respond with html page
   if (req.accepts('html')) {
-    res.render('404', { url: req.url, static_url: "https://s3.amazonaws.com/centerfold-website/", title: "Page Not Found"});
+    res.render('status-errors/404.html', { url: req.url, static_url: "https://s3.amazonaws.com/centerfold-website/", title: "Page Not Found"});
     return;
   }
 
@@ -2808,6 +2808,25 @@ app.use(function(req, res, next){
 
   // default to plain-text. send()
   res.type('txt').send('Not found');
+});
+
+app.use(function(req, res, next){
+  res.status(503);
+
+  // respond with html page
+  if (req.accepts('html')) {
+    res.render('status-errors/503.html', { url: req.url, static_url: "https://s3.amazonaws.com/centerfold-website/", title: "Busy :("});
+    return;
+  }
+
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: 'Too many requests! :(' });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type('txt').send('Too many requests! :(');
 });
 
 var port = process.env.PORT || 3000;
