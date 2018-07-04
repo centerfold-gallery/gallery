@@ -2786,6 +2786,10 @@ app.get('/private/sophie-clement-cousineau', function (req, res) {
   res.render('private-buy/sophie-cousineau.html', {title: "Sophie Clement Cousineau", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
 });
 
+app.get('/private/meghan-brockmeyer', function (req, res) {
+  res.render('private-buy/meghan-brockmeyer.html', {title: "Meghan Brockmeyer", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+});
+
 
 var routes = require('./routes/buy-pages')(app);
 var routes = require('./routes/artist-pages')(app);
