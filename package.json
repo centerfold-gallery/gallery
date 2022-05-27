@@ -29,7 +29,6 @@
     "compression": "^1.7.1",
     "dotenv-flow": "^3.2.0",
     "express": "^4.15.3",
-    "heroku-ssl-redirect": "0.0.4",
     "mustache": "^2.3.0",
     "mustache-express": "^1.2.5"
   },
