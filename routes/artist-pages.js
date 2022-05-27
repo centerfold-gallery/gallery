@@ -1,16 +1,13 @@
 module.exports = function(app) {
-    var config = require('./../config');
-
-    
     app.get('/artists/hailey-anne-guzik', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Hailey Anne Guzik",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -126,12 +123,12 @@ module.exports = function(app) {
     app.get('/artists/pascal-assaleh', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Pascal Assaleh",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -247,12 +244,12 @@ module.exports = function(app) {
     app.get('/artists/koku-awuye', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Koku Awuye",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -368,12 +365,12 @@ module.exports = function(app) {
     app.get('/artists/addison-bale', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Addison Bale",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -489,12 +486,12 @@ module.exports = function(app) {
     app.get('/artists/laurence-belzile', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Laurence Belzile",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -610,12 +607,12 @@ module.exports = function(app) {
     app.get('/artists/sarah-bentivegna', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Sarah Bentivegna",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -731,12 +728,12 @@ module.exports = function(app) {
     app.get('/artists/jonathan-bernier', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jonathan Bernier",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -852,12 +849,12 @@ module.exports = function(app) {
     app.get('/artists/romane-bladou', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Romane Bladou",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -973,12 +970,12 @@ module.exports = function(app) {
     app.get('/artists/gab-bois', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Gab Bois",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1094,12 +1091,12 @@ module.exports = function(app) {
     app.get('/artists/zoe-boivin', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Zoé Boivin",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1215,12 +1212,12 @@ module.exports = function(app) {
     app.get('/artists/maxime-brown', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Maxime Brown",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1336,12 +1333,12 @@ module.exports = function(app) {
     app.get('/artists/heidi-cardyn', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Heidi Cardyn",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1457,12 +1454,12 @@ module.exports = function(app) {
     app.get('/artists/nina-chabel', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Nina Chabel",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1578,12 +1575,12 @@ module.exports = function(app) {
     app.get('/artists/madeleine-chevalier', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Madeleine Chevalier",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1699,12 +1696,12 @@ module.exports = function(app) {
     app.get('/artists/emmanuel-chieze', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Emmanuel Chieze",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1820,12 +1817,12 @@ module.exports = function(app) {
     app.get('/artists/kathryn-ciu-leci', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Kathryn Ciu Leci",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -1941,12 +1938,12 @@ module.exports = function(app) {
     app.get('/artists/nastia-cloutier-ignatiev', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Nastia Cloutier-Ignatiev",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2062,12 +2059,12 @@ module.exports = function(app) {
     app.get('/artists/jacob-cote', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jacob Côté",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2183,12 +2180,12 @@ module.exports = function(app) {
     app.get('/artists/emma-cross', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Emma Cross",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2304,12 +2301,12 @@ module.exports = function(app) {
     app.get('/artists/heidi-daehler', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Heidi Daehler",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2425,12 +2422,12 @@ module.exports = function(app) {
     app.get('/artists/polina-dmitrievna-stanevskaya', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Polina Dmitrievna Stanevskaya",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2546,12 +2543,12 @@ module.exports = function(app) {
     app.get('/artists/erzulie', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Erzulie",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2667,12 +2664,12 @@ module.exports = function(app) {
     app.get('/artists/serge-demetrius-dube', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Serge Demetrius Dube",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2788,12 +2785,12 @@ module.exports = function(app) {
     app.get('/artists/ariane-fairlie', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Ariane Fairlie",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -2909,12 +2906,12 @@ module.exports = function(app) {
     app.get('/artists/catherine-fitri-prince', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Catherine Fitri Prince",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3030,12 +3027,12 @@ module.exports = function(app) {
     app.get('/artists/nikolay-gamurar', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Nikolay Gamurar",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3151,12 +3148,12 @@ module.exports = function(app) {
     app.get('/artists/sayeh-gold', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Sayeh Gold",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3272,12 +3269,12 @@ module.exports = function(app) {
     app.get('/artists/victoria-gravel', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Victoria Gravel",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3393,12 +3390,12 @@ module.exports = function(app) {
     app.get('/artists/ali-inay', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Ali Inay",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3514,12 +3511,12 @@ module.exports = function(app) {
     app.get('/artists/dalia-janian', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Dalia Janian",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3635,12 +3632,12 @@ module.exports = function(app) {
     app.get('/artists/cheyenne-jenkins', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Cheyenne Jenkins",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3756,12 +3753,12 @@ module.exports = function(app) {
     app.get('/artists/cairo-justice', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Cairo Justice",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3877,12 +3874,12 @@ module.exports = function(app) {
     app.get('/artists/jordan-kasarjian', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jordan Kasarjian",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -3998,12 +3995,12 @@ module.exports = function(app) {
     app.get('/artists/minji-kim', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Minji Kim",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4119,12 +4116,12 @@ module.exports = function(app) {
     app.get('/artists/madeline-kinney', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Madeline Kinney",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4240,12 +4237,12 @@ module.exports = function(app) {
     app.get('/artists/lianna-klassen', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Lianna Klassen",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4361,12 +4358,12 @@ module.exports = function(app) {
     app.get('/artists/kristal-kordich-crandall', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Kristal Kordich-Crandall",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4482,12 +4479,12 @@ module.exports = function(app) {
     app.get('/artists/ryan-lebel', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Ryan Lebel",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4603,12 +4600,12 @@ module.exports = function(app) {
     app.get('/artists/marie-pier-leclerc', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Marie-Pier Leclerc",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -4724,12 +4721,12 @@ module.exports = function(app) {
     // app.get('/artists/alessandra-lontra', function(req, res) {
     //     var Airtable = require('airtable');
     //     var base = new Airtable({
-    //         apiKey: config.storageConfig.airtableAPIKey
-    //     }).base(config.storageConfig.airtableBase);
+    //         apiKey: process.env.airtableAPIKey
+    //     }).base(process.env.airtableBase);
     //     var context = {
     //         title: "Alessandra Lontra",
     //         static_url: "https://s3.amazonaws.com/centerfold-website/",
-    //         stripeAPIKey: config.storageConfig.stripeAPIKey
+    //         stripeAPIKey: process.env.stripeAPIKey
     //     };
     //     var getCollection = function(title) {
     //         return new Promise(function(resolve, reject) {
@@ -4845,12 +4842,12 @@ module.exports = function(app) {
     // app.get('/artists/dustyn-lucas', function(req, res) {
     //     var Airtable = require('airtable');
     //     var base = new Airtable({
-    //         apiKey: config.storageConfig.airtableAPIKey
-    //     }).base(config.storageConfig.airtableBase);
+    //         apiKey: process.env.airtableAPIKey
+    //     }).base(process.env.airtableBase);
     //     var context = {
     //         title: "Dustyn Lucas",
     //         static_url: "https://s3.amazonaws.com/centerfold-website/",
-    //         stripeAPIKey: config.storageConfig.stripeAPIKey
+    //         stripeAPIKey: process.env.stripeAPIKey
     //     };
     //     var getCollection = function(title) {
     //         return new Promise(function(resolve, reject) {
@@ -4966,12 +4963,12 @@ module.exports = function(app) {
     app.get('/artists/mahnoor-malik', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Mahnoor Malik",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5087,12 +5084,12 @@ module.exports = function(app) {
     app.get('/artists/schael-marceus', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Schaël Marcéus",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5208,12 +5205,12 @@ module.exports = function(app) {
     app.get('/artists/aydin-matlabi', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Aydin Matlabi",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5329,12 +5326,12 @@ module.exports = function(app) {
     app.get('/artists/alexia-mckindsey', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Alexia McKindsey",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5450,12 +5447,12 @@ module.exports = function(app) {
     app.get('/artists/hunter-mclean', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Hunter McLean",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5571,12 +5568,12 @@ module.exports = function(app) {
     app.get('/artists/genevieve-moreau', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Geneviève Moreau",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5692,12 +5689,12 @@ module.exports = function(app) {
     app.get('/artists/sandra-morellato', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Sandra Morellato",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5813,12 +5810,12 @@ module.exports = function(app) {
     app.get('/artists/stephanie-morin', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Stephanie Morin",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -5934,12 +5931,12 @@ module.exports = function(app) {
     app.get('/artists/devon-munro-menegon', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Devon Munro Menegon",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6055,12 +6052,12 @@ module.exports = function(app) {
     app.get('/artists/jordann-murray', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jordann Murray",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6176,12 +6173,12 @@ module.exports = function(app) {
     app.get('/artists/lesya-nakoneczny', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Lesya Nakoneczny",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6297,12 +6294,12 @@ module.exports = function(app) {
     app.get('/artists/andrew-nowacki', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Andrew Nowacki",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6418,12 +6415,12 @@ module.exports = function(app) {
     app.get('/artists/maela-ohana', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Maela Ohana",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6539,12 +6536,12 @@ module.exports = function(app) {
     app.get('/artists/laurent-palardy', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Laurent Palardy",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6660,12 +6657,12 @@ module.exports = function(app) {
     app.get('/artists/grace-paraluch', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Grace Paraluch",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6781,12 +6778,12 @@ module.exports = function(app) {
     app.get('/artists/maya-pathak', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Maya Pathak",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -6902,12 +6899,12 @@ module.exports = function(app) {
     app.get('/artists/eric-paulino', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Eric Paulino",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7023,12 +7020,12 @@ module.exports = function(app) {
     app.get('/artists/zoe-pawlak', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Zoë Pawlak",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7144,12 +7141,12 @@ module.exports = function(app) {
     app.get('/artists/marianne-pon-layus', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Marianne Pon-Layus",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7265,12 +7262,12 @@ module.exports = function(app) {
     app.get('/artists/isobel-rae', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Isobel Rae",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7386,12 +7383,12 @@ module.exports = function(app) {
     app.get('/artists/claudia-rynkowski', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Claudia Rynkowski",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7507,12 +7504,12 @@ module.exports = function(app) {
     app.get('/artists/anna-sadofsky', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Anna Sadofsky",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7628,12 +7625,12 @@ module.exports = function(app) {
     app.get('/artists/jessica-sallay-carrington', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jessica Sallay-Carrington",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7749,12 +7746,12 @@ module.exports = function(app) {
     app.get('/artists/emile-seguin', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Emile Seguin",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7870,12 +7867,12 @@ module.exports = function(app) {
     app.get('/artists/ariel-shea', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Ariel Shea",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -7991,12 +7988,12 @@ module.exports = function(app) {
     app.get('/artists/kathryn-shriver', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Kathryn Shriver",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8112,12 +8109,12 @@ module.exports = function(app) {
     app.get('/artists/nicole-small', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Nicole Small",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8233,12 +8230,12 @@ module.exports = function(app) {
     app.get('/artists/celia-spenard-ko', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Celia Spenard-Ko",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8354,12 +8351,12 @@ module.exports = function(app) {
     app.get('/artists/emily-spooner', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Emily Spooner",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8475,12 +8472,12 @@ module.exports = function(app) {
     app.get('/artists/jackie-stendel', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jackie Stendel",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8596,12 +8593,12 @@ module.exports = function(app) {
     app.get('/artists/connie-sutera', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Connie Sutera",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8717,12 +8714,12 @@ module.exports = function(app) {
     app.get('/artists/jules-tomi', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jules Tomi",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8838,12 +8835,12 @@ module.exports = function(app) {
     app.get('/artists/sean-vadaru', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Sean Vadaru",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -8959,12 +8956,12 @@ module.exports = function(app) {
     app.get('/artists/andrea-wilkin', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Andrea Wilkin",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9080,12 +9077,12 @@ module.exports = function(app) {
     app.get('/artists/william-wilson', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "William Wilson",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9201,12 +9198,12 @@ module.exports = function(app) {
     app.get('/artists/jade-wulfraat', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jade Wulfraat",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9322,12 +9319,12 @@ module.exports = function(app) {
     app.get('/artists/florence-yee', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Florence Yee",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9443,12 +9440,12 @@ module.exports = function(app) {
     app.get('/artists/janna-yotte', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Janna Yotte",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9564,12 +9561,12 @@ module.exports = function(app) {
     app.get('/artists/jose-guillermo-garcia-sierra', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Jose Guillermo Garcia Sierra",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9685,12 +9682,12 @@ module.exports = function(app) {
     app.get('/artists/olivia-turchyniak', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Olivia Turchyniak",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9806,12 +9803,12 @@ module.exports = function(app) {
     app.get('/artists/stefanie-auger-roy', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Stefanie Auger-Roy",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -9927,12 +9924,12 @@ module.exports = function(app) {
     app.get('/artists/sara-leila-dumont', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Sara-Leila Dumont",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -10048,12 +10045,12 @@ module.exports = function(app) {
     app.get('/artists/katherine-parthimos', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Katherine Parthimos",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -10169,12 +10166,12 @@ module.exports = function(app) {
     app.get('/artists/mary-mulderry-macisaac', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Mary Mulderry MacIsaac",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -10290,12 +10287,12 @@ module.exports = function(app) {
     app.get('/artists/zeesun-haque', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Zeesun Haque",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -10411,12 +10408,12 @@ module.exports = function(app) {
     app.get('/artists/mimi-owen', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "Mimi Owen",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
@@ -10532,12 +10529,12 @@ module.exports = function(app) {
     app.get('/artists/david-durham', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.storageConfig.airtableAPIKey
-        }).base(config.storageConfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             title: "David Durham",
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.storageConfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
