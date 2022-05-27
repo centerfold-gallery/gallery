@@ -2,7 +2,7 @@
   "version": 2,
   "scope": "4-us-and-4-others",
   "builds": [
-    { "src": "index.js", "use": "@vercel/node-server" },
+    { "src": "index.js", "use": "@vercel/node" },
     { "src": "js/**/*", "use": "@vercel/static" },
     { "src": "stylesheets/**/*", "use": "@vercel/static" },
     { "src": "fonts/**/*", "use": "@vercel/static" },
