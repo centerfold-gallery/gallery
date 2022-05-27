@@ -34,12 +34,6 @@
     "mustache-express": "^1.2.5"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-connect": "^5.0.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-nodemon": "^2.2.1",
     "nodemon": "^2.0.16",
     "sass": "^1.52.1"
   }
