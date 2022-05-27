@@ -1,6 +1,5 @@
 const express = require('express');
 var compression = require('compression');
-var sslRedirect = require('heroku-ssl-redirect');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
@@ -22,9 +21,6 @@ app.locals.stripeAPIKey = process.env.stripeAPIKey;
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
 app.use('/fonts', express.static('fonts'))
-
-// SSL
-app.use(sslRedirect());
 
 // GZIP
 app.use(compression());
