@@ -1,30 +1,36 @@
 const express = require('express');
 var compression = require('compression');
-var sslRedirect = require('heroku-ssl-redirect');
 const app = express();
 const mustacheExpress = require('mustache-express');
 
+require('dotenv-flow').config();
 var path = require('path')
-var config = require('./config');
+
+const environment = process.env.environment
 
 // Airtable Configuration
 var Airtable = require('airtable');
 Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
-    apiKey: config.storageConfig.airtableAPIKey,
+    apiKey: process.env.airtableAPIKey,
 });
-var base = Airtable.base(config.storageConfig.airtableBase);
+var base = Airtable.base(process.env.airtableBase);
 
 app.locals.static_url = "https://s3.amazonaws.com/centerfold-website/";
-app.locals.stripeAPIKey = config.storageConfig.stripeAPIKey;
+app.locals.stripeAPIKey = process.env.stripeAPIKey;
+
+if (environment !== 'now') {
+    app.use('/js', express.static('js'))
+    app.use('/stylesheets', express.static('stylesheets'))
+    app.use('/fonts', express.static('fonts'))
+    app.use('/assets', express.static('assets'))
+    app.use('/api', express.static('api'))
+}
 
 // Static Asset Routes
 app.use('/js', express.static('js'))
 app.use('/stylesheets', express.static('stylesheets'))
 app.use('/fonts', express.static('fonts'))
-
-// SSL
-app.use(sslRedirect());
 
 // GZIP
 app.use(compression());
@@ -36,12 +42,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// Setup Mustache
-app.engine('html', mustacheExpress());
-app.set('view engine', 'html');
+app.engine('html', mustacheExpress())
+app.set('view engine', 'html')
+app.set('views', `${__dirname}/views`)
 
 app.get('/', function(req, res){
-    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -140,7 +146,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/art', function(req, res){
-    var context = {title: "Art", current_page: "1", next_page: "2", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", current_page: "1", next_page: "2", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -233,7 +239,7 @@ app.get('/art', function(req, res){
 });
 
 app.get('/art/2', function(req, res){
-    var context = {title: "Art", prev_page: "../art", current_page: "2", next_page: "3", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "../art", current_page: "2", next_page: "3", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -326,7 +332,7 @@ app.get('/art/2', function(req, res){
 });
 
 app.get('/art/3', function(req, res){
-    var context = {title: "Art", prev_page: "2", current_page: "3", next_page: "4", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "2", current_page: "3", next_page: "4", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -419,7 +425,7 @@ app.get('/art/3', function(req, res){
 });
 
 app.get('/art/4', function(req, res){
-    var context = {title: "Art", prev_page: "3", current_page: "4", next_page: "5", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "3", current_page: "4", next_page: "5", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -512,7 +518,7 @@ app.get('/art/4', function(req, res){
 });
 
 app.get('/art/5', function(req, res){
-    var context = {title: "Art", prev_page: "4", current_page: "5", next_page: "6", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "4", current_page: "5", next_page: "6", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -605,7 +611,7 @@ app.get('/art/5', function(req, res){
 });
 
 app.get('/art/6', function(req, res){
-    var context = {title: "Art", prev_page: "5", current_page: "6", next_page: "7", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "5", current_page: "6", next_page: "7", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -698,7 +704,7 @@ app.get('/art/6', function(req, res){
 });
 
 app.get('/art/7', function(req, res){
-    var context = {title: "Art", prev_page: "6", current_page: "7", next_page: "8", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "6", current_page: "7", next_page: "8", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -791,7 +797,7 @@ app.get('/art/7', function(req, res){
 });
 
 app.get('/art/8', function(req, res){
-    var context = {title: "Art", prev_page: "7", current_page: "8", next_page: "9", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "7", current_page: "8", next_page: "9", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -884,7 +890,7 @@ app.get('/art/8', function(req, res){
 });
 
 app.get('/art/9', function(req, res){
-    var context = {title: "Art", prev_page: "8", current_page: "9", next_page: "10", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "8", current_page: "9", next_page: "10", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -977,7 +983,7 @@ app.get('/art/9', function(req, res){
 });
 
 app.get('/art/10', function(req, res){
-    var context = {title: "Art", prev_page: "9", current_page: "10", next_page: "11", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "9", current_page: "10", next_page: "11", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1070,7 +1076,7 @@ app.get('/art/10', function(req, res){
 });
 
 app.get('/art/11', function(req, res){
-    var context = {title: "Art", prev_page: "10", current_page: "11", next_page: "12", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "10", current_page: "11", next_page: "12", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1163,7 +1169,7 @@ app.get('/art/11', function(req, res){
 });
 
 app.get('/art/12', function(req, res){
-    var context = {title: "Art", prev_page: "11", current_page: "12", next_page: "13", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "11", current_page: "12", next_page: "13", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1256,7 +1262,7 @@ app.get('/art/12', function(req, res){
 });
 
 app.get('/art/13', function(req, res){
-    var context = {title: "Art", prev_page: "12", current_page: "13", next_page: "14", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "12", current_page: "13", next_page: "14", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1349,7 +1355,7 @@ app.get('/art/13', function(req, res){
 });
 
 app.get('/art/14', function(req, res){
-    var context = {title: "Art", prev_page: "13", current_page: "14", next_page: "15", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "13", current_page: "14", next_page: "15", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1442,7 +1448,7 @@ app.get('/art/14', function(req, res){
 });
 
 app.get('/art/15', function(req, res){
-    var context = {title: "Art", prev_page: "14", current_page: "15", next_page: "16", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "14", current_page: "15", next_page: "16", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1535,7 +1541,7 @@ app.get('/art/15', function(req, res){
 });
 
 app.get('/art/16', function(req, res){
-    var context = {title: "Art", prev_page: "15", current_page: "16", next_page: "17", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "15", current_page: "16", next_page: "17", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1628,7 +1634,7 @@ app.get('/art/16', function(req, res){
 });
 
 app.get('/art/17', function(req, res){
-    var context = {title: "Art", prev_page: "16", current_page: "17", next_page: "18", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "16", current_page: "17", next_page: "18", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1721,7 +1727,7 @@ app.get('/art/17', function(req, res){
 });
 
 app.get('/art/18', function(req, res){
-    var context = {title: "Art", prev_page: "17", current_page: "18", next_page: "19", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "17", current_page: "18", next_page: "19", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1814,7 +1820,7 @@ app.get('/art/18', function(req, res){
 });
 
 app.get('/art/19', function(req, res){
-    var context = {title: "Art", prev_page: "18", current_page: "19", next_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "18", current_page: "19", next_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -1907,7 +1913,7 @@ app.get('/art/19', function(req, res){
 });
 
 app.get('/art/20', function(req, res){
-    var context = {title: "Art", prev_page: "19", current_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Art", prev_page: "19", current_page: "20", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2002,13 +2008,13 @@ app.get('/art/20', function(req, res){
 // CF MODEL
 
 app.get('/series', function (req, res) {
-  res.render('series/index.html', {title: "Series", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('series/index.html', {title: "Series", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/series/test', function(req, res){
         var Airtable = require('airtable');
-        var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base(config.storageConfig.airtableBase);
-        var context = {title: "Test", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+        var base = new Airtable({apiKey: process.env.airtableAPIKey}).base(process.env.airtableBase);
+        var context = {title: "Test", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
                 base('Model')
@@ -2116,7 +2122,7 @@ app.get('/series/test', function(req, res){
 app.post('/vote', function(req, res) {
 
     var Airtable = require('airtable');
-    var base = new Airtable({apiKey: config.storageConfig.airtableAPIKey}).base('appAxg6rhUJ9BZmV4');
+    var base = new Airtable({apiKey: process.env.airtableAPIKey}).base('appAxg6rhUJ9BZmV4');
 
     var name = req.body.name;
     var email = req.body.email;
@@ -2154,7 +2160,7 @@ app.post('/vote', function(req, res) {
 // Featured Collection 1 Configuration
 
 app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
-    var context = {title: "Moments,, Distorted", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Moments,, Distorted", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2255,7 +2261,7 @@ app.get('/featured-collections/FC000001-moments-distorted', function(req, res){
 //Featured Collection 2 Configuration
 
 app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(req, res){
-    var context = {title: "Freckle Blemish Wrinkle Scar", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Freckle Blemish Wrinkle Scar", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2356,7 +2362,7 @@ app.get('/featured-collections/FC000002-freckle-blemish-wrinkle-scar', function(
 //Featured Collection 3 Configuration
 
 app.get('/featured-collections/FC000003-knowing-yourself', function(req, res){
-    var context = {title: "Knowing Yourself Lets You Understand Others", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Knowing Yourself Lets You Understand Others", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2456,7 +2462,7 @@ app.get('/featured-collections/FC000003-knowing-yourself', function(req, res){
 
 
 app.get('/featured-collections/FC000004-parts-of-a-whole', function(req, res){
-    var context = {title: "Parts of a Whole", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Parts of a Whole", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2555,13 +2561,13 @@ app.get('/featured-collections/FC000004-parts-of-a-whole', function(req, res){
 });
 
 app.get('/merch', function (req, res) {
-  res.render('featured-collections/shirts.html', {title: "Merch", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('featured-collections/shirts.html', {title: "Merch", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 // ArtistFocus01 Configuration
 
 app.get('/artist-focus', function(req, res){
-    var context = {title: "Artist Focus", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Artist Focus", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getCollection = function(title) {
         return new Promise(function(resolve, reject) {
@@ -2660,7 +2666,7 @@ app.get('/artist-focus', function(req, res){
 });
 
 app.get('/events', function (req, res) {
-    var context = {title: "Events", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+    var context = {title: "Events", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
 
     var getUpcomingEvents = new Promise(function(resolve, reject) {
         base('Events')
@@ -2725,51 +2731,51 @@ app.get('/events', function (req, res) {
 // General Store
 
 app.get('/general-store', function (req, res) {
-  res.render('general-store/index.html', {title: "General Store", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('general-store/index.html', {title: "General Store", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/general-store/vendors', function (req, res) {
-  res.render('general-store/vendors.html', {title: "Vendors", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('general-store/vendors.html', {title: "Vendors", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/artists', function (req, res) {
-  res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('artists/index.html', {title: "Artists", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/services', function (req, res) {
-  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('services/index.html', {title: "Services", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/about', function (req, res) {
-  res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('about/index.html', {title: "About", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/faqs', function (req, res) {
-  res.render('faqs/index.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('faqs/index.html', {title: "FAQs", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/privacy', function (req, res) {
-  res.render('privacy/index.html', {title: "Privacy Policy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('privacy/index.html', {title: "Privacy Policy", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/agreement', function (req, res) {
-  res.render('agreement/index.html', {title: "Artist Agreement", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('agreement/index.html', {title: "Artist Agreement", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/tools', function (req, res) {
-  res.render('tools/index.html', {title: "Tools", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('tools/index.html', {title: "Tools", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/tools/cert', function (req, res) {
-  res.render('tools/cert.html', {title: "Certificate of Authenticity", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('tools/cert.html', {title: "Certificate of Authenticity", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/tools/hanging-guide', function (req, res) {
-  res.render('tools/hanging-guide.html', {title: "Hanging Guide", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('tools/hanging-guide.html', {title: "Hanging Guide", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/gallery', function (req, res) {
-  res.render('gallery/index.html', {title: "Gallery", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('gallery/index.html', {title: "Gallery", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/thanks', function (req, res) {
@@ -2783,11 +2789,11 @@ app.get('/error', function (req, res) {
 // Private Buyers
 
 app.get('/private/sophie-clement-cousineau', function (req, res) {
-  res.render('private-buy/sophie-cousineau.html', {title: "Sophie Clement Cousineau", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('private-buy/sophie-cousineau.html', {title: "Sophie Clement Cousineau", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 app.get('/private/meghan-brockmeyer', function (req, res) {
-  res.render('private-buy/meghan-brockmeyer.html', {title: "Meghan Brockmeyer", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+  res.render('private-buy/meghan-brockmeyer.html', {title: "Meghan Brockmeyer", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey});
 });
 
 
@@ -2833,7 +2839,15 @@ app.use(function(req, res, next){
   res.type('txt').send('Too many requests! :(');
 });
 
-var port = process.env.PORT || 3000;
-app.listen(port, function () {
-  console.log('Centerfold App listening on port ' + port)
-})
+if (environment === 'development') {
+    const port = process.env.PORT || 3000
+    app.listen(port, () => {
+        console.log(`Centerfold up on port ${port} 🖼️`)
+    })
+} else {
+    app.listen()
+}
+// what's happening here ?
+// `now` does not like it when ports are specified for it to use, or when options are set inside `app.listen(...)`. However, nodemon _does_ like having options set for ports, so this sets options based on what you are current running/building the server with
+// if you are running hot reloading w `$ nodemon`, `environment` will be "development", and the server will run w a specified PORT (in this case, 3000)
+// if you are compiling a `now` build w `$ now dev`, or `now`, `environment` will be "now", and now will listen with just `app.listen()`

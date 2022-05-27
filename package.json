@@ -1,15 +1,17 @@
 {
   "name": "centerfold",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "driving social and economic change in the art industry",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "sass": "sass --watch --style=compressed stylesheets/scss:stylesheets/css",
+    "style": "sass --watch --style=compressed stylesheets/scss:stylesheets/css"
   },
   "engines": {
-    "node": "4.2.2",
-    "npm": "2.14.7"
+    "node": ">=12.x",
+    "npm": "6.9.0"
   },
   "repository": {
     "type": "git",
@@ -22,20 +24,16 @@
   },
   "homepage": "https://github.com/centerfold-gallery/gallery#readme",
   "dependencies": {
-    "airtable": "^0.5.0",
+    "airtable": "^0.11.4",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
+    "dotenv-flow": "^3.2.0",
     "express": "^4.15.3",
-    "heroku-ssl-redirect": "0.0.4",
-    "mustache": "^2.3.0",
+    "mustache": "^4.2.0",
     "mustache-express": "^1.2.5"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-connect": "^5.0.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-nodemon": "^2.2.1"
+    "nodemon": "^2.0.16",
+    "sass": "^1.52.1"
   }
 }

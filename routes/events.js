@@ -1,16 +1,15 @@
 module.exports = function(app) {
-    var config = require('./../config');
 
     app.get('/gallery/arrival-measures', function (req, res) {
-      res.render('gallery/zoe/dinner.html', {title: "Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+      res.render('gallery/zoe/dinner.html', {title: "Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.process.envfig.stripeAPIKey});
     });
 
     app.get('/gallery/arrival-measures/press', function (req, res) {
-      res.render('gallery/zoe/press.html', {title: "Press, Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey});
+      res.render('gallery/zoe/press.html', {title: "Press, Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.process.envfig.stripeAPIKey});
     });
 
     app.get('/gallery/arrival-measures/preview', function(req, res){
-        var context = {title: "Buyer Preview, Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.storageConfig.stripeAPIKey};
+        var context = {title: "Buyer Preview, Arrival Measures", static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: config.process.envfig.stripeAPIKey};
 
         var getCollection = function(title) {
             return new Promise(function(resolve, reject) {
