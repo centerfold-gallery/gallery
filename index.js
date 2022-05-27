@@ -6,6 +6,8 @@ const mustacheExpress = require('mustache-express');
 require('dotenv-flow').config();
 var path = require('path')
 
+const environment = process.env.environment
+
 // Airtable Configuration
 var Airtable = require('airtable');
 Airtable.configure({
@@ -16,6 +18,14 @@ var base = Airtable.base(process.env.airtableBase);
 
 app.locals.static_url = "https://s3.amazonaws.com/centerfold-website/";
 app.locals.stripeAPIKey = process.env.stripeAPIKey;
+
+if (environment !== 'now') {
+    app.use('/js', express.static('js'))
+    app.use('/stylesheets', express.static('stylesheets'))
+    app.use('/fonts', express.static('fonts'))
+    app.use('/assets', express.static('assets'))
+    app.use('/api', express.static('api'))
+}
 
 // Static Asset Routes
 app.use('/js', express.static('js'))
@@ -32,9 +42,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// Setup Mustache
-app.engine('html', mustacheExpress());
-app.set('view engine', 'html');
+app.engine('html', mustacheExpress())
+app.set('view engine', 'html')
+app.set('views', `${__dirname}/views`)
 
 app.get('/', function(req, res){
     var context = {static_url: "https://s3.amazonaws.com/centerfold-website/", stripeAPIKey: process.env.stripeAPIKey};
@@ -2829,7 +2839,15 @@ app.use(function(req, res, next){
   res.type('txt').send('Too many requests! :(');
 });
 
-var port = process.env.PORT || 3000;
-app.listen(port, function () {
-  console.log('Centerfold App listening on port ' + port)
-})
+if (environment === 'development') {
+    const port = process.env.PORT || 3000
+    app.listen(port, () => {
+        console.log(`Centerfold up on port ${port} 🖼️`)
+    })
+} else {
+    app.listen()
+}
+// what's happening here ?
+// `now` does not like it when ports are specified for it to use, or when options are set inside `app.listen(...)`. However, nodemon _does_ like having options set for ports, so this sets options based on what you are current running/building the server with
+// if you are running hot reloading w `$ nodemon`, `environment` will be "development", and the server will run w a specified PORT (in this case, 3000)
+// if you are compiling a `now` build w `$ now dev`, or `now`, `environment` will be "now", and now will listen with just `app.listen()`
