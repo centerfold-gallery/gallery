@@ -4,11 +4,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPxkmugLyHfDHZS', function(err, record) {
@@ -29,11 +29,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recAk2uMnyX2giz6q', function(err, record) {
@@ -54,11 +54,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIABB1rURsICGfk', function(err, record) {
@@ -79,11 +79,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHXfjbf9HYK1kIl', function(err, record) {
@@ -104,11 +104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsZZsH4bFjaU2uw', function(err, record) {
@@ -129,11 +129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recOKUxTU0spAl33h', function(err, record) {
@@ -154,11 +154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1ubCxRahi0qe4s', function(err, record) {
@@ -179,11 +179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpSAmRsrojKBfou', function(err, record) {
@@ -204,11 +204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvgHJtT9oPX3fF0', function(err, record) {
@@ -229,11 +229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuxRkgn63RXRuWJ', function(err, record) {
@@ -254,11 +254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec7PlEmpO5n8lDVa', function(err, record) {
@@ -279,11 +279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recJjA4jb4LR7W9f8', function(err, record) {
@@ -304,11 +304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbfvPMRFqPFYlby', function(err, record) {
@@ -329,11 +329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGG8ThM0VAwzJhZ', function(err, record) {
@@ -354,11 +354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHRejMFGMjvD4gH', function(err, record) {
@@ -379,11 +379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGtioZCKVK08RmG', function(err, record) {
@@ -404,11 +404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbnLaPlLkj2hIhn', function(err, record) {
@@ -429,11 +429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recY0hbmdX6uSPdNJ', function(err, record) {
@@ -454,11 +454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recey9gnbLsUqy6ne', function(err, record) {
@@ -479,11 +479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaNW55YPzAHUBQ3', function(err, record) {
@@ -504,11 +504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6Gv3ZsBAXV1dYt', function(err, record) {
@@ -529,11 +529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmrzQoCAwjJ6SSd', function(err, record) {
@@ -554,11 +554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccFNVm3uraKa2Yv', function(err, record) {
@@ -579,11 +579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclA4UXuyYB5aP6k', function(err, record) {
@@ -604,11 +604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0zutzfn3nCggtE', function(err, record) {
@@ -629,11 +629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsQ9I7XO8Q0BTue', function(err, record) {
@@ -654,11 +654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recr7I0eNVibkR5v3', function(err, record) {
@@ -679,11 +679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recEm83PVbL7zpzTW', function(err, record) {
@@ -704,11 +704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczrDWqK62tlYDc0', function(err, record) {
@@ -729,11 +729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5OlXkUKW3klADB', function(err, record) {
@@ -754,11 +754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqeAF0i3DSeEtG1', function(err, record) {
@@ -779,11 +779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recBsqXnjsXfH5eyp', function(err, record) {
@@ -804,11 +804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXecxUktEw6eyop', function(err, record) {
@@ -829,11 +829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuEtDJlPEUUjOLy', function(err, record) {
@@ -854,11 +854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recq9OCFOMG33I40k', function(err, record) {
@@ -879,11 +879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyZsxtV3IFMvYaU', function(err, record) {
@@ -904,11 +904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHtIVUTGKIDS4yv', function(err, record) {
@@ -929,11 +929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnGllYR7ZAwIYs8', function(err, record) {
@@ -954,11 +954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqzmRPv63j3wirj', function(err, record) {
@@ -979,11 +979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQElEz6aVTTRYnN', function(err, record) {
@@ -1004,11 +1004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmsTwR97NGkF8sL', function(err, record) {
@@ -1029,11 +1029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCvXeGFZdXP0ce0', function(err, record) {
@@ -1054,11 +1054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2kFmYPq8Ol3Vug', function(err, record) {
@@ -1079,11 +1079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXJk8bIWxPTok2F', function(err, record) {
@@ -1104,11 +1104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpX0dtjPVqSB5Zs', function(err, record) {
@@ -1129,11 +1129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec33CTNfpuYY8Ib0', function(err, record) {
@@ -1154,11 +1154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccmJBRWLj1mkNSk', function(err, record) {
@@ -1179,11 +1179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSjXMchowxQIH2P', function(err, record) {
@@ -1204,11 +1204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciQOSI3wOgbJa72', function(err, record) {
@@ -1229,11 +1229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec7Z3v2HlPHL6iCD', function(err, record) {
@@ -1254,11 +1254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFtjat25LKSvuIN', function(err, record) {
@@ -1279,11 +1279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaI7VeL7BbrlUZO', function(err, record) {
@@ -1304,11 +1304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbHBxj9Jv8sU6zf', function(err, record) {
@@ -1329,11 +1329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recwfZT2nWnNNBlhv', function(err, record) {
@@ -1354,11 +1354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMl712kRN4HqoC4', function(err, record) {
@@ -1379,11 +1379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXxOx0rYpi970k8', function(err, record) {
@@ -1404,11 +1404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('receQtH17sN5Iq16T', function(err, record) {
@@ -1429,11 +1429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recDnmJuWPrlwiQQ9', function(err, record) {
@@ -1454,11 +1454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3tth1TH2k3LxML', function(err, record) {
@@ -1479,11 +1479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4Yr9qlZSYSuT05', function(err, record) {
@@ -1504,11 +1504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8S3uMLTdDlD2tK', function(err, record) {
@@ -1529,11 +1529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recesIR7x12pEttfv', function(err, record) {
@@ -1554,11 +1554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHH8v0u4exkRMR3', function(err, record) {
@@ -1579,11 +1579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfwUqDIrVpHJmUf', function(err, record) {
@@ -1604,11 +1604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recr0sDCaqeEzmUQt', function(err, record) {
@@ -1629,11 +1629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrIpxCHspmLgZE9', function(err, record) {
@@ -1654,11 +1654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTM5Ct9pG91OyTX', function(err, record) {
@@ -1679,11 +1679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLEUr7vt2AlicvB', function(err, record) {
@@ -1704,11 +1704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRASE6hikqkJto0', function(err, record) {
@@ -1729,11 +1729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyCIVBkYT0OWELk', function(err, record) {
@@ -1754,11 +1754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccj087pv8mL0q2l', function(err, record) {
@@ -1779,11 +1779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reck1GI2Tc3K64h7J', function(err, record) {
@@ -1804,11 +1804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfKztPoTBd42QH2', function(err, record) {
@@ -1829,11 +1829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciYiIHHQH7wJ8jN', function(err, record) {
@@ -1854,11 +1854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8xhEsrEWJtrmgs', function(err, record) {
@@ -1879,11 +1879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciy3KoRy6tse6BK', function(err, record) {
@@ -1904,11 +1904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjLI7LGRzp4gX1b', function(err, record) {
@@ -1929,11 +1929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWWztuNB9ITUn5m', function(err, record) {
@@ -1954,11 +1954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIKqFNJYBTpWxK0', function(err, record) {
@@ -1979,11 +1979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclyqvTufYQT1And', function(err, record) {
@@ -2004,11 +2004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckQQw9WnMvno7KI', function(err, record) {
@@ -2029,11 +2029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjl4FsoFYXrNZr1', function(err, record) {
@@ -2054,11 +2054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4FdMmD40qOJ2GB', function(err, record) {
@@ -2079,11 +2079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczTFGQb3JU9t82X', function(err, record) {
@@ -2104,11 +2104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqfrkL0MJ14EzJ6', function(err, record) {
@@ -2129,11 +2129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTmPSDqZtqCpD2S', function(err, record) {
@@ -2154,11 +2154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqpuGUtdQUmBYtw', function(err, record) {
@@ -2179,11 +2179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0Im6ADh3zHVXng', function(err, record) {
@@ -2204,11 +2204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUJ9TRbbv0BXPiv', function(err, record) {
@@ -2229,11 +2229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfcYt3AI9WaJmdd', function(err, record) {
@@ -2254,11 +2254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFvCEOh2lLJpJyz', function(err, record) {
@@ -2279,11 +2279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recn5P0fYn3hM6sKW', function(err, record) {
@@ -2304,11 +2304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczaZxti1gx63jR9', function(err, record) {
@@ -2329,11 +2329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3aI5i19BpdsVxF', function(err, record) {
@@ -2354,11 +2354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciHzKi98MrbcQO4', function(err, record) {
@@ -2379,11 +2379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8ngvqolNSeLwWy', function(err, record) {
@@ -2404,11 +2404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHVjnRBRpVfvKto', function(err, record) {
@@ -2429,11 +2429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recArTEDZ0jeuh41d', function(err, record) {
@@ -2454,11 +2454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recBXW2zSica1NkRd', function(err, record) {
@@ -2479,11 +2479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFaV1LMTJbU62VK', function(err, record) {
@@ -2504,11 +2504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsOj1IBaceqbUSx', function(err, record) {
@@ -2529,11 +2529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec7iWe9piZIegZSj', function(err, record) {
@@ -2554,11 +2554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recv4UGSzzVTPba4P', function(err, record) {
@@ -2579,11 +2579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckdj4GwubBw0NFC', function(err, record) {
@@ -2604,11 +2604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGrmSydYZvzFB19', function(err, record) {
@@ -2629,11 +2629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsrLRPxYQShhdBw', function(err, record) {
@@ -2654,11 +2654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recN6eX8aKmdl52pf', function(err, record) {
@@ -2679,11 +2679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczDgTEYleU6uNIE', function(err, record) {
@@ -2704,11 +2704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recF72OwOVTCoBr8H', function(err, record) {
@@ -2729,11 +2729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('receBl5fvIMON2UNa', function(err, record) {
@@ -2754,11 +2754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnc4tshTUgICIzR', function(err, record) {
@@ -2779,11 +2779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8G64GqJOtUfntJ', function(err, record) {
@@ -2804,11 +2804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKgHERZyEdNw7Z9', function(err, record) {
@@ -2829,11 +2829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIj0LQbLYHyUMYk', function(err, record) {
@@ -2854,11 +2854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recim2DZnUmUYA41r', function(err, record) {
@@ -2879,11 +2879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUUU8dsk2JIi90v', function(err, record) {
@@ -2904,11 +2904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recEpRqKz9WYQZHHf', function(err, record) {
@@ -2929,11 +2929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recDpsOoJnlyTincm', function(err, record) {
@@ -2954,11 +2954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec72C9gKh3qCPFrD', function(err, record) {
@@ -2979,11 +2979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIJoSb59MFmV1Cd', function(err, record) {
@@ -3004,11 +3004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSeKvLpNACzWvuj', function(err, record) {
@@ -3029,11 +3029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPZQg9I7za2Al1X', function(err, record) {
@@ -3054,11 +3054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recv0A073i5xc4AXP', function(err, record) {
@@ -3079,11 +3079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1v633O1C6cXOxe', function(err, record) {
@@ -3104,11 +3104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCYM1nbdzGW81nw', function(err, record) {
@@ -3129,11 +3129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjJNm2DUXortFiN', function(err, record) {
@@ -3154,11 +3154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNADB6mu0jZfQRD', function(err, record) {
@@ -3179,11 +3179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKKLzbUpkh9q0kT', function(err, record) {
@@ -3204,11 +3204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recS16dfFlHaZqwYT', function(err, record) {
@@ -3229,11 +3229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUczUTcPQu0O9dQ', function(err, record) {
@@ -3254,11 +3254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczSv0WdYxhqPEKo', function(err, record) {
@@ -3279,11 +3279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recAwg4VxGUJwa1K0', function(err, record) {
@@ -3304,11 +3304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMryqNX5EdNtqiv', function(err, record) {
@@ -3329,11 +3329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recEjPpWLGnSOztUp', function(err, record) {
@@ -3354,11 +3354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4tDWcjZ53iFarI', function(err, record) {
@@ -3379,11 +3379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recel7atYApkKCcnJ', function(err, record) {
@@ -3404,11 +3404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recgvEo8e9TiMullP', function(err, record) {
@@ -3429,11 +3429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqrW2vbYhkOAJTa', function(err, record) {
@@ -3454,11 +3454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('receFXN8slCBBojL0', function(err, record) {
@@ -3479,11 +3479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdlRfXOGstW8KRY', function(err, record) {
@@ -3504,11 +3504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIi7eBuyDG85Ref', function(err, record) {
@@ -3529,11 +3529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnRKVKNbZraLF3i', function(err, record) {
@@ -3554,11 +3554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqMnD2AzrtJqyLs', function(err, record) {
@@ -3579,11 +3579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMoHPlCv2t8Imzd', function(err, record) {
@@ -3604,11 +3604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2CLpoa1a7jsw3m', function(err, record) {
@@ -3629,11 +3629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5YLzvHvrMD33cT', function(err, record) {
@@ -3654,11 +3654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recgGdMRh0nroFu3j', function(err, record) {
@@ -3679,11 +3679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec660sqoBRmehlq1', function(err, record) {
@@ -3704,11 +3704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recoe5wZkzpJPUlZo', function(err, record) {
@@ -3729,11 +3729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recW0kuv9MdsBTHbC', function(err, record) {
@@ -3754,11 +3754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recinoxNQGxQCOxDL', function(err, record) {
@@ -3779,11 +3779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVnGnc6S6GcOmjU', function(err, record) {
@@ -3804,11 +3804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCwTPaFdRldsy56', function(err, record) {
@@ -3829,11 +3829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSkDtV12zKM7XRy', function(err, record) {
@@ -3854,11 +3854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjJhDT9Fp3k73Dk', function(err, record) {
@@ -3879,11 +3879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPvBbYiHuzwKnoF', function(err, record) {
@@ -3904,11 +3904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMzIAkcFFqo8gCo', function(err, record) {
@@ -3929,11 +3929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZ6z6X02W1ZN4Mj', function(err, record) {
@@ -3954,11 +3954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recV2LRAfGxqqLklH', function(err, record) {
@@ -3979,11 +3979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXFPs4DxLOh0n2U', function(err, record) {
@@ -4004,11 +4004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTRwcXP3L17paF3', function(err, record) {
@@ -4029,11 +4029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaYhVeMIVBoRhZY', function(err, record) {
@@ -4054,11 +4054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUkjimb72ZIhTKl', function(err, record) {
@@ -4079,11 +4079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyHZQaygOxyYMHh', function(err, record) {
@@ -4104,11 +4104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZ6z7H0ITkS94X7', function(err, record) {
@@ -4129,11 +4129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recADqxhDT6kB74gr', function(err, record) {
@@ -4154,11 +4154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recy0GtTzou55daaZ', function(err, record) {
@@ -4179,11 +4179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLsbEOPbFJSAkfy', function(err, record) {
@@ -4204,11 +4204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNf2xv4Uxe2bPrV', function(err, record) {
@@ -4229,11 +4229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSWv20ZhqvojOuX', function(err, record) {
@@ -4254,11 +4254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recAWbYGdEjIhBhkM', function(err, record) {
@@ -4279,11 +4279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recx50j3EdXuSDNBd', function(err, record) {
@@ -4304,11 +4304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCkkEMo5TIO4fbR', function(err, record) {
@@ -4329,11 +4329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNDgw7W0TpKa6T3', function(err, record) {
@@ -4354,11 +4354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recT1kBAJ4kkTYQ2B', function(err, record) {
@@ -4379,11 +4379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6GGSciE8jhFYsX', function(err, record) {
@@ -4404,11 +4404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCWxNyOnwoiJG1M', function(err, record) {
@@ -4429,11 +4429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRRBVaRYTDEr7C8', function(err, record) {
@@ -4454,11 +4454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recoVtT9NUHgZiYap', function(err, record) {
@@ -4479,11 +4479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKkti4JI9wZMqBf', function(err, record) {
@@ -4504,11 +4504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuKZ5F5QZHm6Dev', function(err, record) {
@@ -4529,11 +4529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTjyDzOE4YVD1OJ', function(err, record) {
@@ -4554,11 +4554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjxf8wEXvS3rubZ', function(err, record) {
@@ -4579,11 +4579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWXGOGME0Gn1eYB', function(err, record) {
@@ -4604,11 +4604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recd9fVNAGRsJztjW', function(err, record) {
@@ -4629,11 +4629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1yGyOdfFpCjZEg', function(err, record) {
@@ -4654,11 +4654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczuKUngytfw7NUu', function(err, record) {
@@ -4679,11 +4679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdKr9KbShwNemJ4', function(err, record) {
@@ -4704,11 +4704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec60fJ6UM0mzs4GY', function(err, record) {
@@ -4729,11 +4729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechv200nN6D79Vad', function(err, record) {
@@ -4754,11 +4754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclURScEpeA24k0n', function(err, record) {
@@ -4779,11 +4779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recBId18a2qyZY75a', function(err, record) {
@@ -4804,11 +4804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqCssktc2IBP7pf', function(err, record) {
@@ -4829,11 +4829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdNgtlcY1dm9DKd', function(err, record) {
@@ -4854,11 +4854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclTqsCIaLtGoXb3', function(err, record) {
@@ -4879,11 +4879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recF1y0xY8CbsaEKX', function(err, record) {
@@ -4904,11 +4904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFZ7KA9xukUIsOp', function(err, record) {
@@ -4929,11 +4929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCUjVFlEvLyPByK', function(err, record) {
@@ -4954,11 +4954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recp3cRZGZ0Q0QqR4', function(err, record) {
@@ -4979,11 +4979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWt5yGvaThCfwEi', function(err, record) {
@@ -5004,11 +5004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechqdhVUuQh0U7CV', function(err, record) {
@@ -5029,11 +5029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbDiRqWFKlPXVG9', function(err, record) {
@@ -5054,11 +5054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRIPalyCXMXXpSF', function(err, record) {
@@ -5079,11 +5079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIbeQokhjzvdTl6', function(err, record) {
@@ -5104,11 +5104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1dEoQN9eNzwGmB', function(err, record) {
@@ -5129,11 +5129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recelcsxtZ3p3w1EF', function(err, record) {
@@ -5154,11 +5154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuOXPqacNCGnlh5', function(err, record) {
@@ -5179,11 +5179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZH2H1PBOO4qGPm', function(err, record) {
@@ -5204,11 +5204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGHvdcUIzHUMPBX', function(err, record) {
@@ -5229,11 +5229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHAvoyuwzxlWSfY', function(err, record) {
@@ -5254,11 +5254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsThaI7xvjkdIA8', function(err, record) {
@@ -5279,11 +5279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRv36TEUz6tGD6t', function(err, record) {
@@ -5304,11 +5304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsXQKdZXqcmqS0G', function(err, record) {
@@ -5329,11 +5329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec74T0pqB5oLK4iP', function(err, record) {
@@ -5354,11 +5354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recoG5Qqm8C6Qfvs7', function(err, record) {
@@ -5379,11 +5379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco2JJoQnt86HadR', function(err, record) {
@@ -5404,11 +5404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjYSKWHDq2tBdGf', function(err, record) {
@@ -5429,11 +5429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGO5QMmXPGZbXp1', function(err, record) {
@@ -5454,11 +5454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrTIBtVynoggziq', function(err, record) {
@@ -5479,11 +5479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recwwwpdkgV8DJuZB', function(err, record) {
@@ -5504,11 +5504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recP84QKQt5smS7wc', function(err, record) {
@@ -5529,11 +5529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjpyZLpdV0lkyfk', function(err, record) {
@@ -5554,11 +5554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recwJWL2aNWBUXZ2t', function(err, record) {
@@ -5579,11 +5579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSEjz7TEHhnGSKw', function(err, record) {
@@ -5604,11 +5604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recgk5VnJJCjNghGv', function(err, record) {
@@ -5629,11 +5629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0H8svaCQJ4DFcm', function(err, record) {
@@ -5654,11 +5654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMlj6Vgp4dvZREM', function(err, record) {
@@ -5679,11 +5679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvPfjuMTlsaJCTe', function(err, record) {
@@ -5704,11 +5704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5mHhqMt2UWxHI6', function(err, record) {
@@ -5729,11 +5729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recX83K1n9LUwcdwb', function(err, record) {
@@ -5754,11 +5754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpHDLAMUhVoNg9n', function(err, record) {
@@ -5779,11 +5779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnIbJlYI1TKg61N', function(err, record) {
@@ -5804,11 +5804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recYlIVVkc2HyeIiB', function(err, record) {
@@ -5829,11 +5829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczcbSKPYUKQCJ5m', function(err, record) {
@@ -5854,11 +5854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3A2SlgsziSO1co', function(err, record) {
@@ -5879,11 +5879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recBqJjJu8MnzoyWR', function(err, record) {
@@ -5904,11 +5904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6gn5H07bSfuOfB', function(err, record) {
@@ -5929,11 +5929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckkglbHMprO50eU', function(err, record) {
@@ -5954,11 +5954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPEjP4k9jmvIcja', function(err, record) {
@@ -5979,11 +5979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5EMcnD3y6iQuay', function(err, record) {
@@ -6004,11 +6004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGfZVR1nWJgmVbc', function(err, record) {
@@ -6029,11 +6029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaZcwe3xnPhEYCd', function(err, record) {
@@ -6054,11 +6054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuTDwN25I3Zhhbd', function(err, record) {
@@ -6079,11 +6079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4q3clCf3X5MsNQ', function(err, record) {
@@ -6104,11 +6104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec26623Zt17FJduy', function(err, record) {
@@ -6129,11 +6129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1uHhR40MrflmtK', function(err, record) {
@@ -6154,11 +6154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recH7qCC7qn1zz1A4', function(err, record) {
@@ -6179,11 +6179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnVtdseoUA7hpsC', function(err, record) {
@@ -6204,11 +6204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmnkpacD9dOXyaI', function(err, record) {
@@ -6229,11 +6229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHyTHlvUT0hP4uB', function(err, record) {
@@ -6254,11 +6254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGBK5Dq5cVjcoCT', function(err, record) {
@@ -6279,11 +6279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3tEVrDcMxthgY2', function(err, record) {
@@ -6304,11 +6304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQO5z1m69Rn8xMx', function(err, record) {
@@ -6329,11 +6329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recclEAyFlAXfvejI', function(err, record) {
@@ -6354,11 +6354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recF3f2Bl4bSWsXJk', function(err, record) {
@@ -6379,11 +6379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUThMm7A4GvmBiy', function(err, record) {
@@ -6404,11 +6404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdIc1aWiyZCQ727', function(err, record) {
@@ -6429,11 +6429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIK2STrkAsMpr5J', function(err, record) {
@@ -6454,11 +6454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0lxwzkd95SZ3wS', function(err, record) {
@@ -6479,11 +6479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5ZwrjDseFOC3Ci', function(err, record) {
@@ -6504,11 +6504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recemYR2k4QJSeacx', function(err, record) {
@@ -6529,11 +6529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyP7hxRwXvtZNr9', function(err, record) {
@@ -6554,11 +6554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1qOVqmPf8W5kRE', function(err, record) {
@@ -6579,11 +6579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco4MHZ49hKbvK76', function(err, record) {
@@ -6604,11 +6604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbIwK8NoYADO1Og', function(err, record) {
@@ -6629,11 +6629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recP2X6hthBO0vyrc', function(err, record) {
@@ -6654,11 +6654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvAMXd0ovbqJTVi', function(err, record) {
@@ -6679,11 +6679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjP2kSM3oGPuVyP', function(err, record) {
@@ -6704,11 +6704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQHPugZioHEEflJ', function(err, record) {
@@ -6729,11 +6729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recxV7kO4QpdJ9kbv', function(err, record) {
@@ -6754,11 +6754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLvzyRC0NfD2zDi', function(err, record) {
@@ -6779,11 +6779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec98ydE8004vYAmt', function(err, record) {
@@ -6804,11 +6804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recu9GI8fY6B5EjLs', function(err, record) {
@@ -6829,11 +6829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXcQTchPm3RemCJ', function(err, record) {
@@ -6854,11 +6854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccTv8eCZxCZ5GXJ', function(err, record) {
@@ -6879,11 +6879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rech04Bmn1yqRfzR7', function(err, record) {
@@ -6904,11 +6904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recf3NxWPDWpgwKh4', function(err, record) {
@@ -6929,11 +6929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5kPT7N3UKVwtYY', function(err, record) {
@@ -6954,11 +6954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recOX134lymJlYByx', function(err, record) {
@@ -6979,11 +6979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfq5wl4S6KXgrry', function(err, record) {
@@ -7004,11 +7004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recI1XD2KyL71ClI0', function(err, record) {
@@ -7029,11 +7029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWzkofl6LFalNIl', function(err, record) {
@@ -7054,11 +7054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFKAO7BZw5KNBNK', function(err, record) {
@@ -7079,11 +7079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechotIKUDGZIWywb', function(err, record) {
@@ -7104,11 +7104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec77nIiqRrGRCZRj', function(err, record) {
@@ -7129,11 +7129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recDqb6uV1q3frtcW', function(err, record) {
@@ -7154,11 +7154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUicjMXSJkmOCL8', function(err, record) {
@@ -7179,11 +7179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMLOalit8z10oV9', function(err, record) {
@@ -7204,11 +7204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recf8V444OI3zkt0v', function(err, record) {
@@ -7229,11 +7229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recDZYnG0hxJYIXW1', function(err, record) {
@@ -7254,11 +7254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec9QjFV9OErd5RYC', function(err, record) {
@@ -7279,11 +7279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLEdofHiMzboJ5N', function(err, record) {
@@ -7304,11 +7304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3KiHHavWeBOl7q', function(err, record) {
@@ -7329,11 +7329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNoA64rvtX2uJxI', function(err, record) {
@@ -7354,11 +7354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recBchkiytfLbbnFI', function(err, record) {
@@ -7379,11 +7379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8nIvpA5hXCmJct', function(err, record) {
@@ -7404,11 +7404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rectVfs3PW0Nm7ort', function(err, record) {
@@ -7429,11 +7429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfJt2JEmRlSYwQz', function(err, record) {
@@ -7454,11 +7454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqZKnj4Gz7PrV4b', function(err, record) {
@@ -7479,11 +7479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recH0no5NXaFVW3eK', function(err, record) {
@@ -7504,11 +7504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrWsLl8PkKg1uEo', function(err, record) {
@@ -7529,11 +7529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZ8WNji3x2CPNam', function(err, record) {
@@ -7554,11 +7554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0fPwhq6KOpVpBP', function(err, record) {
@@ -7579,11 +7579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recxuVYjf62eEzt5t', function(err, record) {
@@ -7604,11 +7604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recwan0yRkRAhE6m2', function(err, record) {
@@ -7629,11 +7629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKNbTbhWHca1rml', function(err, record) {
@@ -7654,11 +7654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8CtVLgCBgudVA5', function(err, record) {
@@ -7679,11 +7679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciMhsrd6OgPrim2', function(err, record) {
@@ -7704,11 +7704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjTf3uhEMMpddKK', function(err, record) {
@@ -7729,11 +7729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recknSYXs21WUfult', function(err, record) {
@@ -7754,11 +7754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recoqNV4WvSlU24GR', function(err, record) {
@@ -7779,11 +7779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNnbqVjWbTSzVjy', function(err, record) {
@@ -7804,11 +7804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczOEBEmktLh83HD', function(err, record) {
@@ -7829,11 +7829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXVK6lCl5JjfDqY', function(err, record) {
@@ -7854,11 +7854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnPQBk2lEKRskmL', function(err, record) {
@@ -7879,11 +7879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recir0Sipp9WXzai0', function(err, record) {
@@ -7904,11 +7904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recscHLWaKc6lvFwj', function(err, record) {
@@ -7929,11 +7929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUH15f1BAwpf31W', function(err, record) {
@@ -7954,11 +7954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpwXo1Rhly4xy9H', function(err, record) {
@@ -7979,11 +7979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechjvQhZm1tRC5Dw', function(err, record) {
@@ -8004,11 +8004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('receAE5WZ1Ao25egD', function(err, record) {
@@ -8029,11 +8029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recxC6YDb5jPdrLRI', function(err, record) {
@@ -8054,11 +8054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWKtPTLbhvNZNkD', function(err, record) {
@@ -8079,11 +8079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKC1Tm3maYXfEez', function(err, record) {
@@ -8104,11 +8104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recs3S9SyuNZh4rqU', function(err, record) {
@@ -8129,11 +8129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPZFa6GiJLIqTzF', function(err, record) {
@@ -8154,11 +8154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4nvVaYULaHNo4O', function(err, record) {
@@ -8179,11 +8179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnjPD9Xxzl7Puqe', function(err, record) {
@@ -8204,11 +8204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrI5jphDq6HaG8v', function(err, record) {
@@ -8229,11 +8229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recH9q7dq0zKRx7I7', function(err, record) {
@@ -8254,11 +8254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfhXrH0bbOFlf4g', function(err, record) {
@@ -8279,11 +8279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recu2GoFixIwaVaLF', function(err, record) {
@@ -8304,11 +8304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recG2bGLTl6up7tM4', function(err, record) {
@@ -8329,11 +8329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZGripovFmhlfnd', function(err, record) {
@@ -8354,11 +8354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco2EjaJ7jB7oZcE', function(err, record) {
@@ -8379,11 +8379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnZi8UHMcoVW83j', function(err, record) {
@@ -8404,11 +8404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpUGhE9sErrfzU6', function(err, record) {
@@ -8429,11 +8429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMKFhxScs6zVhiI', function(err, record) {
@@ -8454,11 +8454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUxcWY5z9xGvSUs', function(err, record) {
@@ -8479,11 +8479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2ERu0a25YqYb8z', function(err, record) {
@@ -8504,11 +8504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recT2Xihfu6B4wX3W', function(err, record) {
@@ -8529,11 +8529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recezvh6Dvf8ABacl', function(err, record) {
@@ -8554,11 +8554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsDI0XtenriqJwV', function(err, record) {
@@ -8579,11 +8579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5yLFr20Uy19JHe', function(err, record) {
@@ -8604,11 +8604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGveQo2Lsj9BV5f', function(err, record) {
@@ -8629,11 +8629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recN2Bgab9FxZvGmK', function(err, record) {
@@ -8654,11 +8654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8aAbuuaKqCVf9G', function(err, record) {
@@ -8679,11 +8679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recEko0sZL0vgkOxE', function(err, record) {
@@ -8704,11 +8704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIjcRgwu5XYb1ra', function(err, record) {
@@ -8729,11 +8729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec9wgxzOX66GzMos', function(err, record) {
@@ -8754,11 +8754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfMlA4vc9mJM9g0', function(err, record) {
@@ -8779,11 +8779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recF3MZSsfYVHgxfh', function(err, record) {
@@ -8804,11 +8804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2eyXmTkBwGxNh6', function(err, record) {
@@ -8829,11 +8829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdqiMST3e9EAhRx', function(err, record) {
@@ -8854,11 +8854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXeChaFoSO1wDLj', function(err, record) {
@@ -8879,11 +8879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6ta3TEIVsUhgou', function(err, record) {
@@ -8904,11 +8904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recveGbeftMfw5KZl', function(err, record) {
@@ -8929,11 +8929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGP7U2M7EvhEI4p', function(err, record) {
@@ -8954,11 +8954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recw13HkbWS5Y80IR', function(err, record) {
@@ -8979,11 +8979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFpZDNXmwTiZVbz', function(err, record) {
@@ -9004,11 +9004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recETFmHVoUmsvdy1', function(err, record) {
@@ -9029,11 +9029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8iuhtpAcIpMD7q', function(err, record) {
@@ -9054,11 +9054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqNfDz6GGDKV4ll', function(err, record) {
@@ -9079,11 +9079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmQOSHy8M3ayJCi', function(err, record) {
@@ -9104,11 +9104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnIxhtY7KlhRdF9', function(err, record) {
@@ -9129,11 +9129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrhcbIAVTH1ppzO', function(err, record) {
@@ -9154,11 +9154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZxX70avo7MgfmV', function(err, record) {
@@ -9179,11 +9179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recr67hTd3QEHwerZ', function(err, record) {
@@ -9204,11 +9204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvDkCGbq6lYVcPb', function(err, record) {
@@ -9229,11 +9229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclM2y8Csn4cglM4', function(err, record) {
@@ -9254,11 +9254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaE53yWxNPTPFag', function(err, record) {
@@ -9279,11 +9279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rectcvEcN452bXuf6', function(err, record) {
@@ -9304,11 +9304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recJmPfqnRlCWraqP', function(err, record) {
@@ -9329,11 +9329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPzFc8RpwqOrBKh', function(err, record) {
@@ -9354,11 +9354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0zcGXdTepp0Hn3', function(err, record) {
@@ -9379,11 +9379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccBoKTdckqaEU4E', function(err, record) {
@@ -9404,11 +9404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLpEdqA3OR0tPHq', function(err, record) {
@@ -9429,11 +9429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckRHHxwhZaYQoOH', function(err, record) {
@@ -9454,11 +9454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recIJ3aawY6EHPylx', function(err, record) {
@@ -9479,11 +9479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSuFCwlG1R8ghNQ', function(err, record) {
@@ -9504,11 +9504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1TGq3dGpG4U8pL', function(err, record) {
@@ -9529,11 +9529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpTsCa0nlInhz1W', function(err, record) {
@@ -9554,11 +9554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1gUp7oTLIdBaeJ', function(err, record) {
@@ -9579,11 +9579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciyZIbSXKILXlkT', function(err, record) {
@@ -9604,11 +9604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0c3LqC550s6Bb3', function(err, record) {
@@ -9629,11 +9629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recgNpXL78oHRBIYO', function(err, record) {
@@ -9654,11 +9654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4Ntg5syaXuWsRv', function(err, record) {
@@ -9679,11 +9679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec95KwhPnpDXmSr9', function(err, record) {
@@ -9704,11 +9704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recV40FIaH319Ddui', function(err, record) {
@@ -9729,11 +9729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3kTlB54o6LLlZQ', function(err, record) {
@@ -9754,11 +9754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjqrCbDwf4ZDjLB', function(err, record) {
@@ -9779,11 +9779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZyHCrn4k8dCeLl', function(err, record) {
@@ -9804,11 +9804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recW1kVtehOZc0vGP', function(err, record) {
@@ -9829,11 +9829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRZ76TWIbrfoFBe', function(err, record) {
@@ -9854,11 +9854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6NFZ8smVWoy492', function(err, record) {
@@ -9879,11 +9879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQkn0AHjQcphnDZ', function(err, record) {
@@ -9904,11 +9904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recOO1VBKSSQQca0K', function(err, record) {
@@ -9929,11 +9929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNY8WrjKUOc8gsS', function(err, record) {
@@ -9954,11 +9954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWmhqHnZVftp5ZV', function(err, record) {
@@ -9979,11 +9979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqgnmV6hDCvuw9y', function(err, record) {
@@ -10004,11 +10004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recsMN62nth7khiWt', function(err, record) {
@@ -10029,11 +10029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGPosmJwigKjW6K', function(err, record) {
@@ -10054,11 +10054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recx0Ie2jcFhRWgXg', function(err, record) {
@@ -10079,11 +10079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyCPU7MELdACxP6', function(err, record) {
@@ -10104,11 +10104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rech2MF3pfMuR7Jp7', function(err, record) {
@@ -10129,11 +10129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recc0h8NnlemuaHwm', function(err, record) {
@@ -10154,11 +10154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recw3WWeMyJUXh84X', function(err, record) {
@@ -10179,11 +10179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclLUC9iQ21MhZib', function(err, record) {
@@ -10204,11 +10204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPPdbdtDqW4mPns', function(err, record) {
@@ -10229,11 +10229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSymeLzNkBuyn0x', function(err, record) {
@@ -10254,11 +10254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTCkFyEAITtLQl2', function(err, record) {
@@ -10279,11 +10279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recl79SQ0HAEa298c', function(err, record) {
@@ -10304,11 +10304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMhtwNPnUtE8KbM', function(err, record) {
@@ -10329,11 +10329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbmzXdojD9Hddp1', function(err, record) {
@@ -10354,11 +10354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recYS5hM0LUOZULYw', function(err, record) {
@@ -10379,11 +10379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRHLk7V3vIVjfCt', function(err, record) {
@@ -10404,11 +10404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjdYhP2CCENPfgY', function(err, record) {
@@ -10429,11 +10429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXuDhmm7uyQwK15', function(err, record) {
@@ -10454,11 +10454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recARfUyNwR50J5VY', function(err, record) {
@@ -10479,11 +10479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rece7Ps0GkARYQRBe', function(err, record) {
@@ -10504,11 +10504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvAoBdhiW4rnFz0', function(err, record) {
@@ -10529,11 +10529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCIghFYIdmE2aG9', function(err, record) {
@@ -10554,11 +10554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVTokGaayDnQjiL', function(err, record) {
@@ -10579,11 +10579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjHKqPLUUAejecm', function(err, record) {
@@ -10604,11 +10604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHiaflF2xkih8tZ', function(err, record) {
@@ -10629,11 +10629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recu0I1hjoXds8jnT', function(err, record) {
@@ -10654,11 +10654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec784my7x4tmvFOM', function(err, record) {
@@ -10679,11 +10679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recgI80G1XCtMqQz3', function(err, record) {
@@ -10704,11 +10704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmyFoReNes6918k', function(err, record) {
@@ -10729,11 +10729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQkwEd8mq2Yysmj', function(err, record) {
@@ -10754,11 +10754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recznpuBNaaFlTJW2', function(err, record) {
@@ -10779,11 +10779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recun4GAqIJiZnH4K', function(err, record) {
@@ -10804,11 +10804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recaPrPTwXoSTuWGn', function(err, record) {
@@ -10829,11 +10829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVoqIKYjl64Gbbj', function(err, record) {
@@ -10854,11 +10854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recWIydyxq1jM2W2M', function(err, record) {
@@ -10879,11 +10879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5i1oc35g0pWPjb', function(err, record) {
@@ -10904,11 +10904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recUm6vq6uiUw0bbN', function(err, record) {
@@ -10929,11 +10929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrqr2NwRw45xZBf', function(err, record) {
@@ -10954,11 +10954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recShLfQtzqGAqDcp', function(err, record) {
@@ -10979,11 +10979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCsl4YQgJOmdZ7a', function(err, record) {
@@ -11004,11 +11004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZ5isF56i6CaVGy', function(err, record) {
@@ -11029,11 +11029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reca8INCepYnnCWvA', function(err, record) {
@@ -11054,11 +11054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKQCsPUE4FIUtcn', function(err, record) {
@@ -11079,11 +11079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuQ3mUpZTAoWR1l', function(err, record) {
@@ -11104,11 +11104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recc50TmUNAS6kK1A', function(err, record) {
@@ -11129,11 +11129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnyI69AyX9ML7o0', function(err, record) {
@@ -11154,11 +11154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciXMK47f6YK2xmq', function(err, record) {
@@ -11179,11 +11179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec0QnHWcmE9eCIax', function(err, record) {
@@ -11204,11 +11204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec23Ca2rm5svxSUM', function(err, record) {
@@ -11229,11 +11229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec7uJVYLaZiHK4UA', function(err, record) {
@@ -11254,11 +11254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recDmZ7hXg2xikgOp', function(err, record) {
@@ -11279,11 +11279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZedQ7bs9OQE5ar', function(err, record) {
@@ -11304,11 +11304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2zuNqPgvoD8S2R', function(err, record) {
@@ -11329,11 +11329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recpWP8InPF3wwTWK', function(err, record) {
@@ -11354,11 +11354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec18FWFUT2bzKwcx', function(err, record) {
@@ -11379,11 +11379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFqMHjxTc9xdJhV', function(err, record) {
@@ -11404,11 +11404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recj095QWD7rL8TSk', function(err, record) {
@@ -11429,11 +11429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recmj7JPquUFDfmhp', function(err, record) {
@@ -11454,11 +11454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recTFGwk7PxexcuKn', function(err, record) {
@@ -11479,11 +11479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec1chN7cjmKRXpFX', function(err, record) {
@@ -11504,11 +11504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrPIiXShM1siXfJ', function(err, record) {
@@ -11529,11 +11529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuZNQ66Iuw7Aac0', function(err, record) {
@@ -11554,11 +11554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recwUv9P7FL9kzXcj', function(err, record) {
@@ -11579,11 +11579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco83tmDegxyz1hH', function(err, record) {
@@ -11604,11 +11604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reciyGro42jKmPWVO', function(err, record) {
@@ -11629,11 +11629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recPtFYzBN52mNVw9', function(err, record) {
@@ -11654,11 +11654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVcDUK7aYjsM3C5', function(err, record) {
@@ -11679,11 +11679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recr6nvNWPX7rS1mJ', function(err, record) {
@@ -11704,11 +11704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSjL45NEFKm2Tev', function(err, record) {
@@ -11729,11 +11729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recp5R2KidMu3Cqmt', function(err, record) {
@@ -11754,11 +11754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3k8k5nNVNlYmLA', function(err, record) {
@@ -11779,11 +11779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec7ig0Dt8XptbNEK', function(err, record) {
@@ -11804,11 +11804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recU9ndU7fTe9J3Jt', function(err, record) {
@@ -11829,11 +11829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recY2t50Mt11KyMp3', function(err, record) {
@@ -11854,11 +11854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczbGjcg2UFuauyW', function(err, record) {
@@ -11879,11 +11879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVRDRBNUNTlRbNQ', function(err, record) {
@@ -11904,11 +11904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3x7xAmg9T68W42', function(err, record) {
@@ -11929,11 +11929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec52y33NGGR0HSbw', function(err, record) {
@@ -11954,11 +11954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reccl1vYI7paE34aM', function(err, record) {
@@ -11979,11 +11979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZEwHj4CgnqV38z', function(err, record) {
@@ -12004,11 +12004,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recSsMPbs4NnTGtoQ', function(err, record) {
@@ -12029,11 +12029,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recN9g4YwS4awWUpb', function(err, record) {
@@ -12054,11 +12054,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recxr0cg67outRhOv', function(err, record) {
@@ -12079,11 +12079,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recVkQzSZUAlJ9HDq', function(err, record) {
@@ -12104,11 +12104,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyZemMgEaW2OyTW', function(err, record) {
@@ -12129,11 +12129,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechFSudgC3h2Cmzu', function(err, record) {
@@ -12154,11 +12154,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recd5vIUrfkxbtCLr', function(err, record) {
@@ -12179,11 +12179,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recnFhveyjRrNgB6v', function(err, record) {
@@ -12204,11 +12204,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec3JKIRVKKPwz4XK', function(err, record) {
@@ -12229,11 +12229,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclNECc0IsuDIzcr', function(err, record) {
@@ -12254,11 +12254,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuQuHEkQSdDKMWk', function(err, record) {
@@ -12279,11 +12279,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckqyJ7vUPFgDOfl', function(err, record) {
@@ -12304,11 +12304,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec2LjGwoK9xzdAzN', function(err, record) {
@@ -12329,11 +12329,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco76XGU7V1UPZuu', function(err, record) {
@@ -12354,11 +12354,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rech11srVDpHHGgqx', function(err, record) {
@@ -12379,11 +12379,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rechJyiFw5aF1epvw', function(err, record) {
@@ -12404,11 +12404,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6s4zF9aEjhhabI', function(err, record) {
@@ -12429,11 +12429,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recEIOamuQLhUj1ao', function(err, record) {
@@ -12454,11 +12454,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6R4xzoA2mq2WsB', function(err, record) {
@@ -12479,11 +12479,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recC8EXIIcNDZhJ2G', function(err, record) {
@@ -12504,11 +12504,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec049KbnXmW1SJAz', function(err, record) {
@@ -12529,11 +12529,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recFQkiXouwheCb73', function(err, record) {
@@ -12554,11 +12554,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZCamAfw6LpK3B4', function(err, record) {
@@ -12579,11 +12579,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLlQglScomDujkq', function(err, record) {
@@ -12604,11 +12604,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyBVUlXVa301zew', function(err, record) {
@@ -12629,11 +12629,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recjseKganbrbpN2E', function(err, record) {
@@ -12654,11 +12654,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recht6rAI8qqn9ZZq', function(err, record) {
@@ -12679,11 +12679,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recNb2Y3V6o754Zh0', function(err, record) {
@@ -12704,11 +12704,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec4S6XrDYbjZWvKp', function(err, record) {
@@ -12729,11 +12729,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recl2vyChs6rIRBsq', function(err, record) {
@@ -12754,11 +12754,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclaFZRiRRxXAILy', function(err, record) {
@@ -12779,11 +12779,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recfV1Wty6yFIQjtk', function(err, record) {
@@ -12804,11 +12804,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reco2JrU1af5OMzlI', function(err, record) {
@@ -12829,11 +12829,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recKbz8WRd8Ae31SA', function(err, record) {
@@ -12854,11 +12854,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recMTsbJpaQ5Rz6q0', function(err, record) {
@@ -12879,11 +12879,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5c3JtxNIBenDDu', function(err, record) {
@@ -12904,11 +12904,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recZwc6vOdhv3od7g', function(err, record) {
@@ -12929,11 +12929,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyuJsQbrLM0JrST', function(err, record) {
@@ -12954,11 +12954,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recqLV01L6Abg69IE', function(err, record) {
@@ -12979,11 +12979,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recRjVdFfbswLSxPt', function(err, record) {
@@ -13005,11 +13005,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recHASFq7iwZ83WW8', function(err, record) {
@@ -13030,11 +13030,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recJgENU607Jl1vq9', function(err, record) {
@@ -13055,11 +13055,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec8mk69yJEIEZy7l', function(err, record) {
@@ -13080,11 +13080,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXKNw0ehZoOGFmi', function(err, record) {
@@ -13105,11 +13105,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reckvf4xRoLhsd3Kf', function(err, record) {
@@ -13130,11 +13130,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCE5OTxkIVmmt8Q', function(err, record) {
@@ -13155,11 +13155,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recvQU39gshcDS8Bj', function(err, record) {
@@ -13180,11 +13180,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5siz7Zzn0KyBQv', function(err, record) {
@@ -13205,11 +13205,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recXMHiT0z3OosaGu', function(err, record) {
@@ -13230,11 +13230,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recELaEPRPrzKuv9q', function(err, record) {
@@ -13255,11 +13255,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reclYyEmk4Uvc5Rx1', function(err, record) {
@@ -13280,11 +13280,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reca4Vky8N26mOcSf', function(err, record) {
@@ -13305,11 +13305,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recLpPwHmhHvYL7jq', function(err, record) {
@@ -13330,11 +13330,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recQ6TYvbvvoMxtZc', function(err, record) {
@@ -13355,11 +13355,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recYqCEg4NfYwmO8u', function(err, record) {
@@ -13380,11 +13380,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recI02WQqDEOaaEce', function(err, record) {
@@ -13405,11 +13405,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recyyu3Eo4dXPYe0w', function(err, record) {
@@ -13430,11 +13430,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recO7wkcDkKbaopJc', function(err, record) {
@@ -13455,11 +13455,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recuzbcWcNM6yIUho', function(err, record) {
@@ -13480,11 +13480,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recCvg5EQmOHmH6gw', function(err, record) {
@@ -13505,11 +13505,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reczeevAHiMl54uSa', function(err, record) {
@@ -13530,11 +13530,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recn1XWJhbU3KBZKx', function(err, record) {
@@ -13555,11 +13555,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec01P7smjT5KT7H3', function(err, record) {
@@ -13580,11 +13580,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recshlvXAABfecS5n', function(err, record) {
@@ -13605,11 +13605,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recdiTFgpCtpv1v4z', function(err, record) {
@@ -13630,11 +13630,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recGcLBokHfuwakWh', function(err, record) {
@@ -13655,11 +13655,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec6gNqpCs0c6fyTN', function(err, record) {
@@ -13680,11 +13680,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('rec5sNeizBjs3rXnO', function(err, record) {
@@ -13705,11 +13705,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recrKlc1QYo1SfZkA', function(err, record) {
@@ -13730,11 +13730,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('reci4ishRROQCrGsG', function(err, record) {
@@ -13755,11 +13755,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recL7ojLUaggDhx6G', function(err, record) {
@@ -13780,11 +13780,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recbgvNO5DHoouA6P', function(err, record) {
@@ -13805,11 +13805,11 @@ module.exports = function(app) {
 
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
 
         base('Artworks').find('recATPK7wrSrpltcp', function(err, record) {
@@ -13829,11 +13829,11 @@ module.exports = function(app) {
     app.get('/art/CF000593', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recV03jQUEn2mVEIE', function(err, record) {
             if (err) {
@@ -13853,11 +13853,11 @@ module.exports = function(app) {
     app.get('/art/CF000594', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('reczaE4KPb96nWyOd', function(err, record) {
             if (err) {
@@ -13876,11 +13876,11 @@ module.exports = function(app) {
     app.get('/art/CF000595', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recBW79cyXZAuL63G', function(err, record) {
             if (err) {
@@ -13899,11 +13899,11 @@ module.exports = function(app) {
     app.get('/art/CF000596', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rectWup92wVY6VcOh', function(err, record) {
             if (err) {
@@ -13922,11 +13922,11 @@ module.exports = function(app) {
     app.get('/art/CF000597', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recDO7FVM6eDm5tmy', function(err, record) {
             if (err) {
@@ -13945,11 +13945,11 @@ module.exports = function(app) {
     app.get('/art/CF000598', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recSy6BsOOCb2W7L3', function(err, record) {
             if (err) {
@@ -13968,11 +13968,11 @@ module.exports = function(app) {
     app.get('/art/CF000599', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rec6D8Lenx0yQpb5r', function(err, record) {
             if (err) {
@@ -13991,11 +13991,11 @@ module.exports = function(app) {
     app.get('/art/CF000600', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recRSv1znPgeW9mAW', function(err, record) {
             if (err) {
@@ -14014,11 +14014,11 @@ module.exports = function(app) {
     app.get('/art/CF000601', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recIBDrzo4hzPwauT', function(err, record) {
             if (err) {
@@ -14037,11 +14037,11 @@ module.exports = function(app) {
     app.get('/art/CF000602', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recoYIb8IgYZXAOnN', function(err, record) {
             if (err) {
@@ -14060,11 +14060,11 @@ module.exports = function(app) {
     app.get('/art/CF000603', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rec9vGMXSpoZAhRXC', function(err, record) {
             if (err) {
@@ -14083,11 +14083,11 @@ module.exports = function(app) {
     app.get('/art/CF000604', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recJKR24W7tOqsTC5', function(err, record) {
             if (err) {
@@ -14106,11 +14106,11 @@ module.exports = function(app) {
     app.get('/art/CF000605', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recKBZGwUJio1aJwJ', function(err, record) {
             if (err) {
@@ -14129,11 +14129,11 @@ module.exports = function(app) {
     app.get('/art/CF000606', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recTkzj9SVdk5al6d', function(err, record) {
             if (err) {
@@ -14152,11 +14152,11 @@ module.exports = function(app) {
     app.get('/art/CF000607', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rec7GcEhAwbJq9qvs', function(err, record) {
             if (err) {
@@ -14175,11 +14175,11 @@ module.exports = function(app) {
     app.get('/art/CF000608', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recWn46rskWRzr7nU', function(err, record) {
             if (err) {
@@ -14198,11 +14198,11 @@ module.exports = function(app) {
     app.get('/art/CF000609', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('reckhmUkkdafoOgDq', function(err, record) {
             if (err) {
@@ -14221,11 +14221,11 @@ module.exports = function(app) {
     app.get('/art/CF000610', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recrw5WCH8iF0lENa', function(err, record) {
             if (err) {
@@ -14244,11 +14244,11 @@ module.exports = function(app) {
     app.get('/art/CF000611', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recwFh43tmDmz3DLW', function(err, record) {
             if (err) {
@@ -14267,11 +14267,11 @@ module.exports = function(app) {
     app.get('/art/CF000612', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recrprF8yq47pij7X', function(err, record) {
             if (err) {
@@ -14290,11 +14290,11 @@ module.exports = function(app) {
     app.get('/art/CF000613', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recQ2YVnhuIx7VIud', function(err, record) {
             if (err) {
@@ -14313,11 +14313,11 @@ module.exports = function(app) {
     app.get('/art/CF000614', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rec7T7xbgoGo3PIGz', function(err, record) {
             if (err) {
@@ -14336,11 +14336,11 @@ module.exports = function(app) {
     app.get('/art/CF000615', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('rec7FEitkIFU94lSR', function(err, record) {
             if (err) {
@@ -14359,11 +14359,11 @@ module.exports = function(app) {
     app.get('/art/CF000616', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recPF4iLyugrDRhpi', function(err, record) {
             if (err) {
@@ -14382,11 +14382,11 @@ module.exports = function(app) {
     app.get('/art/CF000617', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recGe3em85gloC6Ev', function(err, record) {
             if (err) {
@@ -14405,11 +14405,11 @@ module.exports = function(app) {
     app.get('/art/CF000618', function(req, res) {
         var Airtable = require('airtable');
         var base = new Airtable({
-            apiKey: config.process.envfig.airtableAPIKey
-        }).base(config.process.envfig.airtableBase);
+            apiKey: process.env.airtableAPIKey
+        }).base(process.env.airtableBase);
         var context = {
             static_url: "https://s3.amazonaws.com/centerfold-website/",
-            stripeAPIKey: config.process.envfig.stripeAPIKey
+            stripeAPIKey: process.env.stripeAPIKey
         };
         base('Artworks').find('recRslaEtD4ENxOkh', function(err, record) {
             if (err) {
@@ -14428,11 +14428,11 @@ module.exports = function(app) {
     app.get('/art/CF000637', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recs3I1keSMXiCkmU', function(err, record) {
         if (err) {
@@ -14451,11 +14451,11 @@ module.exports = function(app) {
 app.get('/art/CF000638', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recPst1vw44aTJ8yc', function(err, record) {
         if (err) {
@@ -14474,11 +14474,11 @@ app.get('/art/CF000638', function(req, res) {
 app.get('/art/CF000639', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recD6edZbzNZijqly', function(err, record) {
         if (err) {
@@ -14497,11 +14497,11 @@ app.get('/art/CF000639', function(req, res) {
 app.get('/art/CF000640', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recZHyeM3GQyjTkfT', function(err, record) {
         if (err) {
@@ -14520,11 +14520,11 @@ app.get('/art/CF000640', function(req, res) {
 app.get('/art/CF000641', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recyzpr2HWP33rCfX', function(err, record) {
         if (err) {
@@ -14543,11 +14543,11 @@ app.get('/art/CF000641', function(req, res) {
 app.get('/art/CF000642', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recPWCoZ2sYO2JAMw', function(err, record) {
         if (err) {
@@ -14566,11 +14566,11 @@ app.get('/art/CF000642', function(req, res) {
 app.get('/art/CF000643', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('rec7ZuqBgdZ5ef6H7', function(err, record) {
         if (err) {
@@ -14589,11 +14589,11 @@ app.get('/art/CF000643', function(req, res) {
 app.get('/art/CF000644', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recUfpWS90bnJ8rGE', function(err, record) {
         if (err) {
@@ -14612,11 +14612,11 @@ app.get('/art/CF000644', function(req, res) {
 app.get('/art/CF000645', function(req, res) {
     var Airtable = require('airtable');
     var base = new Airtable({
-        apiKey: config.process.envfig.airtableAPIKey
-    }).base(config.process.envfig.airtableBase);
+        apiKey: process.env.airtableAPIKey
+    }).base(process.env.airtableBase);
     var context = {
         static_url: "https://s3.amazonaws.com/centerfold-website/",
-        stripeAPIKey: config.process.envfig.stripeAPIKey
+        stripeAPIKey: process.env.stripeAPIKey
     };
     base('Artworks').find('recTbax8Wd1YV8sdk', function(err, record) {
         if (err) {
