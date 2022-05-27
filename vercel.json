@@ -2,12 +2,12 @@
   "version": 2,
   "scope": "4-us-and-4-others",
   "builds": [
-    { "src": "index.js", "use": "@now/node-server" },
-    { "src": "js/**/*", "use": "@now/static" },
-    { "src": "stylesheets/**/*", "use": "@now/static" },
-    { "src": "fonts/**/*", "use": "@now/static" },
-    { "src": "assets/**/*", "use": "@now/static" },
-    { "src": "api/**/*", "use": "@now/static" }
+    { "src": "index.js", "use": "@vercel/node-server" },
+    { "src": "js/**/*", "use": "@vercel/static" },
+    { "src": "stylesheets/**/*", "use": "@vercel/static" },
+    { "src": "fonts/**/*", "use": "@vercel/static" },
+    { "src": "assets/**/*", "use": "@vercel/static" },
+    { "src": "api/**/*", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/(js|fonts|assets|api)/(.*)" },
