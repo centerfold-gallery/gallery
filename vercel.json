@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "scope": "4-us-and-4-others",
+  "builds": [
+    { "src": "index.js", "use": "@now/node-server" },
+    { "src": "js/**/*", "use": "@now/static" },
+    { "src": "stylesheets/**/*", "use": "@now/static" },
+    { "src": "fonts/**/*", "use": "@now/static" },
+    { "src": "assets/**/*", "use": "@now/static" },
+    { "src": "api/**/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(js|fonts|assets|api)/(.*)" },
+    { "src": "^/stylesheets.*\\.css$" },
+    { "src": "/(.*)", "dest": "index.js" }
+  ]
+}
